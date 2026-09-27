@@ -137,6 +137,44 @@ const SC = [
   { kind: 'final', img: '10', mv: { z: [1.12, 1.22], f: [[.5, .58], [.5, .6]] },
     steam: [{ x0: .42, x1: .64, y: .44, n: 16, rise: 130, size: 300, alpha: .24, seed: 14 }] },
 ];
+// ───────── video clips (?clips): real footage replaces the photos ─────────
+// scene index → [clip folder in clips/, in-point (s), optional camera move]
+const USE_CLIPS = /[?&]clips/.test(location.search);
+const CLIP_FPS = 24, CLIP_LAST = 191;
+const CLIP_MAP = {
+  0: ['10_plato', .4, { z: [1.04, 1.04], f: [[.5, .5], [.5, .5]] }],
+  3: ['02_colar', .9], 4: ['03_caramelizar', 1.0], 5: ['04_integrar', .4], 6: ['05_tapa', 1.0],
+  7: ['05b_destapar', .25], 8: ['06_freir', 1.0], 9: ['07_escurrir', .6],
+  10: ['08_montaje', .5, { z: [1.3, 1.32], f: [[.4, .58], [.42, .6]] }],   // crop keeps the napkin logo (x > .83) out of frame
+  11: ['10_plato', 4.9, { z: [1.12, 1.16], f: [[.5, .62], [.5, .62]] }],
+};
+if (USE_CLIPS) for (const [i, [name, inp, mv]] of Object.entries(CLIP_MAP)) {
+  Object.assign(SC[i], { clip: { name, in: inp }, steam: null, glints: null, mv: mv || { z: [1.03, 1.09], f: [[.5, .5], [.5, .5]] } });
+}
+const CACHE = new Map();
+const clipIdx = (s, i, t) => clamp(Math.round((s.clip.in + (t - i * BAR)) * CLIP_FPS), 0, CLIP_LAST);
+const clipKey = (name, k) => `${name}/${k}`;
+function clipFrame(s, i, t) {
+  const k = clipIdx(s, i, t);
+  for (const d of [0, -1, 1, -2, 2]) { const im = CACHE.get(clipKey(s.clip.name, clamp(k + d, 0, CLIP_LAST))); if (im) return im; }
+  return null;
+}
+async function prepareClips(t) {
+  const keys = new Set();
+  for (const tt of [t, t + SHUTTER / FPS]) {
+    const c = Math.floor(tt / BAR);
+    for (let i = Math.max(0, c - 1); i <= Math.min(11, c + 1); i++) {
+      const s = SC[i];
+      if (s.clip && tt >= i * BAR - .45 && tt <= (i + 1) * BAR + .45) keys.add(clipKey(s.clip.name, clipIdx(s, i, tt)));
+    }
+  }
+  await Promise.all([...keys].filter(k => !CACHE.has(k)).map(async k => {
+    const [n, idx] = k.split('/'), im = new Image();
+    im.src = `clips/${n}/f${String(idx).padStart(3, '0')}.jpg`; await im.decode(); CACHE.set(k, im);
+  }));
+  while (CACHE.size > 60) CACHE.delete(CACHE.keys().next().value);
+}
+
 // transition INTO scene i (at t = i*BAR): [type, half-window]
 const TR = [null, ['dissolve', .3], ['zoom', .16], ['whipUp', .13], ['whipL', .13], ['zoom', .16], ['whipL', .13],
   ['flash', .22], ['whipUp', .13], ['whipL', .13], ['zoom', .16], ['dissolve', .35]];
@@ -145,7 +183,7 @@ const INGREDIENTS = [['1 taza', 'lentejas'], ['1 L', 'agua (precocción)'], ['2'
 
 // ───────── photo layer ─────────
 function photo(c, s, t, i) {
-  const img = IMG[s.img], mv = s.mv;
+  const img = (s.clip && clipFrame(s, i, t)) || IMG[s.img], mv = s.mv;
   const u = E.inOutSine(prog(t, i * BAR - .35, (i + 1) * BAR + .35));
   const z = lerp(mv.z[0], mv.z[1], u);
   const fx = lerp(mv.f[0][0], mv.f[1][0], u), fy = lerp(mv.f[0][1], mv.f[1][1], u);
@@ -468,7 +506,7 @@ window.reelReady = (async () => {
   await Promise.all(['600 100px Fraunces', 'italic 400 40px Fraunces', 'italic 600 40px Fraunces', '500 30px Grotesk', '700 30px Grotesk', '400 20px Mono', '700 20px Mono'].map(f => document.fonts.load(f, 'Aá½–·✓')));
   await loadAssets();
 })();
-window.renderFrame = f => renderAt(f / FPS);
+window.renderFrame = async f => { if (USE_CLIPS) await prepareClips(f / FPS); renderAt(f / FPS); };
 window.reelInfo = { W, H, FPS, DUR, frames: FPS * DUR };
 
 if (!/[?&]render/.test(location.search)) {
@@ -477,9 +515,9 @@ if (!/[?&]render/.test(location.search)) {
   const music = document.getElementById('music'), play = document.getElementById('play');
   window.reelReady.then(() => {
     const at = params.get('t');
-    if (at !== null) { renderAt(+at); return; }
+    if (at !== null) { window.renderFrame(Math.round(+at * FPS)); return; }
     renderAt(1.8); play.hidden = false;
-    const loop = () => { renderAt(Math.min(DUR - 1e-3, music.currentTime)); if (!music.paused) requestAnimationFrame(loop); else play.hidden = false; };
+    const loop = () => { const tt = Math.min(DUR - 1e-3, music.currentTime); if (USE_CLIPS) prepareClips(tt); renderAt(tt); if (!music.paused) requestAnimationFrame(loop); else play.hidden = false; };
     play.onclick = () => { play.hidden = true; music.currentTime = 0; music.play().then(loop); };
   });
 }

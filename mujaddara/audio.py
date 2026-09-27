@@ -235,18 +235,36 @@ add(ding(), 11 * BAR, 0.18, send=0.6)
 
 # ───────── foley per scene ─────────
 S = lambda i: i * BAR
-add(bubbles(2.6, 45), S(2), 0.9, pan=0.1)                        # 01 boil
-add(pour(1.2), S(3) + 0.1, 0.8); add(rattle(1.4), S(3) + 0.25, 0.7, pan=-0.2)   # 02 strain
-add(sizzle(2.6, 160, 0.15), S(4), 0.55)                           # 03 caramelize
-add(pour(1.0), S(5) + 0.2, 0.7, pan=0.2); add(bubbles(2.0, 25), S(5) + 0.6, 0.6)  # 04 combine
-add(clink(), S(6) + 0.08, 0.9, pan=0.15, send=0.2)               # 05 lid
+USE_CLIPS = os.environ.get('CLIPS') == '1'
+add(bubbles(2.6, 45), S(2), 0.9, pan=0.1)                        # 01 boil (photo in both versions)
 for k in range(12):
     add(tick(), S(6) + 0.5 + k * E8 / 2 * 1.5, 1.0, pan=0.4)     # timer
-add(bubbles(2.4, 12, 200, 500), S(6), 0.5)
 add(whoosh(0.8, 0.25), S(7) - 0.3, 1.0)                           # time-lapse
-add(sizzle(2.6, 420, 0.3), S(8), 0.8)                             # 06 fry
-add(sizzle(1.4, 90, 0.03), S(9) + 0.2, 0.5)                       # 07 drain crackle
-add(rustle(1.2), S(10) + 0.3, 0.8, pan=-0.1)                      # 08 sprinkle
+if not USE_CLIPS:
+    add(pour(1.2), S(3) + 0.1, 0.8); add(rattle(1.4), S(3) + 0.25, 0.7, pan=-0.2)   # 02 strain
+    add(sizzle(2.6, 160, 0.15), S(4), 0.55)                           # 03 caramelize
+    add(pour(1.0), S(5) + 0.2, 0.7, pan=0.2); add(bubbles(2.0, 25), S(5) + 0.6, 0.6)  # 04 combine
+    add(clink(), S(6) + 0.08, 0.9, pan=0.15, send=0.2)               # 05 lid
+    add(bubbles(2.4, 12, 200, 500), S(6), 0.5)
+    add(sizzle(2.6, 420, 0.3), S(8), 0.8)                             # 06 fry
+    add(sizzle(1.4, 90, 0.03), S(9) + 0.2, 0.5)                       # 07 drain crackle
+    add(rustle(1.2), S(10) + 0.3, 0.8, pan=-0.1)                      # 08 sprinkle
+else:
+    # real sound from the clips, same in-points as CLIP_MAP in recipe.js (10_plato is muted: it carries music)
+    CLIP_AUDIO = {3: ('02_colar', .9), 4: ('03_caramelizar', 1.0), 5: ('04_integrar', .4), 6: ('05_tapa', 1.0),
+                  7: ('05b_destapar', .25), 8: ('06_freir', 1.0), 9: ('07_escurrir', .6), 10: ('08_montaje', .5)}
+    here = os.path.dirname(os.path.abspath(__file__))
+    for i, (name, inp) in CLIP_AUDIO.items():
+        with wave.open(os.path.join(here, 'clips', name + '.wav')) as w:
+            a = np.frombuffer(w.readframes(w.getnframes()), np.int16).reshape(-1, 2).astype(float) / 32768
+        a0 = max(0.0, inp - 0.3); seg = a[int(a0 * SR):int((inp + BAR + 0.3) * SR)]
+        seg = filt(seg.T, 'high', 120).T
+        rms = np.sqrt(np.mean(seg ** 2)) + 1e-9
+        seg *= min(0.1 / rms, 20)                                       # level-match every clip
+        fade = int(0.25 * SR); env = np.ones(len(seg)); env[:fade] = np.linspace(0, 1, fade); env[-fade:] = np.linspace(1, 0, fade)
+        seg *= env[:, None]
+        st = int((S(i) - (inp - a0)) * SR); n = min(len(seg), N - st)
+        L[st:st + n] += seg[:n, 0] * 0.9; R[st:st + n] += seg[:n, 1] * 0.9
 for i in range(1, 12):
     add(whoosh(), S(i) - 0.17, 1.0, pan=(-0.4 if i % 2 else 0.4))
 
@@ -262,7 +280,7 @@ mix = np.tanh(mix * 1.2)
 mix /= np.max(np.abs(mix)) / 0.89
 fo = int(0.5 * SR); mix[-fo:] *= np.linspace(1, 0, fo)[:, None] ** 2
 fi = int(0.02 * SR); mix[:fi] *= np.linspace(0, 1, fi)[:, None]
-out = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'soundtrack.wav')
+out = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'soundtrack_clips.wav' if USE_CLIPS else 'soundtrack.wav')
 with wave.open(out, 'wb') as w:
     w.setnchannels(2); w.setsampwidth(2); w.setframerate(SR)
     w.writeframes((mix * 32767).astype('<i2').tobytes())

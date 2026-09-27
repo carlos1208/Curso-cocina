@@ -1,6 +1,7 @@
 // Renders recipe.js frame-by-frame in headless Chromium and muxes it with soundtrack.wav.
 //   node render.cjs                  → mujaddara.mp4 (master) + mujaddara_web.mp4
 //   node render.cjs --stills 1,5.2   → stills/t1.png … (quick look at given times)
+//   QUERY=clips NAME=mujaddara_clips AUDIO=soundtrack_clips.wav node render.cjs   → version with the real video clips
 // Env: FFMPEG (path to ffmpeg), WORKERS (default 4), OUT_DIR (frame dir, default ./frames)
 const http = require('http');
 const fs = require('fs');
@@ -12,6 +13,9 @@ const ROOT = __dirname;
 const FFMPEG = process.env.FFMPEG || 'ffmpeg';
 const WORKERS = +(process.env.WORKERS || 4);
 const OUT_DIR = process.env.OUT_DIR || path.join(ROOT, 'frames');
+const QUERY = process.env.QUERY ? '&' + process.env.QUERY : '';      // e.g. QUERY=clips
+const NAME = process.env.NAME || 'mujaddara';                          // output basename
+const AUDIO = process.env.AUDIO || 'soundtrack.wav';
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.woff2': 'font/woff2', '.wav': 'audio/wav', '.jpg': 'image/jpeg' };
 
 function serve() {
@@ -27,12 +31,12 @@ function serve() {
 async function openPage(browser, port) {
   const page = await browser.newPage({ viewport: { width: 540, height: 960 } });
   page.on('pageerror', e => { console.error('page error:', e); process.exit(1); });
-  await page.goto(`http://127.0.0.1:${port}/index.html?render`);
+  await page.goto(`http://127.0.0.1:${port}/index.html?render${QUERY}`);
   await page.evaluate(() => window.reelReady);
   return page;
 }
-const grab = (page, f, type, q) => page.evaluate(([f, type, q]) => {
-  window.renderFrame(f);
+const grab = (page, f, type, q) => page.evaluate(async ([f, type, q]) => {
+  await window.renderFrame(f);
   return document.getElementById('c').toDataURL(type, q).split(',')[1];
 }, [f, type, q]);
 
@@ -66,13 +70,13 @@ const grab = (page, f, type, q) => page.evaluate(([f, type, q]) => {
       }
     }));
     const run = a => { const r = spawnSync(FFMPEG, a, { stdio: 'inherit', cwd: OUT_DIR }); if (r.status !== 0) process.exit(r.status || 1); };
-    const input = ['-y', '-hide_banner', '-loglevel', 'error', '-framerate', String(FPS), '-i', path.join(OUT_DIR, 'f%04d.jpg'), '-i', path.join(ROOT, 'soundtrack.wav')];
-    run([...input, '-c:v', 'libx264', '-preset', 'slow', '-crf', '17', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '256k', '-movflags', '+faststart', '-shortest', path.join(ROOT, 'mujaddara.mp4')]);
-    console.log('wrote mujaddara.mp4 (master)');
+    const input = ['-y', '-hide_banner', '-loglevel', 'error', '-framerate', String(FPS), '-i', path.join(OUT_DIR, 'f%04d.jpg'), '-i', path.join(ROOT, AUDIO)];
+    run([...input, '-c:v', 'libx264', '-preset', 'slow', '-crf', '17', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '256k', '-movflags', '+faststart', '-shortest', path.join(ROOT, `${NAME}.mp4`)]);
+    console.log(`wrote ${NAME}.mp4 (master)`);
     const web = [...input, '-c:v', 'libx264', '-preset', 'slow', '-b:v', '4M', '-maxrate', '6M', '-bufsize', '8M'];
     run([...web, '-pass', '1', '-an', '-f', 'null', '/dev/null']);
-    run([...web, '-pass', '2', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-shortest', path.join(ROOT, 'mujaddara_web.mp4')]);
-    console.log('wrote mujaddara_web.mp4');
+    run([...web, '-pass', '2', '-pix_fmt', 'yuv420p', '-c:a', 'aac', '-b:a', '192k', '-movflags', '+faststart', '-shortest', path.join(ROOT, `${NAME}_web.mp4`)]);
+    console.log(`wrote ${NAME}_web.mp4`);
   }
   await browser.close();
   srv.close();
