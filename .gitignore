@@ -1,0 +1,5 @@
+reel/reel.mp4
+reel/frames/
+reel/stills/
+ffmpeg2pass*
+__pycache__/

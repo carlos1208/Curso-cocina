@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Motion Reel 2026</title>
+<style>
+  @font-face { font-family: Anton; src: url(fonts/Anton.woff2) format('woff2'); }
+  @font-face { font-family: Grotesk; font-weight: 500; src: url(fonts/space-grotesk-latin-500-normal.woff2) format('woff2'); }
+  @font-face { font-family: Grotesk; font-weight: 700; src: url(fonts/space-grotesk-latin-700-normal.woff2) format('woff2'); }
+  @font-face { font-family: Mono; font-weight: 400; src: url(fonts/jetbrains-mono-latin-400-normal.woff2) format('woff2'); }
+  @font-face { font-family: Mono; font-weight: 700; src: url(fonts/jetbrains-mono-latin-700-normal.woff2) format('woff2'); }
+  html, body { margin: 0; height: 100%; background: #000; overflow: hidden; }
+  canvas {
+    position: absolute; inset: 0; margin: auto;
+    width: 100vw; height: 56.25vw; max-height: 100vh; max-width: 177.78vh;
+  }
+  #play {
+    position: absolute; inset: 0; display: grid; place-items: center; cursor: pointer;
+    font: 700 20px Mono, monospace; color: #F4EFE6; letter-spacing: .2em;
+  }
+</style>
+</head>
+<body>
+<canvas id="c" width="1920" height="1080"></canvas>
+<div id="play" hidden>▶ PLAY</div>
+<audio id="music" src="soundtrack.wav" preload="auto"></audio>
+<script src="reel.js"></script>
+</body>
+</html>
