@@ -240,7 +240,7 @@
     <div class="wrap cook-head">
       <p class="eyebrow">Paso a paso</p>
       <h2>Cocina con el scroll</h2>
-      <p>Baja despacio: los temporizadores avanzan, la cebolla se carameliza y el vapor sube mientras lees. Pasa el cursor sobre la foto para soplar el vapor y haz clic para remover.</p>
+      <p>Baja despacio: las lentejas caen al colador, la cebolla se carameliza, la tapa se levanta y los temporizadores avanzan mientras lees. Pasa el cursor sobre el video para soplar el vapor y haz clic para remover.</p>
     </div>
     <div class="wrap cook">
       <div class="stage-wrap">
@@ -383,6 +383,40 @@
   ['10', '01', '02', '03', '04', '05', '08', '06', '07', '09'].forEach(k => { const im = new Image(); im.decoding = 'async'; im.src = `img/${k}.jpg`; IMG[k] = im; });
   const ready = im => im && im.complete && im.naturalWidth > 0;
 
+  // ── video clips: scrubbed by the scroll, or looping in the background ──
+  const VFMT = (() => { const t = document.createElement('video');
+    return t.canPlayType('video/mp4; codecs="avc1.64001F"') ? 'mp4' : t.canPlayType('video/webm; codecs="vp9"') ? 'webm' : null; })();
+  const VID = {};
+  let used = new Set();
+  function vid(name, loop, scrubbed) {
+    if (!VFMT) return null;
+    let v = VID[name];
+    if (!v) {
+      v = document.createElement('video');
+      v.muted = true; v.playsInline = true; v.setAttribute('playsinline', ''); v.preload = 'auto'; v.loop = !!loop;
+      v.src = `clips/${name}.${VFMT}`;
+      v.addEventListener('loadeddata', () => kick()); v.addEventListener('seeked', () => kick());
+      if (scrubbed) v.play().then(() => v.pause()).catch(() => {});   // wakes up buffering on phones
+      VID[name] = v;
+    }
+    return v;
+  }
+  const vready = v => !!v && v.readyState >= 2 && v.videoWidth > 0;
+  const srcW = s => s.videoWidth || s.naturalWidth, srcH = s => s.videoHeight || s.naturalHeight;
+  function scrub(v, target) {
+    used.add(v);
+    if (!vready(v)) return;
+    if (!v.paused) v.pause();
+    if (!v.seeking && Math.abs(v.currentTime - target) > 1 / 40) v.currentTime = target;
+  }
+  function loopPlay(v) { used.add(v); if (vready(v) && v.paused && !reduce) v.play().catch(() => {}); }
+  function clipSource(c, l) {
+    const v = vid(c.name, !c.scrub, !!c.scrub);
+    if (!v) return null;
+    if (c.scrub) scrub(v, lerp(c.scrub[0], c.scrub[1], smooth(prog(l, .04, .92)))); else loopPlay(v);
+    return vready(v) ? v : null;
+  }
+
   // ── canvas view with pointer + click effects ──
   function View(canvas, host) {
     const v = { c: canvas, x: canvas.getContext('2d'), w: 1, h: 1, d: 1, p: { x: .5, y: .5, in: false }, ps: { x: .5, y: .5 }, sparks: [], rings: [], visible: false };
@@ -399,13 +433,13 @@
         v.sparks.push({ x, y, vx: Math.cos(a) * s, vy: Math.sin(a) * s, t0: now, life: .5 + Math.random() * .6, size: (10 + Math.random() * 22) * v.d });
       }
     };
-    new IntersectionObserver(es => { v.visible = es[0].isIntersecting; if (v.visible) kick(); }).observe(canvas);
+    new IntersectionObserver(es => { v.visible = es[0].isIntersecting; kick(); }).observe(canvas);
     return v;
   }
 
   function photo(v, im, z, fx, fy, alpha = 1, filter = '', rot = 0) {
-    const ctx = v.x, sc = Math.max(v.w / im.naturalWidth, v.h / im.naturalHeight) * z;
-    const iw = im.naturalWidth * sc, ih = im.naturalHeight * sc, par = reduce ? 0 : 1;
+    const ctx = v.x, sc = Math.max(v.w / srcW(im), v.h / srcH(im)) * z;
+    const iw = srcW(im) * sc, ih = srcH(im) * sc, par = reduce ? 0 : 1;
     let tx = v.w / 2 - fx * iw - (v.ps.x - .5) * 30 * v.d * par, ty = v.h / 2 - fy * ih - (v.ps.y - .5) * 20 * v.d * par;
     tx = clamp(tx, v.w - iw, 0); ty = clamp(ty, v.h - ih, 0);
     ctx.save();
@@ -476,23 +510,25 @@
   function drawHero(t) {
     const v = hero, ctx = v.x; v.resize();
     ctx.fillStyle = '#1D1611'; ctx.fillRect(0, 0, v.w, v.h);
-    if (!ready(IMG['10'])) return;
-    const z = 1.14 + (reduce ? 0 : Math.sin(t * .25) * .025);
-    const pm = photo(v, IMG['10'], z, .5, .56);
-    steam(v, t, HERO_STEAM, pm, 1, 1);
+    const clip = clipSource({ name: '10_plato' }, 0);
+    const src = clip || (ready(IMG['10']) ? IMG['10'] : null);
+    if (!src) return;
+    const pm = clip ? photo(v, clip, 1.06, .5, .6) : photo(v, src, 1.14 + (reduce ? 0 : Math.sin(t * .25) * .025), .5, .56);
+    steam(v, t, HERO_STEAM, pm, clip ? .55 : 1, 1);
     effects(v, performance.now() / 1000);
   }
 
   // ── cooking stage ──
   const STAGE = [
     { img: '01', z: [1.08, 1.22], f: [[.5, .55], [.5, .6]], time: 10, steam: [{ x0: .12, x1: .88, y: .42, n: 22, rise: 170, size: 330, alpha: .28 }], grow: 'steam', glints: { x0: .08, x1: .92, y0: .44, y1: .74, n: 80, a: .9, size: 30 } },
-    { img: '02', z: [1.1, 1.14], f: [[.5, .34], [.5, .6]], steam: [{ x0: .3, x1: .8, y: .5, n: 10, rise: 150, size: 280, alpha: .2 }] },
-    { img: '03', z: [1.2, 1.08], f: [[.44, .56], [.5, .52]], caramel: true, steam: [{ x0: .2, x1: .8, y: .6, n: 8, rise: 120, size: 240, alpha: .14 }], glints: { x0: .05, x1: .95, y0: .45, y1: .8, n: 40, a: .6, size: 22 } },
-    { img: '04', z: [1.24, 1.24], f: [[.38, .55], [.62, .5]], adds: true, glints: { x0: .05, x1: .95, y0: .25, y1: .85, n: 60, a: .75, size: 24 } },
-    { img: '05', img2: '08', z: [1.06, 1.22], f: [[.5, .55], [.5, .62]], time: 20, steam: [{ x0: .03, x1: .12, y: .47, n: 9, rise: 110, size: 170, alpha: .22 }, { x0: .46, x1: .54, y: .33, n: 6, rise: 90, size: 140, alpha: .15 }], steam2: [{ x0: .18, x1: .86, y: .42, n: 26, rise: 180, size: 340, alpha: .3 }] },
-    { img: '06', z: [1.08, 1.24], f: [[.5, .55], [.52, .56]], grow: 'glints', glints: { x0: .12, x1: .88, y0: .46, y1: .68, n: 130, a: 1, size: 30 }, steam: [{ x0: .2, x1: .8, y: .46, n: 10, rise: 160, size: 230, alpha: .12 }] },
-    { img: '07', z: [1.12, 1.2], f: [[.5, .5], [.5, .46]], rot: [-1.6, 1.4] },
-    { img: '09', z: [1.14, 1.18], f: [[.5, .36], [.5, .5]], steam: [{ x0: .3, x1: .55, y: .64, n: 9, rise: 100, size: 210, alpha: .15 }] },
+    // clip.scrub = [from, to] seconds driven by the scroll; clips without scrub loop on their own
+    { img: '02', clip: { name: '02_colar', scrub: [.4, 5.8] }, z: [1.04, 1.1], f: [[.5, .42], [.5, .5]] },
+    { img: '03', clip: { name: '03_caramelizar' }, z: [1.05, 1.08], f: [[.5, .55], [.5, .55]], caramel: true, steam: [{ x0: .2, x1: .8, y: .6, n: 8, rise: 120, size: 240, alpha: .1 }] },
+    { img: '04', clip: { name: '04_integrar', scrub: [.1, 6.5] }, z: [1.06, 1.1], f: [[.5, .45], [.5, .52]], adds: true },
+    { img: '05', img2: '08', clip: { name: '05_tapa' }, clip2: { name: '05b_destapar', scrub: [0, 4.5] }, z: [1.04, 1.12], f: [[.5, .55], [.5, .58]], time: 20, steam: [{ x0: .03, x1: .12, y: .47, n: 9, rise: 110, size: 170, alpha: .16 }], steam2: [{ x0: .18, x1: .86, y: .42, n: 16, rise: 180, size: 340, alpha: .14 }] },
+    { img: '06', clip: { name: '06_freir' }, z: [1.05, 1.12], f: [[.5, .55], [.5, .55]], steam: [{ x0: .2, x1: .8, y: .46, n: 8, rise: 160, size: 230, alpha: .08 }] },
+    { img: '07', clip: { name: '07_escurrir', scrub: [.3, 7.2] }, z: [1.04, 1.08], f: [[.5, .5], [.5, .48]] },
+    { img: '09', clip: { name: '08_montaje', scrub: [.2, 5.6] }, z: [1.06, 1.1], f: [[.45, .45], [.45, .5]], steam: [{ x0: .3, x1: .55, y: .64, n: 6, rise: 100, size: 210, alpha: .1 }] },
   ];
   const stageEl = document.getElementById('stage'), stage = View(document.getElementById('stageCanvas'), stageEl);
   stageEl.addEventListener('click', e => { stage.burst(e); sizzle(); });
@@ -517,7 +553,7 @@
   }
   function drawStep(v, t, i, l, alpha) {
     const S = STAGE[i], ctx = v.x;
-    const im = ready(IMG[S.img]) ? IMG[S.img] : null; if (!im) return;
+    const im = (S.clip && clipSource(S.clip, l)) || (ready(IMG[S.img]) ? IMG[S.img] : null); if (!im) return;
     const q = stepPose(S, l);
     let filter = '';
     if (S.caramel) filter = `sepia(${(.35 * l).toFixed(3)}) saturate(${(1 + .55 * l).toFixed(3)}) brightness(${(1.06 - .24 * l).toFixed(3)}) contrast(${(1 + .12 * l).toFixed(3)})`;
@@ -528,10 +564,11 @@
     if (S.steam) S.steam.forEach((em, k) => steam(v, t, em, pm, fadeFx * (S.grow === 'steam' ? .35 + .9 * l : 1) * (S.img2 ? 1 - smooth(prog(l, .5, .62)) : 1), i * 10 + k));
     ctx.restore();
     // lid scene → time-lapse reveal of the cooked rice
-    if (S.img2 && ready(IMG[S.img2])) {
+    if (S.img2) {
       const r = smooth(prog(l, .5, .62));
-      if (r > 0) {
-        const pm2 = photo(v, IMG[S.img2], lerp(1.26, 1.1, prog(l, .5, 1)), .5, .52, alpha * r);
+      const src2 = r > 0 ? ((S.clip2 && clipSource(S.clip2, prog(l, .45, 1))) || (ready(IMG[S.img2]) ? IMG[S.img2] : null)) : null;
+      if (src2) {
+        const pm2 = photo(v, src2, src2 instanceof HTMLVideoElement ? lerp(1.1, 1.04, prog(l, .5, 1)) : lerp(1.26, 1.1, prog(l, .5, 1)), .5, .52, alpha * r);
         S.steam2.forEach((em, k) => steam(v, t, em, pm2, alpha * r, 40 + k));
         const flash = Math.sin(Math.PI * prog(l, .47, .64));
         if (flash > 0) { ctx.save(); ctx.globalCompositeOperation = 'screen'; ctx.fillStyle = `rgba(255,236,205,${.55 * flash * alpha})`; ctx.fillRect(0, 0, v.w, v.h); ctx.restore(); }
@@ -542,6 +579,9 @@
     const v = stage, ctx = v.x; v.resize();
     ctx.fillStyle = '#1D1611'; ctx.fillRect(0, 0, v.w, v.h);
     const { i, l } = readScroll();
+    // start buffering the next clips before they are needed
+    for (const k of [i + 1, i + 2]) { const S = STAGE[k]; if (S && S.clip) vid(S.clip.name, !S.clip.scrub, !!S.clip.scrub); if (S && S.clip2) vid(S.clip2.name, false, true); }
+    if (STAGE[i].clip2) vid(STAGE[i].clip2.name, false, true);
     drawStep(v, t, i, l, 1);
     const nb = i < STAGE.length - 1 ? smooth(prog(l, .82, 1)) : 0;
     if (nb > 0) drawStep(v, t, i + 1, 0, nb);
@@ -575,8 +615,10 @@
     raf = 0;
     const t = ms / 1000;
     for (const v of [hero, stage]) { v.ps.x += (v.p.x - v.ps.x) * .08; v.ps.y += (v.p.y - v.ps.y) * .08; }
+    used = new Set();
     if (hero.visible) drawHero(t);
     if (stage.visible) drawStage(t);
+    for (const v of Object.values(VID)) if (!used.has(v) && !v.paused) v.pause();   // nothing plays off screen
     if ((hero.visible || stage.visible) && !reduce) kick();
   }
   function kick() { if (!raf) raf = requestAnimationFrame(frame); }
