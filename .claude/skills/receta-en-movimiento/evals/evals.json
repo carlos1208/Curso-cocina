@@ -1,0 +1,23 @@
+{
+  "skill_name": "receta-en-movimiento",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Te paso la receta de mi flan de caramelo y 6 fotos que tomé con el celular (están en img/). Hazme un video vertical de máximo 25 segundos para Instagram con los pasos y música.",
+      "expected_output": "recipe.json con ≤10 escenas a un bpm que respete 25 s, gauge para el punto del caramelo, timer para el horneado, render de *_web.mp4 vertical 1080x1920 ≤25 s con audio, y aviso de datos estimados.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "subí 7 clips a la carpeta 'tacos al pastor clips' en mi drive, únelos en un reel de 30s con los pasos de la receta (te la pego abajo) y ponle música latina",
+      "expected_output": "Descarga por el conector de Drive + drive_decode.py, media_audit.py para elegir tramos y detectar música/logos, recipe.json con music=latino y clips con in-points, render final ≤30 s.",
+      "files": []
+    },
+    {
+      "id": 3,
+      "prompt": "Ya tengo el video de la receta de hummus, ahora quiero la página web del curso donde al hacer scroll se vayan viendo los pasos con los videos",
+      "expected_output": "build_web.py con clip.web scrub/loop por paso, una captura de verificación y publicación como Artifact con el mapa de artifact_files.json; enlace entregado y aviso de que es privado.",
+      "files": []
+    }
+  ]
+}
