@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Brisket ahumado — Curso de Cocina</title>
+<meta name="description" content="Receta de brisket ahumado estilo Texas explicada en 30 segundos.">
+<style>
+  @font-face { font-family: Fraunces; font-weight: 600; src: url(fonts/fraunces-latin-600-normal.woff2) format('woff2'); }
+  @font-face { font-family: Fraunces; font-weight: 600; font-style: italic; src: url(fonts/fraunces-latin-600-italic.woff2) format('woff2'); }
+  @font-face { font-family: Grotesk; font-weight: 500; src: url(fonts/space-grotesk-latin-500-normal.woff2) format('woff2'); }
+  @font-face { font-family: Grotesk; font-weight: 700; src: url(fonts/space-grotesk-latin-700-normal.woff2) format('woff2'); }
+  @font-face { font-family: Mono; font-weight: 400; src: url(fonts/jetbrains-mono-latin-400-normal.woff2) format('woff2'); }
+  @font-face { font-family: Mono; font-weight: 700; src: url(fonts/jetbrains-mono-latin-700-normal.woff2) format('woff2'); }
+  html, body { margin: 0; height: 100%; background: #0B0907; overflow: hidden; }
+  canvas { position: absolute; inset: 0; margin: auto; display: block; touch-action: none; cursor: pointer;
+    width: min(100vw, 56.25vh); height: min(177.78vw, 100vh);
+    width: min(100vw, 56.25dvh); height: min(177.78vw, 100dvh); }
+  #hint { position: absolute; left: 50%; bottom: 14%; transform: translateX(-50%); padding: .7em 1.3em; border-radius: 999px;
+    background: rgba(244,236,223,.92); color: #1B130E; font: 700 15px/1 Mono, Menlo, monospace; letter-spacing: .12em; cursor: pointer; }
+</style>
+</head>
+<body>
+<canvas id="c" width="1080" height="1920" aria-label="Animación: receta de brisket ahumado en 30 segundos"></canvas>
+<div id="hint" hidden>▶  Reproducir</div>
+<script src="brisket.js"></script>
+</body>
+</html>
