@@ -35,3 +35,18 @@ export FFMPEG=$(python3 -c "import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpe
 - S17 usa el final del smash (la costra) en cámara lenta; S24, el aplaste. El inicio de C5 alterna dos tomas y no se usa.
 - S12 (C1) va con zoom para dejar fuera el logo de la olla, igual que en el short. S13 (N08) va recortado arriba: asoma una mano.
 - C4 y C6 traen música en el audio y N07/N08 vienen mudos: no aportan sonido.
+
+## Short vertical (derivado del largo)
+
+`hamburguesa_costena_short.mp4`: 1080×1920, 29,95 s, con la narración. Sale del mismo motor y del mismo material, re-temporizado:
+
+| Short | Del largo | Narración |
+|---|---|---|
+| 0:00–0:12 | 0:00–0:12 | Gancho: "Hoy hacemos una hamburguesa…" + "Dulce, salado y ácido en cada mordisco." |
+| 0:12–0:17 | 2:04,5–2:09,5 | Smash: "Pon una bola y aplástala… No la vuelvas a presionar." |
+| 0:17–0:29 | 2:18,5–2:30,4 | Armado y "Sírvela caliente…" |
+| 0:29–0:30 | — | Cierre "Receta completa en el canal" |
+
+- Los cortes caen en las pausas reales de la voz (medidas en `voz.mp3`), con fundidos de 15 ms.
+- A pantalla completa (el material es vertical). Subtítulos grandes palabra por palabra; texto dentro de la zona segura de Shorts (x 60–900, sin los ~380 px de abajo). En el gancho, pines que nombran cada capa de la hamburguesa cuando la voz la dice.
+- `build_short.py` (lista de tramos arriba del archivo) → `timeline_short.json`, `voz_short.wav`, `subtitulos_short.srt`; `TL=timeline_short.json node render_yt.cjs` → `short_sin_audio.mp4`; `./exportar_short.sh` mezcla y exporta.

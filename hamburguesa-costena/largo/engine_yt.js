@@ -6,8 +6,8 @@
  * switches sides every chapter; chapters open with a two-layer wipe. Every frame is a pure function of time t.
  * Query params: ?t=12.3 (single frame), ?render (driven by render_yt.cjs).
  */
-const W = 1920, H = 1080;
-let FPS = 30, DUR = 157.7, TL = null;
+let W = 1920, H = 1080;              // the vertical Short sets 1080x1920 from its timeline
+let FPS = 30, DUR = 157.7, TL = null, VERT = false;
 const SHUTTER = 0.5;
 const COL = { cream: '#F6EFE3', saffron: '#F2B544', dark: '#140E09', ember: '#E0782F' };
 
@@ -36,8 +36,7 @@ const rgba = (h, a) => `rgba(${parseInt(h.slice(1, 3), 16)},${parseInt(h.slice(3
 // ───────── canvases ─────────
 const out = document.getElementById('c').getContext('2d');
 const mk = (w = W, h = H) => { const c = document.createElement('canvas'); c.width = w; c.height = h; return c; };
-const sceneC = mk(), S = sceneC.getContext('2d');
-const accC = mk(), A = accC.getContext('2d');
+let sceneC, S, accC, A;               // created in setup(), once the size is known
 const tinyC = mk(40, 72), tinyX = tinyC.getContext('2d');          // blurred background source (portrait)
 const midC = mk(320, 180), midX = midC.getContext('2d');
 const mctx = document.createElement('canvas').getContext('2d');
@@ -295,13 +294,12 @@ function heightOf(o) {
   if (o.kind === 'chips') return 74;
   return HGT[o.kind] ?? 90;
 }
-function callouts(c, t, ch) {
-  const x0 = colX(ch.side);
+function callouts(c, t, ch, x0 = colX(ch.side), zone = ZONE) {
   const live = CO.filter(o => t >= o.t - .05 && t < (o.t1 ?? DUR) + .35 && o.t >= ch.t - .01 && o.kind !== 'trace');
   const groups = {};
   live.forEach(o => (groups[o.t1] = groups[o.t1] || []).push(o));
   Object.values(groups).forEach(g => {
-    let y = ZONE;
+    let y = zone;
     g.sort((a, b) => a.t - b.t).forEach(o => {
       if (o.kind === 'gauge') return;
       const out = prog(t, o.t1 - .25, o.t1 + .05);
@@ -733,9 +731,148 @@ function wipe(c, t) {
 }
 function wipeActive(t) { return CH.some(ch => ch.n >= 1 && ch.n <= 6 && t - ch.t > -.52 && t - ch.t < .96); }
 
+
+// ───────── vertical Short (1080x1920): full-bleed footage, big word-by-word captions ─────────
+// Shorts UI covers the bottom ~380 px and a column on the right: text stays in x 60–900, y 60–1500.
+function vShade(c) {
+  let g = c.createLinearGradient(0, 0, 0, 700); g.addColorStop(0, 'rgba(12,8,5,.78)'); g.addColorStop(1, 'rgba(12,8,5,0)');
+  c.fillStyle = g; c.fillRect(0, 0, W, 700);
+  g = c.createLinearGradient(0, 1150, 0, H); g.addColorStop(0, 'rgba(12,8,5,0)'); g.addColorStop(1, 'rgba(12,8,5,.8)');
+  c.fillStyle = g; c.fillRect(0, 1150, W, H - 1150);
+}
+function vHeader(c, t, ch, label = true) {
+  const segs = CH.filter(k => k.side !== 'endshort'), gap = 8, x0 = 40, sw = (W - 80 - gap * (segs.length - 1)) / segs.length;
+  segs.forEach((k, j) => {
+    const nx = CH[CH.indexOf(k) + 1], f = prog(t, k.t, nx ? nx.t : DUR);
+    c.fillStyle = 'rgba(246,239,227,.3)'; c.beginPath(); c.roundRect(x0 + j * (sw + gap), 56, sw, 6, 3); c.fill();
+    if (f > 0) { c.fillStyle = COL.cream; c.beginPath(); c.roundRect(x0 + j * (sw + gap), 56, sw * f, 6, 3); c.fill(); }
+  });
+  drawText(c, TL.tag, 60, 124, '400 22px Mono', rgba(COL.cream, .7), 'left', 3);
+  if (label && ch.side === 'V') maskedLine(c, ch.title.toUpperCase(), 58, 214, '700 64px Grotesk', ch.color, t, ch.t + .05, 6, .5);
+}
+function vMedia(c, t, i) {
+  const s = SHOTS[i], prev = SHOTS[i - 1], win = s.tr === 'push' ? .22 : 0;
+  const p = win && prev ? E.inOutCubic(prog(t, s.t0 - win, s.t0 + win)) : 1;
+  let map = null;
+  if (prev && p < 1) {
+    const pc = camera(prev, t); c.save(); c.translate(0, -p * H);
+    cover(c, shotSample(prev, t), 0, 0, W, H, pc.z, pc.fx, pc.fy, prev.shimmer, t); c.restore();
+  }
+  const cam = camera(s, t), punch = s.tr === 'cut' && s.t0 > 0 ? 1 - E.outCubic(prog(t, s.t0, s.t0 + .35)) : 0;
+  c.save(); if (p < 1) c.translate(0, (1 - p) * H);
+  c.translate(W / 2, H / 2); c.scale(1 + .14 * punch, 1 + .14 * punch); c.translate(-W / 2, -H / 2);
+  map = cover(c, shotSample(s, t), 0, 0, W, H, cam.z, cam.fx, cam.fy, s.shimmer, t);
+  c.restore();
+  if (punch > 0) { c.fillStyle = `rgba(255,240,215,${.55 * punch * punch})`; c.fillRect(0, 0, W, H); }   // flash on the cut
+  return map;
+}
+function vCaptions(c, t) {
+  const cue = CUES.find(q => t >= q[0] - .05 && t < q[1] + .08); if (!cue) return;
+  const words = rich(cue[2]), end = cue[3] ?? cue[1], tot = words.reduce((n, w) => n + w.w.length + 1, 0);
+  let acc = 0;
+  words.forEach(w => { w.t0 = cue[0] + (end - cue[0]) * acc / tot; acc += w.w.length + 1; w.t1 = cue[0] + (end - cue[0]) * acc / tot; });
+  const chunks = []; let cur = [];
+  words.forEach(w => {
+    const len = cur.reduce((n, x) => n + x.w.length + 1, 0) + w.w.length;
+    const prevW = cur.length ? cur[cur.length - 1].w : '', keep = /^[\d½]+$/.test(prevW);   // "1" stays with "cm"
+    if (cur.length && !keep && (len > 19 || /[.,:;!?…]$/.test(prevW))) { chunks.push(cur); cur = []; }
+    cur.push(w);
+  });
+  if (cur.length) chunks.push(cur);
+  let k = chunks.findIndex(ck => t < ck[ck.length - 1].t1); if (k < 0) k = chunks.length - 1;
+  const ck = chunks[k], c0 = ck[0].t0, pop = E.outBack(prog(t, c0 - .02, c0 + .16), 2.4);
+  const font = '700 80px Grotesk'; c.font = font;
+  const sp = c.measureText(' ').width * 1.5 + 12, ww = ck.map(w => c.measureText(w.w).width), tw = ww.reduce((a, b) => a + b, 0) + sp * (ck.length - 1);
+  const sc = Math.min(1, 820 / tw), cx = 480, y = 1360;
+  c.save(); c.translate(cx, y); c.scale(sc * (.85 + .15 * pop), sc * (.85 + .15 * pop)); c.globalAlpha = Math.min(1, pop * 1.5);
+  c.textBaseline = 'alphabetic'; c.textAlign = 'left'; c.lineJoin = 'round';
+  let x = -tw / 2;
+  ck.forEach((w, j) => {
+    const on = (j === 0 ? t >= c0 - .05 : t >= w.t0) && (t < w.t1 || j === ck.length - 1 && t < w.t1 + .3);
+    c.save(); c.translate(x + ww[j] / 2, 0); if (on) c.scale(1.08, 1.08); c.translate(-ww[j] / 2, 0);
+    c.lineWidth = 14; c.strokeStyle = 'rgba(10,6,3,.9)'; c.strokeText(w.w, 0, 0);
+    c.fillStyle = on ? COL.saffron : COL.cream; c.fillText(w.w, 0, 0);
+    c.restore(); x += ww[j] + sp;
+  });
+  c.restore();
+}
+const V_PINS = [['hogao caramelizado', 3.4, [.36, .43], '#D9573B'], ['queso costeño frito', 4.7, [.26, .54], '#EFE3C2'],
+  ['plátano maduro', 6.6, [.52, .46], '#F2B544'], ['salsa de suero', 7.7, [.8, .66], '#A9C44E']];
+function vPin(c, t, map, [label, ti, xy, col], k) {
+  const a = t - ti; if (a < 0) return;
+  const [px, py] = map.map(xy[0], xy[1]), pop = E.outBack(prog(a, 0, .35), 2.5);
+  const right = px < W * .55, lx = right ? px + 70 : px - 70, ly = py - 70 - (k % 2) * 30;
+  for (const dd of [0, .45]) { const q = prog(a, dd, dd + 1.1); if (q > 0 && q < 1) { c.strokeStyle = rgba(col, .85 * (1 - q)); c.lineWidth = 4; c.beginPath(); c.arc(px, py, 12 + 50 * E.outCubic(q), 0, TAU); c.stroke(); } }
+  c.save(); c.translate(px, py); c.scale(pop, pop); c.fillStyle = col; c.strokeStyle = COL.cream; c.lineWidth = 4; c.beginPath(); c.arc(0, 0, 14, 0, TAU); c.fill(); c.stroke(); c.restore();
+  const la = E.outCubic(prog(a, .12, .45)); if (la <= 0) return;
+  c.save(); c.globalAlpha = la;
+  c.strokeStyle = COL.cream; c.lineWidth = 3; c.beginPath(); c.moveTo(px, py); c.lineTo(lerp(px, lx, la), lerp(py, ly, la)); c.stroke();
+  const font = '700 40px Grotesk'; c.font = font; const w = c.measureText(label).width + 40;
+  const bx = right ? lx : lx - w;
+  c.fillStyle = 'rgba(14,10,7,.82)'; c.beginPath(); c.roundRect(bx, ly - 34, w, 68, 34); c.fill();
+  c.fillStyle = col; c.beginPath(); c.roundRect(right ? bx : bx + w - 8, ly - 34, 8, 68, 4); c.fill();
+  drawText(c, label, bx + 20, ly + 14, font, COL.cream);
+  c.restore();
+}
+function vHook(c, t) {
+  const cuts = [[0, 'C6', 0, .89, [1.16, 1.04], [.44, .5]], [9.0, 'N15', 2.0, 1, [1.12, 1.08], [.5, .5]],
+    [9.8, 'C3', 2.2, 1, [2.05, 2.0], [.75, .6]], [10.6, 'N08', 3.2, 1, [1.16, 1.12], [.46, .62]]];
+  let k = 0; cuts.forEach((q, j) => { if (t >= q[0]) k = j; });
+  const [t0, src, m0, rate, zz, f] = cuts[k], t1 = cuts[k + 1] ? cuts[k + 1][0] : CH[1].t;
+  const u = E.inOutSine(prog(t, t0, t1)), punch = k ? 1 - E.outCubic(prog(t, t0, t0 + .3)) : 0;
+  c.save(); c.translate(W / 2, H / 2); c.scale(1 + .14 * punch, 1 + .14 * punch); c.translate(-W / 2, -H / 2);
+  const map = cover(c, sample(src, m0 + (t - t0) * rate), 0, 0, W, H, lerp(zz[0], zz[1], u), f[0], f[1]);
+  c.restore();
+  if (punch > 0) { c.fillStyle = `rgba(255,240,215,${.5 * punch * punch})`; c.fillRect(0, 0, W, H); }
+  vShade(c);
+  vHeader(c, t, CH[0], false);
+  const ta = 1 - prog(t, 8.6, 9.0);
+  if (ta > 0) {
+    c.save(); c.globalAlpha = ta;
+    maskedLine(c, 'Hamburguesa', 54, 330, '600 128px Fraunces', COL.cream, t, .2, 0, .8);
+    maskedLine(c, 'costeña', 50, 490, 'italic 600 168px Fraunces', COL.saffron, t, .45, 0, .8);
+    c.restore();
+    if (map && k === 0) V_PINS.forEach((p, j) => { c.save(); c.globalAlpha = ta; vPin(c, t, map, p, j); c.restore(); });
+  }
+  if (t >= 9.0) {
+    let w = -1; HOOK_WORDS.forEach((q, j) => { if (t >= q[1]) w = j; });
+    if (w >= 0) {
+      const [word, ti, col, cap] = HOOK_WORDS[w], pop = E.outBack(prog(t, ti, ti + .28), 2.2), out = prog(t, 11.75, 11.95);
+      c.save(); c.globalAlpha = 1 - out; c.translate(480, 560); c.scale(pop * (1 + .5 * out), pop * (1 + .5 * out));
+      c.lineJoin = 'round'; c.font = 'italic 600 230px Fraunces'; c.textAlign = 'center'; c.lineWidth = 16; c.strokeStyle = 'rgba(10,6,3,.55)';
+      c.strokeText(word, 0, 0); c.fillStyle = col; c.fillText(word, 0, 0);
+      drawText(c, cap.toUpperCase(), 0, 80, '700 34px Mono', COL.cream, 'center', 6);
+      c.restore();
+    }
+    const a = prog(t, 11.2, 11.45) * (1 - prog(t, 11.75, 11.95));
+    if (a > 0) { c.save(); c.globalAlpha = a; drawText(c, 'EN CADA MORDISCO', 480, 760, '700 44px Grotesk', COL.cream, 'center', 10); c.restore(); }
+  }
+  vCaptions(c, t);
+}
+function vEnd(c, t, ch) {
+  const a = E.outCubic(prog(t, ch.t, ch.t + .35));
+  c.fillStyle = `rgba(14,10,7,${.72 * a})`; c.fillRect(0, 0, W, H);
+  c.save(); c.globalAlpha = a;
+  maskedLine(c, 'Receta completa', 60, 860, 'italic 600 120px Fraunces', COL.saffron, t, ch.t + .05, 0, .5);
+  maskedLine(c, 'en el canal  ▶', 64, 960, '700 64px Grotesk', COL.cream, t, ch.t + .15, 0, .5);
+  c.restore();
+}
+function vScene(c, t) {
+  const ch = chapterAt(t);
+  if (ch.side === 'hook') { vHook(c, t); return; }
+  const i = shotIndex(t), map = vMedia(c, t, i);
+  vShade(c);
+  if (map) pins(c, t, SHOTS[i], map);
+  vHeader(c, t, ch);
+  if (ch.side === 'endshort') { vEnd(c, t, ch); return; }
+  c.save(); c.scale(1.2, 1.2); callouts(c, t, ch, 60 / 1.2, 290 / 1.2); c.restore();   // bigger for a phone
+  vCaptions(c, t);
+}
+
 // ───────── frame ─────────
 function frameScene(t) {
   const c = S; c.setTransform(1, 0, 0, 1, 0, 0); c.globalAlpha = 1; c.globalCompositeOperation = 'source-over';
+  if (VERT) { vScene(c, t); return; }
   const ch = chapterAt(t);
   if (ch.side === 'hook') hook(c, t);
   else if (ch.side === 'end') endScreen(c, t, ch);
@@ -760,11 +897,16 @@ function post(o, src, t) {
   o.save(); o.globalCompositeOperation = 'overlay'; o.globalAlpha = .06;
   o.translate((f * 97) % 256, (f * 57) % 256); o.fillStyle = GRAIN[f % 4]; o.fillRect(-256, -256, W + 256, H + 256);
   o.restore();
-  const blk = Math.max(1 - prog(t, 0, .25), prog(t, DUR - .7, DUR));
+  const blk = Math.max(1 - prog(t, 0, VERT ? .12 : .25), prog(t, DUR - (VERT ? .3 : .7), DUR));
   if (blk > 0) { o.globalAlpha = blk; o.fillStyle = '#000'; o.fillRect(0, 0, W, H); o.globalAlpha = 1; }
 }
 // motion blur only where things move fast: cuts, wipes, the hook deal/flip and the end-card glide
 function subFor(t) {
+  if (VERT) {
+    if ([9.0, 9.8, 10.6].some(j => Math.abs(t - j) < .2) || t < .5) return 8;
+    for (const s of SHOTS) if (s.tr !== 'none' && Math.abs(t - s.t0) < .25 && s.t0 > 0) return 8;
+    return 1;
+  }
   if (wipeActive(t)) return 10;
   if (t < 1.6 || Math.abs(t - RESWAP) < .45 || (t > 12.1 && t < 12.7)) return 8;
   for (const s of SHOTS) if ((s.tr === 'push' || s.tr === 'zoom') && Math.abs(t - s.t0) < .3) return 8;
@@ -783,7 +925,11 @@ function renderAt(t) {
 
 // ───────── setup ─────────
 async function setup() {
-  TL = await (await fetch('timeline.json')).json();
+  TL = await (await fetch(new URLSearchParams(location.search).get('tl') || 'timeline.json')).json();
+  if (TL.size) [W, H] = TL.size;
+  VERT = TL.layout === 'vertical';
+  const cv = document.getElementById('c'); cv.width = W; cv.height = H;
+  sceneC = mk(); S = sceneC.getContext('2d'); accC = mk(); A = accC.getContext('2d');
   INDEX = await (await fetch('frames/index.json')).json();
   FPS = TL.fps; DUR = TL.duration; SHOTS = TL.shots; CH = TL.chapters; CO = TL.callouts; PINS = TL.pins; CUES = TL.cues;
   await Promise.all(Object.values(TL.media).filter(m => m.img).map(async m => { const im = new Image(); im.src = m.img; await im.decode(); IMG[m.img] = im; }));
@@ -793,7 +939,7 @@ async function setup() {
     for (let i = 0; i < id.data.length; i += 4) { const v = r() * 255; id.data[i] = id.data[i + 1] = id.data[i + 2] = v; id.data[i + 3] = 255; }
     gc.putImageData(id, 0, 0); GRAIN.push(out.createPattern(g, 'repeat'));
   }
-  VIGNETTE = out.createRadialGradient(W / 2, H * .5, H * .45, W / 2, H * .5, W * .72);
+  VIGNETTE = out.createRadialGradient(W / 2, H * .5, Math.min(W, H) * .45, W / 2, H * .5, Math.max(W, H) * .72);
   VIGNETTE.addColorStop(0, 'rgba(20,10,0,0)'); VIGNETTE.addColorStop(1, 'rgba(20,10,0,0.5)');
   window.reelInfo = { W, H, FPS, DUR, frames: Math.round(FPS * DUR) };
 }

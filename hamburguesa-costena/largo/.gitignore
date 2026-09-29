@@ -10,3 +10,8 @@ render.log
 master_crf16.mp4
 !hamburguesa_costena_youtube_720p.mp4
 !hamburguesa_costena_youtube_1080p.mp4
+stills_short/
+segments_short/
+short_sin_audio.mp4
+render_short.log
+!hamburguesa_costena_short.mp4

@@ -7,6 +7,7 @@
 - Clip sound (sizzle, simmer) comes from the clips themselves; the graphics get whooshes, pops, timer ticks, thuds.
 Writes: musica_fx.wav (everything but the voice) and mezcla.wav (with the voice when available), normalised to
 -14 LUFS integrated for YouTube with peaks kept under -1 dBFS.
+The Short uses the same script: TL=timeline_short.json VOICE=voz_short.wav OUT=short_ python3 audio_yt.py
 """
 import glob
 import json
@@ -18,7 +19,9 @@ import numpy as np
 import pyloudnorm as pyln
 from scipy import signal
 
-TL = json.load(open('timeline.json', encoding='utf-8'))
+TL = json.load(open(os.environ.get('TL', 'timeline.json'), encoding='utf-8'))
+VERT = TL.get('layout') == 'vertical'
+PREFIX = os.environ.get('OUT', '')
 SR = 44100
 DUR = TL['duration']
 N = int(SR * (DUR + 0.5))
@@ -84,7 +87,8 @@ def clave():
 
 
 # ───────── music: bars per chapter ─────────
-CH = TL['chapters']
+CH = [c for c in TL['chapters'] if c['side'] != 'endshort']       # the Short's end card rides on the last bar
+HAS_END = CH[-1]['side'] == 'end'
 bounds = [c['t'] for c in CH] + [DUR]
 BARS = []                                   # (start, length, chapter index, bar index within chapter, bars in chapter)
 for k, c in enumerate(CH):
@@ -110,8 +114,10 @@ def play(seq, t0, step, vel=0.8, pan=-0.15, octave=0, gain=0.5):
 last_ch = len(CH) - 1
 for j, (t0, bar, k, b, nb) in enumerate(BARS):
     e8 = bar / 8
-    final = k == last_ch
+    final = k == last_ch and HAS_END
     chords = P['chords'][(b + 2 * k) % len(P['chords'])] if not final else (P['dominant'] if b == 0 and nb > 1 else P['tonic'])
+    if k == last_ch and not HAS_END and b >= nb - 2:
+        chords = P['dominant'] if b == nb - 2 else P['tonic']
     if k < last_ch and b == nb - 1 and CH[k + 1]['side'] == 'end':
         chords = P['dominant']
     MUS.add(pad([note(n) for n in chords], bar + 0.6, cutoff=650 + 60 * k), t0 - 0.3, 0.15, send=0.3)
@@ -150,9 +156,10 @@ for j, (t0, bar, k, b, nb) in enumerate(BARS):
 for q in range(8):
     MUS.add(pluck(note(deg(0)), 0.25, 0.35 + 0.05 * q), 0.05 + q * 0.156, 0.5, pan=-0.1, send=0.3)
 end_t = CH[-1]['t']
+ring_t = end_t + 2.2 if HAS_END else DUR - 1.2
 for n in (deg(-7), deg(-3), deg(0), deg(2)):
-    MUS.add(pluck(note(n), 3.0, 0.5), end_t + 2.2, 0.35, send=0.5)
-MUS.add(ding(), end_t + 2.0, 0.14, send=0.6)
+    MUS.add(pluck(note(n), 3.0, 0.5), ring_t, 0.35, send=0.5)
+MUS.add(ding(), ring_t - 0.2, 0.14, send=0.6)
 
 # ───────── clip sound ─────────
 FR = 'frames'
@@ -174,9 +181,11 @@ for s in TL['shots']:
     if a is None:
         continue
     d = s['t1'] - s['t0'] + 0.6
-    start = min(s['a'], max(0.0, len(a) / SR - d))
+    start = max(0.0, min(s['a'], len(a) / SR - d))
     seg = a[int(start * SR):int((start + d) * SR)].copy()
-    f = int(0.3 * SR); env = np.ones(len(seg)); env[:f] = np.linspace(0, 1, f); env[-f:] = np.linspace(1, 0, f)
+    if len(seg) < SR // 5:
+        continue
+    f = min(int(0.3 * SR), len(seg) // 2); env = np.ones(len(seg)); env[:f] = np.linspace(0, 1, f); env[-f:] = np.linspace(1, 0, f)
     FX.add_st(seg * env[:, None], s['t0'] - 0.3, 1.0)
 hs = clip_audio('C3')                            # the hook: pan sizzle under the music
 if hs is not None:
@@ -189,12 +198,20 @@ for s in TL['shots']:
     if s['tr'] in ('push', 'zoom'):
         FX.add(whoosh(0.32, 0.16), s['t0'] - 0.2, 1.0, pan=0.3)
 for c in CH:
-    if 1 <= c['n'] <= 6:
+    if 1 <= c['n'] <= 6 and not VERT:
         FX.add(whoosh(0.9, 0.3), c['t'] - 0.55, 1.0, pan=-0.2)
         FX.add(whoosh(0.7, 0.22), c['t'] + 0.3, 1.0, pan=0.25)
-for k in range(3):                                  # hook: cards dealt, then flipped
-    FX.add(whoosh(0.3, 0.14), 0.12 + k * 0.14, 1.0, pan=0.2 + 0.2 * k)
-FX.add(whoosh(0.35, 0.14), 8.8, 1.0); FX.add(whoosh(0.35, 0.12), 8.9, 1.0, pan=0.3)
+    if 1 <= c['n'] <= 6 and VERT:                     # the Short cuts with a flash and a punch-in
+        FX.add(whoosh(0.4, 0.22), c['t'] - 0.28, 1.0); FX.add(doum(0.8), c['t'], 0.35)
+if VERT:
+    for j in (9.0, 9.8, 10.6):                        # dulce · salado · ácido
+        FX.add(whoosh(0.3, 0.16), j - 0.2, 1.0, pan=0.2); FX.add(doum(0.7), j, 0.3)
+    for _, ti in ((0, 3.4), (0, 4.7), (0, 6.6), (0, 7.7)):   # anatomy pins in the hook
+        FX.add(clink(2300, 0.06), ti, 1.0, pan=0.3)
+else:
+    for k in range(3):                                # hook: cards dealt, then flipped
+        FX.add(whoosh(0.3, 0.14), 0.12 + k * 0.14, 1.0, pan=0.2 + 0.2 * k)
+    FX.add(whoosh(0.35, 0.14), 8.8, 1.0); FX.add(whoosh(0.35, 0.12), 8.9, 1.0, pan=0.3)
 for o in TL['callouts']:
     t0 = o['t']
     kind = o['kind']
@@ -224,13 +241,14 @@ for o in TL['callouts']:
         FX.add(sizzle(0.8, 380, 0.2), t0 + 0.2, 0.35)
 for p in TL['pins']:
     FX.add(pop(0.05, 2400), p['t'], 1.0, pan=0.3)
-FX.add(clink(2600, 0.25), end_t + 1.55, 0.6)                      # subscribe click
-for q in range(6):
-    FX.add(ding(0.05), end_t + 1.6 + q * 0.07, 1.0, pan=0.2)          # bell shake
+if HAS_END:
+    FX.add(clink(2600, 0.25), end_t + 1.55, 0.6)                  # subscribe click
+    for q in range(6):
+        FX.add(ding(0.05), end_t + 1.6 + q * 0.07, 1.0, pan=0.2)      # bell shake
 
 # ───────── voice + ducking ─────────
 voice = None
-cand = sorted(glob.glob('voz.*'))
+cand = [os.environ['VOICE']] if os.environ.get('VOICE') else sorted(glob.glob('voz.*'))
 if cand:
     tmp = '_voz_tmp.wav'
     ff = os.environ.get('FFMPEG', 'ffmpeg')
@@ -291,9 +309,9 @@ def write(path, x):
 
 
 bed_m, lb, pb = master(bed, -20.0)       # bed alone sits lower: it is meant to go under a voice
-write('musica_fx.wav', bed_m)
-print(f'musica_fx.wav  {lb:.1f} LUFS  peak {pb:.1f} dBFS')
+write(f'{PREFIX}musica_fx.wav', bed_m)
+print(f'{PREFIX}musica_fx.wav  {lb:.1f} LUFS  peak {pb:.1f} dBFS')
 if voice is not None:
     mix_m, lm, pm = master(mix, -14.0)
-    write('mezcla.wav', mix_m)
-    print(f'mezcla.wav     {lm:.1f} LUFS  peak {pm:.1f} dBFS')
+    write(f'{PREFIX}mezcla.wav', mix_m)
+    print(f'{PREFIX}mezcla.wav     {lm:.1f} LUFS  peak {pm:.1f} dBFS')

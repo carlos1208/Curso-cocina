@@ -3,6 +3,7 @@
 //   node render_yt.cjs                     → video_sin_audio.mp4 (1920x1080, 30 fps, CRF 16)
 //   node render_yt.cjs --stills 3,40.5     → stills/t003.00.png …
 //   node render_yt.cjs --range 30:45       → preview_30-45.mp4 (a section, for quick review)
+//   TL=timeline_short.json node render_yt.cjs → short_sin_audio.mp4 (the vertical Short; stills go to stills_short/)
 // Env: FFMPEG, WORKERS (default 4). Run from largo/ (the server root is the recipe folder, for ../fonts).
 const http = require('http'), fs = require('fs'), path = require('path');
 const { spawn, spawnSync } = require('child_process');
@@ -10,6 +11,7 @@ const { chromium } = require('playwright');
 
 const HERE = process.cwd(), ROOT = path.dirname(HERE), SUB = path.basename(HERE);
 const FFMPEG = process.env.FFMPEG || 'ffmpeg', WORKERS = +(process.env.WORKERS || 4);
+const TLF = process.env.TL || '', SHORT = TLF.includes('short');
 const TYPES = { '.html': 'text/html', '.js': 'text/javascript', '.woff2': 'font/woff2', '.jpg': 'image/jpeg', '.json': 'application/json' };
 
 function serve() {
@@ -24,7 +26,7 @@ function serve() {
 async function openPage(browser, port) {
   const page = await browser.newPage({ viewport: { width: 960, height: 540 } });
   page.on('pageerror', e => { console.error('page error:', e); process.exit(1); });
-  await page.goto(`http://127.0.0.1:${port}/${SUB}/index.html?render`);
+  await page.goto(`http://127.0.0.1:${port}/${SUB}/index.html?render${TLF ? '&tl=' + TLF : ''}`);
   await page.evaluate(() => window.reelReady);
   return page;
 }
@@ -39,10 +41,11 @@ const grab = (page, f, type, q) => page.evaluate(async ([f, type, q]) => {
   if (si > 0) {
     const page = await openPage(browser, port);
     const { FPS } = await page.evaluate(() => window.reelInfo);
-    fs.mkdirSync(path.join(HERE, 'stills'), { recursive: true });
+    const sd = SHORT ? 'stills_short' : 'stills';
+    fs.mkdirSync(path.join(HERE, sd), { recursive: true });
     for (const t of process.argv[si + 1].split(',').map(Number)) {
       const name = `t${t.toFixed(2).padStart(6, '0')}.png`;
-      fs.writeFileSync(path.join(HERE, 'stills', name), Buffer.from(await grab(page, Math.round(t * FPS), 'image/png'), 'base64'));
+      fs.writeFileSync(path.join(HERE, sd, name), Buffer.from(await grab(page, Math.round(t * FPS), 'image/png'), 'base64'));
     }
   } else {
     const probe = await openPage(browser, port);
@@ -50,7 +53,7 @@ const grab = (page, f, type, q) => page.evaluate(async ([f, type, q]) => {
     await probe.close();
     const ri = process.argv.indexOf('--range');
     const [f0, f1] = ri > 0 ? process.argv[ri + 1].split(':').map(s => Math.round(+s * FPS)) : [0, total];
-    const n = f1 - f0, per = Math.ceil(n / WORKERS), segDir = path.join(HERE, 'segments');
+    const n = f1 - f0, per = Math.ceil(n / WORKERS), segDir = path.join(HERE, SHORT ? 'segments_short' : 'segments');
     fs.mkdirSync(segDir, { recursive: true });
     let done = 0; const t0 = Date.now();
     const segs = await Promise.all(Array.from({ length: WORKERS }, async (_, w) => {
@@ -70,7 +73,7 @@ const grab = (page, f, type, q) => page.evaluate(async ([f, type, q]) => {
     }));
     const list = path.join(segDir, 'list.txt');
     fs.writeFileSync(list, segs.filter(Boolean).map(s => `file '${s}'`).join('\n'));
-    const outName = ri > 0 ? `preview_${process.argv[ri + 1].replace(':', '-')}.mp4` : 'video_sin_audio.mp4';
+    const outName = ri > 0 ? `preview_${process.argv[ri + 1].replace(':', '-')}.mp4` : SHORT ? 'short_sin_audio.mp4' : 'video_sin_audio.mp4';
     const r = spawnSync(FFMPEG, ['-y', '-hide_banner', '-loglevel', 'error', '-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', path.join(HERE, outName)], { stdio: 'inherit' });
     if (r.status !== 0) process.exit(1);
     console.log(`wrote ${outName} (${n} frames, ${((Date.now() - t0) / 1000).toFixed(0)} s)`);
