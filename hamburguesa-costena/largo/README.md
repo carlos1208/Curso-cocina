@@ -7,7 +7,8 @@ La tarjeta cambia de lado en cada capítulo y cada capítulo abre con una cortin
 
 | | |
 |---|---|
-| `hamburguesa_costena_youtube_720p.mp4` | Copia liviana para revisar (el master de 1080p no se versiona: pasa de 100 MB) |
+| `hamburguesa_costena_youtube_1080p.mp4` | **El video para subir a YouTube** (1920×1080, 30 fps, 4,6 Mb/s en dos pasadas, −14 LUFS; 95 MB para caber en GitHub) |
+| `hamburguesa_costena_youtube_720p.mp4` | Copia liviana para revisar. `exportar.sh` también deja una versión a 12 Mb/s y el master CRF 16, que no se versionan por tamaño |
 | `miniatura.png` | Miniatura 1280×720 |
 | `subtitulos.srt` | Subtítulos corregidos (tildes, números, "hogao") |
 | `descripcion_youtube.md` | Títulos, descripción con ingredientes y capítulos, etiquetas y dónde van los elementos de la pantalla final |

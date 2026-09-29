@@ -48,7 +48,7 @@ CAPÍTULOS
 hamburguesa costeña, smash burger, hogao, queso costeño, plátano maduro, suero costeño, cocina colombiana, receta de hamburguesa, hamburguesa casera, comida costeña
 
 ## Notas para publicar
-- Sube `hamburguesa_costena_youtube.mp4` (1920×1080, 30 fps) y la miniatura `miniatura.png` (1280×720).
+- Sube `hamburguesa_costena_youtube_1080p.mp4` (1920×1080, 30 fps, −14 LUFS) y la miniatura `miniatura.png` (1280×720).
 - Subtítulos: sube `subtitulos.srt` como "Español (Colombia)". Van también quemados en el video; el .srt sirve para buscadores y para quien los quiera apagar o traducir.
 - Capítulos: el cierre (2:31) dura menos de 10 s, el mínimo de YouTube por capítulo, así que va dentro de "Armado".
 - Pantalla final (desde 2:31): coloca el elemento de video sobre el recuadro punteado "PRÓXIMO VIDEO" (x 760–1400, y 506–866 en un cuadro de 1920×1080) y el botón de suscripción sobre la píldora "SUSCRÍBETE".
