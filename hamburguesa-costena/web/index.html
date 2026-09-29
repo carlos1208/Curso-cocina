@@ -90,6 +90,7 @@
   .scale { display: inline-flex; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px; justify-self: start; }
   .scale button { font: 600 14px var(--mono); color: var(--muted); background: none; border: 0; padding: 8px 16px; border-radius: 999px; cursor: pointer; font-variant-numeric: tabular-nums; }
   .scale button[aria-pressed="true"] { background: var(--saffron); color: #1A120A; }
+  .scale-label { font: 600 11px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); align-self: center; padding: 0 8px 0 12px; }
   .meter { display: grid; gap: 8px; max-width: 22rem; }
   .meter-label { color: var(--muted); }
   .meter-bar { height: 4px; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
@@ -192,10 +193,10 @@
   <section class="wrap hero" id="inicio">
     <div class="hero-copy">
       <p class="eyebrow">Receta 02 · Cocina costeña</p>
-      <h1>Hamburguesa <em>costeña</em></h1>
+      <h1>Hamburguesa costeña</h1>
       <p class="lede">Smash burger con mermelada de hogao, queso costeño dorado, plátano maduro y salsa de suero. El contraste dulce (plátano y hogao), salado (queso costeño) y ácido (suero con limón) es lo que la hace distinta.</p>
       <dl class="facts">
-        <div><dt>Porciones</dt><dd>4</dd></div>
+        <div><dt>Rinde</dt><dd>4 hamburguesas</dd></div>
         <div><dt>Tiempo</dt><dd>≈ 45 min (estimado)</dd></div>
         <div><dt>Pasos</dt><dd>6</dd></div>
         <div><dt>Ingredientes</dt><dd>15</dd></div>
@@ -212,11 +213,14 @@
     <div class="ing-head">
       <p class="eyebrow">Mise en place</p>
       <h2>Ingredientes</h2>
-      <p>Toca cada ingrediente cuando lo tengas listo en la mesada. Si cocinas para más gente, multiplica la receta.</p>
-      <div class="scale" role="group" aria-label="Multiplicar la receta">
-        <button type="button" data-k="1" aria-pressed="true">×1</button>
-        <button type="button" data-k="2" aria-pressed="false">×2</button>
-        <button type="button" data-k="3" aria-pressed="false">×3</button>
+      <p>Toca cada ingrediente cuando lo tengas listo. La receta base rinde 4 hamburguesas: elige otra cantidad y los ingredientes se ajustan solos. Los pasos siguen indicando las cantidades para 4.</p>
+      <div class="scale" role="group" aria-label="Cantidad de hamburguesas">
+        <button type="button" data-k="0.25" aria-pressed="false" aria-label="1 hamburguesa">1</button>
+        <button type="button" data-k="0.5" aria-pressed="false" aria-label="2 hamburguesas">2</button>
+        <button type="button" data-k="1" aria-pressed="true" aria-label="4 hamburguesas">4</button>
+        <button type="button" data-k="1.5" aria-pressed="false" aria-label="6 hamburguesas">6</button>
+        <button type="button" data-k="2" aria-pressed="false" aria-label="8 hamburguesas">8</button>
+        <span class="scale-label">hamburguesas</span>
       </div>
       <div class="meter">
         <span class="meter-label" id="ingCount">0 de 9 listos</span>
@@ -224,21 +228,21 @@
       </div>
     </div>
     <ul class="ing-list" id="ingList">
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="600" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">600 g</span><span class="n">Carne molida de res 80/20</span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="4" data-u="|"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">4</span><span class="n">Panes brioche<small>Para hamburguesa</small></span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="200" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">200 g</span><span class="n">Queso costeño<small>En lonchas</small></span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="2" data-u="|"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">2</span><span class="n">Plátanos maduros<small>En láminas</small></span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="300" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">300 g</span><span class="n">Tomate chonto<small>Picado</small></span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="150" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">150 g</span><span class="n">Cebolla cabezona<small>Picada fina</small></span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="2" data-u="cda|cdas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">2 cdas</span><span class="n">Azúcar</span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="1" data-u="cda|cdas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">1 cda</span><span class="n">Vinagre blanco</span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="60" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">60 g</span><span class="n">Suero costeño</span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="60" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">60 g</span><span class="n">Mayonesa</span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="1" data-u="cda|cdas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">1 cda</span><span class="n">Ají dulce<small>Picado muy fino</small></span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="1" data-u="cdta|cdtas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">1 cdta</span><span class="n">Jugo de limón</span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="60" data-u="ml|ml"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">60 ml</span><span class="n">Aceite vegetal</span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="2" data-u="cdta|cdtas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">2 cdtas</span><span class="n">Sal</span></button></li>
-      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="1" data-u="cdta|cdtas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">1 cdta</span><span class="n">Pimienta negra molida</span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="600" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">600 g</span><span class="n"><span class="nm">Carne molida de res 80/20</span></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="4" data-u="|" data-n="Pan brioche|Panes brioche"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">4</span><span class="n"><span class="nm">Panes brioche</span><small>Para hamburguesa</small></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="200" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">200 g</span><span class="n"><span class="nm">Queso costeño</span><small>En lonchas</small></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="2" data-u="|" data-n="Plátano maduro|Plátanos maduros"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">2</span><span class="n"><span class="nm">Plátanos maduros</span><small>En láminas</small></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="300" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">300 g</span><span class="n"><span class="nm">Tomate chonto</span><small>Picado</small></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="150" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">150 g</span><span class="n"><span class="nm">Cebolla cabezona</span><small>Picada fina</small></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="2" data-u="cda|cdas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">2 cdas</span><span class="n"><span class="nm">Azúcar</span></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="1" data-u="cda|cdas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">1 cda</span><span class="n"><span class="nm">Vinagre blanco</span></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="60" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">60 g</span><span class="n"><span class="nm">Suero costeño</span></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="60" data-u="g|g"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">60 g</span><span class="n"><span class="nm">Mayonesa</span></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="1" data-u="cda|cdas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">1 cda</span><span class="n"><span class="nm">Ají dulce</span><small>Picado muy fino</small></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="1" data-u="cdta|cdtas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">1 cdta</span><span class="n"><span class="nm">Jugo de limón</span></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="60" data-u="ml|ml"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">60 ml</span><span class="n"><span class="nm">Aceite vegetal</span></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="2" data-u="cdta|cdtas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">2 cdtas</span><span class="n"><span class="nm">Sal</span></span></button></li>
+      <li><button class="ing" type="button" role="checkbox" aria-checked="false" data-q="1" data-u="cdta|cdtas"><span class="box"><svg viewBox="0 0 12 12"><path d="M2 6.5l2.5 2.5L10 3" fill="none" stroke="#14100C" stroke-width="2"/></svg></span><span class="q">1 cdta</span><span class="n"><span class="nm">Pimienta negra molida</span></span></button></li>
     </ul>
   </section>
 
@@ -373,7 +377,7 @@
 
   // ── recipe data (generated by build_web.py from recipe.json) ──
   const HERO = {"img": "img/hero.jpg", "clip": {"name": "06_hamburguesa"}};
-  const STAGE = [{"img": "img/01.jpg", "z": [2.4, 2.4], "f": [[0.5, 0.535], [0.5, 0.535]], "clip": {"name": "01_hogao"}, "gauge": {"names": ["Tomate fresco", "Espesando", "Mermelada"], "colors": ["#F0643F", "#D2452B", "#A0301F", "#6A1D14"]}}, {"img": "img/02.jpg", "z": [1.04, 1.1], "f": [[0.5, 0.5], [0.5, 0.52]], "clip": {"name": "02_suero", "scrub": [0.8, 6.8]}}, {"img": "img/03.jpg", "z": [1.04, 1.1], "f": [[0.5, 0.5], [0.5, 0.52]], "clip": {"name": "03_platano_queso"}, "time": 2}, {"img": "img/04.jpg", "z": [1.04, 1.1], "f": [[0.5, 0.5], [0.5, 0.52]], "clip": {"name": "04_bolas", "scrub": [0.3, 7.6]}}, {"img": "img/05.jpg", "z": [1.04, 1.1], "f": [[0.5, 0.5], [0.5, 0.52]], "clip": {"name": "05_smash", "scrub": [1.5, 4.8]}, "time": 2, "img2": "img/05b.jpg", "clip2": {"name": "05_smash", "scrub": [4.9, 7.9]}, "steam2": [{"x0": 0.2, "x1": 0.8, "y": 0.45, "n": 12, "rise": 170, "size": 320, "alpha": 0.1}]}, {"img": "img/06.jpg", "z": [1.04, 1.1], "f": [[0.5, 0.5], [0.5, 0.52]], "clip": {"name": "06_hamburguesa"}}];
+  const STAGE = [{"img": "img/01.jpg", "z": [1, 1.04], "f": [[0.5, 0.5], [0.5, 0.52]], "fit": 1, "clip": {"name": "01_hogao"}, "gauge": {"names": ["Tomate fresco", "Espesando", "Mermelada"], "colors": ["#F0643F", "#D2452B", "#A0301F", "#6A1D14"]}}, {"img": "img/02.jpg", "z": [1, 1.04], "f": [[0.5, 0.5], [0.5, 0.52]], "fit": 1, "clip": {"name": "02_suero", "scrub": [0.8, 6.8]}}, {"img": "img/03.jpg", "z": [1, 1.04], "f": [[0.5, 0.5], [0.5, 0.52]], "fit": 1, "clip": {"name": "03_platano_queso"}, "time": 2}, {"img": "img/04.jpg", "z": [1, 1.04], "f": [[0.5, 0.5], [0.5, 0.52]], "fit": 1, "clip": {"name": "04_bolas", "scrub": [0.3, 7.6]}}, {"img": "img/05.jpg", "z": [1, 1.04], "f": [[0.5, 0.5], [0.5, 0.52]], "fit": 1, "clip": {"name": "05_smash", "scrub": [1.5, 4.8]}, "time": 2, "img2": "img/05b.jpg", "clip2": {"name": "05_smash", "scrub": [4.9, 7.9]}, "steam2": [{"x0": 0.2, "x1": 0.8, "y": 0.45, "n": 12, "rise": 170, "size": 320, "alpha": 0.1}]}, {"img": "img/06.jpg", "z": [1, 1.04], "f": [[0.5, 0.5], [0.5, 0.52]], "fit": 1, "clip": {"name": "06_hamburguesa"}}];
   const IMG = {};
   [HERO.img, ...STAGE.flatMap(S => [S.img, S.img2])].filter(Boolean).forEach(k => { if (IMG[k]) return; const im = new Image(); im.decoding = 'async'; im.src = k; IMG[k] = im; });
   const ready = im => im && im.complete && im.naturalWidth > 0;
@@ -432,11 +436,25 @@
     return v;
   }
 
-  function photo(v, im, z, fx, fy, alpha = 1, filter = '', rot = 0) {
-    const ctx = v.x, sc = Math.max(v.w / srcW(im), v.h / srcH(im)) * z;
+  const BLUR = document.createElement('canvas'), blurCtx = BLUR.getContext('2d');
+  function backdrop(v, im, alpha) {
+    // tiny copy scaled up = soft blur that works everywhere (Safari lacks ctx.filter on older versions)
+    const w = srcW(im), h = srcH(im), bw = 24, bh = Math.max(1, Math.round(bw * h / w));
+    if (BLUR.width !== bw || BLUR.height !== bh) { BLUR.width = bw; BLUR.height = bh; }
+    blurCtx.drawImage(im, 0, 0, bw, bh);
+    const sc = Math.max(v.w / bw, v.h / bh) * 1.1, ctx = v.x;
+    ctx.save(); ctx.globalAlpha = alpha; ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
+    ctx.drawImage(BLUR, (v.w - bw * sc) / 2, (v.h - bh * sc) / 2, bw * sc, bh * sc);
+    ctx.fillStyle = 'rgba(20,16,12,.5)'; ctx.fillRect(0, 0, v.w, v.h);
+    ctx.restore();
+  }
+  function photo(v, im, z, fx, fy, alpha = 1, filter = '', rot = 0, fit = 0) {
+    const ctx = v.x, cover = Math.max(v.w / srcW(im), v.h / srcH(im)), contain = Math.min(v.w / srcW(im), v.h / srcH(im));
+    const sc = lerp(cover, contain, fit) * z;
     const iw = srcW(im) * sc, ih = srcH(im) * sc, par = reduce ? 0 : 1;
     let tx = v.w / 2 - fx * iw - (v.ps.x - .5) * 30 * v.d * par, ty = v.h / 2 - fy * ih - (v.ps.y - .5) * 20 * v.d * par;
-    tx = clamp(tx, v.w - iw, 0); ty = clamp(ty, v.h - ih, 0);
+    tx = iw <= v.w ? (v.w - iw) / 2 : clamp(tx, v.w - iw, 0); ty = ih <= v.h ? (v.h - ih) / 2 : clamp(ty, v.h - ih, 0);
+    if (iw < v.w - 1 || ih < v.h - 1) backdrop(v, im, alpha);
     ctx.save();
     if (rot) { ctx.translate(v.w / 2, v.h / 2); ctx.rotate(rot); ctx.translate(-v.w / 2, -v.h / 2); }
     ctx.globalAlpha = alpha; if (filter) ctx.filter = filter;
@@ -541,7 +559,7 @@
     const q = stepPose(S, l);
     let filter = '';
     if (S.gauge) filter = `sepia(${(.35 * l).toFixed(3)}) saturate(${(1 + .55 * l).toFixed(3)}) brightness(${(1.06 - .24 * l).toFixed(3)}) contrast(${(1 + .12 * l).toFixed(3)})`;
-    const pm = photo(v, im, q.z, q.fx, q.fy, alpha, filter, q.rot);
+    const pm = photo(v, im, q.z, q.fx, q.fy, alpha, filter, q.rot, S.fit || 0);
     ctx.save(); ctx.globalAlpha = 1;
     const fadeFx = alpha;
     if (S.glints) glints(v, t, S.glints, pm, fadeFx * (S.grow === 'glints' ? .25 + 1.1 * l : 1), i + 3);
@@ -552,7 +570,7 @@
       const r = smooth(prog(l, .5, .62));
       const src2 = r > 0 ? ((S.clip2 && clipSource(S.clip2, prog(l, .45, 1))) || (ready(IMG[S.img2]) ? IMG[S.img2] : null)) : null;
       if (src2) {
-        const pm2 = photo(v, src2, src2 instanceof HTMLVideoElement ? lerp(1.1, 1.04, prog(l, .5, 1)) : lerp(1.26, 1.1, prog(l, .5, 1)), .5, .52, alpha * r);
+        const pm2 = photo(v, src2, src2 instanceof HTMLVideoElement ? lerp(S.fit ? 1.03 : 1.1, S.fit ? 1 : 1.04, prog(l, .5, 1)) : lerp(1.26, 1.1, prog(l, .5, 1)), .5, .52, alpha * r, '', 0, S.fit || 0);
         S.steam2.forEach((em, k) => steam(v, t, em, pm2, alpha * r, 40 + k));
         const flash = Math.sin(Math.PI * prog(l, .47, .64));
         if (flash > 0) { ctx.save(); ctx.globalCompositeOperation = 'screen'; ctx.fillStyle = `rgba(255,236,205,${.55 * flash * alpha})`; ctx.fillRect(0, 0, v.w, v.h); ctx.restore(); }
@@ -625,8 +643,11 @@
     ingBtns.forEach(b => {
       if (!b.dataset.q) return;
       const q = +b.dataset.q * k, q2 = b.dataset.q2 ? +b.dataset.q2 * k : null, [one, many] = b.dataset.u.split('|');
-      const unit = (q2 || q) > 1 ? many : one;
-      b.querySelector('.q').textContent = (q2 ? `${frac(q)}–${frac(q2)}` : frac(q)) + (unit ? ' ' + unit : '');
+      const unit = (q2 || q) > 1 ? many : one, metric = /^(g|ml)$/.test(one);
+      const fmt = metric ? n => String(n >= 20 ? Math.round(n / 5) * 5 : Math.max(1, Math.round(n))) : frac;
+      b.querySelector('.q').textContent = (q2 ? `${fmt(q)}–${fmt(q2)}` : fmt(q)) + (unit ? ' ' + unit : '');
+      const nm = b.querySelector('.nm');
+      if (nm && b.dataset.n) { const [n1, n2] = b.dataset.n.split('|'); nm.textContent = (q2 || q) > 1 ? n2 : n1; }
     });
   }
   function renderChecks() {

@@ -17,11 +17,11 @@ Receta 02 del Curso de Cocina: *Hamburguesa Costeña con Hogao Caramelizado y Qu
 | 20–22,5 s | 06 Tostar y armar · chips de las capas | `06_hamburguesa` desde 2,9 s, cerrado sobre la hamburguesa |
 | 22,5–25 s | Cierre "¡Buen provecho!" | `06_hamburguesa` desde 5,25 s |
 
-**Web:** `web/` (se publica como Artifact). Los clips de colar la salsa, las bolas y el smash avanzan con el scroll; el hogao, el plátano con queso y la hamburguesa van en loop.
+**Web:** `web/` (se publica como Artifact). Los clips de colar la salsa, las bolas y el smash avanzan con el scroll; el hogao, el plátano con queso y la hamburguesa van en loop. El escenario muestra el cuadro vertical completo de cada clip. Los ingredientes se ajustan con un selector de 1, 2, 4, 6 u 8 hamburguesas (la receta base rinde 4).
 
 ## Notas de producción
 
-- La olla del hogao trae el logo "LE CREUSET" grabado en las dos asas. El clip se usa con zoom 2,3× (2,4× en la web) centrado en la cuchara para dejar ambos logos fuera de cuadro.
+- La olla del hogao trae el logo "LE CREUSET" grabado en las dos asas. En el video, el clip se usa con zoom 2,3× centrado en la cuchara para dejar ambos logos fuera de cuadro. En la web se ve el plano completo y las dos asas van desenfocadas (`web.blur`), igual que en `img/01.jpg`.
 - Los clips `06_hamburguesa` y `04_bolas` traían audio tonal (música); están silenciados y llevan sonidos sintetizados. Los demás usan su sonido real.
 - Los primeros ~1,3 s de `05_smash` son una pantalla dividida; la escena empieza después.
 - El tiempo total (≈ 45 min) es una estimación; la receta no lo trae.

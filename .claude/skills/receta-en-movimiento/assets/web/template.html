@@ -61,7 +61,7 @@
   .hero { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 6fr); gap: clamp(24px, 4vw, 64px); align-items: center; padding-block: clamp(24px, 5vw, 64px); }
   .hero-copy { display: grid; gap: 22px; max-width: 34rem; }
   .eyebrow { color: var(--saffron); margin: 0; }
-  .hero h1 { font-size: clamp(56px, 7.6vw, 136px); line-height: .88; letter-spacing: -.025em; }
+  .hero h1 { font-size: clamp(48px, 6.2vw, 112px); line-height: .88; letter-spacing: -.025em; }
   .hero h1 em { font-style: italic; font-weight: 400; color: var(--saffron); }
   .lede { font-size: clamp(18px, 1.6vw, 21px); color: var(--text); margin: 0; max-width: 32rem; }
   .facts { display: flex; flex-wrap: wrap; gap: 10px 28px; margin: 0; }
@@ -90,6 +90,7 @@
   .scale { display: inline-flex; gap: 4px; background: var(--surface); border: 1px solid var(--line); border-radius: 999px; padding: 4px; justify-self: start; }
   .scale button { font: 600 14px var(--mono); color: var(--muted); background: none; border: 0; padding: 8px 16px; border-radius: 999px; cursor: pointer; font-variant-numeric: tabular-nums; }
   .scale button[aria-pressed="true"] { background: var(--saffron); color: #1A120A; }
+  .scale-label { font: 600 11px var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--muted); align-self: center; padding: 0 8px 0 12px; }
   .meter { display: grid; gap: 8px; max-width: 22rem; }
   .meter-label { color: var(--muted); }
   .meter-bar { height: 4px; background: var(--surface-2); border-radius: 2px; overflow: hidden; }
@@ -209,12 +210,8 @@
     <div class="ing-head">
       <p class="eyebrow">Mise en place</p>
       <h2>Ingredientes</h2>
-      <p>Toca cada ingrediente cuando lo tengas listo en la mesada. Si cocinas para más gente, multiplica la receta.</p>
-      <div class="scale" role="group" aria-label="Multiplicar la receta">
-        <button type="button" data-k="1" aria-pressed="true">×1</button>
-        <button type="button" data-k="2" aria-pressed="false">×2</button>
-        <button type="button" data-k="3" aria-pressed="false">×3</button>
-      </div>
+      <p>{{SCALE_TEXT}}</p>
+{{SCALE}}
       <div class="meter">
         <span class="meter-label" id="ingCount">0 de 9 listos</span>
         <div class="meter-bar"><i id="ingBar"></i></div>
@@ -375,11 +372,25 @@
     return v;
   }
 
-  function photo(v, im, z, fx, fy, alpha = 1, filter = '', rot = 0) {
-    const ctx = v.x, sc = Math.max(v.w / srcW(im), v.h / srcH(im)) * z;
+  const BLUR = document.createElement('canvas'), blurCtx = BLUR.getContext('2d');
+  function backdrop(v, im, alpha) {
+    // tiny copy scaled up = soft blur that works everywhere (Safari lacks ctx.filter on older versions)
+    const w = srcW(im), h = srcH(im), bw = 24, bh = Math.max(1, Math.round(bw * h / w));
+    if (BLUR.width !== bw || BLUR.height !== bh) { BLUR.width = bw; BLUR.height = bh; }
+    blurCtx.drawImage(im, 0, 0, bw, bh);
+    const sc = Math.max(v.w / bw, v.h / bh) * 1.1, ctx = v.x;
+    ctx.save(); ctx.globalAlpha = alpha; ctx.imageSmoothingEnabled = true; ctx.imageSmoothingQuality = 'high';
+    ctx.drawImage(BLUR, (v.w - bw * sc) / 2, (v.h - bh * sc) / 2, bw * sc, bh * sc);
+    ctx.fillStyle = 'rgba(20,16,12,.5)'; ctx.fillRect(0, 0, v.w, v.h);
+    ctx.restore();
+  }
+  function photo(v, im, z, fx, fy, alpha = 1, filter = '', rot = 0, fit = 0) {
+    const ctx = v.x, cover = Math.max(v.w / srcW(im), v.h / srcH(im)), contain = Math.min(v.w / srcW(im), v.h / srcH(im));
+    const sc = lerp(cover, contain, fit) * z;
     const iw = srcW(im) * sc, ih = srcH(im) * sc, par = reduce ? 0 : 1;
     let tx = v.w / 2 - fx * iw - (v.ps.x - .5) * 30 * v.d * par, ty = v.h / 2 - fy * ih - (v.ps.y - .5) * 20 * v.d * par;
-    tx = clamp(tx, v.w - iw, 0); ty = clamp(ty, v.h - ih, 0);
+    tx = iw <= v.w ? (v.w - iw) / 2 : clamp(tx, v.w - iw, 0); ty = ih <= v.h ? (v.h - ih) / 2 : clamp(ty, v.h - ih, 0);
+    if (iw < v.w - 1 || ih < v.h - 1) backdrop(v, im, alpha);
     ctx.save();
     if (rot) { ctx.translate(v.w / 2, v.h / 2); ctx.rotate(rot); ctx.translate(-v.w / 2, -v.h / 2); }
     ctx.globalAlpha = alpha; if (filter) ctx.filter = filter;
@@ -484,7 +495,7 @@
     const q = stepPose(S, l);
     let filter = '';
     if (S.gauge) filter = `sepia(${(.35 * l).toFixed(3)}) saturate(${(1 + .55 * l).toFixed(3)}) brightness(${(1.06 - .24 * l).toFixed(3)}) contrast(${(1 + .12 * l).toFixed(3)})`;
-    const pm = photo(v, im, q.z, q.fx, q.fy, alpha, filter, q.rot);
+    const pm = photo(v, im, q.z, q.fx, q.fy, alpha, filter, q.rot, S.fit || 0);
     ctx.save(); ctx.globalAlpha = 1;
     const fadeFx = alpha;
     if (S.glints) glints(v, t, S.glints, pm, fadeFx * (S.grow === 'glints' ? .25 + 1.1 * l : 1), i + 3);
@@ -495,7 +506,7 @@
       const r = smooth(prog(l, .5, .62));
       const src2 = r > 0 ? ((S.clip2 && clipSource(S.clip2, prog(l, .45, 1))) || (ready(IMG[S.img2]) ? IMG[S.img2] : null)) : null;
       if (src2) {
-        const pm2 = photo(v, src2, src2 instanceof HTMLVideoElement ? lerp(1.1, 1.04, prog(l, .5, 1)) : lerp(1.26, 1.1, prog(l, .5, 1)), .5, .52, alpha * r);
+        const pm2 = photo(v, src2, src2 instanceof HTMLVideoElement ? lerp(S.fit ? 1.03 : 1.1, S.fit ? 1 : 1.04, prog(l, .5, 1)) : lerp(1.26, 1.1, prog(l, .5, 1)), .5, .52, alpha * r, '', 0, S.fit || 0);
         S.steam2.forEach((em, k) => steam(v, t, em, pm2, alpha * r, 40 + k));
         const flash = Math.sin(Math.PI * prog(l, .47, .64));
         if (flash > 0) { ctx.save(); ctx.globalCompositeOperation = 'screen'; ctx.fillStyle = `rgba(255,236,205,${.55 * flash * alpha})`; ctx.fillRect(0, 0, v.w, v.h); ctx.restore(); }
@@ -568,8 +579,11 @@
     ingBtns.forEach(b => {
       if (!b.dataset.q) return;
       const q = +b.dataset.q * k, q2 = b.dataset.q2 ? +b.dataset.q2 * k : null, [one, many] = b.dataset.u.split('|');
-      const unit = (q2 || q) > 1 ? many : one;
-      b.querySelector('.q').textContent = (q2 ? `${frac(q)}–${frac(q2)}` : frac(q)) + (unit ? ' ' + unit : '');
+      const unit = (q2 || q) > 1 ? many : one, metric = /^(g|ml)$/.test(one);
+      const fmt = metric ? n => String(n >= 20 ? Math.round(n / 5) * 5 : Math.max(1, Math.round(n))) : frac;
+      b.querySelector('.q').textContent = (q2 ? `${fmt(q)}–${fmt(q2)}` : fmt(q)) + (unit ? ' ' + unit : '');
+      const nm = b.querySelector('.nm');
+      if (nm && b.dataset.n) { const [n1, n2] = b.dataset.n.split('|'); nm.textContent = (q2 || q) > 1 ? n2 : n1; }
     });
   }
   function renderChecks() {
