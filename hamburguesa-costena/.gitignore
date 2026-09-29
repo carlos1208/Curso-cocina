@@ -1,0 +1,7 @@
+frames/
+stills/
+clips/
+clips_raw/
+*.mp4
+!*_web.mp4
+web/clips/
