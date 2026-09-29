@@ -20,6 +20,7 @@ raw/*.mp4
 video_sin_audio.mp4
 short_sin_audio.mp4
 *_master.mp4
+short_master*.mp4
 preview_*.mp4
 *.log
 # deliverables stay versioned even if a parent folder ignores *.mp4 (export.py keeps them under 100 MB)

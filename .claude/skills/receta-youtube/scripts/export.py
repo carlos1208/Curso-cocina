@@ -49,6 +49,13 @@ def two_pass(src, dst, kbps, vf=None, audio=None, abr=192):
             '-movflags', '+faststart', os.path.abspath(dst), cwd=tmp)
 
 
+def with_audio(video, audio, dst):
+    """Joins picture and sound first, so both encoding passes see exactly the same frames."""
+    run('-i', video, '-i', audio, '-map', '0:v', '-map', '1:a', '-c:v', 'copy', '-c:a', 'aac', '-b:a', '320k', '-ar', '48000',
+        '-shortest', dst)
+    return dst
+
+
 def budget(dur, limit_mb, abr=192, cap=8000):
     return int(min(cap, limit_mb * MB * 8 / 1000 / dur - abr) * 0.97)
 
@@ -85,10 +92,11 @@ if what in ('short', 'all'):
     subprocess.run([sys.executable, ENGINE_AUDIO], check=True,
                    env=dict(env, TL='timeline_short.json', VOICE='voz_short.wav', OUT='short_'))
     dur = duration('short_sin_audio.mp4')
-    two_pass('short_sin_audio.mp4', f'{SLUG}_short.mp4', budget(dur, 28), audio='short_mezcla.wav')
+    two_pass(with_audio('short_sin_audio.mp4', 'short_mezcla.wav', 'short_master.mp4'), f'{SLUG}_short.mp4', budget(dur, 28))
     made.append(f'{SLUG}_short.mp4')
     if os.path.exists('short_sin_musica.wav'):
-        two_pass('short_sin_audio.mp4', f'{SLUG}_short_sin_musica.mp4', budget(dur, 28), audio='short_sin_musica.wav')
+        two_pass(with_audio('short_sin_audio.mp4', 'short_sin_musica.wav', 'short_master_sin_musica.mp4'),
+                 f'{SLUG}_short_sin_musica.mp4', budget(dur, 28))
         made.append(f'{SLUG}_short_sin_musica.mp4')
     # cover: the hook with its title fully drawn (short.cover_t, default 1.6 s)
     ct = G.get('short', {}).get('cover_t', 1.6)
