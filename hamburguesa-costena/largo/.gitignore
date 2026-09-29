@@ -1,0 +1,9 @@
+frames/
+segments/
+stills/
+raw/*.mp4
+*.wav
+video_sin_audio.mp4
+hamburguesa_costena_youtube.mp4
+preview_*.mp4
+render.log
