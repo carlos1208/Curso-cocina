@@ -260,13 +260,17 @@ music = MUS.stereo(0.06)
 music = filt(music.T, 'high', 35).T * duck[:, None]
 fx = FX.stereo(0.04) * (1 - 0.3 * env)[:, None]      # clip sound dips a little under the voice too
 bed = music * 0.9 + fx
+meter = pyln.Meter(SR)
 if voice is not None:
+    # levels set against each other: voice at -16 LUFS, the bed 14 LU under it while she speaks
+    # (it comes back up ~7 dB in the pauses through the ducking)
     voice = filt(voice.T, 'high', 80).T
-    mix = bed + voice * 1.0
+    voice *= 10 ** ((-16 - meter.integrated_loudness(voice)) / 20)
+    speaking = env[:N] > 0.5
+    bed *= 10 ** ((-30 - meter.integrated_loudness(bed[speaking])) / 20)
+    mix = bed + voice
 else:
     mix = bed
-
-meter = pyln.Meter(SR)
 
 
 def master(x, target):
