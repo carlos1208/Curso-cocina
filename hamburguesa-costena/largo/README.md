@@ -50,3 +50,7 @@ export FFMPEG=$(python3 -c "import imageio_ffmpeg;print(imageio_ffmpeg.get_ffmpe
 - Los cortes caen en las pausas reales de la voz (medidas en `voz.mp3`), con fundidos de 15 ms.
 - A pantalla completa (el material es vertical). Subtítulos grandes palabra por palabra; texto dentro de la zona segura de Shorts (x 60–900, sin los ~380 px de abajo). En el gancho, pines que nombran cada capa de la hamburguesa cuando la voz la dice.
 - `build_short.py` (lista de tramos arriba del archivo) → `timeline_short.json`, `voz_short.wav`, `subtitulos_short.srt`; `TL=timeline_short.json node render_yt.cjs` → `short_sin_audio.mp4`; `./exportar_short.sh` mezcla y exporta.
+
+## Skill
+
+Este proyecto dio origen a la skill `.claude/skills/receta-youtube/`, que estandariza el proceso: video largo primero, Short como gancho, exportación con el peso justo. Su `assets/example/guion.json` es este mismo video expresado como datos (la skill lo reproduce fotograma a fotograma).

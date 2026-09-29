@@ -1,0 +1,1738 @@
+{
+ "slug": "hamburguesa_costena",
+ "title": "Hamburguesa costeña",
+ "tag": "CURSO DE COCINA  ·  RECETA 02",
+ "sheet": "hoja_tomas.xlsx",
+ "voice": "voz.mp3",
+ "music": "latino",
+ "duration_limits": [
+  150,
+  240
+ ],
+ "media": {
+  "C1": {
+   "clip": "raw/C1.mp4"
+  },
+  "C2": {
+   "clip": "raw/C2.mp4"
+  },
+  "C3": {
+   "clip": "raw/C3.mp4"
+  },
+  "C4": {
+   "clip": "raw/C4.mp4",
+   "audio": false
+  },
+  "C5": {
+   "clip": "raw/C5.mp4"
+  },
+  "C6": {
+   "clip": "raw/C6.mp4",
+   "audio": false
+  },
+  "N04": {
+   "clip": "raw/N04.mp4"
+  },
+  "N05": {
+   "clip": "raw/N05.mp4"
+  },
+  "N06": {
+   "clip": "raw/N06.mp4"
+  },
+  "N07": {
+   "clip": "raw/N07.mp4",
+   "audio": false
+  },
+  "N08": {
+   "clip": "raw/N08.mp4",
+   "audio": false
+  },
+  "N11": {
+   "clip": "raw/N11.mp4"
+  },
+  "N14": {
+   "clip": "raw/N14.mp4"
+  },
+  "N15": {
+   "clip": "raw/N15.mp4"
+  },
+  "N01": {
+   "img": "raw/N01.jpg"
+  },
+  "N02": {
+   "img": "raw/N02.jpg"
+  },
+  "N03": {
+   "img": "raw/N03.jpg"
+  },
+  "N09": {
+   "img": "raw/N09.jpg"
+  },
+  "N10": {
+   "img": "raw/N10.jpg"
+  },
+  "N12": {
+   "img": "raw/N12.jpg"
+  },
+  "N13": {
+   "img": "raw/N13.jpg"
+  },
+  "N16": {
+   "img": "raw/N16.jpg"
+  }
+ },
+ "chapters": [
+  {
+   "start": "S03",
+   "id": "ingredientes",
+   "title": "Ingredientes",
+   "h1": "Ingredientes",
+   "h2": "para 4 hamburguesas",
+   "color": "#F2B544",
+   "mark": "MISE EN PLACE"
+  },
+  {
+   "start": "S07",
+   "id": "hogao",
+   "title": "Hogao caramelizado",
+   "h1": "Hogao",
+   "h2": "caramelizado",
+   "color": "#D9573B",
+   "mark": "HOGAO"
+  },
+  {
+   "start": "S13",
+   "id": "salsa",
+   "title": "Salsa de suero",
+   "h1": "Salsa",
+   "h2": "de suero",
+   "color": "#A9C44E",
+   "mark": "SUERO"
+  },
+  {
+   "start": "S16",
+   "id": "carne",
+   "title": "La carne",
+   "h1": "La",
+   "h2": "carne",
+   "color": "#DB8B78",
+   "mark": "CARNE"
+  },
+  {
+   "start": "S21",
+   "id": "smash",
+   "title": "Plátano, queso y smash",
+   "h1": "Plátano, queso",
+   "h2": "y smash",
+   "color": "#E0782F",
+   "mark": "SMASH"
+  },
+  {
+   "start": "S26",
+   "id": "armado",
+   "title": "Armado",
+   "h1": "A",
+   "h2": "armar",
+   "color": "#E9A23B",
+   "mark": "ARMADO"
+  }
+ ],
+ "hook": {
+  "title": [
+   "Hamburguesa",
+   "costeña"
+  ],
+  "cards": [
+   {
+    "before": {
+     "src": "N15",
+     "a": 0,
+     "rate": 0.6,
+     "z": 1.04,
+     "f": [
+      0.5,
+      0.52
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "C6",
+     "a": 0,
+     "rate": 0.89,
+     "z": 1.02,
+     "f": [
+      0.5,
+      0.5
+     ]
+    },
+    "after": {
+     "src": "C3",
+     "a": 2.2,
+     "rate": 1,
+     "z": 2.0,
+     "f": [
+      0.75,
+      0.6
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "C3",
+     "a": 0,
+     "rate": 0.89,
+     "z": 1.0,
+     "f": [
+      0.5,
+      0.55
+     ]
+    },
+    "after": {
+     "src": "N08",
+     "a": 3.2,
+     "rate": 1,
+     "z": 1.12,
+     "f": [
+      0.46,
+      0.62
+     ]
+    }
+   }
+  ],
+  "rows": [
+   [
+    "hogao caramelizado",
+    3.3,
+    "#D9573B",
+    0
+   ],
+   [
+    "queso costeño frito",
+    4.5,
+    "#EFE3C2",
+    2
+   ],
+   [
+    "plátano maduro",
+    6.6,
+    "#F2B544",
+    2
+   ],
+   [
+    "salsa de suero",
+    7.6,
+    "#A9C44E",
+    1
+   ]
+  ],
+  "beat": 9.0,
+  "words": [
+   [
+    "Dulce",
+    9.1,
+    "#F2B544",
+    "plátano + hogao"
+   ],
+   [
+    "Salado",
+    9.9,
+    "#EFE3C2",
+    "queso costeño"
+   ],
+   [
+    "Ácido",
+    10.7,
+    "#A9C44E",
+    "suero + limón"
+   ]
+  ],
+  "tagline": [
+   "EN CADA MORDISCO",
+   11.2
+  ],
+  "sizzle": "C3",
+  "vertical": {
+   "cuts": [
+    [
+     0,
+     "C6",
+     0,
+     0.89,
+     [
+      1.16,
+      1.04
+     ],
+     [
+      0.44,
+      0.5
+     ]
+    ],
+    [
+     9.0,
+     "N15",
+     2.0,
+     1,
+     [
+      1.12,
+      1.08
+     ],
+     [
+      0.5,
+      0.5
+     ]
+    ],
+    [
+     9.8,
+     "C3",
+     2.2,
+     1,
+     [
+      2.05,
+      2.0
+     ],
+     [
+      0.75,
+      0.6
+     ]
+    ],
+    [
+     10.6,
+     "N08",
+     3.2,
+     1,
+     [
+      1.16,
+      1.12
+     ],
+     [
+      0.46,
+      0.62
+     ]
+    ]
+   ],
+   "pins": [
+    [
+     "hogao caramelizado",
+     3.4,
+     [
+      0.36,
+      0.43
+     ],
+     "#D9573B"
+    ],
+    [
+     "queso costeño frito",
+     4.7,
+     [
+      0.26,
+      0.54
+     ],
+     "#EFE3C2"
+    ],
+    [
+     "plátano maduro",
+     6.6,
+     [
+      0.52,
+      0.46
+     ],
+     "#F2B544"
+    ],
+    [
+     "salsa de suero",
+     7.7,
+     [
+      0.8,
+      0.66
+     ],
+     "#A9C44E"
+    ]
+   ]
+  }
+ },
+ "shots": {
+  "S01": {
+   "src": "C6",
+   "a": 0,
+   "b": 8.0
+  },
+  "S02": {
+   "src": "C6",
+   "a": 8.0,
+   "b": 8.0
+  },
+  "S03": {
+   "src": "N01",
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.42
+    ],
+    [
+     0.5,
+     0.4
+    ]
+   ]
+  },
+  "S04": {
+   "src": "N02",
+   "z": [
+    1.02,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.58
+    ],
+    [
+     0.52,
+     0.6
+    ]
+   ]
+  },
+  "S05": {
+   "src": "N03",
+   "z": [
+    1.0,
+    1.07
+   ],
+   "f": [
+    [
+     0.48,
+     0.56
+    ],
+    [
+     0.46,
+     0.58
+    ]
+   ]
+  },
+  "S06": {
+   "src": "N01",
+   "z": [
+    2.05,
+    2.25
+   ],
+   "f": [
+    [
+     0.22,
+     0.5
+    ],
+    [
+     0.23,
+     0.5
+    ]
+   ],
+   "tr": "zoom"
+  },
+  "S07": {
+   "src": "N04",
+   "a": 0,
+   "b": 8.0
+  },
+  "S08": {
+   "src": "N04",
+   "a": 3.7,
+   "b": 8.0,
+   "z": [
+    1.2,
+    1.26
+   ],
+   "f": [
+    [
+     0.5,
+     0.62
+    ],
+    [
+     0.5,
+     0.64
+    ]
+   ],
+   "tr": "zoom"
+  },
+  "S09": {
+   "src": "N05",
+   "a": 0,
+   "b": 6.4
+  },
+  "S10": {
+   "src": "N06",
+   "a": 0,
+   "b": 6.6
+  },
+  "S11": {
+   "src": "N07",
+   "a": 0,
+   "b": 3.9,
+   "z": [
+    1.04,
+    1.1
+   ]
+  },
+  "S12": {
+   "src": "C1",
+   "a": 0,
+   "b": 3.5,
+   "z": [
+    2.3,
+    2.3
+   ],
+   "f": [
+    [
+     0.5,
+     0.535
+    ],
+    [
+     0.5,
+     0.535
+    ]
+   ]
+  },
+  "S13": {
+   "src": "N08",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.16,
+    1.2
+   ],
+   "f": [
+    [
+     0.46,
+     0.6
+    ],
+    [
+     0.46,
+     0.6
+    ]
+   ]
+  },
+  "S14": {
+   "src": "C2",
+   "a": 0,
+   "b": 4.2
+  },
+  "S15": {
+   "src": "N09",
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.58
+    ]
+   ]
+  },
+  "S16": {
+   "src": "N10",
+   "z": [
+    1.0,
+    1.05
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.56
+    ]
+   ]
+  },
+  "S17": {
+   "src": "C5",
+   "a": 6.2,
+   "b": 8.0,
+   "z": [
+    1.12,
+    1.2
+   ],
+   "f": [
+    [
+     0.5,
+     0.56
+    ],
+    [
+     0.5,
+     0.58
+    ]
+   ]
+  },
+  "S18": {
+   "src": "N11",
+   "a": 0,
+   "b": 6.0
+  },
+  "S19": {
+   "src": "N10",
+   "z": [
+    1.55,
+    1.7
+   ],
+   "f": [
+    [
+     0.46,
+     0.66
+    ],
+    [
+     0.5,
+     0.7
+    ]
+   ],
+   "tr": "zoom"
+  },
+  "S20": {
+   "src": "C4",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.08,
+    1.16
+   ],
+   "f": [
+    [
+     0.5,
+     0.58
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ]
+  },
+  "S21": {
+   "src": "C3",
+   "a": 0.5,
+   "b": 5.1,
+   "z": [
+    2.0,
+    2.06
+   ],
+   "f": [
+    [
+     0.25,
+     0.59
+    ],
+    [
+     0.25,
+     0.6
+    ]
+   ]
+  },
+  "S22": {
+   "src": "C3",
+   "a": 4.0,
+   "b": 7.7,
+   "z": [
+    2.0,
+    2.06
+   ],
+   "f": [
+    [
+     0.75,
+     0.6
+    ],
+    [
+     0.75,
+     0.6
+    ]
+   ]
+  },
+  "S23": {
+   "src": "N12",
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.52,
+     0.52
+    ]
+   ],
+   "shimmer": [
+    0.08,
+    0.36,
+    0.98,
+    0.62
+   ]
+  },
+  "S24": {
+   "src": "C5",
+   "a": 1.4,
+   "b": 6.2,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.58
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ]
+  },
+  "S25": {
+   "src": "N13",
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.62
+    ]
+   ]
+  },
+  "S26": {
+   "src": "N14",
+   "a": 0,
+   "b": 3.5
+  },
+  "S27": {
+   "src": "N15",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.03,
+    1.07
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.56
+    ]
+   ]
+  },
+  "S28": {
+   "src": "N16",
+   "z": [
+    2.1,
+    1.35
+   ],
+   "f": [
+    [
+     0.34,
+     0.53
+    ],
+    [
+     0.4,
+     0.5
+    ]
+   ]
+  },
+  "S29": {
+   "src": "C6",
+   "a": 1.3,
+   "b": 8.0
+  }
+ },
+ "callouts": [
+  {
+   "kind": "board",
+   "t": 12.9,
+   "groups": [
+    [
+     "base",
+     "La base"
+    ],
+    [
+     "hogao",
+     "Hogao"
+    ],
+    [
+     "salsa",
+     "Salsa"
+    ]
+   ],
+   "items": [
+    {
+     "g": "base",
+     "t": 13.9,
+     "v": 600,
+     "unit": "g",
+     "label": "carne molida 80/20"
+    },
+    {
+     "g": "base",
+     "t": 18.3,
+     "v": 4,
+     "unit": "",
+     "label": "panes brioche"
+    },
+    {
+     "g": "base",
+     "t": 19.9,
+     "v": 200,
+     "unit": "g",
+     "label": "queso costeño"
+    },
+    {
+     "g": "base",
+     "t": 21.5,
+     "v": 2,
+     "unit": "",
+     "label": "plátanos maduros"
+    },
+    {
+     "g": "hogao",
+     "t": 25.0,
+     "v": 300,
+     "unit": "g",
+     "label": "tomate chonto"
+    },
+    {
+     "g": "hogao",
+     "t": 26.7,
+     "v": 150,
+     "unit": "g",
+     "label": "cebolla"
+    },
+    {
+     "g": "salsa",
+     "t": 30.2,
+     "v": 60,
+     "unit": "g",
+     "label": "suero costeño"
+    },
+    {
+     "g": "salsa",
+     "t": 31.9,
+     "v": 60,
+     "unit": "g",
+     "label": "mayonesa"
+    },
+    {
+     "g": "salsa",
+     "t": 32.9,
+     "v": null,
+     "unit": "",
+     "label": "ají dulce"
+    }
+   ],
+   "until": "S06"
+  },
+  {
+   "kind": "gauge",
+   "t": 34.9,
+   "stops": [
+    [
+     34.3,
+     "Transparente"
+    ],
+    [
+     47.8,
+     "Tomate"
+    ],
+    [
+     54.2,
+     "Reduce"
+    ],
+    [
+     64.7,
+     "Mermelada"
+    ]
+   ],
+   "colors": [
+    "#EFE3C2",
+    "#E0492F",
+    "#A8321F",
+    "#62190F"
+   ],
+   "at": [
+    35.3,
+    67.2
+   ],
+   "until": "S12"
+  },
+  {
+   "kind": "heat",
+   "t": 38.6,
+   "level": 2,
+   "label": "Fuego medio-bajo",
+   "until": "S07"
+  },
+  {
+   "kind": "chips",
+   "t": 38.0,
+   "items": [
+    [
+     "1 cda de aceite",
+     38.0
+    ],
+    [
+     "cebolla",
+     41.0
+    ],
+    [
+     "pizca de sal",
+     42.1
+    ]
+   ],
+   "until": "S07"
+  },
+  {
+   "kind": "timer",
+   "t": 43.7,
+   "value": 3,
+   "unit": "min",
+   "label": "hasta que esté transparente",
+   "until": "S08"
+  },
+  {
+   "kind": "tip",
+   "t": 45.9,
+   "icon": "x",
+   "text": "Que no se dore",
+   "until": "S08"
+  },
+  {
+   "kind": "chips",
+   "t": 48.0,
+   "items": [
+    [
+     "+ 300 g de tomate",
+     48.1
+    ]
+   ],
+   "until": "S09"
+  },
+  {
+   "kind": "heat",
+   "t": 49.3,
+   "level": 1,
+   "label": "Fuego bajo",
+   "until": "S09"
+  },
+  {
+   "kind": "timer",
+   "t": 51.9,
+   "value": 25,
+   "unit": "min",
+   "approx": true,
+   "label": "moviendo de vez en cuando",
+   "until": "S09"
+  },
+  {
+   "kind": "tip",
+   "t": 54.4,
+   "icon": "drop",
+   "text": "¿Se pega? Un chorrito de agua",
+   "until": "S10"
+  },
+  {
+   "kind": "chips",
+   "t": 57.2,
+   "items": [
+    [
+     "2 cdas de azúcar",
+     57.9
+    ],
+    [
+     "1 cda de vinagre",
+     59.3
+    ]
+   ],
+   "until": "S10"
+  },
+  {
+   "kind": "tip",
+   "t": 61.0,
+   "icon": "check",
+   "text": "El surco no se cierra enseguida",
+   "until": "S11"
+  },
+  {
+   "kind": "trace",
+   "t": 61.4,
+   "shot": "S11",
+   "path": [
+    [
+     0.1,
+     0.77
+    ],
+    [
+     0.46,
+     0.56
+    ],
+    [
+     0.82,
+     0.36
+    ]
+   ],
+   "until": "S11"
+  },
+  {
+   "kind": "tip",
+   "t": 65.0,
+   "icon": "spark",
+   "text": "Brillante, casi como mermelada",
+   "until": "S12"
+  },
+  {
+   "kind": "list",
+   "t": 69.9,
+   "rows": [
+    [
+     60,
+     "g",
+     "suero costeño",
+     70.3
+    ],
+    [
+     60,
+     "g",
+     "mayonesa",
+     71.5
+    ],
+    [
+     1,
+     "cda",
+     "ají dulce, picado muy fino",
+     72.7
+    ],
+    [
+     1,
+     "cdta",
+     "jugo de limón",
+     75.5
+    ]
+   ],
+   "until": "S13"
+  },
+  {
+   "kind": "tip",
+   "t": 77.5,
+   "icon": "x",
+   "text": "Prueba antes de agregar sal",
+   "until": "S14"
+  },
+  {
+   "kind": "chips",
+   "t": 79.6,
+   "items": [
+    [
+     "el suero ya trae sal",
+     79.6
+    ]
+   ],
+   "until": "S14"
+  },
+  {
+   "kind": "timer",
+   "t": 81.9,
+   "value": 30,
+   "unit": "min",
+   "label": "en la nevera",
+   "cold": true,
+   "until": "S15"
+  },
+  {
+   "kind": "tip",
+   "t": 87.3,
+   "icon": "x",
+   "text": "No mezcles la sal con la carne",
+   "until": "S16"
+  },
+  {
+   "kind": "chips",
+   "t": 89.2,
+   "items": [
+    [
+     "queda compacta",
+     89.2
+    ],
+    [
+     "textura de salchicha",
+     90.4
+    ]
+   ],
+   "until": "S16"
+  },
+  {
+   "kind": "big",
+   "t": 92.3,
+   "text": "En un smash,\nse nota.",
+   "until": "S17"
+  },
+  {
+   "kind": "note",
+   "t": 95.0,
+   "text": "Esto sí se mezcla, con suavidad:",
+   "until": "S19"
+  },
+  {
+   "kind": "list",
+   "t": 98.8,
+   "rows": [
+    [
+     "½",
+     "cdta",
+     "ajo en polvo",
+     98.9
+    ],
+    [
+     "½",
+     "cdta",
+     "cebolla en polvo",
+     101.4
+    ],
+    [
+     "½",
+     "cdta",
+     "pimentón ahumado",
+     103.2
+    ]
+   ],
+   "until": "S19"
+  },
+  {
+   "kind": "chips",
+   "t": 104.2,
+   "items": [
+    [
+     "para los 600 g",
+     104.3
+    ]
+   ],
+   "until": "S19"
+  },
+  {
+   "kind": "balls",
+   "t": 106.6,
+   "n": 4,
+   "each": "150 g",
+   "until": "S20"
+  },
+  {
+   "kind": "tip",
+   "t": 108.0,
+   "icon": "hand",
+   "text": "Sin apretar",
+   "until": "S20"
+  },
+  {
+   "kind": "chips",
+   "t": 109.8,
+   "items": [
+    [
+     "sal y pimienta: por fuera",
+     110.2
+    ],
+    [
+     "justo antes de cocinar",
+     111.9
+    ]
+   ],
+   "until": "S20"
+  },
+  {
+   "kind": "timer",
+   "t": 115.3,
+   "value": 2,
+   "unit": "min",
+   "label": "por lado · hasta dorar",
+   "sides": 2,
+   "until": "S21"
+  },
+  {
+   "kind": "timer",
+   "t": 119.2,
+   "value": 1,
+   "unit": "min",
+   "label": "por lado · hasta hacer costra",
+   "sides": 2,
+   "until": "S22"
+  },
+  {
+   "kind": "heat",
+   "t": 122.5,
+   "level": 4,
+   "label": "Plancha muy caliente",
+   "until": "S23"
+  },
+  {
+   "kind": "tip",
+   "t": 125.4,
+   "icon": "press",
+   "text": "Una sola vez",
+   "until": "S24"
+  },
+  {
+   "kind": "measure",
+   "t": 126.9,
+   "text": "1 cm",
+   "until": "S24"
+  },
+  {
+   "kind": "tip",
+   "t": 128.3,
+   "icon": "x",
+   "text": "No la vuelvas a presionar",
+   "until": "S24"
+  },
+  {
+   "kind": "chips",
+   "t": 130.0,
+   "items": [
+    [
+     "salpimienta",
+     130.0
+    ]
+   ],
+   "until": "S24"
+  },
+  {
+   "kind": "timer",
+   "t": 131.6,
+   "value": 2,
+   "unit": "min",
+   "plus": 1,
+   "label": "voltea · 1 minuto más",
+   "until": "S25"
+  },
+  {
+   "kind": "tip",
+   "t": 136.2,
+   "icon": "bread",
+   "text": "Tuesta el pan en la grasa",
+   "until": "S26"
+  },
+  {
+   "kind": "stack",
+   "t": 138.4,
+   "layers": [
+    [
+     "pan tostado",
+     "#D9A15C",
+     138.5
+    ],
+    [
+     "salsa de suero",
+     "#F3EBDD",
+     139.1
+    ],
+    [
+     "carne",
+     "#5E3324",
+     140.9
+    ],
+    [
+     "queso frito",
+     "#E7C27B",
+     141.8
+    ],
+    [
+     "plátano maduro",
+     "#E9A23B",
+     142.8
+    ],
+    [
+     "hogao",
+     "#A8321F",
+     145.2
+    ]
+   ],
+   "until": "S27"
+  },
+  {
+   "kind": "tip",
+   "t": 147.2,
+   "icon": "fire",
+   "text": "Sírvela caliente",
+   "until": "S28"
+  },
+  {
+   "kind": "chips",
+   "t": 148.3,
+   "items": [
+    [
+     "con el queso aún crujiente",
+     148.4
+    ]
+   ],
+   "until": "S28"
+  }
+ ],
+ "pins": [
+  {
+   "shot": "S03",
+   "t": 13.9,
+   "xy": [
+    0.5,
+    0.29
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S03",
+   "t": 18.3,
+   "xy": [
+    0.83,
+    0.34
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S04",
+   "t": 19.9,
+   "xy": [
+    0.28,
+    0.6
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S04",
+   "t": 21.5,
+   "xy": [
+    0.82,
+    0.64
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S05",
+   "t": 25.0,
+   "xy": [
+    0.26,
+    0.6
+   ],
+   "n": 5
+  },
+  {
+   "shot": "S05",
+   "t": 26.7,
+   "xy": [
+    0.7,
+    0.58
+   ],
+   "n": 6
+  },
+  {
+   "shot": "S06",
+   "t": 30.2,
+   "xy": [
+    0.156,
+    0.558
+   ],
+   "n": 7
+  },
+  {
+   "shot": "S06",
+   "t": 31.9,
+   "xy": [
+    0.313,
+    0.558
+   ],
+   "n": 8
+  },
+  {
+   "shot": "S06",
+   "t": 32.9,
+   "xy": [
+    0.2,
+    0.45
+   ],
+   "n": 9
+  },
+  {
+   "shot": "S19",
+   "t": 101.4,
+   "xy": [
+    0.42,
+    0.65
+   ],
+   "n": "b"
+  },
+  {
+   "shot": "S19",
+   "t": 103.2,
+   "xy": [
+    0.59,
+    0.756
+   ],
+   "n": "c"
+  }
+ ],
+ "end": {
+  "start": "S29",
+  "title": "¡Buen provecho!",
+  "next": "PRÓXIMO VIDEO",
+  "bubble": [
+   "¿Otra versión?",
+   "Cuéntamelo en",
+   "los comentarios"
+  ]
+ },
+ "thumb": {
+  "img": "raw/N16.jpg",
+  "crop": [
+   0,
+   0.27,
+   0.74
+  ],
+  "title": [
+   "Hamburguesa",
+   "costeña"
+  ],
+  "tags": [
+   [
+    "hogao",
+    "#D9573B",
+    "#F6EFE3"
+   ],
+   [
+    "queso frito",
+    "#F6EFE3",
+    "#140E09"
+   ],
+   [
+    "plátano",
+    "#F2B544",
+    "#140E09"
+   ]
+  ]
+ },
+ "short": {
+  "edl": [
+   {
+    "from": 0.0,
+    "to": 11.95,
+    "title": "Hamburguesa costeña"
+   },
+   {
+    "from": 124.5,
+    "to": 129.5,
+    "title": "Smash"
+   },
+   {
+    "from": 138.45,
+    "to": 150.35,
+    "title": "A armar"
+   }
+  ],
+  "end_card": [
+   "Receta completa",
+   "en el canal  ▶"
+  ],
+  "end_dur": 1.1
+ },
+ "subtitles": [
+  [
+   0.2,
+   3.9,
+   "Hoy hacemos una hamburguesa con sabor de la Costa: **hogao**"
+  ],
+  [
+   3.9,
+   6.0,
+   "**caramelizado**, **queso costeño frito**,"
+  ],
+  [
+   6.5,
+   8.4,
+   "**plátano maduro** y **salsa de suero**."
+  ],
+  [
+   9.0,
+   11.8,
+   "Dulce, salado y ácido en cada mordisco."
+  ],
+  [
+   12.6,
+   17.5,
+   "Para **4 hamburguesas**: **600 g** de carne molida de res **80/20**,"
+  ],
+  [
+   17.5,
+   22.3,
+   "**4** panes brioche, **200 g** de queso costeño y **2** plátanos maduros."
+  ],
+  [
+   23.0,
+   26.5,
+   "Para el hogao, **300 g** de tomate y **150**"
+  ],
+  [
+   26.5,
+   27.5,
+   "de cebolla."
+  ],
+  [
+   28.2,
+   32.3,
+   "Para la salsa, **60 g** de suero costeño, **60** de"
+  ],
+  [
+   32.3,
+   33.8,
+   "mayonesa y ají dulce."
+  ],
+  [
+   34.3,
+   37.0,
+   "Empezamos por el hogao, que es lo que más tarda."
+  ],
+  [
+   37.4,
+   41.2,
+   "Calienta **1 cucharada** de aceite a **fuego medio-bajo** y sofríe la"
+  ],
+  [
+   41.2,
+   41.9,
+   "cebolla con"
+  ],
+  [
+   41.9,
+   42.8,
+   "una pizca de sal."
+  ],
+  [
+   43.5,
+   47.1,
+   "**3 minutos**, hasta que esté transparente. Que no se dore."
+  ],
+  [
+   47.8,
+   50.9,
+   "Agrega el tomate y cocina a **fuego bajo**, moviendo de vez en"
+  ],
+  [
+   50.9,
+   51.2,
+   "cuando."
+  ],
+  [
+   51.9,
+   53.6,
+   "Son unos **25 minutos**."
+  ],
+  [
+   54.2,
+   56.3,
+   "Si se pega, échale un chorrito de agua."
+  ],
+  [
+   57.0,
+   60.2,
+   "Al final, **2 cucharadas** de azúcar y **1** de vinagre."
+  ],
+  [
+   60.8,
+   63.7,
+   "Está listo cuando pasas la cuchara y el surco no se cierra"
+  ],
+  [
+   63.7,
+   64.1,
+   "enseguida."
+  ],
+  [
+   64.7,
+   67.2,
+   "Debe verse brillante, casi como una mermelada."
+  ],
+  [
+   68.2,
+   69.4,
+   "Ahora, la salsa."
+  ],
+  [
+   70.0,
+   73.6,
+   "Mezcla el suero, la mayonesa, **1 cucharada** de ají dulce"
+  ],
+  [
+   73.6,
+   74.9,
+   "picado muy fino y"
+  ],
+  [
+   74.9,
+   76.5,
+   "**1 cucharadita** de jugo de limón."
+  ],
+  [
+   77.4,
+   78.7,
+   "Prueba antes de agregar sal."
+  ],
+  [
+   79.5,
+   81.0,
+   "El suero costeño ya es salado."
+  ],
+  [
+   81.6,
+   84.5,
+   "Déjala **30 minutos** en la nevera para que los sabores se"
+  ],
+  [
+   84.5,
+   85.0,
+   "integren."
+  ],
+  [
+   86.0,
+   86.8,
+   "Ahora, la carne."
+  ],
+  [
+   87.3,
+   91.0,
+   "No mezcles la sal con la carne: la vuelve compacta, con textura"
+  ],
+  [
+   91.0,
+   91.7,
+   "de salchicha,"
+  ],
+  [
+   92.3,
+   94.1,
+   "y en un smash eso se nota."
+  ],
+  [
+   94.8,
+   100.2,
+   "Lo que sí puedes mezclar, suavemente, es **½ cucharadita** de ajo en polvo,"
+  ],
+  [
+   100.2,
+   105.2,
+   "**½** de cebolla en polvo y **½** de pimentón ahumado para los **600 g**."
+  ],
+  [
+   105.9,
+   108.9,
+   "Forma **4 bolas** de **150 g**, sin apretar."
+  ],
+  [
+   109.7,
+   112.9,
+   "La sal y la pimienta van por fuera, justo antes de cocinar."
+  ],
+  [
+   113.9,
+   117.3,
+   "Fríe el plátano hasta que dore, **2 minutos** por lado, y"
+  ],
+  [
+   117.3,
+   117.8,
+   "resérvalo."
+  ],
+  [
+   118.5,
+   121.6,
+   "Luego el queso, **1 minuto** por lado, hasta que haga costra."
+  ],
+  [
+   122.2,
+   124.1,
+   "Ahora, la plancha **muy caliente**."
+  ],
+  [
+   124.6,
+   127.8,
+   "Pon una bola y aplástala de una sola vez hasta **1 cm**."
+  ],
+  [
+   128.3,
+   129.3,
+   "No la vuelvas a presionar."
+  ],
+  [
+   130.0,
+   130.8,
+   "Salpimienta."
+  ],
+  [
+   131.4,
+   134.2,
+   "**2 minutos**, voltea y **1 minuto** más."
+  ],
+  [
+   135.1,
+   135.6,
+   "A armar."
+  ],
+  [
+   136.2,
+   138.1,
+   "Tuesta el pan en la grasa de la plancha."
+  ],
+  [
+   138.6,
+   140.1,
+   "Abajo, la salsa de suero."
+  ],
+  [
+   140.7,
+   143.8,
+   "Encima, la carne, el queso frito y el plátano."
+  ],
+  [
+   144.4,
+   146.6,
+   "Termina con una cucharada generosa de hogao."
+  ],
+  [
+   147.1,
+   150.1,
+   "Sírvela caliente, mientras el queso conserva la costra."
+  ],
+  [
+   151.0,
+   152.4,
+   "Si te sirvió, suscríbete."
+  ],
+  [
+   152.8,
+   156.0,
+   "En el próximo video… y dime en los comentarios si te gustaría"
+  ],
+  [
+   156.0,
+   156.8,
+   "explorar otra"
+  ],
+  [
+   156.9,
+   157.3,
+   "versión."
+  ]
+ ]
+}
