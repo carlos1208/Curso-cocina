@@ -30,24 +30,29 @@ El material es vertical, así que el formato es editorial. Una **tarjeta** 9:16 
 
 No más de 2–3 callouts vivos a la vez. Revisa alturas en la hoja de contactos.
 
-## Short vertical (1080×1920): gancho del video largo
+## Short vertical (1080×1920)
 
-**Objetivo:** que la gente vaya al video largo. El Short **no enseña la receta**: sin lista de cantidades ni todos los pasos. Da ganas y promete.
+**Objetivo:** alcance. Instagram, TikTok y Shorts empujan lo que retiene y lo que la gente guarda o comparte. Un Short que solo "promete" retiene menos y lleva poca gente al largo. Por eso el Short por defecto es **autónomo**: enseña la receta resumida y deja los porqués y los trucos para el largo.
 
-- **Estructura recomendada (20–30 s):**
-  1. **El gancho del largo** (0–~12 s): ya está diseñado como gancho.
-  2. **Uno o dos momentos de mayor impacto visual**, con su frase: lo que chisporrotea, se aplasta, chorrea o se derrite.
-  3. **El plato terminado** (la recompensa).
-  4. **Tarjeta final** "Receta completa / en el canal ▶" (~1 s).
-- **Cortes:** en las pausas reales (`voice_check.py --phrases`), frases completas. Nunca cortes una palabra.
-- **Recomendación para el guion de voz:** grabar en ElevenLabs una frase extra para el Short ("La receta completa está en mi canal") y usarla al cierre en vez de la tarjeta muda.
+- **Estructura del autónomo (30–45 s, voz propia):**
+  1. **0–2 s, el plato terminado y el título** (el gancho: la recompensa primero).
+  2. **Ingredientes rápidos:** `list` con cantidades, uno por frase.
+  3. **3–5 pasos clave** con los gráficos del largo (`timer`, `heat`, `measure`, `stack`…).
+  4. **Recompensa**, el plato de nuevo.
+  5. **Llamada:** "Guárdala / Receta con trucos / en el canal ▶", dicha por la voz.
+  6. **Bucle:** el último medio segundo vuelve al primer cuadro, sin fundidos. El video se repite sin corte y la gente lo mira dos veces.
+- **Recorte (sin voz propia, ≤ 30 s):** gancho del largo, uno o dos momentos de impacto, plato final y tarjeta "Receta completa en el canal". Cortes en las pausas reales (`voice_check.py --phrases`), frases completas.
+- **Sonido:** con voz, música y efectos, pero legible en silencio gracias a los subtítulos quemados. `export.py` deja también la versión **sin música** (voz y cocina) para poner un audio en tendencia dentro de la app, bajito bajo la voz.
 - **Pantalla completa:** el material es vertical, así que el plato se ve más grande que en el largo.
 - **Subtítulos:** grandes, palabra por palabra (Grotesk 80 px, contorno oscuro, la palabra que suena en azafrán), centrados en x = 480, y = 1360.
-- **Zona segura de Shorts:** todo el texto en x 60–900 y por encima de y ≈ 1500. Abajo va el título/canal y a la derecha los botones.
+- **Zona segura (Shorts, Reels, TikTok):** todo el texto en x 60–900 y por encima de y ≈ 1500. Abajo va el título/canal y a la derecha los botones.
+- **Portada:** el título del gancho va dentro del recorte 3:4 central (y ≈ 240–1680), que es lo que muestra la cuadrícula del perfil de Instagram (`hook.vertical.title_y` ≥ 430). `export.py` saca la portada en `short.cover_t`.
 - **Arriba:** barras de progreso por tramo (estilo historias) y el rótulo del tramo.
-- **Transiciones:** entre tramos, destello + punch-in (0,35 s). En el gancho vertical, pines con etiqueta sobre cada capa del plato mientras se nombra.
+- **Transiciones:** entre tramos, destello + punch-in (0,35 s). En el gancho, pines con etiqueta sobre cada capa del plato mientras se nombra, o tres palabras (`words`) en cortes rápidos.
 - **Callouts:** los del largo, al 120 %, arriba (el plato va al centro).
-- **Al publicarlo:** pon el largo como "Video relacionado"; aparece como botón sobre el Short.
+- **Al publicarlo:**
+  - en Instagram y TikTok, texto con "guárdala" y "receta con trucos en YouTube (link en la bio)";
+  - en YouTube Shorts, el largo como "Video relacionado".
 
 ## Miniatura (1280×720)
 

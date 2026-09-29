@@ -1,5 +1,7 @@
 # Material: lo que prepara el usuario y cómo recibirlo
 
+El formato exacto del paquete (archivos, hojas, columnas, IDs, prompts) está en `contrato-preproduccion.md`. Es lo que entrega la skill de preproducción del usuario. Esta página resume el flujo y cómo recibirlo.
+
 El flujo que funcionó: **receta → guion de voz → ElevenLabs → hoja de tomas → imágenes y clips (Flow) → Drive → Claude**. Si el usuario llega con menos, ayúdalo a completar el paso que falta antes de montar.
 
 ## 1. Guion de voz (2,5–4 min)
@@ -12,7 +14,7 @@ El flujo que funcionó: **receta → guion de voz → ElevenLabs → hoja de tom
   4. **Armado o servicio.**
   5. **Cierre y llamada** (suscribirse, comentar).
 - Frases cortas y con pausas: cada pausa es un posible corte, tanto en el largo como en el Short.
-- **Frase extra para el Short:** "La receta completa está en mi canal".
+- **Guion del Short autónomo** (80–110 palabras, 30–45 s), grabado aparte como `voz_short.mp3`: gancho sobre el plato terminado, ingredientes rápidos, pasos clave y "Guárdala, y los trucos están en el canal". Tiene su propia hoja `Short` (filas V01…) y sus subtítulos.
 - **Exportar de ElevenLabs:**
   - el **audio en MP3** (2–3 MB) → `voz.mp3`;
   - los subtítulos (vienen sin tildes: se corrigen en `guion.json`).

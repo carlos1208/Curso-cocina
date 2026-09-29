@@ -5,6 +5,8 @@
          <slug>_youtube.mp4  1080p to upload: two-pass, bitrate chosen so the file stays under 95 MB (GitHub's limit is 100)
          <slug>_revision.mp4 720p review copy under 28 MB (the chat's file limit is 30 MiB)
   short: <slug>_short.mp4    1080x1920, under 28 MB (sendable in the chat and committable)
+         <slug>_short_sin_musica.mp4  voice + kitchen sound only, to add a trending track inside Instagram/TikTok
+         <slug>_short_portada.jpg     cover frame (title inside Instagram's 3:4 grid crop)
 Below ~4 Mb/s the synthetic film grain eats the bitrate, so the encode gets a light denoise first.
     python3 export.py [long|short|all]      (reads guion.json; needs video_sin_audio.mp4 / short_sin_audio.mp4)
 """
@@ -85,4 +87,13 @@ if what in ('short', 'all'):
     dur = duration('short_sin_audio.mp4')
     two_pass('short_sin_audio.mp4', f'{SLUG}_short.mp4', budget(dur, 28), audio='short_mezcla.wav')
     made.append(f'{SLUG}_short.mp4')
+    if os.path.exists('short_sin_musica.wav'):
+        two_pass('short_sin_audio.mp4', f'{SLUG}_short_sin_musica.mp4', budget(dur, 28), audio='short_sin_musica.wav')
+        made.append(f'{SLUG}_short_sin_musica.mp4')
+    # cover: the hook with its title fully drawn (short.cover_t, default 1.6 s)
+    ct = G.get('short', {}).get('cover_t', 1.6)
+    subprocess.run(['node', 'render_yt.cjs', '--stills', str(ct)], check=True, env=dict(env, TL='timeline_short.json'))
+    png = sorted(glob.glob('stills_short/*.png'), key=os.path.getmtime)[-1]
+    run('-i', png, '-q:v', '2', f'{SLUG}_short_portada.jpg')
+    print(f'cover: {SLUG}_short_portada.jpg (from {png})')
 report(made)

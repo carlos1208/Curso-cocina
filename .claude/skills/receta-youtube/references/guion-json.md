@@ -96,6 +96,27 @@ Todos llevan `kind` y `t`. Por defecto se quedan hasta el fin de su toma; `"unti
 
 `{"img": "raw/N16.jpg", "crop": [x, y, ancho], "title": ["Hamburguesa", "costeña"], "tags": [["hogao", "#D9573B", "#F6EFE3"], …]}`. Usa la foto más nítida del plato terminado (mejor una imagen que un fotograma de un clip de 360 px). Hasta tres etiquetas de sabor, legibles a tamaño de celular.
 
-## `short` (el gancho vertical)
+## `short`
 
-`{"edl": [{"from": 0, "to": 11.95, "title": "…"}, {"from": 124.5, "to": 129.5, "title": "Smash"}], "end_card": ["Receta completa", "en el canal  ▶"], "end_dur": 1.1, "max": 30}`. Los rangos son segundos del largo, cortados en pausas de la voz. El primero empieza en 0 (el gancho). Criterios en `diseno.md`.
+**Autónomo** (voz propia; ejemplo completo en `assets/example/short_autonomo.json`):
+
+```json
+"short": {
+  "mode": "autonomo", "voice": "voz_short.mp3", "sheet": "Short", "limits": [30, 45], "loop": true, "cover_t": 1.6,
+  "hook": {"title": ["Hamburguesa", "costeña"], "words": [...], "tagline": [...],
+           "vertical": {"title_y": 440, "cuts": [[0, "HERO", 0, 1, [1.16, 1.04], [0.44, 0.5]], ...], "pins": [...]}},
+  "chapters": [{"start": "V03", "title": "Ingredientes", "color": "#F2B544"}, ...],
+  "cta": {"start": "V07", "card": ["Guárdala", "Receta con trucos", "en el canal  ▶"]},
+  "shots": {"V03": {"src": "N01", "z": [1.0, 1.08], "f": [[0.5, 0.42], [0.5, 0.4]]}, ...},
+  "callouts": [{"kind": "list", "t": 13.3, "until": "V04", "rows": [[600, "g", "carne molida 80/20", 13.3], ...]}, ...],
+  "pins": [],
+  "subtitles": [[0.2, 3.9, "..."], ...]
+}
+```
+
+- **Tiempos:** vienen de la hoja `Short` (filas V01…). Dentro de `short` se puede usar `"@V03"` y `"@V03$"`.
+- **Gancho:** las filas que caen antes del primer capítulo se dibujan con `hook.vertical.cuts`, así que no necesitan entrada en `shots`.
+- **`cta`:** desde esa toma se muestra la tarjeta final, y la voz dice la llamada con subtítulos.
+- **`loop`:** agrega 0,5 s que vuelven al primer cuadro del gancho y quita los fundidos a negro.
+
+**Recorte** (sin voz propia): `{"mode": "recorte", "edl": [{"from": 0, "to": 11.95, "title": "…"}, {"from": 124.5, "to": 129.5, "title": "Smash"}], "end_card": ["Receta completa", "en el canal  ▶"], "end_dur": 1.1, "max": 30}`. Los rangos son segundos del largo, cortados en pausas de la voz; el primero empieza en 0 (el gancho).

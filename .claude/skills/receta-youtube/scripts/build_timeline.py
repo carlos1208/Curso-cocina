@@ -24,10 +24,28 @@ rows = list(ws.iter_rows(values_only=True))
 head = [str(h or '').strip().lower() for h in rows[0]]
 col = lambda *names: next(i for i, h in enumerate(head) if any(n in h for n in names))
 ci, c0, c1 = 0, col('inicio (s)', 'inicio'), col('fin (s)', 'fin')
+cd = next((i for i, h in enumerate(head) if h.startswith('dur')), None)
+# formula cells lose their cached value when a script re-saves the workbook: rebuild the end from the next start
+# (or start + duration) instead of failing
+num = lambda v: float(v) if isinstance(v, (int, float)) or (isinstance(v, str) and re.fullmatch(r'[\d.]+', v)) else None
+raw = [(str(r[ci]), num(r[c0]), num(r[c1]), num(r[cd]) if cd is not None else None)
+       for r in rows[1:] if r[ci] and re.match(r'^S\d+', str(r[ci]))]
+def voice_length():
+    import subprocess
+    info = subprocess.run([os.environ.get('FFMPEG', 'ffmpeg'), '-hide_banner', '-i', G.get('voice', 'voz.mp3')], capture_output=True, text=True).stderr
+    m = re.search(r'Duration: (\d+):(\d+):([\d.]+)', info)
+    return int(m[1]) * 3600 + int(m[2]) * 60 + float(m[3]) if m else None
+
+
 T = {}
-for r in rows[1:]:
-    if r[ci] and re.match(r'^S\d+', str(r[ci])):
-        T[str(r[ci])] = (float(r[c0]), float(r[c1]))
+for k, (sid, t0, t1, du) in enumerate(raw):
+    if t1 is None:
+        t1 = raw[k + 1][1] if k + 1 < len(raw) and raw[k + 1][1] is not None else (t0 + du if du is not None else None)
+    if t1 is None and k == len(raw) - 1:
+        t1 = voice_length()                  # the last shot ends with the narration
+    if t0 is None or t1 is None:
+        sys.exit(f'{sid}: no start/end in the sheet (formulas without a saved value? open and save it in Excel/Sheets)')
+    T[sid] = (t0, t1)
 ORDER = sorted(T, key=lambda k: T[k][0])
 DUR = round(max(t1 for _, t1 in T.values()), 2)
 warn = []

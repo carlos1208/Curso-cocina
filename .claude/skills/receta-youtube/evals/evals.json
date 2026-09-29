@@ -1,23 +1,29 @@
 {
-  "skill_name": "receta-youtube",
-  "evals": [
-    {
-      "id": 1,
-      "prompt": "Ya subí a Drive la carpeta 'Arepa de huevo' con el mp3 de la narración (3:10), la hoja de tomas y los clips N01–N14 que saqué de Flow. Arma el video largo para el canal y después el short para promocionarlo.",
-      "expected_output": "Proyecto con new_project.sh; auditoría de cada clip contra su ID; guion.json con capítulos, tomas, callouts y subtítulos corregidos; fotogramas revisados antes del render; largo renderizado y exportado con export.py (archivo de YouTube ≤ 95 MB y revisión ≤ 28 MB); Short de 20–30 s recortado del largo en pausas de la voz, que funciona como gancho y termina con 'receta completa en el canal'; miniatura, .srt y descripción con capítulos ≥ 10 s.",
-      "files": []
-    },
-    {
-      "id": 2,
-      "prompt": "El video largo del sancocho ya está renderizado en sancocho/ (guion.json, timeline.json y voz.mp3). Sácame un short de unos 20 segundos que invite a ver la receta completa, sin regalar todos los pasos.",
-      "expected_output": "voice_check.py --phrases para ver las pausas; short.edl con el gancho, uno o dos momentos visuales y el plato final; build_short.py; fotogramas de revisión del Short (zona segura, subtítulos); render vertical y export.py short ≤ 28 MB; explicación de por qué cada tramo sirve de gancho.",
-      "files": []
-    },
-    {
-      "id": 3,
-      "prompt": "Tengo la narración de 4:30 para las empanadas y la hoja de tomas, pero el render me salió de 600 MB y no lo puedo mandar. ¿Cómo lo dejo listo para YouTube?",
-      "expected_output": "Avisa que 4:30 supera el objetivo de 2,5–4 min y propone recortar la narración o dividir; explica los límites de entrega (chat 30 MiB, GitHub 100 MB, Drive no sirve para subir) y usa export.py para generar la versión de YouTube ≤ 95 MB y la revisión ≤ 28 MB, sin volver a renderizar.",
-      "files": []
-    }
-  ]
+ "skill_name": "receta-youtube",
+ "evals": [
+  {
+   "id": 1,
+   "prompt": "Ya subí a Drive la carpeta 'Arepa de huevo' con el mp3 de la narración (3:10), la hoja de tomas y los clips N01–N14 que saqué de Flow. Arma el video largo para el canal y después el short para promocionarlo.",
+   "expected_output": "Proyecto con new_project.sh; auditoría de cada clip contra su ID; guion.json con capítulos, tomas, callouts y subtítulos corregidos; fotogramas revisados antes del render; largo renderizado y exportado con export.py (archivo de YouTube ≤ 95 MB y revisión ≤ 28 MB); Short de 20–30 s recortado del largo en pausas de la voz, que funciona como gancho y termina con 'receta completa en el canal'; miniatura, .srt y descripción con capítulos ≥ 10 s.",
+   "files": []
+  },
+  {
+   "id": 2,
+   "prompt": "El video largo del sancocho ya está renderizado en sancocho/ (guion.json, timeline.json y voz.mp3). Sácame un short de unos 20 segundos que invite a ver la receta completa, sin regalar todos los pasos.",
+   "expected_output": "voice_check.py --phrases para ver las pausas; short.edl con el gancho, uno o dos momentos visuales y el plato final; build_short.py; fotogramas de revisión del Short (zona segura, subtítulos); render vertical y export.py short ≤ 28 MB; explicación de por qué cada tramo sirve de gancho.",
+   "files": []
+  },
+  {
+   "id": 3,
+   "prompt": "Tengo la narración de 4:30 para las empanadas y la hoja de tomas, pero el render me salió de 600 MB y no lo puedo mandar. ¿Cómo lo dejo listo para YouTube?",
+   "expected_output": "Avisa que 4:30 supera el objetivo de 2,5–4 min y propone recortar la narración o dividir; explica los límites de entrega (chat 30 MiB, GitHub 100 MB, Drive no sirve para subir) y usa export.py para generar la versión de YouTube ≤ 95 MB y la revisión ≤ 28 MB, sin volver a renderizar.",
+   "files": []
+  },
+  {
+   "id": 4,
+   "prompt": "Ya está el largo del ajiaco. Grabé también voz_short.mp3 (38 s) y la hoja Short con V01–V08. Hazme el short para Instagram y TikTok, que funcione solo y que quede en bucle.",
+   "expected_output": "short.mode autonomo en guion.json (gancho vertical con el plato y el título dentro del recorte 3:4, capítulos, tomas V, list de ingredientes, pasos con callouts, cta 'Guárdala / Receta con trucos / en el canal', loop); build_short.py sin avisos de duración; fotogramas revisados; export.py short → _short.mp4 y _short_sin_musica.mp4 ≤ 28 MB y _short_portada.jpg; textos para Instagram/TikTok con 'guárdala' y link en la bio.",
+   "files": []
+  }
+ ]
 }

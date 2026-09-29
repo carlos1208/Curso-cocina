@@ -280,7 +280,8 @@ if voice is not None:
     voice = filt(voice.T, 'high', 80).T
     voice *= 10 ** ((-16 - meter.integrated_loudness(voice)) / 20)
     speaking = env[:N] > 0.5
-    bed *= 10 ** ((-30 - meter.integrated_loudness(bed[speaking])) / 20)
+    g_bed = 10 ** ((-30 - meter.integrated_loudness(bed[speaking])) / 20)
+    bed *= g_bed
     mix = bed + voice
 else:
     mix = bed
@@ -310,3 +311,8 @@ if voice is not None:
     mix_m, lm, pm = master(mix, -14.0)
     write(f'{PREFIX}mezcla.wav', mix_m)
     print(f'{PREFIX}mezcla.wav     {lm:.1f} LUFS  peak {pm:.1f} dBFS')
+    if VERT:     # voice + kitchen sound, no music: to lay a trending track over it inside Instagram/TikTok
+        fx_only = fx * g_bed + voice
+        nm, ln, pn = master(fx_only, -14.0)
+        write(f'{PREFIX}sin_musica.wav', nm)
+        print(f'{PREFIX}sin_musica.wav {ln:.1f} LUFS  peak {pn:.1f} dBFS')

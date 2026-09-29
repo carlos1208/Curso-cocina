@@ -824,8 +824,9 @@ function vHook(c, t) {
   const ta = 1 - prog(t, beat - .4, beat);
   if (ta > 0) {
     c.save(); c.globalAlpha = ta;
-    maskedLine(c, HK.title[0], 54, 330, '600 128px Fraunces', COL.cream, t, .2, 0, .8);
-    maskedLine(c, HK.title[1] || '', 50, 490, 'italic 600 168px Fraunces', COL.saffron, t, .45, 0, .8);
+    const ty = HK.vertical.title_y || 330;          // 430+ keeps the title inside Instagram's 3:4 profile-grid crop
+    maskedLine(c, HK.title[0], 54, ty, '600 128px Fraunces', COL.cream, t, .2, 0, .8);
+    maskedLine(c, HK.title[1] || '', 50, ty + 160, 'italic 600 168px Fraunces', COL.saffron, t, .45, 0, .8);
     c.restore();
     if (map && k === 0) (HK.vertical.pins || []).forEach((p, j) => { c.save(); c.globalAlpha = ta; vPin(c, t, map, p, j); c.restore(); });
   }
@@ -846,12 +847,14 @@ function vHook(c, t) {
   vCaptions(c, t);
 }
 function vEnd(c, t, ch) {
-  const a = E.outCubic(prog(t, ch.t, ch.t + .35));
+  // in a looping Short the card fades out again at the very end, so the last frame matches the first one
+  const a = E.outCubic(prog(t, ch.t, ch.t + .35)) * (TL.loop ? 1 - E.inOutSine(prog(t, DUR - .6, DUR - .08)) : 1);
   c.fillStyle = `rgba(14,10,7,${.72 * a})`; c.fillRect(0, 0, W, H);
   c.save(); c.globalAlpha = a;
   const ec = TL.end_card || ['Receta completa', 'en el canal  ▶'];
   maskedLine(c, ec[0], 60, 860, 'italic 600 120px Fraunces', COL.saffron, t, ch.t + .05, 0, .5);
   maskedLine(c, ec[1] || '', 64, 960, '700 64px Grotesk', COL.cream, t, ch.t + .15, 0, .5);
+  if (ec[2]) maskedLine(c, ec[2], 64, 1050, '700 64px Grotesk', COL.cream, t, ch.t + .25, 0, .5);
   c.restore();
 }
 function vScene(c, t) {
@@ -861,7 +864,7 @@ function vScene(c, t) {
   vShade(c);
   if (map) pins(c, t, SHOTS[i], map);
   vHeader(c, t, ch);
-  if (ch.side === 'endshort') { vEnd(c, t, ch); return; }
+  if (ch.side === 'endshort') { vEnd(c, t, ch); vCaptions(c, t); return; }   // the Short's own voice may speak the CTA
   c.save(); c.scale(1.2, 1.2); callouts(c, t, ch, 60 / 1.2, 290 / 1.2); c.restore();   // bigger for a phone
   vCaptions(c, t);
 }
@@ -894,7 +897,7 @@ function post(o, src, t) {
   o.save(); o.globalCompositeOperation = 'overlay'; o.globalAlpha = .06;
   o.translate((f * 97) % 256, (f * 57) % 256); o.fillStyle = GRAIN[f % 4]; o.fillRect(-256, -256, W + 256, H + 256);
   o.restore();
-  const blk = Math.max(1 - prog(t, 0, VERT ? .12 : .25), prog(t, DUR - (VERT ? .3 : .7), DUR));
+  const blk = TL.loop ? 0 : Math.max(1 - prog(t, 0, VERT ? .12 : .25), prog(t, DUR - (VERT ? .3 : .7), DUR));   // a loop has no fades
   if (blk > 0) { o.globalAlpha = blk; o.fillStyle = '#000'; o.fillRect(0, 0, W, H); o.globalAlpha = 1; }
 }
 // motion blur only where things move fast: cuts, wipes, the hook deal/flip and the end-card glide

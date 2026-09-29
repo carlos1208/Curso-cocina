@@ -1,11 +1,14 @@
 ---
 name: receta-youtube
-description: Produce el video largo de YouTube de una receta (16:9, 2,5 a 4 minutos) a partir de la narración de ElevenLabs, la hoja de tomas y las fotos y clips verticales, con motion graphics editoriales (datos animados que siguen la voz, capítulos, subtítulos corregidos, música editada a los cortes y mezcla a −14 LUFS). De ese largo recorta el Short vertical como gancho que lleva al video completo, y deja miniatura, .srt y textos para publicar, todo con un peso que se puede entregar. Úsala siempre que se hable de video largo, YouTube, canal, narración o voz en off, ElevenLabs, hoja de tomas, capítulos, "sacar el short del video", tráiler o gancho de una receta, o de montar clips de Flow con una voz, aunque no se nombre esta skill. Para un reel musical de 30 s sin narración o la web interactiva del curso, usa receta-en-movimiento.
+description: Produce el video largo de YouTube de una receta (16:9, 2,5 a 4 minutos) a partir de la narración de ElevenLabs, la hoja de tomas y las fotos y clips verticales, con motion graphics editoriales (datos animados que siguen la voz, capítulos, subtítulos corregidos, música editada a los cortes y mezcla a −14 LUFS). Con el mismo material y estilo hace el Short vertical autónomo (30–45 s, voz propia, receta resumida y cierre en bucle, listo para Reels, TikTok y Shorts, más una versión sin música para audio en tendencia) o, si no hay voz propia, un Short recortado del largo como gancho. Deja además miniatura, portada, .srt y textos para publicar, todo con un peso que se puede entregar. Úsala siempre que se hable de video largo, YouTube, canal, narración o voz en off, ElevenLabs, hoja de tomas, capítulos, short o reel con voz, "sacar el short del video", tráiler o gancho de una receta, contenido para Instagram o TikTok con narración, o de montar clips de Flow con una voz, aunque no se nombre esta skill. Para un reel musical de 30 s sin narración o la web interactiva del curso, usa receta-en-movimiento.
 ---
 
-# Receta para YouTube: video largo primero, Short como gancho
+# Receta para YouTube: video largo primero, Short después
 
-El **video largo** (2,5–4 min, 16:9) es la pieza principal. El **Short** (≤ 30 s, vertical) se recorta de él y funciona como gancho: gancho + uno o dos momentos de impacto + plato final + "receta completa en el canal". Recortar un video ya montado es mucho más fácil y consistente que alargar un short: la voz, los gráficos y la música ya existen.
+El **video largo** (2,5–4 min, 16:9) es la pieza principal. Se monta primero: define el material, los encuadres, los gráficos y el estilo. El **Short** (vertical) sale de ese trabajo ya hecho:
+
+- **Autónomo** (lo recomendado, si el usuario grabó una voz para el Short): 30–45 s con la receta resumida que funciona sola en Reels, TikTok y Shorts. Busca que la guarden y la compartan, y deja los trucos y los porqués para el largo.
+- **Recorte** (si no hay voz propia): ≤ 30 s cortados del largo como gancho: gancho + momento de impacto + plato final + "receta completa en el canal".
 
 Todo es código y datos:
 
@@ -35,7 +38,7 @@ SK=<ruta de esta skill>
 
 ### 1. Material
 
-Necesitas `voz.mp3` (solo el audio, 2–3 MB), `hoja_tomas.xlsx` y las fotos y clips nombrados por ID en una carpeta de Drive. Cómo prepararlos y cómo descargarlos sin que el conector se caiga: `references/material.md`. Resumen:
+Necesitas `voz.mp3` (y `voz_short.mp3` para el Short autónomo), solo audio de 2–3 MB; `hoja_tomas.xlsx` (hojas `Tomas`, `Subtítulos`, `Short`, `Subtítulos Short`, `Por generar`); y las fotos y clips nombrados por ID en una carpeta de Drive. Es el paquete que entrega la skill de preproducción del usuario (`references/contrato-preproduccion.md`). Cómo recibirlo sin que el conector se caiga: `references/material.md`. Resumen:
 
 - **Descargas:** de a una o dos, con `drive_decode.py` después de cada tanda.
 - **Carpetas:** paginan de 5 en 5.
@@ -110,31 +113,41 @@ python3 $SK/scripts/export.py long     # master local + <slug>_youtube.mp4 (≤ 
 
 `export.py` calcula el bitrate a partir de la duración: el archivo de YouTube cabe en GitHub y la revisión y el Short se pueden enviar por el chat. Al final imprime una tabla con tamaño, vía de entrega y LUFS. El master (cientos de MB) nunca se entrega ni se versiona. Esto evita el error de la primera producción, un master de 598 MB que no cabía en ninguna vía.
 
-### 7. El Short: el gancho del largo
+### 7. El Short
+
+**Autónomo** (`short.mode: "autonomo"`, recomendado). Lo que aporta el usuario:
+- `voz_short.mp3`;
+- la hoja `Short` en `hoja_tomas.xlsx` (filas V01…);
+- los subtítulos del Short.
+
+Configura `short` en `guion.json`: gancho vertical, capítulos, tomas V, callouts, llamada final y `loop`. Hay un ejemplo en `assets/example/short_autonomo.json` y los criterios están en `references/diseno.md`:
+
+1. **Abre con el plato terminado** y el título, en el primer segundo.
+2. **Ingredientes rápidos** (`list`) y los **pasos clave**, con los mismos gráficos del largo (`timer`, `measure`, `stack`…).
+3. **Cierra** con "Guárdala / Receta con trucos / en el canal ▶" mientras la voz lo dice.
+4. **Con `loop`**, el último medio segundo vuelve al primer cuadro: el video se repite sin corte.
+
+**Recorte** (`short.edl`, si no hay voz propia): mira `voice_check.py --phrases` y elige, en segundos del largo:
+1. del segundo 0 al fin del gancho;
+2. uno o dos momentos de impacto, con su frase completa;
+3. el plato terminado.
+
+Total ≤ 30 s, con la tarjeta "Receta completa en el canal".
 
 ```bash
-python3 $SK/scripts/voice_check.py --phrases    # frases con inicio y fin: se corta en esos silencios
+python3 $SK/scripts/build_short.py              # → timeline_short.json + voz_short.wav + subtitulos_short.srt (avisa si sale de 30–45 s)
+TL=timeline_short.json node render_yt.cjs --stills 1.6,5,10,…   # revisa: zona segura, título dentro del recorte 3:4, subtítulos, bucle
+TL=timeline_short.json node render_yt.cjs      # ≈ 2 min
+python3 $SK/scripts/export.py short            # <slug>_short.mp4 + _short_sin_musica.mp4 (≤ 28 MB) + _short_portada.jpg
 ```
 
-Elige los tramos (`short.edl`, segundos del largo) con estos criterios (`references/diseno.md`):
+**Versión sin música:** lleva voz y sonido de cocina. Sirve para ponerle un audio en tendencia dentro de Instagram o TikTok, bajito bajo la voz. Esos audios no se pueden incluir en el archivo por licencia, pero ayudan al alcance.
 
-1. `0 → fin del gancho`.
-2. Uno o dos momentos de más impacto visual, con su frase completa.
-3. El plato terminado.
-4. Tarjeta final "Receta completa en el canal". Si el usuario grabó una frase propia para el Short, úsala.
-
-El total queda entre 20 y 30 s. **No enseñes la receta completa**: el Short promete y el largo cumple.
-
-```bash
-python3 $SK/scripts/build_short.py              # → timeline_short.json + voz_short.wav + subtitulos_short.srt
-TL=timeline_short.json node render_yt.cjs --stills 1,4,8,…    # revisa: zona segura, subtítulos, pines del gancho
-TL=timeline_short.json node render_yt.cjs      # ≈ 1,5 min
-python3 $SK/scripts/export.py short            # <slug>_short.mp4 (≤ 28 MB)
-```
+**Portada:** el cuadro del gancho, con el título dentro del recorte 3:4 que muestra la cuadrícula del perfil de Instagram.
 
 ### 8. Entregar
 
-- **Por el chat (SendUserFile):** `<slug>_revision.mp4` y `<slug>_short.mp4` (render), además de `miniatura.png`, `subtitulos.srt` y la descripción (attach).
+- **Por el chat (SendUserFile):** `<slug>_revision.mp4`, `<slug>_short.mp4` y `<slug>_short_sin_musica.mp4` (render), además de `miniatura.png`, `<slug>_short_portada.jpg`, los `.srt` y la descripción (attach).
 - **Por GitHub:** `<slug>_youtube.mp4`, el archivo para subir. Da el enlace de GitHub con "Download raw".
 - **Descripción** (`descripcion_youtube.md`):
   - 2–3 títulos;
@@ -142,17 +155,19 @@ python3 $SK/scripts/export.py short            # <slug>_short.mp4 (≤ 28 MB)
   - capítulos (cada uno ≥ 10 s, el primero en 0:00; fusiona un cierre corto con el anterior);
   - etiquetas;
   - dónde poner los elementos de la pantalla final;
-  - la sección del Short (con "Video relacionado" → el largo).
+  - la sección del Short: texto para Instagram/TikTok con "guárdala" y el enlace o "link en la bio" al largo; en YouTube, "Video relacionado" → el largo.
 - **Commit:** sin lo pesado (`.gitignore` de `new_project.sh`).
 
 ## Al terminar, cuéntale al usuario
 
 - Qué hiciste con cada material que faltó o llegó distinto, y qué recortaste (logos, manos, pantallas divididas).
 - Qué subtítulos corregiste y qué datos resolviste tú.
-- Los tramos del Short y por qué funcionan como gancho.
+- Cómo quedó el Short (autónomo o recorte), su duración y por qué retiene en los primeros 2 s.
 - Tamaños y dónde está cada archivo; que no pudiste escuchar la mezcla (revisar voz/música y los empalmes del Short).
 - Frases de la narración que parezcan incompletas.
 
 ## Problemas conocidos
 
 `references/lecciones.md`: pesos y vías de entrega, Drive, formatos de la IA, subtítulos, voz, render y publicación. Léelo antes de la primera producción y cuando algo falle.
+
+El paquete que se espera de la preproducción: `references/contrato-preproduccion.md`. Si llega distinto, adáptalo y dile al usuario qué ajustar en esa skill.

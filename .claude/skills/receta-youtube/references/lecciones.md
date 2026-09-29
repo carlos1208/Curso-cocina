@@ -29,6 +29,10 @@ Cada punto costó tiempo o una vuelta. Léelos antes de empezar y cuando algo fa
 - **Formato:** Flow entrega **9:16 aunque el prompt pida 16:9**. Escribe los prompts en vertical desde el principio. El formato editorial del largo y el Short a pantalla completa están pensados para material vertical.
 - **Defectos de la IA:** los clips pueden empezar con segundos de pantalla dividida o parpadeo (C5), traer logos (LE CREUSET grabado en la olla) o manos al borde (N08). Revisa la tira a 1 fps y, en los primeros 2 s, a 4–8 fps.
 
+## La hoja de tomas
+
+- Si un script vuelve a guardar el `.xlsx` (openpyxl), las celdas con fórmula pierden su valor calculado y se leen vacías (pasó con `Fin (s)`). `build_timeline.py` reconstruye el fin a partir del inicio siguiente o de la duración. Aun así, conviene editar la hoja en Excel o Sheets, o escribir valores y no fórmulas.
+
 ## Voz y subtítulos
 
 - La hoja de subtítulos de ElevenLabs viene en mayúsculas, sin tildes y con errores de reconocimiento ("HOGAOO", "OGAU", "CAS!", "Si" por "Sí"). Reescríbelos en `guion.json`: tildes, cifras ("600 g", "½ cucharadita"), `**resaltado**` en cantidades.
