@@ -240,6 +240,8 @@ def main():
         'STAGE_JSON': json.dumps(stage, ensure_ascii=False),
         'STORAGE_KEY': json.dumps(web_title.lower().replace(' ', '-') + '-mise'),
         'SCALE': scale_html,
+        'FILM_TITLE': (R.get('film') or {}).get('title', 'La receta en 30 segundos'),
+        'FILM_TEXT': (R.get('film') or {}).get('text', 'La misma receta en formato vertical para Reels, TikTok o Shorts, con música original y los sonidos de la cocina.'),
         'SCALE_TEXT': scale_text,
     }
     page = open(TEMPLATE, encoding='utf-8').read()

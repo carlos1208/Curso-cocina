@@ -53,6 +53,7 @@
   .sound i { width: 8px; height: 8px; border-radius: 50%; background: var(--muted); }
   .sound[aria-pressed="true"] i { background: var(--saffron); box-shadow: 0 0 10px var(--saffron); }
   @media (max-width: 720px) { .bar nav { display: none; } .sound { margin-left: auto; } }
+  @media (max-width: 480px) { .brand span { display: none; } }   /* the course tag doesn't fit next to the sound button on a phone */
 
   main { padding-top: calc(var(--bar-h) + env(safe-area-inset-top, 0px)); }
   .wrap { padding-inline: var(--gutter); max-width: 1440px; margin-inline: auto; }
@@ -258,8 +259,8 @@
   <section class="wrap film" id="video">
     <div class="film-copy">
       <p class="eyebrow">Para compartir</p>
-      <h2>La receta en 30 segundos</h2>
-      <p>La misma receta en formato vertical para Reels, TikTok o Shorts, con música original y los sonidos de la cocina.</p>
+      <h2>{{FILM_TITLE}}</h2>
+      <p>{{FILM_TEXT}}</p>
     </div>
     <video controls playsinline preload="metadata" poster="{{HERO_IMG}}" src="media/video.mp4"></video>
   </section>
@@ -601,6 +602,7 @@
     renderIng(+b.dataset.k);
   }));
   renderChecks();
+  renderIng(1);   // format the base amounts too (singular names for 1, rounded metric units)
 
   // ── sound: soundtrack + synthesized sizzle on click ──
   const music = document.getElementById('music'), soundBtn = document.getElementById('sound');

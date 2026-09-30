@@ -23,6 +23,7 @@ Un solo archivo alimenta el video (`engine.js`), la música (`audio.py`) y la we
 | `palette` | Opcional; cambia los colores del video | `{"saffron":"#E9A23B","cream":"#F6EFE3","dark":"#140E09"}` |
 | `cookIntro` | Opcional; párrafo de la sección "Cocina con el scroll" | |
 | `servings` | Opcional; cambia el ×1/×2/×3 de la web por un selector de unidades sobre el rendimiento base. Úsalo cuando la receta rinde piezas contables (hamburguesas, galletas, porciones) | `{"base":4,"options":[1,2,4,6,8],"unit":"hamburguesa\|hamburguesas"}` |
+| `film` | Opcional; título y texto de la sección del video vertical en la web, si el video no es el de 30 s de esta skill (por ejemplo, un Short narrado de `receta-youtube` pasado con `--video`) | `{"title":"La receta en 43 segundos","text":"…"}` |
 | `webFit` | Opcional; encuadre de los clips en la web. `1` (por defecto) muestra el cuadro vertical completo sobre un fondo desenfocado; `0` llena el escenario y recorta arriba y abajo | `1` |
 | `ingredients` | Lista (ver abajo) | |
 | `scenes` | Lista de escenas en orden; define el video completo | |
