@@ -22,6 +22,8 @@ Un solo archivo alimenta el video (`engine.js`), la música (`audio.py`) y la we
 | `heroImage` | Foto del plato terminado (portada web, fondo de ingredientes, póster) | `"img/10.jpg"` |
 | `palette` | Opcional; cambia los colores del video | `{"saffron":"#E9A23B","cream":"#F6EFE3","dark":"#140E09"}` |
 | `cookIntro` | Opcional; párrafo de la sección "Cocina con el scroll" | |
+| `servings` | Opcional; cambia el ×1/×2/×3 de la web por un selector de unidades sobre el rendimiento base. Úsalo cuando la receta rinde piezas contables (hamburguesas, galletas, porciones) | `{"base":4,"options":[1,2,4,6,8],"unit":"hamburguesa\|hamburguesas"}` |
+| `webFit` | Opcional; encuadre de los clips en la web. `1` (por defecto) muestra el cuadro vertical completo sobre un fondo desenfocado; `0` llena el escenario y recorta arriba y abajo | `1` |
 | `ingredients` | Lista (ver abajo) | |
 | `scenes` | Lista de escenas en orden; define el video completo | |
 
@@ -31,8 +33,8 @@ Un solo archivo alimenta el video (`engine.js`), la música (`audio.py`) y la we
 { "qty": "2½ tazas", "name": "agua", "note": "Para cocer el arroz", "q": 2.5, "unit": "taza|tazas" }
 ```
 
-- `qty` + `name` es lo que se ve. `note` solo aparece en la web.
-- `q`, `q2` (rango) y `unit` (`singular|plural`) permiten el multiplicador ×2/×3 de la web. Sin `q` la cantidad queda fija ("al gusto"). Para unidades sin nombre usa `"unit": "|"`.
+- `qty` + `name` es lo que se ve. `note` solo aparece en la web. `nameOne` es el nombre en singular ("pan brioche") que la web muestra cuando el selector deja la cantidad en 1 o menos.
+- `q`, `q2` (rango) y `unit` (`singular|plural`) permiten el multiplicador de la web. Con `g` o `ml` la cantidad escalada se redondea a enteros (de 5 en 5 por encima de 20); el resto usa fracciones ¼ ½ ¾. Sin `q` la cantidad queda fija ("al gusto"). Para unidades sin nombre usa `"unit": "|"`.
 - En el video conviene no pasar de 10 a 12 ingredientes, porque las filas se achican.
 
 ## Escenas
@@ -62,7 +64,7 @@ Un solo archivo alimenta el video (`engine.js`), la música (`audio.py`) y la we
 | `sfx` | Sonidos sintetizados si la escena no tiene clip con audio: `bubbles`, `bubbles_soft`, `simmer`, `pour`, `rattle`, `sizzle`, `sizzle_strong`, `crackle`, `clink`, `rustle`. |
 | `clip` | Video del paso (ver abajo). Si existe y está preparado, reemplaza la foto y desactiva `steam`/`glints` (el clip ya trae vapor real; `"keepFx": true` los conserva). |
 | `clipMv` | Movimiento de cámara cuando se usa el clip (por defecto un zoom leve de 1.03 a 1.09). Úsalo para dejar un logo fuera de cuadro. |
-| `webFrame` | `{"z":[…],"f":[[…],[…]]}` para reencuadrar el clip en el escenario de la web (que es casi cuadrado). |
+| `webFrame` | `{"z":[…],"f":[[…],[…]], "fit":0}` para reencuadrar el clip en el escenario de la web. Evítalo para esconder un logo: cierra mucho el plano (usa `web.blur`). |
 
 ### `clip`
 
@@ -74,6 +76,7 @@ Un solo archivo alimenta el video (`engine.js`), la música (`audio.py`) y la we
 - `in`: segundo del clip donde empieza la escena. La escena usa `240/bpm` segundos a partir de ahí, más unos 0,35 s antes y después para las transiciones.
 - `audio`: `false` si el clip trae música o voz (lo dice `media_audit.py`).
 - `web.scrub [a,b]`: el scroll mueve el clip entre esos segundos. `web.loop [a,b]`: loop de ida y vuelta de ese tramo. Sin `web`, la web usa la foto.
+- `web.blur [[x,y,w,h], …]`: zonas (0..1 del cuadro) que se desenfocan con borde suave en el clip de la web, para tapar un logo sin cerrar el plano. Verifica con un recorte ampliado que no se lea, y aplica lo mismo a la foto `img` de ese paso (se ve mientras carga el clip).
 
 ### `intro` y `final`
 

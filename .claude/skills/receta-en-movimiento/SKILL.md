@@ -1,6 +1,6 @@
 ---
 name: receta-en-movimiento
-description: Convierte una receta (texto + fotos y/o clips de video) en un video vertical de hasta 30 s para Reels/TikTok/Shorts con pasos animados, temporizadores, música original a ritmo y sonidos de cocina, y además en una web de curso donde el scroll "cocina" la receta (los clips avanzan con el scroll, el cursor sopla el vapor, el clic remueve). Úsala siempre que alguien quiera un video de receta, un reel o short de cocina, un video paso a paso de un plato, unir clips de cocina con títulos y efectos, una landing o web interactiva para un curso de cocina, o "hacer un video/una web con esta receta", aunque no mencione motion graphics, scroll ni esta skill. También sirve para recetas de repostería, bebidas o cualquier preparación con pasos.
+description: Convierte una receta (texto + fotos y/o clips de video) en un video vertical de hasta 30 s para Reels/TikTok/Shorts con pasos animados, temporizadores, música original a ritmo y sonidos de cocina, y además en una web de curso donde el scroll "cocina" la receta (los clips avanzan con el scroll, el cursor sopla el vapor, el clic remueve). Úsala siempre que alguien quiera un video de receta, un reel o short de cocina, un video paso a paso de un plato, unir clips de cocina con títulos y efectos, una landing o web interactiva para un curso de cocina, o "hacer un video/una web con esta receta", aunque no mencione motion graphics, scroll ni esta skill. También sirve para recetas de repostería, bebidas o cualquier preparación con pasos. Si hay narración o voz en off, o se pide el video largo de YouTube o un short sacado de él, usa receta-youtube.
 ---
 
 # Receta en movimiento
@@ -8,7 +8,7 @@ description: Convierte una receta (texto + fotos y/o clips de video) en un video
 Produce dos piezas a partir de una receta:
 
 1. **Video vertical** 1080×1920, 30 fps, de 20 a 30 s. Incluye portada, ingredientes, un bloque por paso (número, título, detalle, temporizador, escala de color, chips de ingredientes), cierre, transiciones a ritmo con motion blur real, corrección de color cálida, música original y sonidos de cocina (o el sonido real de los clips).
-2. **Web del curso** publicada como Artifact. Un escenario fijo muestra el paso activo mientras el texto se desliza. Los clips con acción avanzan con el scroll y los ambientales van en loop. El cursor sopla el vapor, el clic remueve con chispas y chisporroteo, y hay una lista de ingredientes con multiplicador ×1/×2/×3 y el video embebido.
+2. **Web del curso** publicada como Artifact. Un escenario fijo muestra el paso activo mientras el texto se desliza. Los clips con acción avanzan con el scroll y los ambientales van en loop. El cursor sopla el vapor, el clic remueve con chispas y chisporroteo, y hay una lista de ingredientes con multiplicador (×1/×2/×3, o un selector de unidades con `servings` cuando la receta rinde piezas, como 4 hamburguesas) y el video embebido.
 
 Todo es código: `engine.js` (Canvas 2D, cada fotograma depende solo del tiempo), `audio.py` (numpy/scipy), `render.cjs` (Chromium headless → ffmpeg) y `build_web.py`. Un único **`recipe.json`** describe la receta, y de ahí salen el video, la música y la web.
 
@@ -111,6 +111,9 @@ python3 <skill>/scripts/build_web.py     # web/index.html + img, clips (H.264 y 
 Tarda unos 2 minutos codificando clips. Los clips se controlan con `clip.web` en `recipe.json`:
 - `{"scrub": [a, b]}`: el scroll mueve el clip de a a b segundos. Úsalo para acciones como colar, verter, destapar o espolvorear.
 - `{"loop": [a, b]}`: loop de ida y vuelta sin corte. Úsalo para lo ambiental, como remover, freír, hervir tapado o el plato de portada.
+- `"blur": [[x, y, w, h], …]` (junto a `scrub` o `loop`): desenfoca con borde suave un logo en el clip de la web, en vez de cerrar el plano con zoom. La web muestra el cuadro vertical completo, así que un logo que en el video quedaba fuera de cuadro aquí se ve.
+
+Si la receta rinde piezas contables (4 hamburguesas, 12 galletas), declara `servings` para que la web ofrezca "1 · 2 · 4 · 6 · 8 hamburguesas" en vez de ×1/×2/×3.
 
 Para comprobarla, sirve `web/` en local (`python3 -m http.server`) y toma **una** captura con Playwright en dos o tres puntos del scroll. El Chromium de prueba no tiene H.264 y usará el VP9, que es lo esperado. Las tildes se verán rotas en local porque falta el charset, que el Artifact agrega al publicar.
 

@@ -53,15 +53,26 @@ def encode_clip(name, web, out):
     mp4, webm = (os.path.join(out, 'clips', f'{name}.{e}') for e in ('mp4', 'webm'))
     if os.path.exists(mp4) and os.path.exists(webm):
         return True
-    scale = 'scale=540:960:force_original_aspect_ratio=increase,crop=540:960'
+    # scale to 540x960; web.blur regions [x, y, w, h] (0..1 of the frame, e.g. a brand logo) get a strong blur
+    # through a feathered mask, so it reads as depth of field rather than a box. The mask is stretched to full
+    # range (gray from lavfi is limited range: white = 235, which lets ~8 % of the logo show through).
+    fc = '[0:v]scale=540:960:force_original_aspect_ratio=increase,crop=540:960'
+    regions = web.get('blur', [])
+    if regions:
+        boxes = ','.join(f'drawbox=x={round(x * 540)}:y={round(y * 960)}:w={round(w * 540)}:h={round(h * 960)}:color=white:t=fill'
+                         for x, y, w, h in regions)
+        fc += (f',split[o][g];[g]gblur=sigma=22:steps=3[gb];color=c=black:s=540x960:r=30,format=gray,{boxes},'
+               f"gblur=sigma=10,lut=y='clip(val*1.3\\,0\\,255)'[mk];[gb][mk]alphamerge[ga];[o][ga]overlay=shortest=1")
+    fc += '[s0]'
+    last = '[s0]'
     if 'scrub' in web:   # short GOP so seeking while scrolling is instant
-        common = ['-i', src, '-an', '-vf', scale]
+        common = ['-i', src, '-an', '-filter_complex', fc, '-map', last]
         ff(*common, '-c:v', 'libx264', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-crf', '29', '-preset', 'slow',
            '-g', '8', '-keyint_min', '8', '-sc_threshold', '0', '-movflags', '+faststart', mp4)
         ff(*common, '-c:v', 'libvpx-vp9', '-b:v', '0', '-crf', '42', '-g', '8', '-row-mt', '1', '-deadline', 'good', '-cpu-used', '3', webm)
     else:                # ping-pong loop: forwards then backwards, so the loop point is invisible
         a, b = web.get('loop', [0, 5])
-        fc = f'[0:v]{scale},split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1[v]'
+        fc += f';{last}split[a][b];[b]reverse[r];[a][r]concat=n=2:v=1[v]'
         common = ['-ss', str(a), '-t', str(b - a), '-i', src, '-an', '-filter_complex', fc, '-map', '[v]']
         ff(*common, '-c:v', 'libx264', '-profile:v', 'high', '-pix_fmt', 'yuv420p', '-crf', '29', '-preset', 'slow', '-g', '48', '-movflags', '+faststart', mp4)
         ff(*common, '-c:v', 'libvpx-vp9', '-b:v', '0', '-crf', '42', '-g', '48', '-row-mt', '1', '-deadline', 'good', '-cpu-used', '3', webm)
@@ -123,8 +134,11 @@ def main():
     for n in order:
         first, *rest = steps[n]
         clip = web_clip(first)
-        e = {'img': first.get('img'), 'z': [1.04, 1.1] if clip else first.get('mv', {}).get('z', [1.08, 1.2]),
+        fit = R.get('webFit', 1)   # 1: whole clip frame over a blurred fill · 0: fill the stage (crops a vertical clip)
+        e = {'img': first.get('img'), 'z': ([1, 1.04] if fit else [1.04, 1.1]) if clip else first.get('mv', {}).get('z', [1.08, 1.2]),
              'f': [[.5, .5], [.5, .52]] if clip else first.get('mv', {}).get('f', [[.5, .5], [.5, .5]])}
+        if clip and fit:
+            e['fit'] = fit
         if first.get('webFrame'):
             e.update(first['webFrame'])       # {"z": [...], "f": [[..],[..]]} to reframe (e.g. hide a logo)
         if clip:
@@ -167,8 +181,24 @@ def main():
             data = f' data-q="{g["q"]}" data-u="{esc(g.get("unit", "|"))}"' + (f' data-q2="{g["q2"]}"' if 'q2' in g else '')
         note = f'<small>{esc(g["note"])}</small>' if g.get('note') else ''
         name = g['name'][:1].upper() + g['name'][1:]
+        if g.get('nameOne'):   # singular name, shown when the servings selector brings the amount to 1 or less
+            data += f' data-n="{esc(g["nameOne"][:1].upper() + g["nameOne"][1:])}|{esc(name)}"'
         ings.append(f'      <li><button class="ing" type="button" role="checkbox" aria-checked="false"{data}>{CHECK}'
-                    f'<span class="q">{esc(g["qty"])}</span><span class="n">{esc(name)}{note}</span></button></li>')
+                    f'<span class="q">{esc(g["qty"])}</span><span class="n"><span class="nm">{esc(name)}</span>{note}</span></button></li>')
+
+    # quantity selector: servings buttons ("1 2 4 6 8 hamburguesas") when the recipe declares them, else ×1 ×2 ×3
+    sv = R.get('servings')
+    if sv:
+        base, (one, many) = sv['base'], sv.get('unit', 'porción|porciones').split('|')
+        btns = ''.join(f'\n        <button type="button" data-k="{n / base:g}" aria-pressed="{str(n == base).lower()}" '
+                       f'aria-label="{n} {esc(one if n == 1 else many)}">{n}</button>' for n in sv.get('options', [1, 2, base, base * 2]))
+        scale_html = f'      <div class="scale" role="group" aria-label="Cantidad de {esc(many)}">{btns}\n        <span class="scale-label">{esc(many)}</span>\n      </div>'
+        scale_text = (f'Toca cada ingrediente cuando lo tengas listo. La receta base rinde {base} {many}: elige otra cantidad '
+                      f'y los ingredientes se ajustan solos. Los pasos siguen indicando las cantidades para {base}.')
+    else:
+        scale_html = '      <div class="scale" role="group" aria-label="Multiplicar la receta">' + ''.join(
+            f'\n        <button type="button" data-k="{k}" aria-pressed="{str(k == 1).lower()}">×{k}</button>' for k in (1, 2, 3)) + '\n      </div>'
+        scale_text = 'Toca cada ingrediente cuando lo tengas listo en la mesada. Si cocinas para más gente, multiplica la receta.'
     arts = []
     for k, n in enumerate(order):
         s = steps[n][0]
@@ -209,11 +239,13 @@ def main():
         'HERO_JSON': json.dumps(hero, ensure_ascii=False),
         'STAGE_JSON': json.dumps(stage, ensure_ascii=False),
         'STORAGE_KEY': json.dumps(web_title.lower().replace(' ', '-') + '-mise'),
+        'SCALE': scale_html,
+        'SCALE_TEXT': scale_text,
     }
     page = open(TEMPLATE, encoding='utf-8').read()
     for k, v in rep.items():
         # text placeholders are escaped; the JSON / pre-built HTML blocks are inserted as-is
-        raw = k in ('FACTS', 'INGREDIENTS', 'STEPS', 'RAIL', 'HERO_JSON', 'STAGE_JSON', 'STORAGE_KEY')
+        raw = k in ('FACTS', 'INGREDIENTS', 'STEPS', 'RAIL', 'HERO_JSON', 'STAGE_JSON', 'STORAGE_KEY', 'SCALE')
         page = page.replace('{{' + k + '}}', v if raw else esc(v))
     left = [p for p in rep if '{{' + p + '}}' in page]
     if '{{' in page and left:
