@@ -1,0 +1,20 @@
+# heavy or rebuildable: clips are in Drive, frames/segments/wavs are regenerated
+frames/
+segments/
+segments_short/
+stills/
+stills_short/
+raw/*.mp4
+*.wav
+video_sin_audio.mp4
+short_sin_audio.mp4
+*_master.mp4
+short_master*.mp4
+preview_*.mp4
+*.log
+# deliverables stay versioned even if a parent folder ignores *.mp4 (export.py keeps them under 100 MB)
+!*_youtube.mp4
+!*_revision.mp4
+!*_short.mp4
+# originals as downloaded from Drive (same bytes as raw/ and voz*.mp3)
+drive/

@@ -1,0 +1,2035 @@
+{
+ "duration": 179.0,
+ "fps": 30,
+ "title": "Carne guisada colombiana",
+ "tag": "CURSO DE COCINA  ·  RECETA 03",
+ "music": "latino",
+ "colors": {},
+ "chapters": [
+  {
+   "id": "gancho",
+   "t": 0.0,
+   "n": 0,
+   "title": "Carne guisada colombiana",
+   "color": "#F2B544",
+   "side": "hook"
+  },
+  {
+   "id": "ingredientes",
+   "t": 8.95,
+   "n": 1,
+   "title": "Ingredientes",
+   "h1": "Ingredientes",
+   "h2": "para 4 personas",
+   "color": "#F2B544",
+   "side": "R",
+   "mark": "MISE EN PLACE"
+  },
+  {
+   "id": "marinado",
+   "t": 50.57,
+   "n": 2,
+   "title": "Marinado",
+   "h1": "Secar y",
+   "h2": "sazonar",
+   "color": "#E8893F",
+   "side": "L",
+   "mark": "MARINADO"
+  },
+  {
+   "id": "sellado",
+   "t": 67.01,
+   "n": 3,
+   "title": "Sellado",
+   "h1": "Sellar",
+   "h2": "en dos tandas",
+   "color": "#DB8B78",
+   "side": "R",
+   "mark": "SELLADO"
+  },
+  {
+   "id": "hogao",
+   "t": 87.3,
+   "n": 4,
+   "title": "Hogao",
+   "h1": "Hogao",
+   "h2": "sobre el fondo",
+   "color": "#D9573B",
+   "side": "L",
+   "mark": "HOGAO"
+  },
+  {
+   "id": "guiso",
+   "t": 113.71,
+   "n": 5,
+   "title": "Guiso",
+   "h1": "Cerveza negra",
+   "h2": "y panela",
+   "color": "#C98B5B",
+   "side": "R",
+   "mark": "GUISO"
+  },
+  {
+   "id": "papas",
+   "t": 141.65,
+   "n": 6,
+   "title": "Papas",
+   "h1": "Papa criolla",
+   "h2": "y a reducir",
+   "color": "#F3D35B",
+   "side": "L",
+   "mark": "PAPA CRIOLLA"
+  },
+  {
+   "id": "servicio",
+   "t": 159.0,
+   "n": 7,
+   "title": "Servicio",
+   "h1": "A la",
+   "h2": "mesa",
+   "color": "#A9C44E",
+   "side": "R",
+   "mark": "SERVICIO"
+  },
+  {
+   "id": "cierre",
+   "t": 171.01,
+   "n": 8,
+   "title": "Cierre",
+   "color": "#F2B544",
+   "side": "end"
+  }
+ ],
+ "media": {
+  "HERO": {
+   "img": "raw/HERO.jpg"
+  },
+  "N01": {
+   "img": "raw/N01.jpg"
+  },
+  "N02": {
+   "img": "raw/N02.jpg"
+  },
+  "N04": {
+   "img": "raw/N04.jpg"
+  },
+  "N14": {
+   "img": "raw/N14.jpg"
+  },
+  "N03": {
+   "clip": "N03",
+   "audio": true
+  },
+  "N05": {
+   "clip": "N05",
+   "audio": true
+  },
+  "N07": {
+   "clip": "N07",
+   "audio": true
+  },
+  "N08": {
+   "clip": "N08",
+   "audio": true
+  },
+  "N09": {
+   "clip": "N09",
+   "audio": true
+  },
+  "N10": {
+   "clip": "N10",
+   "audio": true
+  },
+  "N11": {
+   "clip": "N11",
+   "audio": false
+  },
+  "N12": {
+   "clip": "N12",
+   "audio": false
+  },
+  "N13": {
+   "clip": "N13",
+   "audio": false
+  }
+ },
+ "shots": [
+  {
+   "id": "S01",
+   "t0": 0.0,
+   "t1": 4.17,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 4.17,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S02",
+   "t0": 4.17,
+   "t1": 8.95,
+   "src": "N12",
+   "a": 0,
+   "b": 4.8,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S03",
+   "t0": 8.95,
+   "t1": 14.58,
+   "src": "N01",
+   "a": 0.0,
+   "b": 5.630000000000001,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.45,
+     0.44
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S04",
+   "t0": 14.58,
+   "t1": 22.51,
+   "src": "N01",
+   "a": 0.0,
+   "b": 7.9300000000000015,
+   "z": [
+    1.7,
+    1.85
+   ],
+   "f": [
+    [
+     0.33,
+     0.33
+    ],
+    [
+     0.34,
+     0.34
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S05",
+   "t0": 22.51,
+   "t1": 27.54,
+   "src": "N01",
+   "a": 0.0,
+   "b": 5.029999999999998,
+   "z": [
+    1.5,
+    1.58
+   ],
+   "f": [
+    [
+     0.37,
+     0.52
+    ],
+    [
+     0.39,
+     0.52
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S06",
+   "t0": 27.54,
+   "t1": 34.13,
+   "src": "N01",
+   "a": 0.0,
+   "b": 6.590000000000003,
+   "z": [
+    1.15,
+    1.2
+   ],
+   "f": [
+    [
+     0.48,
+     0.62
+    ],
+    [
+     0.49,
+     0.63
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S07",
+   "t0": 34.13,
+   "t1": 43.12,
+   "src": "N01",
+   "a": 0.0,
+   "b": 8.989999999999995,
+   "z": [
+    1.3,
+    1.36
+   ],
+   "f": [
+    [
+     0.41,
+     0.64
+    ],
+    [
+     0.41,
+     0.65
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S08",
+   "t0": 43.12,
+   "t1": 50.57,
+   "src": "N01",
+   "a": 0.0,
+   "b": 7.450000000000003,
+   "z": [
+    1.3,
+    1.02
+   ],
+   "f": [
+    [
+     0.72,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S09",
+   "t0": 50.57,
+   "t1": 60.19,
+   "src": "N02",
+   "a": 0.0,
+   "b": 9.619999999999997,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.56
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S10",
+   "t0": 60.19,
+   "t1": 67.01,
+   "src": "N02",
+   "a": 0.0,
+   "b": 6.820000000000007,
+   "z": [
+    1.4,
+    1.5
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.52,
+     0.56
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S11",
+   "t0": 67.01,
+   "t1": 71.33,
+   "src": "N03",
+   "a": 1.3,
+   "b": 5.2,
+   "z": [
+    1.35,
+    1.45
+   ],
+   "f": [
+    [
+     0.5,
+     0.52
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S12",
+   "t0": 71.33,
+   "t1": 75.28,
+   "src": "N03",
+   "a": 4.0,
+   "b": 6.6,
+   "z": [
+    1.75,
+    1.85
+   ],
+   "f": [
+    [
+     0.5,
+     0.48
+    ],
+    [
+     0.5,
+     0.47
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S13",
+   "t0": 75.28,
+   "t1": 81.45,
+   "src": "N03",
+   "a": 5.0,
+   "b": 8.0,
+   "z": [
+    2.3,
+    2.42
+   ],
+   "f": [
+    [
+     0.52,
+     0.47
+    ],
+    [
+     0.52,
+     0.46
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S14",
+   "t0": 81.45,
+   "t1": 87.3,
+   "src": "N04",
+   "a": 0.0,
+   "b": 5.849999999999994,
+   "z": [
+    1.18,
+    1.4
+   ],
+   "f": [
+    [
+     0.38,
+     0.62
+    ],
+    [
+     0.72,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S15",
+   "t0": 87.3,
+   "t1": 93.62,
+   "src": "N05",
+   "a": 0,
+   "b": 4.8,
+   "z": [
+    1.6,
+    1.66
+   ],
+   "f": [
+    [
+     0.4,
+     0.66
+    ],
+    [
+     0.4,
+     0.66
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S16",
+   "t0": 93.62,
+   "t1": 99.85,
+   "src": "N05",
+   "a": 5.0,
+   "b": 8.0,
+   "z": [
+    1.2,
+    1.28
+   ],
+   "f": [
+    [
+     0.55,
+     0.6
+    ],
+    [
+     0.55,
+     0.62
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S17",
+   "t0": 99.85,
+   "t1": 105.03,
+   "src": "N01",
+   "a": 0.0,
+   "b": 5.180000000000007,
+   "z": [
+    2.5,
+    2.65
+   ],
+   "f": [
+    [
+     0.58,
+     0.535
+    ],
+    [
+     0.58,
+     0.535
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S18",
+   "t0": 105.03,
+   "t1": 109.58,
+   "src": "N07",
+   "a": 0,
+   "b": 4.6,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.52
+    ],
+    [
+     0.5,
+     0.54
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S19",
+   "t0": 109.58,
+   "t1": 113.71,
+   "src": "N07",
+   "a": 4.6,
+   "b": 8.0,
+   "z": [
+    1.45,
+    1.55
+   ],
+   "f": [
+    [
+     0.62,
+     0.62
+    ],
+    [
+     0.66,
+     0.64
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S20",
+   "t0": 113.71,
+   "t1": 120.03,
+   "src": "N08",
+   "a": 0,
+   "b": 5.2,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.55,
+     0.55
+    ],
+    [
+     0.55,
+     0.57
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S21",
+   "t0": 120.03,
+   "t1": 124.15,
+   "src": "N08",
+   "a": 4.4,
+   "b": 8.0,
+   "z": [
+    1.35,
+    1.45
+   ],
+   "f": [
+    [
+     0.6,
+     0.6
+    ],
+    [
+     0.6,
+     0.62
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S22",
+   "t0": 124.15,
+   "t1": 131.03,
+   "src": "N09",
+   "a": 0.5,
+   "b": 8.0,
+   "z": [
+    1.85,
+    1.95
+   ],
+   "f": [
+    [
+     0.5,
+     0.52
+    ],
+    [
+     0.5,
+     0.53
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S23",
+   "t0": 131.03,
+   "t1": 136.68,
+   "src": "N10",
+   "a": 0,
+   "b": 5.6,
+   "z": [
+    1.08,
+    1.14
+   ],
+   "f": [
+    [
+     0.6,
+     0.55
+    ],
+    [
+     0.62,
+     0.55
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S24",
+   "t0": 136.68,
+   "t1": 141.65,
+   "src": "N10",
+   "a": 4.0,
+   "b": 8.0,
+   "z": [
+    1.45,
+    1.55
+   ],
+   "f": [
+    [
+     0.58,
+     0.5
+    ],
+    [
+     0.58,
+     0.48
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S25",
+   "t0": 141.65,
+   "t1": 147.24,
+   "src": "N11",
+   "a": 0,
+   "b": 5.6,
+   "z": [
+    1.05,
+    1.1
+   ],
+   "f": [
+    [
+     0.55,
+     0.6
+    ],
+    [
+     0.55,
+     0.61
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S26",
+   "t0": 147.24,
+   "t1": 153.9,
+   "src": "N11",
+   "a": 3.0,
+   "b": 8.0,
+   "z": [
+    1.4,
+    1.5
+   ],
+   "f": [
+    [
+     0.6,
+     0.62
+    ],
+    [
+     0.6,
+     0.63
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S27",
+   "t0": 153.9,
+   "t1": 159.0,
+   "src": "N14",
+   "a": 0.0,
+   "b": 5.099999999999994,
+   "z": [
+    1.05,
+    1.14
+   ],
+   "f": [
+    [
+     0.45,
+     0.52
+    ],
+    [
+     0.45,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S28",
+   "t0": 159.0,
+   "t1": 164.1,
+   "src": "N13",
+   "a": 0,
+   "b": 5.1,
+   "z": [
+    1.3,
+    1.36
+   ],
+   "f": [
+    [
+     0.48,
+     0.6
+    ],
+    [
+     0.48,
+     0.6
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S29",
+   "t0": 164.1,
+   "t1": 167.74,
+   "src": "N13",
+   "a": 4.4,
+   "b": 8.0,
+   "z": [
+    1.55,
+    1.65
+   ],
+   "f": [
+    [
+     0.5,
+     0.58
+    ],
+    [
+     0.5,
+     0.57
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S30",
+   "t0": 167.74,
+   "t1": 171.01,
+   "src": "N12",
+   "a": 2.4,
+   "b": 5.7,
+   "z": [
+    1.05,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S31",
+   "t0": 171.01,
+   "t1": 179.0,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 7.990000000000009,
+   "z": [
+    1.04,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "end"
+  }
+ ],
+ "callouts": [
+  {
+   "kind": "list",
+   "t": 10.31,
+   "rows": [
+    [
+     4,
+     "",
+     "porciones",
+     10.31
+    ],
+    [
+     1,
+     "kg",
+     "morrillo de res",
+     11.83
+    ],
+    [
+     4,
+     "cm",
+     "cubos",
+     13.43
+    ]
+   ],
+   "t1": 14.58
+  },
+  {
+   "kind": "chips",
+   "t": 17.54,
+   "items": [
+    [
+     "cuello",
+     17.54
+    ],
+    [
+     "aguja",
+     18.01
+    ],
+    [
+     "pecho",
+     18.81
+    ]
+   ],
+   "t1": 22.51
+  },
+  {
+   "kind": "list",
+   "t": 19.61,
+   "rows": [
+    [
+     "AR",
+     "",
+     "aguja · cogote",
+     19.61
+    ],
+    [
+     "MX",
+     "",
+     "pescuezo · pecho",
+     20.58
+    ],
+    [
+     "PE",
+     "",
+     "asado de aguja",
+     20.97
+    ],
+    [
+     "CL",
+     "",
+     "huachalomo",
+     21.38
+    ],
+    [
+     "VE",
+     "",
+     "pecho",
+     21.94
+    ]
+   ],
+   "t1": 22.51
+  },
+  {
+   "kind": "list",
+   "t": 22.61,
+   "rows": [
+    [
+     500,
+     "g",
+     "papa criolla",
+     22.61
+    ],
+    [
+     400,
+     "g",
+     "tomate chonto maduro",
+     24.81
+    ]
+   ],
+   "t1": 27.54
+  },
+  {
+   "kind": "list",
+   "t": 27.64,
+   "rows": [
+    [
+     150,
+     "g",
+     "cebolla larga",
+     27.64
+    ],
+    [
+     1,
+     "",
+     "cebolla roja",
+     29.97
+    ],
+    [
+     1,
+     "",
+     "pimentón rojo",
+     31.41
+    ],
+    [
+     5,
+     "",
+     "dientes de ajo",
+     32.77
+    ]
+   ],
+   "t1": 34.13
+  },
+  {
+   "kind": "list",
+   "t": 34.23,
+   "rows": [
+    [
+     1,
+     "cdta",
+     "comino",
+     34.23
+    ],
+    [
+     1,
+     "cdta",
+     "color (achiote)",
+     35.97
+    ],
+    [
+     2,
+     "",
+     "hojas de laurel",
+     37.17
+    ],
+    [
+     10,
+     "g",
+     "sal",
+     38.85
+    ],
+    [
+     "",
+     "",
+     "pimienta, al gusto",
+     40.43
+    ],
+    [
+     3,
+     "cdas",
+     "aceite",
+     41.16
+    ]
+   ],
+   "t1": 43.12
+  },
+  {
+   "kind": "list",
+   "t": 43.22,
+   "rows": [
+    [
+     330,
+     "ml",
+     "cerveza negra",
+     43.22
+    ],
+    [
+     500,
+     "ml",
+     "caldo de res",
+     46.03
+    ],
+    [
+     20,
+     "g",
+     "panela rallada",
+     47.95
+    ]
+   ],
+   "t1": 50.57
+  },
+  {
+   "kind": "tip",
+   "t": 51.37,
+   "icon": "drop",
+   "text": "Superficie seca",
+   "t1": 60.19
+  },
+  {
+   "kind": "list",
+   "t": 56.67,
+   "rows": [
+    [
+     10,
+     "g",
+     "sal",
+     56.67
+    ],
+    [
+     "",
+     "",
+     "pimienta",
+     57.31
+    ],
+    [
+     1,
+     "cdta",
+     "comino",
+     58.35
+    ],
+    [
+     1,
+     "cdta",
+     "color",
+     59.31
+    ]
+   ],
+   "t1": 60.19
+  },
+  {
+   "kind": "timer",
+   "t": 61.39,
+   "value": 30,
+   "unit": "min",
+   "label": "a temperatura ambiente",
+   "t1": 67.01
+  },
+  {
+   "kind": "note",
+   "t": 63.79,
+   "text": "Marinada de la noche anterior: sácala 30 min antes",
+   "t1": 67.01
+  },
+  {
+   "kind": "chips",
+   "t": 67.93,
+   "items": [
+    [
+     "2 cdas de aceite",
+     67.93
+    ]
+   ],
+   "t1": 71.33
+  },
+  {
+   "kind": "heat",
+   "t": 69.45,
+   "level": 4,
+   "label": "Fuego alto",
+   "t1": 71.33
+  },
+  {
+   "kind": "timer",
+   "t": 71.73,
+   "value": 6,
+   "unit": "min",
+   "label": "por tanda · son 2 tandas",
+   "t1": 75.28
+  },
+  {
+   "kind": "tip",
+   "t": 76.65,
+   "icon": "hand",
+   "text": "2 min sin moverla",
+   "t1": 81.45
+  },
+  {
+   "kind": "tip",
+   "t": 77.76,
+   "icon": "x",
+   "text": "Olla llena: hierve, no dora",
+   "t1": 81.45
+  },
+  {
+   "kind": "note",
+   "t": 81.95,
+   "text": "Resérvala con sus jugos",
+   "t1": 87.3
+  },
+  {
+   "kind": "big",
+   "t": 83.37,
+   "text": "Ese fondo\nes sabor.",
+   "t1": 87.3
+  },
+  {
+   "kind": "gauge",
+   "t": 88.06,
+   "stops": [
+    [
+     88.06,
+     "Transparente"
+    ],
+    [
+     99.95,
+     "Tomate"
+    ],
+    [
+     108.56,
+     "Oscuro"
+    ],
+    [
+     110.68,
+     "Listo"
+    ]
+   ],
+   "colors": [
+    "#EFE3C2",
+    "#E0492F",
+    "#A8321F",
+    "#6E2014"
+   ],
+   "at": [
+    88.06,
+    113.06
+   ],
+   "t1": 113.71
+  },
+  {
+   "kind": "heat",
+   "t": 88.65,
+   "level": 2,
+   "label": "Fuego medio",
+   "t1": 93.62
+  },
+  {
+   "kind": "chips",
+   "t": 89.93,
+   "items": [
+    [
+     "+ 1 cda de aceite",
+     89.93
+    ],
+    [
+     "+ cebolla larga y roja",
+     92.65
+    ]
+   ],
+   "t1": 93.62
+  },
+  {
+   "kind": "timer",
+   "t": 93.72,
+   "value": 5,
+   "unit": "min",
+   "label": "cebolla transparente",
+   "t1": 99.85
+  },
+  {
+   "kind": "chips",
+   "t": 97.28,
+   "items": [
+    [
+     "+ 5 dientes de ajo",
+     97.28
+    ],
+    [
+     "+ pimentón",
+     97.84
+    ],
+    [
+     "2 min más",
+     98.64
+    ]
+   ],
+   "t1": 99.85
+  },
+  {
+   "kind": "chips",
+   "t": 99.95,
+   "items": [
+    [
+     "400 g de tomate chonto",
+     99.95
+    ]
+   ],
+   "t1": 105.03
+  },
+  {
+   "kind": "tip",
+   "t": 101.52,
+   "icon": "check",
+   "text": "Piel afuera, pulpa adentro",
+   "t1": 105.03
+  },
+  {
+   "kind": "chips",
+   "t": 105.92,
+   "items": [
+    [
+     "+ 2 hojas de laurel",
+     105.92
+    ]
+   ],
+   "t1": 109.58
+  },
+  {
+   "kind": "timer",
+   "t": 107.2,
+   "value": 10,
+   "unit": "min",
+   "label": "fuego medio · hasta oscurecer",
+   "t1": 109.58
+  },
+  {
+   "kind": "tip",
+   "t": 110.04,
+   "icon": "check",
+   "text": "Aceite en los bordes",
+   "t1": 113.71
+  },
+  {
+   "kind": "chips",
+   "t": 114.58,
+   "items": [
+    [
+     "+ carne con sus jugos",
+     114.58
+    ],
+    [
+     "+ 330 ml de cerveza negra",
+     118.99
+    ]
+   ],
+   "t1": 120.03
+  },
+  {
+   "kind": "heat",
+   "t": 117.23,
+   "level": 3,
+   "label": "Fuego medio-alto",
+   "t1": 120.03
+  },
+  {
+   "kind": "tip",
+   "t": 120.33,
+   "icon": "hand",
+   "text": "Raspa el fondo pegado",
+   "t1": 124.15
+  },
+  {
+   "kind": "timer",
+   "t": 121.15,
+   "value": 3,
+   "unit": "min",
+   "label": "hasta reducir a la mitad",
+   "t1": 124.15
+  },
+  {
+   "kind": "chips",
+   "t": 124.87,
+   "items": [
+    [
+     "+ 500 ml de caldo",
+     124.87
+    ],
+    [
+     "+ 20 g de panela",
+     125.43
+    ]
+   ],
+   "t1": 131.03
+  },
+  {
+   "kind": "tip",
+   "t": 128.22,
+   "icon": "spark",
+   "text": "Equilibra la acidez",
+   "t1": 131.03
+  },
+  {
+   "kind": "heat",
+   "t": 132.15,
+   "level": 1,
+   "label": "Fuego bajo · tapado",
+   "t1": 136.68
+  },
+  {
+   "kind": "timer",
+   "t": 133.43,
+   "value": 90,
+   "unit": "min",
+   "label": "hervor apenas visible",
+   "t1": 136.68
+  },
+  {
+   "kind": "tip",
+   "t": 137.08,
+   "icon": "x",
+   "text": "Que no hierva fuerte",
+   "t1": 141.65
+  },
+  {
+   "kind": "chips",
+   "t": 142.81,
+   "items": [
+    [
+     "+ 500 g de papa criolla",
+     142.81
+    ]
+   ],
+   "t1": 147.24
+  },
+  {
+   "kind": "timer",
+   "t": 144.25,
+   "value": 30,
+   "unit": "min",
+   "label": "destapado · fuego bajo",
+   "t1": 147.24
+  },
+  {
+   "kind": "tip",
+   "t": 150.44,
+   "icon": "spark",
+   "text": "Espesa sin harina",
+   "t1": 153.9
+  },
+  {
+   "kind": "tip",
+   "t": 155.0,
+   "icon": "x",
+   "text": "Sal: solo al final",
+   "t1": 159.0
+  },
+  {
+   "kind": "chips",
+   "t": 160.61,
+   "items": [
+    [
+     "plato hondo",
+     160.61
+    ],
+    [
+     "arroz blanco",
+     161.65
+    ],
+    [
+     "aguacate",
+     162.53
+    ]
+   ],
+   "t1": 164.1
+  },
+  {
+   "kind": "chips",
+   "t": 164.68,
+   "items": [
+    [
+     "cilantro picado",
+     164.68
+    ],
+    [
+     "hilo de salsa",
+     166.12
+    ]
+   ],
+   "t1": 167.74
+  },
+  {
+   "kind": "big",
+   "t": 168.53,
+   "text": "Sin\ncuchillo.",
+   "t1": 171.01
+  }
+ ],
+ "pins": [
+  {
+   "shot": "S03",
+   "t": 12.23,
+   "xy": [
+    0.33,
+    0.33
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S05",
+   "t": 23.61,
+   "xy": [
+    0.19,
+    0.51
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S05",
+   "t": 25.85,
+   "xy": [
+    0.58,
+    0.53
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S06",
+   "t": 29.01,
+   "xy": [
+    0.82,
+    0.58
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S06",
+   "t": 30.21,
+   "xy": [
+    0.14,
+    0.66
+   ],
+   "n": 5
+  },
+  {
+   "shot": "S06",
+   "t": 31.57,
+   "xy": [
+    0.42,
+    0.66
+   ],
+   "n": 6
+  },
+  {
+   "shot": "S06",
+   "t": 33.57,
+   "xy": [
+    0.71,
+    0.69
+   ],
+   "n": 7
+  },
+  {
+   "shot": "S07",
+   "t": 35.33,
+   "xy": [
+    0.11,
+    0.78
+   ],
+   "n": 8
+  },
+  {
+   "shot": "S07",
+   "t": 36.45,
+   "xy": [
+    0.3,
+    0.78
+   ],
+   "n": 9
+  },
+  {
+   "shot": "S07",
+   "t": 37.89,
+   "xy": [
+    0.67,
+    0.78
+   ],
+   "n": 10
+  },
+  {
+   "shot": "S07",
+   "t": 39.73,
+   "xy": [
+    0.49,
+    0.78
+   ],
+   "n": 11
+  },
+  {
+   "shot": "S08",
+   "t": 44.84,
+   "xy": [
+    0.93,
+    0.42
+   ],
+   "n": 12
+  },
+  {
+   "shot": "S08",
+   "t": 46.75,
+   "xy": [
+    0.76,
+    0.33
+   ],
+   "n": 13
+  },
+  {
+   "shot": "S08",
+   "t": 48.67,
+   "xy": [
+    0.88,
+    0.77
+   ],
+   "n": 14
+  }
+ ],
+ "cues": [
+  [
+   0.1,
+   4.25,
+   "Carne guisada colombiana, pero con técnica de restaurante."
+  ],
+  [
+   4.27,
+   6.45,
+   "Tierna, profunda y brillante."
+  ],
+  [
+   6.47,
+   7.78,
+   "Se deshace con la cuchara."
+  ],
+  [
+   8.7,
+   9.99,
+   "Ingredientes."
+  ],
+  [
+   10.01,
+   14.66,
+   "Para **4 personas** necesitas **1 kilo** de morrillo en cubos de **4 centímetros**."
+  ],
+  [
+   14.68,
+   19.59,
+   "Si no estás en Colombia, pide un corte para guisar de cuello, aguja o pecho."
+  ],
+  [
+   19.61,
+   22.59,
+   "En la descripción te dejo cómo se llama en tu país."
+  ],
+  [
+   22.61,
+   27.62,
+   "**500 g** de papa criolla y **400 g** de tomate chonto maduro."
+  ],
+  [
+   27.64,
+   31.39,
+   "**150 g** de cebolla larga y **1** cebolla roja."
+  ],
+  [
+   31.41,
+   34.209999999999994,
+   "**1** pimentón rojo y **5** dientes de ajo."
+  ],
+  [
+   34.23,
+   38.83,
+   "**1 cucharadita** de comino, **1** de color, **2** hojas de laurel,"
+  ],
+  [
+   38.85,
+   42.5,
+   "**10 g** de sal, pimienta y **3 cucharadas** de aceite."
+  ],
+  [
+   43.22,
+   49.57,
+   "**330 ml** de cerveza negra, **500** de caldo de res y **20 g** de panela rallada."
+  ],
+  [
+   50.32,
+   51.05,
+   "Marinado."
+  ],
+  [
+   51.07,
+   53.29,
+   "Seca bien la carne con papel."
+  ],
+  [
+   53.31,
+   55.529999999999994,
+   "La humedad impide que dore."
+  ],
+  [
+   55.55,
+   59.49,
+   "Sazónala con la sal, la pimienta, el comino y el color."
+  ],
+  [
+   60.29,
+   63.769999999999996,
+   "Déjala reposar **30 minutos** a temperatura ambiente."
+  ],
+  [
+   63.79,
+   66.74000000000001,
+   "Así no enfría la olla y dora parejo."
+  ],
+  [
+   66.76,
+   67.35000000000001,
+   "Sellado."
+  ],
+  [
+   67.37,
+   71.41000000000001,
+   "Calienta **2 cucharadas** de aceite a **fuego alto**, hasta que humee."
+  ],
+  [
+   71.43,
+   75.36,
+   "Dora la carne en **2 tandas**, unos **6 minutos** cada una."
+  ],
+  [
+   75.38,
+   77.51,
+   "No la muevas los primeros **2 minutos**."
+  ],
+  [
+   77.53,
+   81.53,
+   "Si llenas la olla, suelta jugo y se cocina en vez de dorarse."
+  ],
+  [
+   81.55,
+   83.02000000000001,
+   "Saca la carne."
+  ],
+  [
+   83.04,
+   85.74000000000001,
+   "Ese fondo café pegado es sabor."
+  ],
+  [
+   85.76,
+   87.03,
+   "No lo laves."
+  ],
+  [
+   87.05,
+   88.04,
+   "Hogao."
+  ],
+  [
+   88.06,
+   91.82000000000001,
+   "Baja a **fuego medio** y agrega la cucharada de aceite restante."
+  ],
+  [
+   91.84,
+   93.7,
+   "Suma las dos cebollas picadas."
+  ],
+  [
+   93.72,
+   96.62,
+   "**5 minutos**, hasta que estén transparentes."
+  ],
+  [
+   96.64,
+   99.93,
+   "Luego el ajo y el pimentón, **2 minutos** más."
+  ],
+  [
+   99.95,
+   101.34,
+   "Ralla el tomate."
+  ],
+  [
+   101.36,
+   105.11,
+   "La piel queda afuera y la pulpa se deshace en la salsa."
+  ],
+  [
+   105.13,
+   109.66000000000001,
+   "Agrégalo con el laurel y cocina **10 minutos**, hasta que se oscurezca."
+  ],
+  [
+   109.68,
+   113.44,
+   "Cuando el aceite se separa en los bordes, el hogao está listo."
+  ],
+  [
+   113.46,
+   113.91,
+   "Guiso."
+  ],
+  [
+   114.58,
+   116.66000000000001,
+   "Devuelve la carne con sus jugos."
+  ],
+  [
+   116.68,
+   120.11,
+   "Sube a **fuego medio-alto** y vierte la cerveza negra."
+  ],
+  [
+   120.13,
+   124.23,
+   "Raspa el fondo y deja reducir a la mitad, unos **3 minutos**."
+  ],
+  [
+   124.25,
+   126.21000000000001,
+   "Añade el caldo y la panela."
+  ],
+  [
+   126.23,
+   131.10999999999999,
+   "La panela no endulza: equilibra la acidez del tomate y la cerveza."
+  ],
+  [
+   131.13,
+   133.41,
+   "Tapa y baja a **fuego bajo**."
+  ],
+  [
+   133.43,
+   136.06,
+   "**1 hora y media**, con un hervor apenas visible."
+  ],
+  [
+   136.78,
+   140.69,
+   "Si hierve fuerte, las fibras se tensan y la carne queda dura."
+  ],
+  [
+   141.4,
+   141.82999999999998,
+   "Papas."
+  ],
+  [
+   141.85,
+   145.19,
+   "Agrega la papa criolla entera y destapa."
+  ],
+  [
+   145.21,
+   147.32,
+   "**30 minutos** más a **fuego bajo**."
+  ],
+  [
+   147.34,
+   150.42,
+   "La salsa se reduce mientras la papa se cocina."
+  ],
+  [
+   150.44,
+   153.37,
+   "Algunas se deshacen y espesan el guiso."
+  ],
+  [
+   154.0,
+   158.06,
+   "Prueba y ajusta la sal al final, no antes: la salsa se concentra."
+  ],
+  [
+   158.75,
+   159.39,
+   "Servicio."
+  ],
+  [
+   160.0,
+   163.59,
+   "Sirve en plato hondo, con arroz blanco y tajadas de aguacate."
+  ],
+  [
+   164.2,
+   167.82,
+   "Termina con cilantro picado y un hilo de salsa por encima."
+  ],
+  [
+   167.84,
+   170.69,
+   "Mira cómo se abre con solo apoyar la cuchara."
+  ],
+  [
+   170.71,
+   171.64,
+   "Cierre."
+  ],
+  [
+   171.66,
+   173.63,
+   "Si te sirvió, suscríbete."
+  ],
+  [
+   173.65,
+   175.8,
+   "Aquí cocinamos lo nuestro, con técnica."
+  ]
+ ],
+ "hook": {
+  "title": [
+   "Carne guisada",
+   "colombiana"
+  ],
+  "cards": [
+   {
+    "before": {
+     "src": "N03",
+     "a": 1.4,
+     "rate": 0.9,
+     "z": 1.55,
+     "f": [
+      0.5,
+      0.5
+     ]
+    },
+    "after": {
+     "src": "N12",
+     "a": 2.6,
+     "rate": 1.0,
+     "z": 1.05,
+     "f": [
+      0.5,
+      0.6
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "N07",
+     "a": 0.0,
+     "rate": 1.0,
+     "z": 1.1,
+     "f": [
+      0.5,
+      0.52
+     ]
+    },
+    "after": {
+     "src": "HERO",
+     "a": 0,
+     "rate": 1,
+     "z": 1.12,
+     "f": [
+      0.36,
+      0.57
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "N08",
+     "a": 0.4,
+     "rate": 1.0,
+     "z": 1.1,
+     "f": [
+      0.55,
+      0.56
+     ]
+    },
+    "after": {
+     "src": "N13",
+     "a": 0.0,
+     "rate": 1.0,
+     "z": 1.35,
+     "f": [
+      0.48,
+      0.6
+     ]
+    }
+   }
+  ],
+  "rows": [
+   [
+    "sellado en dos tandas",
+    1.19,
+    "#DB8B78",
+    0
+   ],
+   [
+    "hogao sobre el fondo",
+    2.55,
+    "#D9573B",
+    1
+   ],
+   [
+    "cerveza negra y panela",
+    3.11,
+    "#C98B5B",
+    2
+   ]
+  ],
+  "beat": 4.17,
+  "words": [
+   [
+    "Tierna",
+    4.27,
+    "#DB8B78",
+    "2 horas a fuego bajo"
+   ],
+   [
+    "Profunda",
+    4.95,
+    "#D9573B",
+    "hogao + cerveza negra"
+   ],
+   [
+    "Brillante",
+    5.67,
+    "#F2B544",
+    "el colágeno del morrillo"
+   ]
+  ],
+  "tagline": [
+   "SE DESHACE CON LA CUCHARA",
+   6.47
+  ],
+  "sizzle": "N03"
+ },
+ "end": {
+  "start": "S31",
+  "title": "¡Buen provecho!",
+  "next": "PRÓXIMO VIDEO",
+  "bubble": [
+   "¿Cómo le dicen",
+   "a este corte",
+   "en tu país?"
+  ]
+ },
+ "thumb": {
+  "img": "raw/HERO.jpg",
+  "crop": [
+   0.0,
+   0.3,
+   0.84
+  ],
+  "title": [
+   "Carne guisada",
+   "colombiana"
+  ],
+  "tags": [
+   [
+    "se deshace",
+    "#DB8B78",
+    "#140E09"
+   ],
+   [
+    "cerveza negra",
+    "#F6EFE3",
+    "#140E09"
+   ],
+   [
+    "papa criolla",
+    "#F3D35B",
+    "#140E09"
+   ]
+  ]
+ }
+}
