@@ -1,0 +1,360 @@
+{
+ "short": {
+  "mode": "autonomo",
+  "voice": "voz_short.mp3",
+  "sheet": "Short",
+  "limits": [
+   30,
+   45
+  ],
+  "loop": true,
+  "cover_t": 1.6,
+  "hook": {
+   "title": [
+    "Hamburguesa",
+    "costeña"
+   ],
+   "words": [
+    [
+     "Dulce",
+     9.1,
+     "#F2B544",
+     "plátano + hogao"
+    ],
+    [
+     "Salado",
+     9.9,
+     "#EFE3C2",
+     "queso costeño"
+    ],
+    [
+     "Ácido",
+     10.7,
+     "#A9C44E",
+     "suero + limón"
+    ]
+   ],
+   "tagline": [
+    "EN CADA MORDISCO",
+    11.2
+   ],
+   "vertical": {
+    "cuts": [
+     [
+      0,
+      "C6",
+      0,
+      0.89,
+      [
+       1.16,
+       1.04
+      ],
+      [
+       0.44,
+       0.5
+      ]
+     ],
+     [
+      9.0,
+      "N15",
+      2.0,
+      1,
+      [
+       1.12,
+       1.08
+      ],
+      [
+       0.5,
+       0.5
+      ]
+     ],
+     [
+      9.8,
+      "C3",
+      2.2,
+      1,
+      [
+       2.05,
+       2.0
+      ],
+      [
+       0.75,
+       0.6
+      ]
+     ],
+     [
+      10.6,
+      "N08",
+      3.2,
+      1,
+      [
+       1.16,
+       1.12
+      ],
+      [
+       0.46,
+       0.62
+      ]
+     ]
+    ],
+    "pins": [
+     [
+      "hogao caramelizado",
+      3.4,
+      [
+       0.36,
+       0.43
+      ],
+      "#D9573B"
+     ],
+     [
+      "queso costeño frito",
+      4.7,
+      [
+       0.26,
+       0.54
+      ],
+      "#EFE3C2"
+     ],
+     [
+      "plátano maduro",
+      6.6,
+      [
+       0.52,
+       0.46
+      ],
+      "#F2B544"
+     ],
+     [
+      "salsa de suero",
+      7.7,
+      [
+       0.8,
+       0.66
+      ],
+      "#A9C44E"
+     ]
+    ],
+    "title_y": 440
+   }
+  },
+  "chapters": [
+   {
+    "start": "V03",
+    "title": "Ingredientes",
+    "color": "#F2B544"
+   },
+   {
+    "start": "V05",
+    "title": "Smash",
+    "color": "#E0782F"
+   },
+   {
+    "start": "V06",
+    "title": "A armar",
+    "color": "#E9A23B"
+   }
+  ],
+  "cta": {
+   "start": "V07",
+   "card": [
+    "Guárdala",
+    "Receta con trucos",
+    "en el canal  ▶"
+   ]
+  },
+  "shots": {
+   "V03": {
+    "src": "N01",
+    "z": [
+     1.0,
+     1.08
+    ],
+    "f": [
+     [
+      0.5,
+      0.42
+     ],
+     [
+      0.5,
+      0.4
+     ]
+    ]
+   },
+   "V04": {
+    "src": "N02",
+    "z": [
+     1.02,
+     1.1
+    ],
+    "f": [
+     [
+      0.5,
+      0.58
+     ],
+     [
+      0.52,
+      0.6
+     ]
+    ]
+   },
+   "V05": {
+    "src": "C5",
+    "a": 1.4,
+    "b": 6.4,
+    "z": [
+     1.04,
+     1.1
+    ],
+    "f": [
+     [
+      0.5,
+      0.58
+     ],
+     [
+      0.5,
+      0.6
+     ]
+    ]
+   },
+   "V06": {
+    "src": "N15",
+    "a": 0,
+    "b": 8.0,
+    "z": [
+     1.03,
+     1.07
+    ],
+    "f": [
+     [
+      0.5,
+      0.55
+     ],
+     [
+      0.5,
+      0.56
+     ]
+    ]
+   },
+   "V07": {
+    "src": "N16",
+    "z": [
+     1.3,
+     1.2
+    ],
+    "f": [
+     [
+      0.4,
+      0.5
+     ],
+     [
+      0.42,
+      0.5
+     ]
+    ]
+   }
+  },
+  "callouts": [
+   {
+    "kind": "list",
+    "t": 13.2,
+    "until": "V04",
+    "rows": [
+     [
+      600,
+      "g",
+      "carne molida 80/20",
+      13.3
+     ],
+     [
+      4,
+      "",
+      "panes brioche",
+      17.7
+     ],
+     [
+      200,
+      "g",
+      "queso costeño",
+      19.3
+     ],
+     [
+      2,
+      "",
+      "plátanos maduros",
+      20.9
+     ]
+    ]
+   },
+   {
+    "kind": "tip",
+    "t": 22.7,
+    "icon": "press",
+    "text": "Una sola vez"
+   },
+   {
+    "kind": "measure",
+    "t": 24.2,
+    "text": "1 cm"
+   },
+   {
+    "kind": "stack",
+    "t": 26.85,
+    "layers": [
+     [
+      "pan tostado",
+      "#D9A15C",
+      26.85
+     ],
+     [
+      "salsa de suero",
+      "#F3EBDD",
+      27.45
+     ],
+     [
+      "carne",
+      "#5E3324",
+      29.25
+     ],
+     [
+      "queso frito",
+      "#E7C27B",
+      30.15
+     ],
+     [
+      "plátano maduro",
+      "#E9A23B",
+      31.15
+     ],
+     [
+      "hogao",
+      "#A8321F",
+      33.55
+     ]
+    ]
+   }
+  ],
+  "subtitles": [
+   [
+    0.2,
+    6.48,
+    "Hoy hacemos una hamburguesa con sabor de la Costa: **hogao** **caramelizado**, **queso costeño frito**,"
+   ],
+   [
+    6.5,
+    8.98,
+    "**plátano maduro** y **salsa de suero**."
+   ],
+   [
+    9.0,
+    11.8,
+    "Dulce, salado y ácido en cada mordisco."
+   ],
+   [
+    "…",
+    "…",
+    "(una línea por subtítulo de voz_short, corregida)"
+   ]
+  ]
+ }
+}

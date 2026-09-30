@@ -29,6 +29,10 @@ Cada punto costó una vuelta; léelos antes de improvisar.
 
 ## Artifacts (web)
 
+- El escenario de la web es casi cuadrado en escritorio. Si un clip vertical lo llena (cover), se pierde casi la mitad del cuadro y el usuario lo notó como "planos muy cerrados". Por defecto la web muestra el cuadro completo sobre un fondo desenfocado (`webFit: 1`).
+- Para esconder un logo en la web no reencuadres con zoom (vuelve a cerrar el plano): usa `web.blur`. Una caja con `boxblur` se ve como un parche; una máscara con borde suave parece desenfoque de cámara. La máscara hecha con `color=…,format=gray` es de rango limitado (blanco = 235) y deja ver ~8 % del logo: estírala con `lut=y='clip(val*1.3,0,255)'`.
+- Un multiplicador ×2/×3 sobre una receta que rinde 4 hamburguesas se lee como "para 2 o 3 hamburguesas" (1800 g de carne para 3). Si la receta rinde piezas contables, usa `servings` para elegir la cantidad de piezas.
+
 - `.m4a` no se sirve: usa `.mp3`. Tipos servidos: mp4, webm, mp3, wav, ogg, jpg, png, webp, json, js y css, entre otros.
 - Los límites son 15 MB por archivo binario y 64 MB por publicación (si hace falta, publica en dos tandas a la misma URL). Cada visitante descarga solo lo que ve: los clips se crean al acercarse a su paso.
 - Si el CSS le da `display` a un elemento, pisa al atributo `hidden`. La plantilla ya trae `[hidden]{display:none!important}`.

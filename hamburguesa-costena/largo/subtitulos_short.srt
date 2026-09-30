@@ -1,0 +1,36 @@
+1
+00:00:00,200 --> 00:00:06,480
+Hoy hacemos una hamburguesa con sabor de la Costa: hogao caramelizado, queso costeño frito,
+
+2
+00:00:06,500 --> 00:00:08,980
+plátano maduro y salsa de suero.
+
+3
+00:00:09,000 --> 00:00:11,800
+Dulce, salado y ácido en cada mordisco.
+
+4
+00:00:12,050 --> 00:00:15,730
+Pon una bola y aplástala de una sola vez hasta 1 cm.
+
+5
+00:00:15,750 --> 00:00:16,750
+No la vuelvas a presionar.
+
+6
+00:00:17,100 --> 00:00:19,180
+Abajo, la salsa de suero.
+
+7
+00:00:19,200 --> 00:00:22,880
+Encima, la carne, el queso frito y el plátano.
+
+8
+00:00:22,900 --> 00:00:25,580
+Termina con una cucharada generosa de hogao.
+
+9
+00:00:25,600 --> 00:00:28,600
+Sírvela caliente, mientras el queso conserva la costra.
+

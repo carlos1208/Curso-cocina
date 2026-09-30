@@ -1,0 +1,1692 @@
+{
+ "duration": 157.7,
+ "fps": 30,
+ "colors": {
+  "saffron": "#F2B544",
+  "cream": "#F6EFE3",
+  "dark": "#140E09",
+  "ember": "#E0782F",
+  "red": "#D9573B",
+  "lime": "#A9C44E",
+  "rose": "#DB8B78",
+  "gold": "#E9A23B"
+ },
+ "chapters": [
+  {
+   "id": "gancho",
+   "t": 0.0,
+   "n": 0,
+   "title": "Hamburguesa costeña",
+   "color": "#F2B544",
+   "side": "hook"
+  },
+  {
+   "id": "ingredientes",
+   "t": 12.6,
+   "n": 1,
+   "title": "Ingredientes",
+   "h1": "Ingredientes",
+   "h2": "para 4 hamburguesas",
+   "color": "#F2B544",
+   "side": "R",
+   "mark": "MISE EN PLACE"
+  },
+  {
+   "id": "hogao",
+   "t": 34.3,
+   "n": 2,
+   "title": "Hogao caramelizado",
+   "h1": "Hogao",
+   "h2": "caramelizado",
+   "color": "#D9573B",
+   "side": "L",
+   "mark": "HOGAO"
+  },
+  {
+   "id": "salsa",
+   "t": 68.2,
+   "n": 3,
+   "title": "Salsa de suero",
+   "h1": "Salsa",
+   "h2": "de suero",
+   "color": "#A9C44E",
+   "side": "R",
+   "mark": "SUERO"
+  },
+  {
+   "id": "carne",
+   "t": 86.0,
+   "n": 4,
+   "title": "La carne",
+   "h1": "La",
+   "h2": "carne",
+   "color": "#DB8B78",
+   "side": "L",
+   "mark": "CARNE"
+  },
+  {
+   "id": "smash",
+   "t": 113.9,
+   "n": 5,
+   "title": "Plátano, queso y smash",
+   "h1": "Plátano, queso",
+   "h2": "y smash",
+   "color": "#E0782F",
+   "side": "R",
+   "mark": "SMASH"
+  },
+  {
+   "id": "armado",
+   "t": 135.1,
+   "n": 6,
+   "title": "Armado",
+   "h1": "A",
+   "h2": "armar",
+   "color": "#E9A23B",
+   "side": "L",
+   "mark": "ARMADO"
+  },
+  {
+   "id": "cierre",
+   "t": 151.0,
+   "n": 7,
+   "title": "Cierre",
+   "color": "#F2B544",
+   "side": "end"
+  }
+ ],
+ "media": {
+  "C1": {
+   "clip": "C1"
+  },
+  "C2": {
+   "clip": "C2"
+  },
+  "C3": {
+   "clip": "C3"
+  },
+  "C4": {
+   "clip": "C4"
+  },
+  "C5": {
+   "clip": "C5"
+  },
+  "C6": {
+   "clip": "C6"
+  },
+  "N04": {
+   "clip": "N04"
+  },
+  "N05": {
+   "clip": "N05"
+  },
+  "N06": {
+   "clip": "N06"
+  },
+  "N07": {
+   "clip": "N07"
+  },
+  "N08": {
+   "clip": "N08"
+  },
+  "N11": {
+   "clip": "N11"
+  },
+  "N14": {
+   "clip": "N14"
+  },
+  "N15": {
+   "clip": "N15"
+  },
+  "N01": {
+   "img": "raw/N01.jpg"
+  },
+  "N02": {
+   "img": "raw/N02.jpg"
+  },
+  "N03": {
+   "img": "raw/N03.jpg"
+  },
+  "N09": {
+   "img": "raw/N09.jpg"
+  },
+  "N10": {
+   "img": "raw/N10.jpg"
+  },
+  "N12": {
+   "img": "raw/N12.jpg"
+  },
+  "N13": {
+   "img": "raw/N13.jpg"
+  },
+  "N16": {
+   "img": "raw/N16.jpg"
+  }
+ },
+ "shots": [
+  {
+   "id": "S01",
+   "t0": 0.0,
+   "t1": 9.0,
+   "src": "C6",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S02",
+   "t0": 9.0,
+   "t1": 12.6,
+   "src": "C6",
+   "a": 8.0,
+   "b": 8.0,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S03",
+   "t0": 12.6,
+   "t1": 18.2,
+   "src": "N01",
+   "a": 0.0,
+   "b": 5.6,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.42
+    ],
+    [
+     0.5,
+     0.4
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S04",
+   "t0": 18.2,
+   "t1": 23.0,
+   "src": "N02",
+   "a": 0.0,
+   "b": 4.800000000000001,
+   "z": [
+    1.02,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.58
+    ],
+    [
+     0.52,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S05",
+   "t0": 23.0,
+   "t1": 28.2,
+   "src": "N03",
+   "a": 0.0,
+   "b": 5.199999999999999,
+   "z": [
+    1.0,
+    1.07
+   ],
+   "f": [
+    [
+     0.48,
+     0.56
+    ],
+    [
+     0.46,
+     0.58
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S06",
+   "t0": 28.2,
+   "t1": 34.3,
+   "src": "N01",
+   "a": 0.0,
+   "b": 6.099999999999998,
+   "z": [
+    2.05,
+    2.25
+   ],
+   "f": [
+    [
+     0.22,
+     0.5
+    ],
+    [
+     0.23,
+     0.5
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S07",
+   "t0": 34.3,
+   "t1": 43.5,
+   "src": "N04",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S08",
+   "t0": 43.5,
+   "t1": 47.8,
+   "src": "N04",
+   "a": 3.7,
+   "b": 8.0,
+   "z": [
+    1.2,
+    1.26
+   ],
+   "f": [
+    [
+     0.5,
+     0.62
+    ],
+    [
+     0.5,
+     0.64
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S09",
+   "t0": 47.8,
+   "t1": 54.2,
+   "src": "N05",
+   "a": 0,
+   "b": 6.4,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S10",
+   "t0": 54.2,
+   "t1": 60.8,
+   "src": "N06",
+   "a": 0,
+   "b": 6.6,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S11",
+   "t0": 60.8,
+   "t1": 64.7,
+   "src": "N07",
+   "a": 0,
+   "b": 3.9,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S12",
+   "t0": 64.7,
+   "t1": 68.2,
+   "src": "C1",
+   "a": 0,
+   "b": 3.5,
+   "z": [
+    2.3,
+    2.3
+   ],
+   "f": [
+    [
+     0.5,
+     0.535
+    ],
+    [
+     0.5,
+     0.535
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S13",
+   "t0": 68.2,
+   "t1": 77.4,
+   "src": "N08",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.16,
+    1.2
+   ],
+   "f": [
+    [
+     0.46,
+     0.6
+    ],
+    [
+     0.46,
+     0.6
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S14",
+   "t0": 77.4,
+   "t1": 81.6,
+   "src": "C2",
+   "a": 0,
+   "b": 4.2,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S15",
+   "t0": 81.6,
+   "t1": 86.0,
+   "src": "N09",
+   "a": 0.0,
+   "b": 4.400000000000006,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.58
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S16",
+   "t0": 86.0,
+   "t1": 91.7,
+   "src": "N10",
+   "a": 0.0,
+   "b": 5.700000000000003,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.56
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S17",
+   "t0": 91.7,
+   "t1": 94.8,
+   "src": "C5",
+   "a": 6.2,
+   "b": 8.0,
+   "z": [
+    1.12,
+    1.2
+   ],
+   "f": [
+    [
+     0.5,
+     0.56
+    ],
+    [
+     0.5,
+     0.58
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S18",
+   "t0": 94.8,
+   "t1": 100.8,
+   "src": "N11",
+   "a": 0,
+   "b": 6.0,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S19",
+   "t0": 100.8,
+   "t1": 105.9,
+   "src": "N10",
+   "a": 0.0,
+   "b": 5.1000000000000085,
+   "z": [
+    1.55,
+    1.7
+   ],
+   "f": [
+    [
+     0.46,
+     0.66
+    ],
+    [
+     0.5,
+     0.7
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S20",
+   "t0": 105.9,
+   "t1": 113.9,
+   "src": "C4",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.08,
+    1.16
+   ],
+   "f": [
+    [
+     0.5,
+     0.58
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S21",
+   "t0": 113.9,
+   "t1": 118.5,
+   "src": "C3",
+   "a": 0.5,
+   "b": 5.1,
+   "z": [
+    2.0,
+    2.06
+   ],
+   "f": [
+    [
+     0.25,
+     0.59
+    ],
+    [
+     0.25,
+     0.6
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S22",
+   "t0": 118.5,
+   "t1": 122.2,
+   "src": "C3",
+   "a": 4.0,
+   "b": 7.7,
+   "z": [
+    2.0,
+    2.06
+   ],
+   "f": [
+    [
+     0.75,
+     0.6
+    ],
+    [
+     0.75,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S23",
+   "t0": 122.2,
+   "t1": 124.6,
+   "src": "N12",
+   "a": 0.0,
+   "b": 2.3999999999999915,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.52,
+     0.52
+    ]
+   ],
+   "tr": "push",
+   "shimmer": [
+    0.08,
+    0.36,
+    0.98,
+    0.62
+   ]
+  },
+  {
+   "id": "S24",
+   "t0": 124.6,
+   "t1": 131.4,
+   "src": "C5",
+   "a": 1.4,
+   "b": 6.2,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.58
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S25",
+   "t0": 131.4,
+   "t1": 135.1,
+   "src": "N13",
+   "a": 0.0,
+   "b": 3.6999999999999886,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.62
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S26",
+   "t0": 135.1,
+   "t1": 138.6,
+   "src": "N14",
+   "a": 0,
+   "b": 3.5,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S27",
+   "t0": 138.6,
+   "t1": 147.1,
+   "src": "N15",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.03,
+    1.07
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.56
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S28",
+   "t0": 147.1,
+   "t1": 151.0,
+   "src": "N16",
+   "a": 0.0,
+   "b": 3.9000000000000057,
+   "z": [
+    2.1,
+    1.35
+   ],
+   "f": [
+    [
+     0.34,
+     0.53
+    ],
+    [
+     0.4,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S29",
+   "t0": 151.0,
+   "t1": 157.7,
+   "src": "C6",
+   "a": 1.3,
+   "b": 8.0,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "end"
+  }
+ ],
+ "callouts": [
+  {
+   "kind": "board",
+   "t": 12.9,
+   "t1": 34.3,
+   "groups": [
+    [
+     "base",
+     "La base"
+    ],
+    [
+     "hogao",
+     "Hogao"
+    ],
+    [
+     "salsa",
+     "Salsa"
+    ]
+   ],
+   "items": [
+    {
+     "g": "base",
+     "t": 13.9,
+     "v": 600,
+     "unit": "g",
+     "label": "carne molida 80/20"
+    },
+    {
+     "g": "base",
+     "t": 18.3,
+     "v": 4,
+     "unit": "",
+     "label": "panes brioche"
+    },
+    {
+     "g": "base",
+     "t": 19.9,
+     "v": 200,
+     "unit": "g",
+     "label": "queso costeño"
+    },
+    {
+     "g": "base",
+     "t": 21.5,
+     "v": 2,
+     "unit": "",
+     "label": "plátanos maduros"
+    },
+    {
+     "g": "hogao",
+     "t": 25.0,
+     "v": 300,
+     "unit": "g",
+     "label": "tomate chonto"
+    },
+    {
+     "g": "hogao",
+     "t": 26.7,
+     "v": 150,
+     "unit": "g",
+     "label": "cebolla"
+    },
+    {
+     "g": "salsa",
+     "t": 30.2,
+     "v": 60,
+     "unit": "g",
+     "label": "suero costeño"
+    },
+    {
+     "g": "salsa",
+     "t": 31.9,
+     "v": 60,
+     "unit": "g",
+     "label": "mayonesa"
+    },
+    {
+     "g": "salsa",
+     "t": 32.9,
+     "v": null,
+     "unit": "",
+     "label": "ají dulce"
+    }
+   ]
+  },
+  {
+   "kind": "gauge",
+   "t": 34.9,
+   "t1": 68.2,
+   "stops": [
+    [
+     34.3,
+     "Transparente"
+    ],
+    [
+     47.8,
+     "Tomate"
+    ],
+    [
+     54.2,
+     "Reduce"
+    ],
+    [
+     64.7,
+     "Mermelada"
+    ]
+   ],
+   "colors": [
+    "#EFE3C2",
+    "#E0492F",
+    "#A8321F",
+    "#62190F"
+   ],
+   "at": [
+    35.3,
+    67.2
+   ]
+  },
+  {
+   "kind": "heat",
+   "t": 38.6,
+   "t1": 43.5,
+   "level": 2,
+   "label": "Fuego medio-bajo"
+  },
+  {
+   "kind": "chips",
+   "t": 38.0,
+   "t1": 43.5,
+   "items": [
+    [
+     "1 cda de aceite",
+     38.0
+    ],
+    [
+     "cebolla",
+     41.0
+    ],
+    [
+     "pizca de sal",
+     42.1
+    ]
+   ]
+  },
+  {
+   "kind": "timer",
+   "t": 43.7,
+   "t1": 47.8,
+   "value": 3,
+   "unit": "min",
+   "label": "hasta que esté transparente"
+  },
+  {
+   "kind": "tip",
+   "t": 45.9,
+   "t1": 47.8,
+   "icon": "x",
+   "text": "Que no se dore"
+  },
+  {
+   "kind": "chips",
+   "t": 48.0,
+   "t1": 54.2,
+   "items": [
+    [
+     "+ 300 g de tomate",
+     48.1
+    ]
+   ]
+  },
+  {
+   "kind": "heat",
+   "t": 49.3,
+   "t1": 54.2,
+   "level": 1,
+   "label": "Fuego bajo"
+  },
+  {
+   "kind": "timer",
+   "t": 51.9,
+   "t1": 54.2,
+   "value": 25,
+   "unit": "min",
+   "approx": true,
+   "label": "moviendo de vez en cuando"
+  },
+  {
+   "kind": "tip",
+   "t": 54.4,
+   "t1": 60.8,
+   "icon": "drop",
+   "text": "¿Se pega? Un chorrito de agua"
+  },
+  {
+   "kind": "chips",
+   "t": 57.2,
+   "t1": 60.8,
+   "items": [
+    [
+     "2 cdas de azúcar",
+     57.9
+    ],
+    [
+     "1 cda de vinagre",
+     59.3
+    ]
+   ]
+  },
+  {
+   "kind": "tip",
+   "t": 61.0,
+   "t1": 64.7,
+   "icon": "check",
+   "text": "El surco no se cierra enseguida"
+  },
+  {
+   "kind": "trace",
+   "t": 61.4,
+   "t1": 64.7,
+   "shot": "S11",
+   "path": [
+    [
+     0.1,
+     0.77
+    ],
+    [
+     0.46,
+     0.56
+    ],
+    [
+     0.82,
+     0.36
+    ]
+   ]
+  },
+  {
+   "kind": "tip",
+   "t": 65.0,
+   "t1": 68.2,
+   "icon": "spark",
+   "text": "Brillante, casi como mermelada"
+  },
+  {
+   "kind": "list",
+   "t": 69.9,
+   "t1": 77.4,
+   "rows": [
+    [
+     60,
+     "g",
+     "suero costeño",
+     70.3
+    ],
+    [
+     60,
+     "g",
+     "mayonesa",
+     71.5
+    ],
+    [
+     1,
+     "cda",
+     "ají dulce, picado muy fino",
+     72.7
+    ],
+    [
+     1,
+     "cdta",
+     "jugo de limón",
+     75.5
+    ]
+   ]
+  },
+  {
+   "kind": "tip",
+   "t": 77.5,
+   "t1": 81.6,
+   "icon": "x",
+   "text": "Prueba antes de agregar sal"
+  },
+  {
+   "kind": "chips",
+   "t": 79.6,
+   "t1": 81.6,
+   "items": [
+    [
+     "el suero ya trae sal",
+     79.6
+    ]
+   ]
+  },
+  {
+   "kind": "timer",
+   "t": 81.9,
+   "t1": 86.0,
+   "value": 30,
+   "unit": "min",
+   "label": "en la nevera",
+   "cold": true
+  },
+  {
+   "kind": "tip",
+   "t": 87.3,
+   "t1": 91.7,
+   "icon": "x",
+   "text": "No mezcles la sal con la carne"
+  },
+  {
+   "kind": "chips",
+   "t": 89.2,
+   "t1": 91.7,
+   "items": [
+    [
+     "queda compacta",
+     89.2
+    ],
+    [
+     "textura de salchicha",
+     90.4
+    ]
+   ]
+  },
+  {
+   "kind": "big",
+   "t": 92.3,
+   "t1": 94.8,
+   "text": "En un smash,\nse nota."
+  },
+  {
+   "kind": "note",
+   "t": 95.0,
+   "t1": 105.9,
+   "text": "Esto sí se mezcla, con suavidad:"
+  },
+  {
+   "kind": "list",
+   "t": 98.8,
+   "t1": 105.9,
+   "rows": [
+    [
+     "½",
+     "cdta",
+     "ajo en polvo",
+     98.9
+    ],
+    [
+     "½",
+     "cdta",
+     "cebolla en polvo",
+     101.4
+    ],
+    [
+     "½",
+     "cdta",
+     "pimentón ahumado",
+     103.2
+    ]
+   ]
+  },
+  {
+   "kind": "chips",
+   "t": 104.2,
+   "t1": 105.9,
+   "items": [
+    [
+     "para los 600 g",
+     104.3
+    ]
+   ]
+  },
+  {
+   "kind": "balls",
+   "t": 106.6,
+   "t1": 113.9,
+   "n": 4,
+   "each": "150 g"
+  },
+  {
+   "kind": "tip",
+   "t": 108.0,
+   "t1": 113.9,
+   "icon": "hand",
+   "text": "Sin apretar"
+  },
+  {
+   "kind": "chips",
+   "t": 109.8,
+   "t1": 113.9,
+   "items": [
+    [
+     "sal y pimienta: por fuera",
+     110.2
+    ],
+    [
+     "justo antes de cocinar",
+     111.9
+    ]
+   ]
+  },
+  {
+   "kind": "timer",
+   "t": 115.3,
+   "t1": 118.5,
+   "value": 2,
+   "unit": "min",
+   "label": "por lado · hasta dorar",
+   "sides": 2
+  },
+  {
+   "kind": "timer",
+   "t": 119.2,
+   "t1": 122.2,
+   "value": 1,
+   "unit": "min",
+   "label": "por lado · hasta hacer costra",
+   "sides": 2
+  },
+  {
+   "kind": "heat",
+   "t": 122.5,
+   "t1": 124.6,
+   "level": 4,
+   "label": "Plancha muy caliente"
+  },
+  {
+   "kind": "tip",
+   "t": 125.4,
+   "t1": 131.4,
+   "icon": "press",
+   "text": "Una sola vez"
+  },
+  {
+   "kind": "measure",
+   "t": 126.9,
+   "t1": 131.4,
+   "text": "1 cm"
+  },
+  {
+   "kind": "tip",
+   "t": 128.3,
+   "t1": 131.4,
+   "icon": "x",
+   "text": "No la vuelvas a presionar"
+  },
+  {
+   "kind": "chips",
+   "t": 130.0,
+   "t1": 131.4,
+   "items": [
+    [
+     "salpimienta",
+     130.0
+    ]
+   ]
+  },
+  {
+   "kind": "timer",
+   "t": 131.6,
+   "t1": 135.1,
+   "value": 2,
+   "unit": "min",
+   "plus": 1,
+   "label": "voltea · 1 minuto más"
+  },
+  {
+   "kind": "tip",
+   "t": 136.2,
+   "t1": 138.6,
+   "icon": "bread",
+   "text": "Tuesta el pan en la grasa"
+  },
+  {
+   "kind": "stack",
+   "t": 138.4,
+   "t1": 147.1,
+   "layers": [
+    [
+     "pan tostado",
+     "#D9A15C",
+     138.5
+    ],
+    [
+     "salsa de suero",
+     "#F3EBDD",
+     139.1
+    ],
+    [
+     "carne",
+     "#5E3324",
+     140.9
+    ],
+    [
+     "queso frito",
+     "#E7C27B",
+     141.8
+    ],
+    [
+     "plátano maduro",
+     "#E9A23B",
+     142.8
+    ],
+    [
+     "hogao",
+     "#A8321F",
+     145.2
+    ]
+   ]
+  },
+  {
+   "kind": "tip",
+   "t": 147.2,
+   "t1": 151.0,
+   "icon": "fire",
+   "text": "Sírvela caliente"
+  },
+  {
+   "kind": "chips",
+   "t": 148.3,
+   "t1": 151.0,
+   "items": [
+    [
+     "con el queso aún crujiente",
+     148.4
+    ]
+   ]
+  }
+ ],
+ "pins": [
+  {
+   "shot": "S03",
+   "t": 13.9,
+   "xy": [
+    0.5,
+    0.29
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S03",
+   "t": 18.3,
+   "xy": [
+    0.83,
+    0.34
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S04",
+   "t": 19.9,
+   "xy": [
+    0.28,
+    0.6
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S04",
+   "t": 21.5,
+   "xy": [
+    0.82,
+    0.64
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S05",
+   "t": 25.0,
+   "xy": [
+    0.26,
+    0.6
+   ],
+   "n": 5
+  },
+  {
+   "shot": "S05",
+   "t": 26.7,
+   "xy": [
+    0.7,
+    0.58
+   ],
+   "n": 6
+  },
+  {
+   "shot": "S06",
+   "t": 30.2,
+   "xy": [
+    0.156,
+    0.558
+   ],
+   "n": 7
+  },
+  {
+   "shot": "S06",
+   "t": 31.9,
+   "xy": [
+    0.313,
+    0.558
+   ],
+   "n": 8
+  },
+  {
+   "shot": "S06",
+   "t": 32.9,
+   "xy": [
+    0.2,
+    0.45
+   ],
+   "n": 9
+  },
+  {
+   "shot": "S19",
+   "t": 101.4,
+   "xy": [
+    0.42,
+    0.65
+   ],
+   "n": "b"
+  },
+  {
+   "shot": "S19",
+   "t": 103.2,
+   "xy": [
+    0.59,
+    0.756
+   ],
+   "n": "c"
+  }
+ ],
+ "cues": [
+  [
+   0.2,
+   6.48,
+   "Hoy hacemos una hamburguesa con sabor de la Costa: **hogao** **caramelizado**, **queso costeño frito**,"
+  ],
+  [
+   6.5,
+   8.98,
+   "**plátano maduro** y **salsa de suero**."
+  ],
+  [
+   9.0,
+   11.8,
+   "Dulce, salado y ácido en cada mordisco."
+  ],
+  [
+   12.6,
+   17.48,
+   "Para **4 hamburguesas**: **600 g** de carne molida de res **80/20**,"
+  ],
+  [
+   17.5,
+   22.3,
+   "**4** panes brioche, **200 g** de queso costeño y **2** plátanos maduros."
+  ],
+  [
+   23.0,
+   27.5,
+   "Para el hogao, **300 g** de tomate y **150** de cebolla."
+  ],
+  [
+   28.2,
+   34.279999999999994,
+   "Para la salsa, **60 g** de suero costeño, **60** de mayonesa y ají dulce."
+  ],
+  [
+   34.3,
+   37.379999999999995,
+   "Empezamos por el hogao, que es lo que más tarda."
+  ],
+  [
+   37.4,
+   42.8,
+   "Calienta **1 cucharada** de aceite a **fuego medio-bajo** y sofríe la cebolla con una pizca de sal."
+  ],
+  [
+   43.5,
+   47.1,
+   "**3 minutos**, hasta que esté transparente. Que no se dore."
+  ],
+  [
+   47.8,
+   51.2,
+   "Agrega el tomate y cocina a **fuego bajo**, moviendo de vez en cuando."
+  ],
+  [
+   51.9,
+   53.6,
+   "Son unos **25 minutos**."
+  ],
+  [
+   54.2,
+   56.3,
+   "Si se pega, échale un chorrito de agua."
+  ],
+  [
+   57.0,
+   60.779999999999994,
+   "Al final, **2 cucharadas** de azúcar y **1** de vinagre."
+  ],
+  [
+   60.8,
+   64.1,
+   "Está listo cuando pasas la cuchara y el surco no se cierra enseguida."
+  ],
+  [
+   64.7,
+   67.2,
+   "Debe verse brillante, casi como una mermelada."
+  ],
+  [
+   68.2,
+   69.98,
+   "Ahora, la salsa."
+  ],
+  [
+   70.0,
+   74.88000000000001,
+   "Mezcla el suero, la mayonesa, **1 cucharada** de ají dulce picado muy fino y"
+  ],
+  [
+   74.9,
+   76.5,
+   "**1 cucharadita** de jugo de limón."
+  ],
+  [
+   77.4,
+   78.7,
+   "Prueba antes de agregar sal."
+  ],
+  [
+   79.5,
+   81.58,
+   "El suero costeño ya es salado."
+  ],
+  [
+   81.6,
+   85.0,
+   "Déjala **30 minutos** en la nevera para que los sabores se integren."
+  ],
+  [
+   86.0,
+   87.28,
+   "Ahora, la carne."
+  ],
+  [
+   87.3,
+   92.28,
+   "No mezcles la sal con la carne: la vuelve compacta, con textura de salchicha,"
+  ],
+  [
+   92.3,
+   94.1,
+   "y en un smash eso se nota."
+  ],
+  [
+   94.8,
+   100.18,
+   "Lo que sí puedes mezclar, suavemente, es **½ cucharadita** de ajo en polvo,"
+  ],
+  [
+   100.2,
+   105.2,
+   "**½** de cebolla en polvo y **½** de pimentón ahumado para los **600 g**."
+  ],
+  [
+   105.9,
+   108.9,
+   "Forma **4 bolas** de **150 g**, sin apretar."
+  ],
+  [
+   109.7,
+   112.9,
+   "La sal y la pimienta van por fuera, justo antes de cocinar."
+  ],
+  [
+   113.9,
+   117.8,
+   "Fríe el plátano hasta que dore, **2 minutos** por lado, y resérvalo."
+  ],
+  [
+   118.5,
+   121.6,
+   "Luego el queso, **1 minuto** por lado, hasta que haga costra."
+  ],
+  [
+   122.2,
+   124.58,
+   "Ahora, la plancha **muy caliente**."
+  ],
+  [
+   124.6,
+   128.28,
+   "Pon una bola y aplástala de una sola vez hasta **1 cm**."
+  ],
+  [
+   128.3,
+   129.3,
+   "No la vuelvas a presionar."
+  ],
+  [
+   130.0,
+   131.38,
+   "Salpimienta."
+  ],
+  [
+   131.4,
+   134.2,
+   "**2 minutos**, voltea y **1 minuto** más."
+  ],
+  [
+   135.1,
+   136.17999999999998,
+   "A armar."
+  ],
+  [
+   136.2,
+   138.57999999999998,
+   "Tuesta el pan en la grasa de la plancha."
+  ],
+  [
+   138.6,
+   140.67999999999998,
+   "Abajo, la salsa de suero."
+  ],
+  [
+   140.7,
+   144.38,
+   "Encima, la carne, el queso frito y el plátano."
+  ],
+  [
+   144.4,
+   147.07999999999998,
+   "Termina con una cucharada generosa de hogao."
+  ],
+  [
+   147.1,
+   150.1,
+   "Sírvela caliente, mientras el queso conserva la costra."
+  ],
+  [
+   151.0,
+   152.78,
+   "Si te sirvió, suscríbete."
+  ],
+  [
+   152.8,
+   157.3,
+   "En el próximo video… y dime en los comentarios si te gustaría explorar otra versión."
+  ]
+ ],
+ "tag": "CURSO DE COCINA  ·  RECETA 02"
+}
