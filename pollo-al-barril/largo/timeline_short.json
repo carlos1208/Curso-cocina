@@ -1,0 +1,629 @@
+{
+ "duration": 25.92,
+ "fps": 30,
+ "title": "Pollo al barril en mariposa",
+ "tag": "CURSO DE COCINA  ·  RECETA 04",
+ "music": "latino",
+ "colors": {},
+ "chapters": [
+  {
+   "id": "seg0",
+   "side": "hook",
+   "title": "Pollo al barril",
+   "n": 0,
+   "t": 0.0,
+   "color": "#F2B544"
+  },
+  {
+   "id": "seg1",
+   "side": "V",
+   "title": "El truco",
+   "n": 1,
+   "t": 9.6,
+   "color": "#C9BFB0"
+  },
+  {
+   "id": "seg2",
+   "side": "V",
+   "title": "El punto",
+   "n": 2,
+   "t": 14.56,
+   "color": "#E0782F"
+  },
+  {
+   "id": "seg3",
+   "side": "V",
+   "title": "Plátano con queso",
+   "n": 3,
+   "t": 18.77,
+   "color": "#F3D35B"
+  },
+  {
+   "id": "fin",
+   "side": "endshort",
+   "title": "fin",
+   "n": 4,
+   "t": 24.82,
+   "color": "#F3D35B"
+  }
+ ],
+ "media": {
+  "HERO": {
+   "img": "raw/HERO.jpg"
+  },
+  "N01": {
+   "img": "raw/N01.jpg"
+  },
+  "N02": {
+   "img": "raw/N02.jpg"
+  },
+  "N09": {
+   "img": "raw/N09.jpg"
+  },
+  "N03": {
+   "clip": "N03",
+   "audio": true
+  },
+  "N04": {
+   "clip": "N04",
+   "audio": true
+  },
+  "N05": {
+   "clip": "N05",
+   "audio": true
+  },
+  "N06": {
+   "clip": "N06",
+   "audio": true
+  },
+  "N07": {
+   "clip": "N07",
+   "audio": true
+  },
+  "N08": {
+   "clip": "N08",
+   "audio": true
+  },
+  "N10": {
+   "clip": "N10",
+   "audio": true
+  },
+  "N11": {
+   "clip": "N11",
+   "audio": false
+  },
+  "N12": {
+   "clip": "N12",
+   "audio": false
+  }
+ },
+ "shots": [
+  {
+   "id": "S01",
+   "t0": 0.0,
+   "t1": 3.19,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 3.19,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "S02",
+   "t0": 3.19,
+   "t1": 6.66,
+   "src": "N11",
+   "a": 0.0,
+   "b": 3.5,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S03",
+   "t0": 6.66,
+   "t1": 9.6,
+   "src": "N12",
+   "a": 0.0,
+   "b": 2.9308411214953276,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S23",
+   "t0": 9.6,
+   "t1": 14.559999999999993,
+   "src": "N05",
+   "a": 0.0,
+   "b": 2.867052023121385,
+   "z": [
+    1.6,
+    1.7
+   ],
+   "f": [
+    [
+     0.5,
+     0.56
+    ],
+    [
+     0.5,
+     0.56
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "S29",
+   "t0": 14.559999999999993,
+   "t1": 18.769999999999975,
+   "src": "N08",
+   "a": 0.0,
+   "b": 4.2193763919821805,
+   "z": [
+    1.05,
+    1.12
+   ],
+   "f": [
+    [
+     0.47,
+     0.45
+    ],
+    [
+     0.47,
+     0.44
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "S34",
+   "t0": 18.769999999999975,
+   "t1": 24.819999999999958,
+   "src": "N10",
+   "a": 0.4,
+   "b": 6.0,
+   "z": [
+    1.25,
+    1.35
+   ],
+   "f": [
+    [
+     0.45,
+     0.45
+    ],
+    [
+     0.47,
+     0.46
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "END",
+   "t0": 24.819999999999958,
+   "t1": 25.92,
+   "src": "N10",
+   "a": 0.4,
+   "b": 6.0,
+   "z": [
+    1.35,
+    1.4310000000000003
+   ],
+   "f": [
+    [
+     0.47,
+     0.46
+    ],
+    [
+     0.47,
+     0.46
+    ]
+   ],
+   "tr": "none"
+  }
+ ],
+ "callouts": [
+  {
+   "kind": "tip",
+   "t": 9.699999999999994,
+   "icon": "x",
+   "text": "Nunca sobre llama viva",
+   "t1": 14.559999999999993
+  },
+  {
+   "kind": "big",
+   "t": 17.019999999999975,
+   "text": "74 °C",
+   "t1": 18.769999999999975
+  },
+  {
+   "kind": "note",
+   "t": 17.41999999999998,
+   "text": "En la parte más gruesa del muslo",
+   "t1": 18.769999999999975
+  },
+  {
+   "kind": "timer",
+   "t": 19.229999999999954,
+   "value": 25,
+   "unit": "min",
+   "label": "en la parrilla, tapado",
+   "t1": 24.819999999999958
+  },
+  {
+   "kind": "chips",
+   "t": 22.799999999999976,
+   "items": [
+    [
+     "50 g de queso crema por plátano",
+     22.799999999999976
+    ]
+   ],
+   "t1": 24.819999999999958
+  }
+ ],
+ "pins": [],
+ "cues": [
+  [
+   0.12,
+   3.2399999999999998,
+   "Pollo entero al barril, abierto en mariposa.",
+   2.71
+  ],
+  [
+   3.26,
+   6.710000000000001,
+   "Piel crocante, carne jugosa y sabor a carbón.",
+   6.28
+  ],
+  [
+   6.73,
+   9.6,
+   "Y de compañía, plátano maduro con queso crema.",
+   9.33
+  ],
+  [
+   9.669999999999993,
+   11.690000000000003,
+   "No pongas el pollo con llama viva.",
+   11.3
+  ],
+  [
+   11.709999999999999,
+   14.559999999999993,
+   "La llama quema la piel antes de que la carne se cocine.",
+   14.41
+  ],
+  [
+   14.619999999999996,
+   18.769999999999975,
+   "Está listo cuando la parte más gruesa del muslo marca **74 grados**.",
+   18.55
+  ],
+  [
+   18.789999999999957,
+   24.819999999999958,
+   "Después de **25 minutos**, ábrelos y rellena cada uno con **50 g** de queso crema.",
+   24.81
+  ]
+ ],
+ "hook": {
+  "title": [
+   "Pollo al barril",
+   "en mariposa"
+  ],
+  "cards": [
+   {
+    "before": {
+     "src": "N08",
+     "a": 0.6,
+     "rate": 1.0,
+     "z": 1.2,
+     "f": [
+      0.48,
+      0.45
+     ]
+    },
+    "after": {
+     "src": "N11",
+     "a": 2.6,
+     "rate": 1.0,
+     "z": 1.05,
+     "f": [
+      0.5,
+      0.6
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "N07",
+     "a": 0.0,
+     "rate": 0.9,
+     "z": 1.08,
+     "f": [
+      0.5,
+      0.5
+     ]
+    },
+    "after": {
+     "src": "HERO",
+     "a": 0,
+     "rate": 1,
+     "z": 1.3,
+     "f": [
+      0.42,
+      0.55
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "N05",
+     "a": 3.5,
+     "rate": 1.0,
+     "z": 1.15,
+     "f": [
+      0.5,
+      0.6
+     ]
+    },
+    "after": {
+     "src": "N12",
+     "a": 2.0,
+     "rate": 1.0,
+     "z": 1.2,
+     "f": [
+      0.45,
+      0.62
+     ]
+    }
+   }
+  ],
+  "rows": [
+   [
+    "pollo entero",
+    0.3,
+    "#F2B544",
+    0
+   ],
+   [
+    "al barril",
+    0.9,
+    "#E0782F",
+    2
+   ],
+   [
+    "abierto en mariposa",
+    1.6,
+    "#DB8B78",
+    1
+   ]
+  ],
+  "beat": 3.1,
+  "words": [
+   [
+    "Crocante",
+    3.4,
+    "#F2B544",
+    "piel dorada al carbón"
+   ],
+   [
+    "Jugosa",
+    4.19,
+    "#DB8B78",
+    "74 °C en el muslo"
+   ],
+   [
+    "Carbón",
+    5.6,
+    "#E0782F",
+    "barril a 180–200 °C"
+   ]
+  ],
+  "tagline": [
+   "CON PLÁTANO Y QUESO CREMA",
+   6.9
+  ],
+  "sizzle": "N07",
+  "vertical": {
+   "title_y": 440,
+   "cuts": [
+    [
+     0,
+     "HERO",
+     0,
+     1,
+     [
+      1.16,
+      1.04
+     ],
+     [
+      0.44,
+      0.52
+     ]
+    ],
+    [
+     3.1,
+     "N08",
+     0.6,
+     1,
+     [
+      1.12,
+      1.08
+     ],
+     [
+      0.48,
+      0.45
+     ]
+    ],
+    [
+     4.1,
+     "N11",
+     2.6,
+     1,
+     [
+      1.1,
+      1.06
+     ],
+     [
+      0.5,
+      0.6
+     ]
+    ],
+    [
+     5.5,
+     "N05",
+     3.5,
+     1,
+     [
+      1.12,
+      1.08
+     ],
+     [
+      0.5,
+      0.6
+     ]
+    ],
+    [
+     6.66,
+     "N12",
+     0.5,
+     1,
+     [
+      1.12,
+      1.06
+     ],
+     [
+      0.45,
+      0.62
+     ]
+    ]
+   ],
+   "pins": [
+    [
+     "pollo en mariposa",
+     1.0,
+     [
+      0.42,
+      0.5
+     ],
+     "#DB8B78"
+    ],
+    [
+     "plátano con queso",
+     1.9,
+     [
+      0.72,
+      0.64
+     ],
+     "#F3D35B"
+    ]
+   ]
+  }
+ },
+ "end": {
+  "start": "S39",
+  "title": "¡Buen provecho!",
+  "next": "PRÓXIMO VIDEO",
+  "bubble": [
+   "¿Mariposa o",
+   "colgado entero?",
+   "Dímelo abajo"
+  ]
+ },
+ "thumb": {
+  "img": "raw/HERO.jpg",
+  "crop": [
+   0.0,
+   0.3,
+   0.95
+  ],
+  "title": [
+   "Pollo al barril",
+   "en mariposa"
+  ],
+  "tags": [
+   [
+    "al carbón",
+    "#E0782F",
+    "#140E09"
+   ],
+   [
+    "piel crocante",
+    "#F2B544",
+    "#140E09"
+   ],
+   [
+    "plátano + queso",
+    "#F6EFE3",
+    "#140E09"
+   ]
+  ]
+ },
+ "size": [
+  1080,
+  1920
+ ],
+ "layout": "vertical",
+ "edl": [
+  [
+   0.0,
+   9.6
+  ],
+  [
+   102.37,
+   107.33
+  ],
+  [
+   128.74,
+   132.95
+  ],
+  [
+   150.52,
+   156.57
+  ]
+ ],
+ "end_card": [
+  "Receta completa",
+  "en el canal  ▶"
+ ]
+}

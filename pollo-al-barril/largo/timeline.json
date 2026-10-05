@@ -1,0 +1,2180 @@
+{
+ "duration": 183.2,
+ "fps": 30,
+ "title": "Pollo al barril en mariposa",
+ "tag": "CURSO DE COCINA  ·  RECETA 04",
+ "music": "latino",
+ "colors": {},
+ "chapters": [
+  {
+   "id": "gancho",
+   "t": 0.0,
+   "n": 0,
+   "title": "Pollo al barril en mariposa",
+   "color": "#F2B544",
+   "side": "hook"
+  },
+  {
+   "id": "ingredientes",
+   "t": 9.87,
+   "n": 1,
+   "title": "Ingredientes",
+   "h1": "Ingredientes",
+   "h2": "para 4 personas",
+   "color": "#F2B544",
+   "side": "R",
+   "mark": "MISE EN PLACE"
+  },
+  {
+   "id": "mariposa",
+   "t": 40.81,
+   "n": 2,
+   "title": "Mariposa",
+   "h1": "Abrir en",
+   "h2": "mariposa",
+   "color": "#DB8B78",
+   "side": "L",
+   "mark": "MARIPOSA"
+  },
+  {
+   "id": "adobo",
+   "t": 64.12,
+   "n": 3,
+   "title": "Adobo",
+   "h1": "Adobo",
+   "h2": "costeño",
+   "color": "#D9573B",
+   "side": "R",
+   "mark": "ADOBO"
+  },
+  {
+   "id": "barril",
+   "t": 94.42,
+   "n": 4,
+   "title": "Barril",
+   "h1": "Brasas con",
+   "h2": "ceniza gris",
+   "color": "#C9BFB0",
+   "side": "L",
+   "mark": "BARRIL"
+  },
+  {
+   "id": "coccion",
+   "t": 112.45,
+   "n": 5,
+   "title": "Cocción",
+   "h1": "Tapa y",
+   "h2": "no destapes",
+   "color": "#E0782F",
+   "side": "R",
+   "mark": "AL CARBÓN"
+  },
+  {
+   "id": "platanos",
+   "t": 138.21,
+   "n": 6,
+   "title": "Plátanos",
+   "h1": "Plátano",
+   "h2": "con queso crema",
+   "color": "#F3D35B",
+   "side": "L",
+   "mark": "PLÁTANOS"
+  },
+  {
+   "id": "servicio",
+   "t": 160.53,
+   "n": 7,
+   "title": "Servicio",
+   "h1": "Reposo",
+   "h2": "y a la mesa",
+   "color": "#A9C44E",
+   "side": "R",
+   "mark": "SERVICIO"
+  },
+  {
+   "id": "cierre",
+   "t": 172.36,
+   "n": 8,
+   "title": "Cierre",
+   "color": "#F2B544",
+   "side": "end"
+  }
+ ],
+ "media": {
+  "HERO": {
+   "img": "raw/HERO.jpg"
+  },
+  "N01": {
+   "img": "raw/N01.jpg"
+  },
+  "N02": {
+   "img": "raw/N02.jpg"
+  },
+  "N09": {
+   "img": "raw/N09.jpg"
+  },
+  "N03": {
+   "clip": "N03",
+   "audio": true
+  },
+  "N04": {
+   "clip": "N04",
+   "audio": true
+  },
+  "N05": {
+   "clip": "N05",
+   "audio": true
+  },
+  "N06": {
+   "clip": "N06",
+   "audio": true
+  },
+  "N07": {
+   "clip": "N07",
+   "audio": true
+  },
+  "N08": {
+   "clip": "N08",
+   "audio": true
+  },
+  "N10": {
+   "clip": "N10",
+   "audio": true
+  },
+  "N11": {
+   "clip": "N11",
+   "audio": false
+  },
+  "N12": {
+   "clip": "N12",
+   "audio": false
+  }
+ },
+ "shots": [
+  {
+   "id": "S01",
+   "t0": 0.0,
+   "t1": 3.19,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 3.19,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S02",
+   "t0": 3.19,
+   "t1": 6.66,
+   "src": "N11",
+   "a": 0,
+   "b": 3.5,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S03",
+   "t0": 6.66,
+   "t1": 9.87,
+   "src": "N12",
+   "a": 0,
+   "b": 3.2,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S04",
+   "t0": 9.87,
+   "t1": 13.38,
+   "src": "N01",
+   "a": 0.0,
+   "b": 3.5100000000000016,
+   "z": [
+    1.04,
+    1.22
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.52,
+     0.5
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S05",
+   "t0": 13.38,
+   "t1": 18.53,
+   "src": "N01",
+   "a": 0.0,
+   "b": 5.15,
+   "z": [
+    1.25,
+    1.3
+   ],
+   "f": [
+    [
+     0.4,
+     0.66
+    ],
+    [
+     0.4,
+     0.67
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S06",
+   "t0": 18.53,
+   "t1": 24.59,
+   "src": "N01",
+   "a": 0.0,
+   "b": 6.059999999999999,
+   "z": [
+    1.6,
+    1.7
+   ],
+   "f": [
+    [
+     0.2,
+     0.66
+    ],
+    [
+     0.21,
+     0.68
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S07",
+   "t0": 24.59,
+   "t1": 31.6,
+   "src": "N01",
+   "a": 0.0,
+   "b": 7.010000000000002,
+   "z": [
+    1.7,
+    1.8
+   ],
+   "f": [
+    [
+     0.33,
+     0.33
+    ],
+    [
+     0.35,
+     0.34
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S08",
+   "t0": 31.6,
+   "t1": 36.64,
+   "src": "N01",
+   "a": 0.0,
+   "b": 5.039999999999999,
+   "z": [
+    1.7,
+    1.8
+   ],
+   "f": [
+    [
+     0.76,
+     0.5
+    ],
+    [
+     0.78,
+     0.5
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S09",
+   "t0": 36.64,
+   "t1": 40.81,
+   "src": "N05",
+   "a": 0,
+   "b": 4.2,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S10",
+   "t0": 40.81,
+   "t1": 44.15,
+   "src": "N02",
+   "a": 0.0,
+   "b": 3.3399999999999963,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.48,
+     0.56
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S11",
+   "t0": 44.15,
+   "t1": 49.07,
+   "src": "N02",
+   "a": 0.0,
+   "b": 4.920000000000002,
+   "z": [
+    1.5,
+    1.6
+   ],
+   "f": [
+    [
+     0.62,
+     0.64
+    ],
+    [
+     0.66,
+     0.65
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S12",
+   "t0": 49.07,
+   "t1": 52.81,
+   "src": "N02",
+   "a": 0.0,
+   "b": 3.740000000000002,
+   "z": [
+    1.45,
+    1.55
+   ],
+   "f": [
+    [
+     0.42,
+     0.55
+    ],
+    [
+     0.43,
+     0.54
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S13",
+   "t0": 52.81,
+   "t1": 61.31,
+   "src": "N07",
+   "a": 0,
+   "b": 4.0,
+   "z": [
+    1.05,
+    1.18
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.48
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S14",
+   "t0": 61.31,
+   "t1": 64.12,
+   "src": "N08",
+   "a": 0.2,
+   "b": 3.0,
+   "z": [
+    1.05,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.45
+    ],
+    [
+     0.5,
+     0.44
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S15",
+   "t0": 64.12,
+   "t1": 71.81,
+   "src": "N03",
+   "a": 0,
+   "b": 0.7,
+   "z": [
+    1.25,
+    1.42
+   ],
+   "f": [
+    [
+     0.5,
+     0.66
+    ],
+    [
+     0.5,
+     0.7
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S16",
+   "t0": 71.81,
+   "t1": 75.91,
+   "src": "N03",
+   "a": 0.6,
+   "b": 4.7,
+   "z": [
+    1.1,
+    1.15
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.62
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S17",
+   "t0": 75.91,
+   "t1": 81.87,
+   "src": "N01",
+   "a": 0.0,
+   "b": 5.960000000000008,
+   "z": [
+    2.0,
+    2.05
+   ],
+   "f": [
+    [
+     0.24,
+     0.42
+    ],
+    [
+     0.12,
+     0.57
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S18",
+   "t0": 81.87,
+   "t1": 86.08,
+   "src": "N04",
+   "a": 0,
+   "b": 4.2,
+   "z": [
+    1.05,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S19",
+   "t0": 86.08,
+   "t1": 89.62,
+   "src": "N04",
+   "a": 4.0,
+   "b": 6.6,
+   "z": [
+    1.4,
+    1.48
+   ],
+   "f": [
+    [
+     0.55,
+     0.62
+    ],
+    [
+     0.55,
+     0.62
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S20",
+   "t0": 89.62,
+   "t1": 94.42,
+   "src": "N04",
+   "a": 5.4,
+   "b": 8.0,
+   "z": [
+    1.65,
+    1.75
+   ],
+   "f": [
+    [
+     0.55,
+     0.6
+    ],
+    [
+     0.56,
+     0.6
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S21",
+   "t0": 94.42,
+   "t1": 97.12,
+   "src": "N05",
+   "a": 0,
+   "b": 2.7,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.5,
+     0.55
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S22",
+   "t0": 97.12,
+   "t1": 102.37,
+   "src": "N05",
+   "a": 3.0,
+   "b": 8.0,
+   "z": [
+    1.08,
+    1.2
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.62
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S23",
+   "t0": 102.37,
+   "t1": 107.56,
+   "src": "N05",
+   "a": 0,
+   "b": 3.0,
+   "z": [
+    1.6,
+    1.7
+   ],
+   "f": [
+    [
+     0.5,
+     0.56
+    ],
+    [
+     0.5,
+     0.56
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S24",
+   "t0": 107.56,
+   "t1": 112.45,
+   "src": "N06",
+   "a": 0,
+   "b": 4.0,
+   "z": [
+    1.02,
+    1.08
+   ],
+   "f": [
+    [
+     0.4,
+     0.55
+    ],
+    [
+     0.4,
+     0.55
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S25",
+   "t0": 112.45,
+   "t1": 115.54,
+   "src": "N07",
+   "a": 0,
+   "b": 3.0,
+   "z": [
+    1.0,
+    1.05
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S26",
+   "t0": 115.54,
+   "t1": 120.11,
+   "src": "N07",
+   "a": 1.0,
+   "b": 4.0,
+   "z": [
+    1.45,
+    1.55
+   ],
+   "f": [
+    [
+     0.5,
+     0.52
+    ],
+    [
+     0.5,
+     0.54
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S27",
+   "t0": 120.11,
+   "t1": 123.62,
+   "src": "N06",
+   "a": 0,
+   "b": 3.5,
+   "z": [
+    1.15,
+    1.2
+   ],
+   "f": [
+    [
+     0.38,
+     0.5
+    ],
+    [
+     0.38,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S28",
+   "t0": 123.62,
+   "t1": 128.74,
+   "src": "N06",
+   "a": 0.5,
+   "b": 4.0,
+   "z": [
+    1.7,
+    1.8
+   ],
+   "f": [
+    [
+     0.34,
+     0.4
+    ],
+    [
+     0.34,
+     0.39
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S29",
+   "t0": 128.74,
+   "t1": 133.23,
+   "src": "N08",
+   "a": 0,
+   "b": 4.5,
+   "z": [
+    1.05,
+    1.12
+   ],
+   "f": [
+    [
+     0.47,
+     0.45
+    ],
+    [
+     0.47,
+     0.44
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S30",
+   "t0": 133.23,
+   "t1": 138.21,
+   "src": "N08",
+   "a": 3.0,
+   "b": 8.0,
+   "z": [
+    1.8,
+    1.9
+   ],
+   "f": [
+    [
+     0.68,
+     0.5
+    ],
+    [
+     0.7,
+     0.5
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S31",
+   "t0": 138.21,
+   "t1": 141.89,
+   "src": "N09",
+   "a": 0.0,
+   "b": 3.6799999999999784,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.48
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S32",
+   "t0": 141.89,
+   "t1": 146.96,
+   "src": "N09",
+   "a": 0.0,
+   "b": 5.070000000000022,
+   "z": [
+    2.0,
+    2.1
+   ],
+   "f": [
+    [
+     0.64,
+     0.52
+    ],
+    [
+     0.66,
+     0.52
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S33",
+   "t0": 146.96,
+   "t1": 150.52,
+   "src": "N10",
+   "a": 0,
+   "b": 3.5,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S34",
+   "t0": 150.52,
+   "t1": 156.57,
+   "src": "N10",
+   "a": 0.4,
+   "b": 6.0,
+   "z": [
+    1.25,
+    1.35
+   ],
+   "f": [
+    [
+     0.45,
+     0.45
+    ],
+    [
+     0.47,
+     0.46
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S35",
+   "t0": 156.57,
+   "t1": 160.53,
+   "src": "N10",
+   "a": 3.5,
+   "b": 6.0,
+   "z": [
+    1.7,
+    1.8
+   ],
+   "f": [
+    [
+     0.42,
+     0.48
+    ],
+    [
+     0.42,
+     0.48
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S36",
+   "t0": 160.53,
+   "t1": 164.08,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 3.5500000000000114,
+   "z": [
+    1.4,
+    1.5
+   ],
+   "f": [
+    [
+     0.41,
+     0.52
+    ],
+    [
+     0.42,
+     0.52
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S37",
+   "t0": 164.08,
+   "t1": 168.63,
+   "src": "N11",
+   "a": 2.0,
+   "b": 6.6,
+   "z": [
+    1.05,
+    1.12
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.62
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S38",
+   "t0": 168.63,
+   "t1": 172.36,
+   "src": "N12",
+   "a": 0,
+   "b": 3.7,
+   "z": [
+    1.05,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S39",
+   "t0": 172.36,
+   "t1": 183.2,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 10.839999999999975,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "end"
+  }
+ ],
+ "callouts": [
+  {
+   "kind": "list",
+   "t": 10.24,
+   "rows": [
+    [
+     1,
+     "",
+     "pollo entero",
+     10.24
+    ],
+    [
+     "1,8",
+     "kg",
+     "de peso",
+     11.52
+    ]
+   ],
+   "t1": 13.38
+  },
+  {
+   "kind": "note",
+   "t": 13.48,
+   "text": "Adobo costeño",
+   "t1": 18.53
+  },
+  {
+   "kind": "list",
+   "t": 15.4,
+   "rows": [
+    [
+     6,
+     "",
+     "dientes de ajo",
+     15.4
+    ],
+    [
+     20,
+     "g",
+     "sal",
+     16.4
+    ]
+   ],
+   "t1": 18.53
+  },
+  {
+   "kind": "list",
+   "t": 18.88,
+   "rows": [
+    [
+     1,
+     "cda",
+     "achiote molido",
+     18.88
+    ],
+    [
+     "½",
+     "cda",
+     "comino molido",
+     20.74
+    ],
+    [
+     2,
+     "g",
+     "pimienta negra",
+     22.3
+    ]
+   ],
+   "t1": 24.59
+  },
+  {
+   "kind": "list",
+   "t": 24.65,
+   "rows": [
+    [
+     80,
+     "ml",
+     "jugo de naranja agria",
+     24.65
+    ],
+    [
+     120,
+     "ml",
+     "cerveza rubia",
+     27.37
+    ],
+    [
+     2,
+     "cdas",
+     "aceite",
+     29.07
+    ]
+   ],
+   "t1": 31.6
+  },
+  {
+   "kind": "list",
+   "t": 32.94,
+   "rows": [
+    [
+     4,
+     "",
+     "plátanos maduros",
+     32.94
+    ],
+    [
+     200,
+     "g",
+     "queso crema",
+     33.87
+    ]
+   ],
+   "t1": 36.64
+  },
+  {
+   "kind": "list",
+   "t": 37.99,
+   "rows": [
+    [
+     "2,5",
+     "kg",
+     "carbón vegetal",
+     37.99
+    ]
+   ],
+   "t1": 40.81
+  },
+  {
+   "kind": "note",
+   "t": 38.9,
+   "text": "Para un barril de 45 cm de ancho",
+   "t1": 40.81
+  },
+  {
+   "kind": "chips",
+   "t": 44.22,
+   "items": [
+    [
+     "tijeras de cocina",
+     44.22
+    ]
+   ],
+   "t1": 49.07
+  },
+  {
+   "kind": "tip",
+   "t": 45.7,
+   "icon": "check",
+   "text": "Un corte a cada lado del espinazo",
+   "t1": 49.07
+  },
+  {
+   "kind": "trace",
+   "t": 46.4,
+   "shot": "S11",
+   "path": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.62,
+     0.63
+    ],
+    [
+     0.72,
+     0.63
+    ]
+   ],
+   "t1": 49.07
+  },
+  {
+   "kind": "tip",
+   "t": 49.63,
+   "icon": "press",
+   "text": "Presiona la pechuga",
+   "t1": 52.81
+  },
+  {
+   "kind": "big",
+   "t": 54.65,
+   "text": "Plano, parejo.",
+   "t1": 61.31
+  },
+  {
+   "kind": "note",
+   "t": 56.0,
+   "text": "Muslo y pechuga a la misma altura",
+   "t1": 61.31
+  },
+  {
+   "kind": "tip",
+   "t": 61.37,
+   "icon": "spark",
+   "text": "Más rápido que entero",
+   "t1": 64.12
+  },
+  {
+   "kind": "chips",
+   "t": 66.69,
+   "items": [
+    [
+     "ajo bien picado",
+     66.69
+    ],
+    [
+     "sal",
+     67.91
+    ]
+   ],
+   "t1": 71.81
+  },
+  {
+   "kind": "chips",
+   "t": 68.96,
+   "items": [
+    [
+     "achiote",
+     68.96
+    ],
+    [
+     "comino",
+     69.81
+    ],
+    [
+     "pimienta",
+     70.41
+    ]
+   ],
+   "t1": 71.81
+  },
+  {
+   "kind": "chips",
+   "t": 72.26,
+   "items": [
+    [
+     "+ 80 ml de naranja agria",
+     72.26
+    ],
+    [
+     "+ aceite",
+     74.0
+    ]
+   ],
+   "t1": 75.91
+  },
+  {
+   "kind": "chips",
+   "t": 74.54,
+   "items": [
+    [
+     "+ 120 ml de cerveza",
+     74.54
+    ]
+   ],
+   "t1": 75.91
+  },
+  {
+   "kind": "tip",
+   "t": 75.98,
+   "icon": "drop",
+   "text": "Naranja agria: la acidez",
+   "t1": 81.87
+  },
+  {
+   "kind": "note",
+   "t": 77.2,
+   "text": "¿No hay? Mitad naranja y mitad limón",
+   "t1": 81.87
+  },
+  {
+   "kind": "tip",
+   "t": 78.59,
+   "icon": "spark",
+   "text": "Achiote: el color",
+   "t1": 81.87
+  },
+  {
+   "kind": "tip",
+   "t": 82.9,
+   "icon": "check",
+   "text": "Por los dos lados",
+   "t1": 86.08
+  },
+  {
+   "kind": "tip",
+   "t": 83.97,
+   "icon": "hand",
+   "text": "Y debajo de la piel",
+   "t1": 86.08
+  },
+  {
+   "kind": "big",
+   "t": 87.07,
+   "text": "Directo a\nla carne.",
+   "t1": 89.62
+  },
+  {
+   "kind": "timer",
+   "t": 91.52,
+   "value": 4,
+   "unit": "h",
+   "label": "en la nevera · ideal 12 h",
+   "cold": true,
+   "t1": 94.42
+  },
+  {
+   "kind": "chips",
+   "t": 94.66,
+   "items": [
+    [
+     "carbón al fondo",
+     94.66
+    ]
+   ],
+   "t1": 97.12
+  },
+  {
+   "kind": "gauge",
+   "t": 95.0,
+   "stops": [
+    [
+     95.0,
+     "Llama"
+    ],
+    [
+     99.55,
+     "Brasas"
+    ],
+    [
+     101.13,
+     "Ceniza gris"
+    ]
+   ],
+   "colors": [
+    "#F7C35A",
+    "#E0492F",
+    "#8E8A84"
+   ],
+   "at": [
+    95.0,
+    102.0
+   ],
+   "t1": 107.56
+  },
+  {
+   "kind": "timer",
+   "t": 97.54,
+   "value": 25,
+   "unit": "min",
+   "label": "hasta la ceniza gris",
+   "approx": true,
+   "t1": 102.37
+  },
+  {
+   "kind": "tip",
+   "t": 102.44,
+   "icon": "x",
+   "text": "Nunca sobre llama viva",
+   "t1": 107.56
+  },
+  {
+   "kind": "tip",
+   "t": 107.63,
+   "icon": "check",
+   "text": "Tapa el barril",
+   "t1": 112.45
+  },
+  {
+   "kind": "heat",
+   "t": 109.56,
+   "level": 3,
+   "label": "180–200 °C",
+   "t1": 112.45
+  },
+  {
+   "kind": "tip",
+   "t": 114.11,
+   "icon": "check",
+   "text": "Piel hacia arriba",
+   "t1": 115.54
+  },
+  {
+   "kind": "big",
+   "t": 116.78,
+   "text": "La grasa\nbaña la carne.",
+   "t1": 120.11
+  },
+  {
+   "kind": "timer",
+   "t": 121.32,
+   "value": 70,
+   "unit": "min",
+   "main": "60–70 minutos",
+   "label": "tapado · 180–200 °C",
+   "t1": 123.62
+  },
+  {
+   "kind": "tip",
+   "t": 123.69,
+   "icon": "x",
+   "text": "No destapes a cada rato",
+   "t1": 128.74
+  },
+  {
+   "kind": "big",
+   "t": 131.2,
+   "text": "74 °C",
+   "t1": 133.23
+  },
+  {
+   "kind": "note",
+   "t": 131.6,
+   "text": "En la parte más gruesa del muslo",
+   "t1": 133.23
+  },
+  {
+   "kind": "note",
+   "t": 133.3,
+   "text": "¿Sin termómetro? Pincha el muslo",
+   "t1": 138.21
+  },
+  {
+   "kind": "tip",
+   "t": 135.98,
+   "icon": "drop",
+   "text": "Jugo transparente: listo",
+   "t1": 138.21
+  },
+  {
+   "kind": "timer",
+   "t": 140.39,
+   "value": 30,
+   "unit": "min",
+   "main": "faltando 30 min",
+   "label": "para que el pollo esté listo",
+   "t1": 141.89
+  },
+  {
+   "kind": "tip",
+   "t": 141.96,
+   "icon": "check",
+   "text": "Corte a lo largo, con cáscara",
+   "t1": 146.96
+  },
+  {
+   "kind": "tip",
+   "t": 147.31,
+   "icon": "spark",
+   "text": "Se cocinan en su dulce",
+   "t1": 150.52
+  },
+  {
+   "kind": "timer",
+   "t": 150.98,
+   "value": 25,
+   "unit": "min",
+   "label": "en la parrilla, tapado",
+   "t1": 156.57
+  },
+  {
+   "kind": "chips",
+   "t": 154.55,
+   "items": [
+    [
+     "50 g de queso crema por plátano",
+     154.55
+    ]
+   ],
+   "t1": 156.57
+  },
+  {
+   "kind": "timer",
+   "t": 157.06,
+   "value": 5,
+   "unit": "min",
+   "main": "5 minutos más",
+   "label": "hasta que el queso se ablande",
+   "t1": 160.53
+  },
+  {
+   "kind": "timer",
+   "t": 162.03,
+   "value": 10,
+   "unit": "min",
+   "label": "de reposo, antes de cortar",
+   "t1": 164.08
+  },
+  {
+   "kind": "tip",
+   "t": 164.47,
+   "icon": "x",
+   "text": "Si lo cortas ya, el jugo se va",
+   "t1": 168.63
+  },
+  {
+   "kind": "chips",
+   "t": 169.49,
+   "items": [
+    [
+     "plátano caliente",
+     169.49
+    ],
+    [
+     "queso derretido",
+     170.75
+    ]
+   ],
+   "t1": 172.36
+  }
+ ],
+ "pins": [
+  {
+   "shot": "S04",
+   "t": 10.64,
+   "xy": [
+    0.53,
+    0.51
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S05",
+   "t": 16.1,
+   "xy": [
+    0.58,
+    0.81
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S05",
+   "t": 17.5,
+   "xy": [
+    0.15,
+    0.5
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S06",
+   "t": 19.28,
+   "xy": [
+    0.07,
+    0.58
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S06",
+   "t": 21.63,
+   "xy": [
+    0.08,
+    0.7
+   ],
+   "n": 5
+  },
+  {
+   "shot": "S06",
+   "t": 23.07,
+   "xy": [
+    0.3,
+    0.765
+   ],
+   "n": 6
+  },
+  {
+   "shot": "S07",
+   "t": 26.11,
+   "xy": [
+    0.23,
+    0.42
+   ],
+   "n": 7
+  },
+  {
+   "shot": "S07",
+   "t": 28.67,
+   "xy": [
+    0.28,
+    0.27
+   ],
+   "n": 8
+  },
+  {
+   "shot": "S07",
+   "t": 30.3,
+   "xy": [
+    0.47,
+    0.34
+   ],
+   "n": 9
+  },
+  {
+   "shot": "S08",
+   "t": 33.07,
+   "xy": [
+    0.81,
+    0.41
+   ],
+   "n": 10
+  },
+  {
+   "shot": "S08",
+   "t": 35.31,
+   "xy": [
+    0.88,
+    0.58
+   ],
+   "n": 11
+  }
+ ],
+ "cues": [
+  [
+   0.12,
+   3.2399999999999998,
+   "Pollo entero al barril, abierto en mariposa."
+  ],
+  [
+   3.26,
+   6.710000000000001,
+   "Piel crocante, carne jugosa y sabor a carbón."
+  ],
+  [
+   6.73,
+   9.88,
+   "Y de compañía, plátano maduro con queso crema."
+  ],
+  [
+   9.9,
+   13.46,
+   "Necesitas un pollo entero de **1 kilo 800 g**."
+  ],
+  [
+   13.48,
+   17.97,
+   "Para el adobo costeño: **6** dientes de ajo y **20 g** de sal."
+  ],
+  [
+   18.59,
+   23.89,
+   "**1 cucharada** de achiote molido, **½ cucharada** de comino y **2 g** de pimienta negra."
+  ],
+  [
+   24.65,
+   30.87,
+   "**80 ml** de jugo de naranja agria, **120 ml** de cerveza y **2 cucharadas** de aceite."
+  ],
+  [
+   31.66,
+   36.68,
+   "Para acompañar: **4** plátanos maduros y **200 g** de queso crema."
+  ],
+  [
+   36.7,
+   40.14,
+   "Y para el barril, **2 kilos y medio** de carbón vegetal."
+  ],
+  [
+   40.87,
+   41.949999999999996,
+   "El pollo."
+  ],
+  [
+   41.97,
+   44.199999999999996,
+   "Primero, abre el pollo en mariposa."
+  ],
+  [
+   44.22,
+   49.11,
+   "Con unas tijeras de cocina, corta a los dos lados del espinazo y retíralo."
+  ],
+  [
+   49.13,
+   52.13,
+   "Voltea el pollo y presiona la pechuga hasta que quede plano."
+  ],
+  [
+   52.88,
+   53.87,
+   "¿Por qué en mariposa?"
+  ],
+  [
+   54.65,
+   55.98,
+   "Porque plano,"
+  ],
+  [
+   56.0,
+   60.64,
+   "el muslo y la pechuga quedan a la misma altura del carbón y se cocinan parejo."
+  ],
+  [
+   61.37,
+   63.24,
+   "Y se cocina más rápido que entero."
+  ],
+  [
+   64.19,
+   65.72,
+   "Ahora, el adobo."
+  ],
+  [
+   65.74,
+   68.94,
+   "En un bol, mezcla el ajo bien picado con la sal,"
+  ],
+  [
+   68.96,
+   71.85000000000001,
+   "el achiote, el comino y la pimienta."
+  ],
+  [
+   71.87,
+   75.96000000000001,
+   "Agrega el jugo de naranja agria, el aceite y la cerveza."
+  ],
+  [
+   75.98,
+   78.57000000000001,
+   "La naranja agria aporta la acidez."
+  ],
+  [
+   78.59,
+   81.92,
+   "El achiote da ese color anaranjado tan costeño."
+  ],
+  [
+   81.94,
+   86.12,
+   "Baña el pollo por los dos lados y mete adobo también debajo de la piel."
+  ],
+  [
+   86.14,
+   89.02,
+   "Debajo de la piel, el sabor llega directo a la carne."
+  ],
+  [
+   89.68,
+   92.73,
+   "Déjalo marinar en la nevera mínimo **4 horas**."
+  ],
+  [
+   92.75,
+   94.47,
+   "Lo ideal son **12**."
+  ],
+  [
+   94.49,
+   97.16000000000001,
+   "Enciende el carbón en el fondo del barril."
+  ],
+  [
+   97.18,
+   102.42,
+   "Espera unos **25 minutos**, hasta que las brasas estén cubiertas de ceniza gris."
+  ],
+  [
+   102.44,
+   104.46000000000001,
+   "No pongas el pollo con llama viva."
+  ],
+  [
+   104.48,
+   107.61,
+   "La llama quema la piel antes de que la carne se cocine."
+  ],
+  [
+   107.63,
+   112.5,
+   "Tapa el barril y deja que suba a entre **180 y 200 grados**."
+  ],
+  [
+   112.52,
+   115.58,
+   "Pon el pollo sobre la parrilla, con la piel hacia arriba."
+  ],
+  [
+   115.6,
+   119.43,
+   "Así, la grasa de la piel se derrite y baña la carne mientras se cocina."
+  ],
+  [
+   120.18,
+   123.67,
+   "Tapa y cocina entre **60 y 70 minutos**."
+  ],
+  [
+   123.69,
+   125.48,
+   "No destapes a cada rato."
+  ],
+  [
+   125.5,
+   128.07,
+   "Cada vez que abres, el barril pierde calor."
+  ],
+  [
+   128.8,
+   133.28,
+   "Está listo cuando la parte más gruesa del muslo marca **74 grados**."
+  ],
+  [
+   133.3,
+   135.95999999999998,
+   "Si no tienes termómetro, pincha el muslo."
+  ],
+  [
+   135.98,
+   138.26,
+   "El jugo debe salir transparente."
+  ],
+  [
+   138.28,
+   141.94,
+   "Los plátanos entran cuando al pollo le faltan **30 minutos**."
+  ],
+  [
+   141.96,
+   143.86999999999998,
+   "Hazles un corte a lo largo,"
+  ],
+  [
+   143.89,
+   147.01,
+   "sin quitar la cáscara, y ponlos en la parrilla."
+  ],
+  [
+   147.03,
+   150.51999999999998,
+   "La cáscara los protege, y adentro se cocinan en su propio dulce."
+  ],
+  [
+   150.54,
+   156.6,
+   "Después de **25 minutos**, ábrelos y rellena cada uno con **50 g** de queso crema."
+  ],
+  [
+   156.62,
+   160.57,
+   "Tapa **5 minutos** más, hasta que el queso se ablande."
+  ],
+  [
+   160.59,
+   164.45,
+   "Saca el pollo y déjalo reposar **10 minutos** antes de cortarlo."
+  ],
+  [
+   164.47,
+   168.88,
+   "Si lo cortas de una vez, el jugo se queda en la tabla y no en la carne."
+  ],
+  [
+   168.9,
+   172.41,
+   "Sírvelo con el plátano caliente y el queso derretido."
+  ],
+  [
+   172.43,
+   176.22,
+   "Si te gustó, suscríbete para más recetas al carbón."
+  ],
+  [
+   176.24,
+   179.03,
+   "¿Tú lo harías en mariposa o colgado entero?"
+  ],
+  [
+   179.05,
+   180.41,
+   "Dímelo en los comentarios."
+  ]
+ ],
+ "hook": {
+  "title": [
+   "Pollo al barril",
+   "en mariposa"
+  ],
+  "cards": [
+   {
+    "before": {
+     "src": "N08",
+     "a": 0.6,
+     "rate": 1.0,
+     "z": 1.2,
+     "f": [
+      0.48,
+      0.45
+     ]
+    },
+    "after": {
+     "src": "N11",
+     "a": 2.6,
+     "rate": 1.0,
+     "z": 1.05,
+     "f": [
+      0.5,
+      0.6
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "N07",
+     "a": 0.0,
+     "rate": 0.9,
+     "z": 1.08,
+     "f": [
+      0.5,
+      0.5
+     ]
+    },
+    "after": {
+     "src": "HERO",
+     "a": 0,
+     "rate": 1,
+     "z": 1.3,
+     "f": [
+      0.42,
+      0.55
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "N05",
+     "a": 3.5,
+     "rate": 1.0,
+     "z": 1.15,
+     "f": [
+      0.5,
+      0.6
+     ]
+    },
+    "after": {
+     "src": "N12",
+     "a": 2.0,
+     "rate": 1.0,
+     "z": 1.2,
+     "f": [
+      0.45,
+      0.62
+     ]
+    }
+   }
+  ],
+  "rows": [
+   [
+    "pollo entero",
+    0.3,
+    "#F2B544",
+    0
+   ],
+   [
+    "al barril",
+    0.9,
+    "#E0782F",
+    2
+   ],
+   [
+    "abierto en mariposa",
+    1.6,
+    "#DB8B78",
+    1
+   ]
+  ],
+  "beat": 3.1,
+  "words": [
+   [
+    "Crocante",
+    3.4,
+    "#F2B544",
+    "piel dorada al carbón"
+   ],
+   [
+    "Jugosa",
+    4.19,
+    "#DB8B78",
+    "74 °C en el muslo"
+   ],
+   [
+    "Carbón",
+    5.6,
+    "#E0782F",
+    "barril a 180–200 °C"
+   ]
+  ],
+  "tagline": [
+   "CON PLÁTANO Y QUESO CREMA",
+   6.9
+  ],
+  "sizzle": "N07",
+  "vertical": {
+   "title_y": 440,
+   "cuts": [
+    [
+     0,
+     "HERO",
+     0,
+     1,
+     [
+      1.16,
+      1.04
+     ],
+     [
+      0.44,
+      0.52
+     ]
+    ],
+    [
+     3.1,
+     "N08",
+     0.6,
+     1,
+     [
+      1.12,
+      1.08
+     ],
+     [
+      0.48,
+      0.45
+     ]
+    ],
+    [
+     4.1,
+     "N11",
+     2.6,
+     1,
+     [
+      1.1,
+      1.06
+     ],
+     [
+      0.5,
+      0.6
+     ]
+    ],
+    [
+     5.5,
+     "N05",
+     3.5,
+     1,
+     [
+      1.12,
+      1.08
+     ],
+     [
+      0.5,
+      0.6
+     ]
+    ],
+    [
+     6.66,
+     "N12",
+     0.5,
+     1,
+     [
+      1.12,
+      1.06
+     ],
+     [
+      0.45,
+      0.62
+     ]
+    ]
+   ],
+   "pins": [
+    [
+     "pollo en mariposa",
+     1.0,
+     [
+      0.42,
+      0.5
+     ],
+     "#DB8B78"
+    ],
+    [
+     "plátano con queso",
+     1.9,
+     [
+      0.72,
+      0.64
+     ],
+     "#F3D35B"
+    ]
+   ]
+  }
+ },
+ "end": {
+  "start": "S39",
+  "title": "¡Buen provecho!",
+  "next": "PRÓXIMO VIDEO",
+  "bubble": [
+   "¿Mariposa o",
+   "colgado entero?",
+   "Dímelo abajo"
+  ]
+ },
+ "thumb": {
+  "img": "raw/HERO.jpg",
+  "crop": [
+   0.0,
+   0.3,
+   0.95
+  ],
+  "title": [
+   "Pollo al barril",
+   "en mariposa"
+  ],
+  "tags": [
+   [
+    "al carbón",
+    "#E0782F",
+    "#140E09"
+   ],
+   [
+    "piel crocante",
+    "#F2B544",
+    "#140E09"
+   ],
+   [
+    "plátano + queso",
+    "#F6EFE3",
+    "#140E09"
+   ]
+  ]
+ }
+}
