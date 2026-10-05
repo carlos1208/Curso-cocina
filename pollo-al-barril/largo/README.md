@@ -4,10 +4,10 @@ Hecho con la skill `receta-youtube` a partir del material de la carpeta «Pollo 
 
 | Archivo | Qué es |
 |---|---|
-| `pollo_al_barril_youtube.mp4` | **El video para subir a YouTube** (1920×1080, 30 fps, 3:03, −14 LUFS) |
-| `pollo_al_barril_revision.mp4` | Copia liviana de revisión (720p) |
-| `pollo_al_barril_short.mp4` | Short vertical 1080×1920, 0:26, recortado del largo, con voz, música y sonido de cocina |
-| `pollo_al_barril_short_sin_musica.mp4` | El mismo Short solo con voz y cocina, para poner un audio en tendencia en Instagram o TikTok |
+| `pollo_al_barril_youtube.mp4` | **El video para subir a YouTube** (1920×1080, 30 fps, 3:03, −14 LUFS, 3,8 Mb/s en dos pasadas, 92,6 MB) |
+| `pollo_al_barril_revision.mp4` | Copia liviana de revisión (720p, 27,6 MB) |
+| `pollo_al_barril_short.mp4` | Short vertical 1080×1920, 0:26, recortado del largo, con voz, música y sonido de cocina (25,7 MB, −14 LUFS) |
+| `pollo_al_barril_short_sin_musica.mp4` | El mismo Short solo con voz y cocina, para poner un audio en tendencia en Instagram o TikTok (25,7 MB) |
 | `pollo_al_barril_short_portada.jpg` | Portada del Short (el título cae dentro del recorte 3:4 del perfil de Instagram) |
 | `miniatura.png` | Miniatura 1280×720 |
 | `subtitulos.srt`, `subtitulos_short.srt` | Subtítulos corregidos (tildes, cifras, cantidades) |
@@ -48,6 +48,7 @@ La hoja de Drive traía tiempos estimados (196,4 s; la voz real dura 180,7 s) y 
 ## Cambios al motor (`engine_yt.js`)
 
 - Temporizador: `unit: "h"` dice «horas» (el marinado de 4 h) y `main` reemplaza el texto principal para rangos («60–70 minutos», «faltando 30 min»).
+- Audio (`audio_yt.py`): el chisporroteo del gancho acepta clips de menos de 8 s (N07 dura 4 s).
 - Gancho vertical del Short: la palabra grande («Crocante») y el título se achican para no salir de la zona segura (x ≤ 900).
 
 ## Capítulos
