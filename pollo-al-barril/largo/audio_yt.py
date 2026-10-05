@@ -182,7 +182,8 @@ for s in TL['shots']:
 HK = TL.get('hook', {})
 hs = clip_audio(HK['sizzle']) if HK.get('sizzle') else None      # the hook: a clip's sizzle under the music
 if hs is not None:
-    seg = hs[:int(8 * SR)] * np.linspace(0, 1, int(8 * SR))[:, None] ** .5
+    n = min(len(hs), int(8 * SR))                                  # clips can be shorter than 8 s (Flow: 4 s)
+    seg = hs[:n] * np.linspace(0, 1, n)[:, None] ** .5
     FX.add_st(seg, 0.4, 0.6)
 
 # ───────── motion-graphics foley ─────────
