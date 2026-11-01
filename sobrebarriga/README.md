@@ -41,3 +41,14 @@ node illus/render.cjs            # ilustraciones → img/
 python3 audio.py                 # soundtrack.wav
 NAME=sobrebarriga node render.cjs   # sobrebarriga.mp4 (master, ignorado por git) + sobrebarriga_web.mp4
 ```
+
+## Web del curso
+
+Página donde el scroll "cocina" la receta: un escenario fijo muestra el paso activo, los temporizadores corren y el vapor sube mientras lees. El cursor sopla el vapor, el clic remueve, la lista de ingredientes (completa, 22) tiene multiplicador ×1/×2/×3 y el video va embebido. Publicada como Artifact (privado hasta que lo compartas).
+
+```bash
+python3 ../.claude/skills/receta-en-movimiento/scripts/build_web.py --video sobrebarriga_web.mp4   # web/
+python3 web_patch.py      # DOCTYPE + charset + viewport, temporizador en horas, columna de cantidades y ajuste móvil
+```
+
+Sin clips, el escenario usa las ilustraciones animadas. En el paso 5, a mitad del scroll, la olla tapada da paso a "3 horas después".
