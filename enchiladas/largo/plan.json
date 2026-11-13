@@ -1,0 +1,379 @@
+{
+  "receta": "Enchiladas rojas de pollo",
+  "props": {
+    "licuadora": [
+      "blender",
+      "a glass blender jar on a plain matte black base, no logo and no visible buttons text"
+    ],
+    "pinzas": [
+      "tongs",
+      "stainless-steel kitchen tongs"
+    ]
+  },
+  "assets": [
+    {
+      "id": "HERO",
+      "tipo": "Nueva fija",
+      "escena": "Hero shot at a 45-degree angle of three rolled enchiladas on [plato], fully covered in glossy deep-red chile sauce, topped with a drizzle of white crema, crumbled white fresh cheese, thin red onion rings, shredded lettuce and three avocado slices, a few red sauce drops on the rim, on the dark wood countertop"
+    },
+    {
+      "id": "N01",
+      "tipo": "Nueva fija",
+      "escena": "Overhead 90-degree mise en place on the dark wood countertop: 600 g of raw chicken breast on [tabla] with [cuchillo], six dried dark-red guajillo chiles and two dried wrinkled ancho chiles, two ripe red tomatoes, half a white onion, four garlic cloves, a bay leaf, a stack of twelve yellow corn tortillas, white crema, crumbled white fresh cheese, a red onion, lettuce leaves, a ripe avocado, ground cumin and dried oregano each in its own [bolito]"
+    },
+    {
+      "id": "N02",
+      "tipo": "Nueva animada",
+      "escena": "Low 30-degree side view of [olla]: whole chicken breasts in clear broth with half a white onion, garlic cloves and a bay leaf floating, gentle small bubbles on the surface, light steam rising",
+      "camara": "push",
+      "accion": "The broth simmers gently with small bubbles and soft steam rising",
+      "en_fuego": true,
+      "recipiente": "olla",
+      "fuego": "medio-bajo"
+    },
+    {
+      "id": "N03",
+      "tipo": "Nueva fija",
+      "escena": "Close 45-degree view of [bol] filled with juicy shredded chicken, long tender fibers, a little warm steam, on the dark wood countertop beside the stove",
+      "en_fuego": false
+    },
+    {
+      "id": "N04",
+      "tipo": "Nueva fija",
+      "escena": "Close 45-degree view of [tabla] with dried guajillo and ancho chiles cut open and flattened, stems removed, a small pile of pale seeds and veins beside them, [cuchillo] resting on the edge",
+      "en_fuego": false
+    },
+    {
+      "id": "N05",
+      "tipo": "Nueva animada",
+      "escena": "Low 30-degree side view of [sarten] with flattened dried guajillo and ancho chiles toasting with no oil, edges slightly blistered, a faint wisp of smoke",
+      "camara": "push",
+      "accion": "The chiles puff slightly and their edges darken, a faint wisp of smoke rises",
+      "en_fuego": true,
+      "recipiente": "sarten",
+      "fuego": "medio"
+    },
+    {
+      "id": "N06",
+      "tipo": "Nueva fija",
+      "escena": "Close 45-degree view of [bol] with softened dark-red chiles submerged in hot water, the water tinted red, light steam above, on the dark wood countertop beside the stove",
+      "en_fuego": false
+    },
+    {
+      "id": "N07",
+      "tipo": "Nueva animada",
+      "escena": "Eye-level side view of [licuadora] on the dark wood countertop, filled with soaked red chiles, tomato pieces, onion, garlic and broth being blended into a smooth deep-red sauce",
+      "camara": "push",
+      "accion": "The red sauce swirls into a smooth vortex inside the blender jar",
+      "en_fuego": false
+    },
+    {
+      "id": "N08",
+      "tipo": "Nueva animada",
+      "escena": "Low 30-degree side view of [cacerola] with thick deep-red chile sauce frying, glossy surface with a thin sheen of oil at the edges",
+      "camara": "push",
+      "accion": "The thick sauce bubbles slowly with small thick bubbles that pop and darken its surface",
+      "en_fuego": true,
+      "recipiente": "cacerola",
+      "fuego": "medio"
+    },
+    {
+      "id": "N09",
+      "tipo": "Nueva animada",
+      "escena": "Low 30-degree side view of [sarten] with shallow hot oil and one yellow corn tortilla lying flat in it, tiny bubbles around its edge, [pinzas] resting on the rim of [sarten]",
+      "camara": "push",
+      "accion": "The tortilla sizzles gently in the oil, tiny bubbles form around its edge and it softens",
+      "en_fuego": true,
+      "recipiente": "sarten",
+      "fuego": "medio"
+    },
+    {
+      "id": "N10",
+      "tipo": "Nueva fija",
+      "escena": "Close 45-degree view of one open corn tortilla soaked in glossy red chile sauce on [plato], a line of shredded chicken along its center, on the dark wood countertop",
+      "en_fuego": false
+    },
+    {
+      "id": "N11",
+      "tipo": "Nueva animada",
+      "escena": "Close 45-degree view of three rolled enchiladas seam side down on [plato] on the dark wood countertop, partly covered in red chile sauce",
+      "camara": "push",
+      "accion": "A stream of red chile sauce falls from above, covers the enchiladas and drips slowly down their sides",
+      "en_fuego": false
+    },
+    {
+      "id": "N12",
+      "tipo": "Nueva animada",
+      "escena": "Macro 30-degree close-up of finished enchiladas on [plato] covered in red sauce, white crema, crumbled fresh cheese, red onion rings and avocado slices",
+      "camara": "orbit",
+      "accion": "A drop of white crema runs slowly down the side of an enchilada into the red sauce",
+      "en_fuego": false
+    }
+  ],
+  "largo": [
+    {
+      "seccion": "Gancho",
+      "narracion": "Enchiladas rojas de pollo. Picantes, cremosas y bañadas en salsa de chile.",
+      "clip": "HERO"
+    },
+    {
+      "seccion": "Gancho",
+      "narracion": "Hoy te enseño a hacerlas como en México, paso a paso.",
+      "clip": "N12"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Ingredientes. Para cuatro personas necesitas seiscientos gramos de pechuga de pollo.",
+      "clip": "N01",
+      "nota": "Texto: 4 porciones · 600 g de pechuga de pollo"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Seis chiles guajillo y dos chiles ancho. Trescientos gramos de tomate, cebolla blanca y cuatro dientes de ajo.",
+      "clip": "N01",
+      "ajuste": "Zoom 120 % sobre chiles y tomates",
+      "nota": "Texto: 6 guajillo · 2 ancho · 300 g de tomate · 4 dientes de ajo"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Comino, orégano, laurel y sal. Doce tortillas de maíz y aceite.",
+      "clip": "N01",
+      "ajuste": "Zoom 120 % sobre tortillas y especias",
+      "nota": "Texto: 12 tortillas de maíz"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Y para servir: crema agria, queso fresco, cebolla morada, lechuga y aguacate.",
+      "clip": "N01",
+      "ajuste": "Zoom 120 % sobre crema, queso y aguacate"
+    },
+    {
+      "seccion": "Pollo",
+      "narracion": "Pollo. Empieza por el pollo. Ponlo en una olla con litro y medio de agua, media cebolla y dos dientes de ajo.",
+      "clip": "N02",
+      "nota": "Texto: 1,5 l de agua · ½ cebolla · 2 dientes de ajo"
+    },
+    {
+      "seccion": "Pollo",
+      "narracion": "Una hoja de laurel y una cucharadita de sal.",
+      "clip": "N02",
+      "tramo": "desde 4",
+      "nota": "Texto: 1 hoja de laurel · 1 cdta de sal"
+    },
+    {
+      "seccion": "Pollo",
+      "narracion": "Cocina veinticinco minutos a fuego medio-bajo. Que hierva suave.",
+      "clip": "N02",
+      "tramo": "final",
+      "nota": "Texto: 25 min · fuego medio-bajo"
+    },
+    {
+      "seccion": "Pollo",
+      "narracion": "A borbotones, la carne queda seca y fibrosa.",
+      "clip": "N02",
+      "ajuste": "Zoom 130 % en las burbujas"
+    },
+    {
+      "seccion": "Pollo",
+      "narracion": "Sácalo, déjalo enfriar diez minutos y deshébralo con dos tenedores.",
+      "clip": "N03",
+      "nota": "Texto: 10 min"
+    },
+    {
+      "seccion": "Pollo",
+      "narracion": "No botes el caldo. Guarda doscientos cincuenta mililitros para la salsa.",
+      "clip": "N02",
+      "tramo": "final",
+      "ajuste": "Zoom 120 %",
+      "nota": "Texto: 250 ml de caldo"
+    },
+    {
+      "seccion": "Salsa roja",
+      "narracion": "Salsa roja. Ahora la salsa, que es el alma del plato. Quítales a los chiles el tallo, las semillas y las venas.",
+      "clip": "N04"
+    },
+    {
+      "seccion": "Salsa roja",
+      "narracion": "Ahí está casi todo el picante.",
+      "clip": "N04",
+      "ajuste": "Zoom 130 % sobre las semillas"
+    },
+    {
+      "seccion": "Salsa roja",
+      "narracion": "Tuéstalos en una sartén seca a fuego medio, de veinte a treinta segundos por lado.",
+      "clip": "N05",
+      "nota": "Texto: 20–30 s por lado · fuego medio"
+    },
+    {
+      "seccion": "Salsa roja",
+      "narracion": "Solo hasta que suelten su aroma. Si se queman, la salsa queda amarga.",
+      "clip": "N05",
+      "tramo": "final",
+      "ajuste": "Zoom 120 %"
+    },
+    {
+      "seccion": "Salsa roja",
+      "narracion": "Remójalos quince minutos en agua caliente para que se ablanden.",
+      "clip": "N06",
+      "nota": "Texto: 15 min"
+    },
+    {
+      "seccion": "Salsa roja",
+      "narracion": "Luego licúalos con el tomate, un cuarto de cebolla y dos dientes de ajo.",
+      "clip": "N07",
+      "nota": "Texto: 300 g de tomate · ¼ de cebolla · 2 dientes de ajo"
+    },
+    {
+      "seccion": "Salsa roja",
+      "narracion": "Media cucharadita de comino, media de orégano, una cucharadita de sal y el caldo.",
+      "clip": "N07",
+      "tramo": "desde 3",
+      "nota": "Texto: ½ cdta de comino · ½ cdta de orégano · 1 cdta de sal · 250 ml de caldo"
+    },
+    {
+      "seccion": "Salsa roja",
+      "narracion": "Un minuto, hasta que quede lisa.",
+      "clip": "N07",
+      "tramo": "final",
+      "nota": "Texto: 1 min"
+    },
+    {
+      "seccion": "Salsa roja",
+      "narracion": "Calienta dos cucharadas de aceite y fríe la salsa a fuego medio, de ocho a diez minutos.",
+      "clip": "N08",
+      "nota": "Texto: 2 cdas de aceite · 8–10 min · fuego medio"
+    },
+    {
+      "seccion": "Salsa roja",
+      "narracion": "Va a oscurecer y a espesar. Este paso le quita el sabor a crudo.",
+      "clip": "N08",
+      "tramo": "final",
+      "ajuste": "Zoom 120 %"
+    },
+    {
+      "seccion": "Tortillas",
+      "narracion": "Tortillas. Vamos con las tortillas. Calienta ciento veinte mililitros de aceite a fuego medio.",
+      "clip": "N09",
+      "nota": "Texto: 120 ml de aceite · fuego medio"
+    },
+    {
+      "seccion": "Tortillas",
+      "narracion": "Pasa cada tortilla cinco segundos por lado.",
+      "clip": "N09",
+      "tramo": "desde 3",
+      "nota": "Texto: 5 s por lado"
+    },
+    {
+      "seccion": "Tortillas",
+      "narracion": "No es para freírlas. Es para que queden flexibles y no se rompan al enrollarlas.",
+      "clip": "N09",
+      "tramo": "final",
+      "ajuste": "Zoom 120 %"
+    },
+    {
+      "seccion": "Tortillas",
+      "narracion": "Enseguida pásala por la salsa, por los dos lados.",
+      "clip": "N08",
+      "ajuste": "Zoom 130 % sobre la salsa"
+    },
+    {
+      "seccion": "Armado",
+      "narracion": "Armado. Rellena cada tortilla con dos cucharadas de pollo y enróllala.",
+      "clip": "N10",
+      "nota": "Texto: 2 cdas de pollo"
+    },
+    {
+      "seccion": "Armado",
+      "narracion": "Acomoda tres por plato, con la unión hacia abajo para que no se abran.",
+      "clip": "N11",
+      "nota": "Texto: 3 por plato"
+    },
+    {
+      "seccion": "Armado",
+      "narracion": "Báñalas con más salsa caliente.",
+      "clip": "N11",
+      "tramo": "final"
+    },
+    {
+      "seccion": "Servicio",
+      "narracion": "Servicio. Termina con crema, queso fresco, aros de cebolla morada, lechuga y aguacate.",
+      "clip": "HERO",
+      "ajuste": "Zoom 115 % sobre los toppings"
+    },
+    {
+      "seccion": "Servicio",
+      "narracion": "Sírvelas de inmediato, antes de que la tortilla absorba toda la salsa.",
+      "clip": "N12"
+    },
+    {
+      "seccion": "Cierre",
+      "narracion": "Si te gustó, suscríbete para más recetas. Y cuéntame en los comentarios: ¿las prefieres rojas o verdes?",
+      "clip": "HERO"
+    }
+  ],
+  "short": [
+    {
+      "seccion": "Gancho",
+      "narracion": "Enchiladas rojas, jugosas y bañadas en salsa.",
+      "clip": "HERO"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Necesitas seiscientos gramos de pollo, seis chiles guajillo y dos chiles ancho.",
+      "clip": "N01",
+      "nota": "Texto: 600 g de pollo · 6 guajillo · 2 ancho"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Trescientos gramos de tomate y doce tortillas de maíz.",
+      "clip": "N01",
+      "ajuste": "Zoom 120 % sobre tomates y tortillas",
+      "nota": "Texto: 300 g de tomate · 12 tortillas"
+    },
+    {
+      "seccion": "Pasos",
+      "narracion": "Cocina el pollo veinticinco minutos y deshébralo.",
+      "clip": "N02",
+      "nota": "Texto: 25 min"
+    },
+    {
+      "seccion": "Pasos",
+      "narracion": "Tuesta los chiles, remójalos quince minutos y licúalos con tomate, ajo y caldo.",
+      "clip": "N05",
+      "nota": "Texto: 15 min de remojo"
+    },
+    {
+      "seccion": "Pasos",
+      "narracion": "Fríe la salsa hasta que oscurezca y espese.",
+      "clip": "N08",
+      "nota": "Texto: 8–10 min"
+    },
+    {
+      "seccion": "Pasos",
+      "narracion": "Pasa cada tortilla por aceite caliente y luego por la salsa.",
+      "clip": "N09",
+      "nota": "Texto: 5 s por lado"
+    },
+    {
+      "seccion": "Pasos",
+      "narracion": "Rellena con pollo, enrolla y baña con más salsa.",
+      "clip": "N11"
+    },
+    {
+      "seccion": "Recompensa",
+      "narracion": "Crema, queso fresco, cebolla morada y aguacate encima.",
+      "clip": "N12"
+    },
+    {
+      "seccion": "Cierre",
+      "narracion": "Guárdala, y los trucos están en el canal.",
+      "clip": "N11",
+      "tramo": "final"
+    },
+    {
+      "seccion": "Cierre",
+      "narracion": "Así quedan unas enchiladas rojas, jugosas y bañadas en salsa.",
+      "clip": "HERO"
+    }
+  ]
+}

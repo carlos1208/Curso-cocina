@@ -1,0 +1,2242 @@
+{
+ "slug": "enchiladas_rojas",
+ "title": "Enchiladas rojas de pollo",
+ "tag": "CURSO DE COCINA  ·  COCINA MEXICANA",
+ "sheet": "hoja_tomas.xlsx",
+ "voice": "voz.mp3",
+ "music": "latino",
+ "footage": "landscape",
+ "cue_chars": 64,
+ "duration_limits": [
+  150,
+  240
+ ],
+ "media": {
+  "HERO": {
+   "img": "raw/HERO.jpg"
+  },
+  "N01": {
+   "img": "raw/N01.jpg"
+  },
+  "N03": {
+   "img": "raw/N03.jpg"
+  },
+  "N04": {
+   "img": "raw/N04.jpg"
+  },
+  "N06": {
+   "img": "raw/N06.jpg"
+  },
+  "N10": {
+   "img": "raw/N10.jpg"
+  },
+  "N02": {
+   "clip": "raw/N02.mp4"
+  },
+  "N05": {
+   "clip": "raw/N05.mp4"
+  },
+  "N07": {
+   "clip": "raw/N07.mp4"
+  },
+  "N08": {
+   "clip": "raw/N08.mp4"
+  },
+  "N09": {
+   "clip": "raw/N09.mp4"
+  },
+  "N11": {
+   "clip": "raw/N11.mp4"
+  },
+  "N12": {
+   "clip": "raw/N12.mp4"
+  }
+ },
+ "chapters": [
+  {
+   "start": "S03",
+   "id": "ingredientes",
+   "title": "Ingredientes",
+   "h1": "Ingredientes",
+   "h2": "para 4 personas",
+   "color": "#F2B544",
+   "mark": "MISE EN PLACE"
+  },
+  {
+   "start": "S07",
+   "id": "pollo",
+   "title": "Pollo",
+   "h1": "Pollo",
+   "h2": "deshebrado",
+   "color": "#DB8B78",
+   "mark": "POLLO"
+  },
+  {
+   "start": "S13",
+   "id": "salsa",
+   "title": "Salsa roja",
+   "h1": "Salsa",
+   "h2": "de guajillo",
+   "color": "#D9573B",
+   "mark": "SALSA ROJA"
+  },
+  {
+   "start": "S23",
+   "id": "tortillas",
+   "title": "Tortillas",
+   "h1": "Tortillas",
+   "h2": "flexibles",
+   "color": "#F3D35B",
+   "mark": "TORTILLAS"
+  },
+  {
+   "start": "S27",
+   "id": "armado",
+   "title": "Armado",
+   "h1": "Rellenar",
+   "h2": "y enrollar",
+   "color": "#E9A23B",
+   "mark": "ARMADO"
+  },
+  {
+   "start": "S30",
+   "id": "servicio",
+   "title": "Servicio",
+   "h1": "Servir",
+   "h2": "y decorar",
+   "color": "#A9C44E",
+   "mark": "SERVICIO"
+  }
+ ],
+ "shots": {
+  "S01": {
+   "src": "HERO"
+  },
+  "S02": {
+   "src": "N12",
+   "a": 0,
+   "b": 4.0
+  },
+  "S03": {
+   "src": "N01",
+   "z": [
+    1.0,
+    1.03
+   ],
+   "f": [
+    [
+     0.42,
+     0.52
+    ],
+    [
+     0.42,
+     0.52
+    ]
+   ]
+  },
+  "S04": {
+   "src": "N01",
+   "z": [
+    1.03,
+    1.06
+   ],
+   "f": [
+    [
+     0.42,
+     0.52
+    ],
+    [
+     0.4,
+     0.52
+    ]
+   ],
+   "tr": "none"
+  },
+  "S05": {
+   "src": "N01",
+   "z": [
+    1.06,
+    1.09
+   ],
+   "f": [
+    [
+     0.4,
+     0.52
+    ],
+    [
+     0.42,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  "S06": {
+   "src": "N01",
+   "z": [
+    1.45,
+    1.52
+   ],
+   "f": [
+    [
+     0.3,
+     0.22
+    ],
+    [
+     0.32,
+     0.22
+    ]
+   ]
+  },
+  "S07": {
+   "src": "N02",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  "S08": {
+   "src": "N02",
+   "a": 3.0,
+   "b": 6.4,
+   "z": [
+    1.28,
+    1.34
+   ],
+   "f": [
+    [
+     0.45,
+     0.32
+    ],
+    [
+     0.47,
+     0.32
+    ]
+   ]
+  },
+  "S09": {
+   "src": "N02",
+   "a": 2.6,
+   "b": 8.0,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ]
+  },
+  "S10": {
+   "src": "N02",
+   "a": 0,
+   "b": 3.2,
+   "z": [
+    1.3,
+    1.38
+   ],
+   "f": [
+    [
+     0.45,
+     0.35
+    ],
+    [
+     0.45,
+     0.35
+    ]
+   ]
+  },
+  "S11": {
+   "src": "N03",
+   "z": [
+    1.04,
+    1.12
+   ],
+   "f": [
+    [
+     0.36,
+     0.6
+    ],
+    [
+     0.34,
+     0.6
+    ]
+   ]
+  },
+  "S12": {
+   "src": "N02",
+   "a": 2.4,
+   "b": 8.0,
+   "z": [
+    1.18,
+    1.24
+   ],
+   "f": [
+    [
+     0.45,
+     0.4
+    ],
+    [
+     0.45,
+     0.42
+    ]
+   ]
+  },
+  "S13": {
+   "src": "N04",
+   "z": [
+    1.0,
+    1.12
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.56,
+     0.6
+    ]
+   ]
+  },
+  "S14": {
+   "src": "N04",
+   "z": [
+    1.55,
+    1.62
+   ],
+   "f": [
+    [
+     0.64,
+     0.68
+    ],
+    [
+     0.64,
+     0.68
+    ]
+   ]
+  },
+  "S15": {
+   "src": "N05",
+   "a": 0,
+   "b": 5.9,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  "S16": {
+   "src": "N05",
+   "a": 1.7,
+   "b": 8.0,
+   "z": [
+    1.2,
+    1.26
+   ],
+   "f": [
+    [
+     0.48,
+     0.4
+    ],
+    [
+     0.48,
+     0.42
+    ]
+   ]
+  },
+  "S17": {
+   "src": "N06",
+   "z": [
+    1.04,
+    1.12
+   ],
+   "f": [
+    [
+     0.38,
+     0.62
+    ],
+    [
+     0.38,
+     0.6
+    ]
+   ]
+  },
+  "S18": {
+   "src": "N07",
+   "a": 0,
+   "b": 3.6,
+   "z": [
+    1.0,
+    1.02
+   ]
+  },
+  "S19": {
+   "src": "N07",
+   "a": 3.6,
+   "b": 6.6,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  "S20": {
+   "src": "N07",
+   "a": 5.9,
+   "b": 8.0,
+   "z": [
+    1.08,
+    1.12
+   ]
+  },
+  "S21": {
+   "src": "N08",
+   "a": 0,
+   "b": 7.2,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  "S22": {
+   "src": "N08",
+   "a": 2.5,
+   "b": 8.0,
+   "z": [
+    1.2,
+    1.26
+   ],
+   "f": [
+    [
+     0.45,
+     0.42
+    ],
+    [
+     0.45,
+     0.42
+    ]
+   ]
+  },
+  "S23": {
+   "src": "N09",
+   "a": 0,
+   "b": 7.0,
+   "z": [
+    1.0,
+    1.03
+   ]
+  },
+  "S24": {
+   "src": "N09",
+   "a": 2.5,
+   "b": 6.2,
+   "z": [
+    1.25,
+    1.3
+   ],
+   "f": [
+    [
+     0.42,
+     0.42
+    ],
+    [
+     0.42,
+     0.42
+    ]
+   ]
+  },
+  "S25": {
+   "src": "N09",
+   "a": 1.6,
+   "b": 8.0,
+   "z": [
+    1.06,
+    1.1
+   ]
+  },
+  "S26": {
+   "src": "N08",
+   "a": 0,
+   "b": 3.8,
+   "z": [
+    1.3,
+    1.36
+   ],
+   "f": [
+    [
+     0.45,
+     0.4
+    ],
+    [
+     0.45,
+     0.4
+    ]
+   ]
+  },
+  "S27": {
+   "src": "N10",
+   "z": [
+    1.0,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.58
+    ]
+   ]
+  },
+  "S28": {
+   "src": "N11",
+   "a": 5.0,
+   "b": 8.0,
+   "z": [
+    1.04,
+    1.08
+   ],
+   "f": [
+    [
+     0.48,
+     0.6
+    ],
+    [
+     0.48,
+     0.6
+    ]
+   ]
+  },
+  "S29": {
+   "src": "N11",
+   "a": 1.0,
+   "b": 3.9,
+   "z": [
+    1.0,
+    1.02
+   ]
+  },
+  "S30": {
+   "src": "HERO",
+   "z": [
+    1.08,
+    1.24
+   ],
+   "f": [
+    [
+     0.47,
+     0.6
+    ],
+    [
+     0.47,
+     0.58
+    ]
+   ]
+  },
+  "S31": {
+   "src": "N12",
+   "a": 0,
+   "b": 4.9,
+   "z": [
+    1.0,
+    1.04
+   ]
+  },
+  "S32": {
+   "src": "HERO",
+   "z": [
+    1.04,
+    1.04
+   ]
+  }
+ },
+ "callouts": [
+  {
+   "kind": "board",
+   "t": 14.1,
+   "until": "S05",
+   "groups": [
+    [
+     "a",
+     "Pollo y salsa"
+    ],
+    [
+     "b",
+     "Aromáticos"
+    ],
+    [
+     "c",
+     "Y además"
+    ]
+   ],
+   "items": [
+    {
+     "g": "a",
+     "t": 14.1,
+     "v": 600,
+     "unit": "g",
+     "label": "pechuga de pollo"
+    },
+    {
+     "g": "a",
+     "t": 17.3,
+     "v": 6,
+     "unit": "",
+     "label": "chiles guajillo"
+    },
+    {
+     "g": "a",
+     "t": 18.9,
+     "v": 2,
+     "unit": "",
+     "label": "chiles ancho"
+    },
+    {
+     "g": "a",
+     "t": 20.8,
+     "v": 300,
+     "unit": "g",
+     "label": "tomate"
+    },
+    {
+     "g": "b",
+     "t": 22.55,
+     "v": "¾",
+     "unit": "",
+     "label": "cebolla blanca"
+    },
+    {
+     "g": "b",
+     "t": 23.9,
+     "v": 4,
+     "unit": "",
+     "label": "dientes de ajo"
+    },
+    {
+     "g": "b",
+     "t": 25.8,
+     "v": "½",
+     "unit": "cdta",
+     "label": "comino"
+    },
+    {
+     "g": "b",
+     "t": 26.6,
+     "v": "½",
+     "unit": "cdta",
+     "label": "orégano"
+    },
+    {
+     "g": "c",
+     "t": 27.4,
+     "v": 1,
+     "unit": "",
+     "label": "hoja de laurel"
+    },
+    {
+     "g": "c",
+     "t": 28.18,
+     "v": 2,
+     "unit": "cdtas",
+     "label": "sal"
+    },
+    {
+     "g": "c",
+     "t": 28.75,
+     "v": 12,
+     "unit": "",
+     "label": "tortillas de maíz"
+    },
+    {
+     "g": "c",
+     "t": 30.11,
+     "v": 120,
+     "unit": "ml",
+     "label": "aceite (+ 2 cdas)"
+    }
+   ]
+  },
+  {
+   "kind": "list",
+   "t": 32.39,
+   "rows": [
+    [
+     120,
+     "ml",
+     "crema agria",
+     32.39
+    ],
+    [
+     100,
+     "g",
+     "queso fresco",
+     33.35
+    ],
+    [
+     "½",
+     "",
+     "cebolla morada",
+     34.23
+    ],
+    [
+     2,
+     "hojas",
+     "lechuga",
+     35.43
+    ],
+    [
+     1,
+     "",
+     "aguacate",
+     36.07
+    ]
+   ],
+   "until": "S06"
+  },
+  {
+   "kind": "chips",
+   "t": 41.26,
+   "items": [
+    [
+     "+ 1,5 l de agua",
+     41.26
+    ],
+    [
+     "+ ½ cebolla",
+     42.74
+    ]
+   ],
+   "until": "S07"
+  },
+  {
+   "kind": "chips",
+   "t": 43.94,
+   "items": [
+    [
+     "+ 2 dientes de ajo",
+     43.94
+    ]
+   ],
+   "until": "S07"
+  },
+  {
+   "kind": "chips",
+   "t": 45.88,
+   "items": [
+    [
+     "+ 1 hoja de laurel",
+     45.88
+    ],
+    [
+     "+ 1 cdta de sal",
+     47.23
+    ]
+   ],
+   "until": "S08"
+  },
+  {
+   "kind": "timer",
+   "t": 49.58,
+   "value": 25,
+   "unit": "min",
+   "label": "hervor suave",
+   "until": "S09"
+  },
+  {
+   "kind": "heat",
+   "t": 50.85,
+   "level": 2,
+   "label": "Medio-bajo",
+   "until": "S09"
+  },
+  {
+   "kind": "tip",
+   "t": 54.55,
+   "icon": "x",
+   "text": "A borbotones: seco y fibroso",
+   "until": "S10"
+  },
+  {
+   "kind": "timer",
+   "t": 59.28,
+   "value": 10,
+   "unit": "min",
+   "label": "que se enfríe",
+   "until": "S11"
+  },
+  {
+   "kind": "tip",
+   "t": 60.09,
+   "icon": "hand",
+   "text": "Con 2 tenedores",
+   "until": "S11"
+  },
+  {
+   "kind": "list",
+   "t": 64.98,
+   "rows": [
+    [
+     250,
+     "ml",
+     "de caldo → salsa",
+     64.98
+    ]
+   ],
+   "until": "S12"
+  },
+  {
+   "kind": "chips",
+   "t": 74.92,
+   "items": [
+    [
+     "– tallo",
+     74.92
+    ],
+    [
+     "– semillas",
+     75.97
+    ],
+    [
+     "– venas",
+     77.17
+    ]
+   ],
+   "until": "S13"
+  },
+  {
+   "kind": "tip",
+   "t": 78.66,
+   "icon": "fire",
+   "text": "El picante está en semillas y venas",
+   "until": "S14"
+  },
+  {
+   "kind": "heat",
+   "t": 82.62,
+   "level": 3,
+   "label": "Medio",
+   "until": "S15"
+  },
+  {
+   "kind": "timer",
+   "t": 84.03,
+   "value": 30,
+   "unit": "s",
+   "main": "20–30 segundos",
+   "label": "sartén seca",
+   "sides": 2,
+   "until": "S15"
+  },
+  {
+   "kind": "tip",
+   "t": 89.4,
+   "icon": "x",
+   "text": "Quemados: salsa amarga",
+   "until": "S16"
+  },
+  {
+   "kind": "timer",
+   "t": 93.91,
+   "value": 15,
+   "unit": "min",
+   "label": "en agua caliente",
+   "until": "S17"
+  },
+  {
+   "kind": "chips",
+   "t": 98.77,
+   "items": [
+    [
+     "+ 300 g de tomate",
+     98.77
+    ],
+    [
+     "+ ¼ de cebolla",
+     99.53
+    ]
+   ],
+   "until": "S18"
+  },
+  {
+   "kind": "chips",
+   "t": 101.12,
+   "items": [
+    [
+     "+ 2 dientes de ajo",
+     101.12
+    ]
+   ],
+   "until": "S18"
+  },
+  {
+   "kind": "list",
+   "t": 103.15,
+   "rows": [
+    [
+     "½",
+     "cdta",
+     "de comino",
+     103.0
+    ],
+    [
+     "½",
+     "cdta",
+     "de orégano",
+     105.11
+    ],
+    [
+     1,
+     "cdta",
+     "de sal",
+     106.4
+    ],
+    [
+     250,
+     "ml",
+     "de caldo",
+     108.08
+    ]
+   ],
+   "until": "S19"
+  },
+  {
+   "kind": "timer",
+   "t": 109.55,
+   "value": 1,
+   "unit": "min",
+   "label": "en la licuadora",
+   "until": "S20"
+  },
+  {
+   "kind": "chips",
+   "t": 112.34,
+   "items": [
+    [
+     "+ 2 cdas de aceite",
+     112.34
+    ]
+   ],
+   "until": "S21"
+  },
+  {
+   "kind": "heat",
+   "t": 115.06,
+   "level": 3,
+   "label": "Medio",
+   "until": "S21"
+  },
+  {
+   "kind": "timer",
+   "t": 116.23,
+   "value": 10,
+   "unit": "min",
+   "main": "8–10 minutos",
+   "label": "hasta que oscurezca",
+   "until": "S21"
+  },
+  {
+   "kind": "tip",
+   "t": 119.07,
+   "icon": "check",
+   "text": "Oscura y espesa: ya no sabe a crudo",
+   "until": "S22"
+  },
+  {
+   "kind": "chips",
+   "t": 128.28,
+   "items": [
+    [
+     "+ 120 ml de aceite",
+     128.28
+    ]
+   ],
+   "until": "S23"
+  },
+  {
+   "kind": "heat",
+   "t": 130.28,
+   "level": 3,
+   "label": "Medio",
+   "until": "S23"
+  },
+  {
+   "kind": "timer",
+   "t": 133.03,
+   "value": 5,
+   "unit": "s",
+   "main": "5 segundos",
+   "label": "por lado",
+   "sides": 2,
+   "until": "S24"
+  },
+  {
+   "kind": "tip",
+   "t": 135.2,
+   "icon": "x",
+   "text": "No es para freírlas",
+   "until": "S25"
+  },
+  {
+   "kind": "tip",
+   "t": 137.97,
+   "icon": "check",
+   "text": "Flexibles: no se rompen",
+   "until": "S25"
+  },
+  {
+   "kind": "tip",
+   "t": 142.03,
+   "icon": "drop",
+   "text": "Salsa por ambos lados",
+   "until": "S26"
+  },
+  {
+   "kind": "list",
+   "t": 147.24,
+   "rows": [
+    [
+     2,
+     "cdas",
+     "de pollo por tortilla",
+     147.24
+    ]
+   ],
+   "until": "S27"
+  },
+  {
+   "kind": "tip",
+   "t": 148.68,
+   "icon": "hand",
+   "text": "Rellena y enrolla",
+   "until": "S27"
+  },
+  {
+   "kind": "big",
+   "t": 150.72,
+   "text": "3 por plato",
+   "until": "S29"
+  },
+  {
+   "kind": "tip",
+   "t": 152.0,
+   "icon": "check",
+   "text": "La unión hacia abajo",
+   "until": "S29"
+  },
+  {
+   "kind": "chips",
+   "t": 159.99,
+   "items": [
+    [
+     "crema",
+     159.99
+    ],
+    [
+     "queso fresco",
+     161.23
+    ],
+    [
+     "cebolla morada",
+     162.97
+    ]
+   ],
+   "until": "S30"
+  },
+  {
+   "kind": "chips",
+   "t": 164.59,
+   "items": [
+    [
+     "lechuga",
+     164.59
+    ],
+    [
+     "aguacate",
+     165.47
+    ]
+   ],
+   "until": "S30"
+  },
+  {
+   "kind": "big",
+   "t": 167.41,
+   "text": "¡A la mesa!",
+   "until": "S31"
+  }
+ ],
+ "pins": [
+  {
+   "shot": "S03",
+   "t": 14.1,
+   "xy": [
+    0.4,
+    0.7
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S04",
+   "t": 17.21,
+   "xy": [
+    0.4,
+    0.7
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S04",
+   "t": 17.3,
+   "xy": [
+    0.1,
+    0.7
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S04",
+   "t": 18.9,
+   "xy": [
+    0.25,
+    0.57
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S04",
+   "t": 20.8,
+   "xy": [
+    0.23,
+    0.34
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S04",
+   "t": 22.55,
+   "xy": [
+    0.25,
+    0.43
+   ],
+   "n": 5
+  },
+  {
+   "shot": "S04",
+   "t": 23.9,
+   "xy": [
+    0.35,
+    0.37
+   ],
+   "n": 6
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.4,
+    0.7
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.1,
+    0.7
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.25,
+    0.57
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.23,
+    0.34
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.25,
+    0.43
+   ],
+   "n": 5
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.35,
+    0.37
+   ],
+   "n": 6
+  },
+  {
+   "shot": "S05",
+   "t": 25.8,
+   "xy": [
+    0.5,
+    0.4
+   ],
+   "n": 7
+  },
+  {
+   "shot": "S05",
+   "t": 26.6,
+   "xy": [
+    0.61,
+    0.4
+   ],
+   "n": 8
+  },
+  {
+   "shot": "S05",
+   "t": 27.4,
+   "xy": [
+    0.4,
+    0.42
+   ],
+   "n": 9
+  },
+  {
+   "shot": "S05",
+   "t": 28.75,
+   "xy": [
+    0.47,
+    0.22
+   ],
+   "n": 11
+  },
+  {
+   "shot": "S06",
+   "t": 32.39,
+   "xy": [
+    0.33,
+    0.18
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S06",
+   "t": 33.35,
+   "xy": [
+    0.61,
+    0.26
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S06",
+   "t": 34.23,
+   "xy": [
+    0.15,
+    0.21
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S06",
+   "t": 35.43,
+   "xy": [
+    0.06,
+    0.22
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S06",
+   "t": 36.07,
+   "xy": [
+    0.22,
+    0.16
+   ],
+   "n": 5
+  },
+  {
+   "shot": "S30",
+   "t": 159.99,
+   "xy": [
+    0.37,
+    0.68
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S30",
+   "t": 161.23,
+   "xy": [
+    0.55,
+    0.6
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S30",
+   "t": 162.97,
+   "xy": [
+    0.385,
+    0.57
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S30",
+   "t": 164.59,
+   "xy": [
+    0.53,
+    0.54
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S30",
+   "t": 165.47,
+   "xy": [
+    0.5,
+    0.46
+   ],
+   "n": 5
+  }
+ ],
+ "subtitles": [
+  [
+   0.1,
+   1.6,
+   "Enchiladas rojas de pollo."
+  ],
+  [
+   2.1,
+   2.9,
+   "Picantes,"
+  ],
+  [
+   3.26,
+   5.9,
+   "cremosas y bañadas en salsa de chile."
+  ],
+  [
+   6.4,
+   8.4,
+   "Hoy te enseño a hacerlas como en México,"
+  ],
+  [
+   8.8,
+   9.7,
+   "paso a paso."
+  ],
+  [
+   10.4,
+   11.4,
+   "Ingredientes."
+  ],
+  [
+   12.2,
+   16.6,
+   "Para **4 personas** necesitas **600 g** de pechuga de pollo."
+  ],
+  [
+   17.2,
+   20.3,
+   "**6** chiles guajillo y **2** chiles ancho."
+  ],
+  [
+   20.9,
+   23.6,
+   "**300 g** de tomate, cebolla blanca"
+  ],
+  [
+   23.8,
+   25.1,
+   "y **4** dientes de ajo."
+  ],
+  [
+   25.8,
+   26.4,
+   "Comino,"
+  ],
+  [
+   26.6,
+   27.3,
+   "orégano,"
+  ],
+  [
+   27.5,
+   28.5,
+   "laurel y sal."
+  ],
+  [
+   28.9,
+   30.6,
+   "**12** tortillas de maíz y aceite."
+  ],
+  [
+   31.2,
+   32.1,
+   "Y para servir:"
+  ],
+  [
+   32.5,
+   36.9,
+   "crema agria, queso fresco, cebolla morada, lechuga y aguacate."
+  ],
+  [
+   37.4,
+   37.8,
+   "Pollo."
+  ],
+  [
+   38.4,
+   39.4,
+   "Empieza por el pollo."
+  ],
+  [
+   40,
+   42.4,
+   "Ponlo en una olla con **litro y medio** de agua,"
+  ],
+  [
+   42.9,
+   45.1,
+   "**media** cebolla y **2** dientes de ajo."
+  ],
+  [
+   45.7,
+   48.4,
+   "**1** hoja de laurel y **1 cucharadita** de sal."
+  ],
+  [
+   49.1,
+   52,
+   "Cocina **25 minutos** a fuego **medio-bajo**."
+  ],
+  [
+   52.8,
+   53.8,
+   "Que hierva suave."
+  ],
+  [
+   54.5,
+   57.2,
+   "A borbotones, la carne queda seca y fibrosa."
+  ],
+  [
+   57.7,
+   58.4,
+   "Sácalo,"
+  ],
+  [
+   58.5,
+   62.2,
+   "déjalo enfriar **10 minutos** y deshébralo con **2** tenedores."
+  ],
+  [
+   62.7,
+   64,
+   "No botes el caldo."
+  ],
+  [
+   64.5,
+   67.7,
+   "Guarda **250 ml** para la salsa."
+  ],
+  [
+   68.3,
+   69.3,
+   "Salsa roja."
+  ],
+  [
+   70,
+   71.1,
+   "Ahora la salsa,"
+  ],
+  [
+   71.4,
+   72.8,
+   "que es el alma del plato."
+  ],
+  [
+   73.3,
+   75.6,
+   "Quítales a los chiles el tallo,"
+  ],
+  [
+   75.7,
+   77.8,
+   "las semillas y las venas."
+  ],
+  [
+   78.3,
+   80.3,
+   "Ahí está casi todo el picante."
+  ],
+  [
+   80.9,
+   83.4,
+   "Tuéstalos en una sartén seca a fuego **medio**,"
+  ],
+  [
+   83.9,
+   86.1,
+   "de **20 a 30 segundos** por lado."
+  ],
+  [
+   86.8,
+   88.8,
+   "Solo hasta que suelten su aroma."
+  ],
+  [
+   89.4,
+   90.2,
+   "Si se queman,"
+  ],
+  [
+   90.7,
+   92.2,
+   "la salsa queda amarga."
+  ],
+  [
+   93.1,
+   96.6,
+   "Remójalos **15 minutos** en agua caliente para que se ablanden."
+  ],
+  [
+   97.6,
+   99.3,
+   "Luego licúalos con el tomate,"
+  ],
+  [
+   99.7,
+   102.3,
+   "**¼** de cebolla y **2** dientes de ajo."
+  ],
+  [
+   103.1,
+   104.8,
+   "**½ cucharadita** de comino,"
+  ],
+  [
+   105.2,
+   106.3,
+   "**½** de orégano,"
+  ],
+  [
+   106.5,
+   108.8,
+   "**1 cucharadita** de sal y el caldo."
+  ],
+  [
+   109.5,
+   110.1,
+   "**1 minuto**,"
+  ],
+  [
+   110.3,
+   111.3,
+   "hasta que quede lisa."
+  ],
+  [
+   111.7,
+   115.8,
+   "Calienta **2 cucharadas** de aceite y fríe la salsa a fuego **medio**,"
+  ],
+  [
+   116.3,
+   118.2,
+   "de **8 a 10 minutos**."
+  ],
+  [
+   118.9,
+   120.7,
+   "Va a oscurecer y a espesar."
+  ],
+  [
+   121.3,
+   123.5,
+   "Este paso le quita el sabor a crudo."
+  ],
+  [
+   124.4,
+   125.2,
+   "Tortillas."
+  ],
+  [
+   125.9,
+   127.2,
+   "Vamos con las tortillas."
+  ],
+  [
+   127.6,
+   131,
+   "Calienta **120 ml** de aceite a fuego **medio**."
+  ],
+  [
+   131.39,
+   134.5,
+   "Pasa cada tortilla **5 segundos** por lado."
+  ],
+  [
+   135.1,
+   136.6,
+   "No es para freírlas."
+  ],
+  [
+   137,
+   140.8,
+   "Es para que queden flexibles y no se rompan al enrollarlas."
+  ],
+  [
+   141.5,
+   143.4,
+   "Enseguida pásala por la salsa,"
+  ],
+  [
+   143.6,
+   144.8,
+   "por los dos lados."
+  ],
+  [
+   145.31,
+   145.68,
+   "Armado."
+  ],
+  [
+   145.79,
+   149.5,
+   "Rellena cada tortilla con **2 cucharadas** de pollo y enróllala."
+  ],
+  [
+   150.1,
+   151.5,
+   "Acomoda **3 por plato**,"
+  ],
+  [
+   151.66,
+   154.4,
+   "con la unión hacia abajo para que no se abran."
+  ],
+  [
+   154.8,
+   156.7,
+   "Báñalas con más salsa caliente."
+  ],
+  [
+   157.7,
+   158.5,
+   "Servicio."
+  ],
+  [
+   159.4,
+   160.5,
+   "Termina con crema,"
+  ],
+  [
+   161.1,
+   162,
+   "queso fresco,"
+  ],
+  [
+   162.6,
+   164,
+   "aros de cebolla morada,"
+  ],
+  [
+   164.7,
+   166.2,
+   "lechuga y aguacate."
+  ],
+  [
+   166.8,
+   168.1,
+   "Sírvelas de inmediato,"
+  ],
+  [
+   168.4,
+   170,
+   "antes de que la tortilla absorba"
+  ],
+  [
+   170.1,
+   171.1,
+   "toda la salsa."
+  ],
+  [
+   171.7,
+   172.6,
+   "Si te gustó,"
+  ],
+  [
+   173.2,
+   175,
+   "suscríbete para más recetas."
+  ],
+  [
+   175.7,
+   177.2,
+   "Y cuéntame en los comentarios:"
+  ],
+  [
+   177.9,
+   179.8,
+   "¿Las prefieres rojas o verdes?"
+  ]
+ ],
+ "hook": {
+  "title": [
+   "Enchiladas",
+   "rojas"
+  ],
+  "cards": [
+   {
+    "before": {
+     "src": "N04",
+     "a": 0,
+     "rate": 0,
+     "z": 1.0,
+     "f": [
+      0.47,
+      0.55
+     ]
+    },
+    "after": {
+     "src": "N05",
+     "a": 2.0,
+     "rate": 1,
+     "z": 1.0,
+     "f": [
+      0.42,
+      0.5
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "HERO",
+     "a": 0,
+     "rate": 0,
+     "z": 1.0,
+     "f": [
+      0.46,
+      0.6
+     ]
+    },
+    "after": {
+     "src": "N12",
+     "a": 1.2,
+     "rate": 1,
+     "z": 1.0,
+     "f": [
+      0.52,
+      0.5
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "N10",
+     "a": 0,
+     "rate": 0,
+     "z": 1.0,
+     "f": [
+      0.5,
+      0.6
+     ]
+    },
+    "after": {
+     "src": "N11",
+     "a": 0.8,
+     "rate": 1,
+     "z": 1.0,
+     "f": [
+      0.56,
+      0.5
+     ]
+    }
+   }
+  ],
+  "rows": [],
+  "beat": 2.0,
+  "words": [
+   [
+    "Picantes",
+    2.05,
+    "#D9573B",
+    "chile guajillo y ancho"
+   ],
+   [
+    "Cremosas",
+    3.2,
+    "#F2B544",
+    "crema y queso fresco"
+   ],
+   [
+    "Bañadas",
+    4.2,
+    "#F6EFE3",
+    "en salsa roja"
+   ]
+  ],
+  "tagline": [
+   "COMO EN MÉXICO  ·  PASO A PASO",
+   6.4
+  ],
+  "sizzle": "N09"
+ },
+ "end": {
+  "start": "S32",
+  "title": "¡Buen provecho!",
+  "next": "PRÓXIMO VIDEO",
+  "bubble": [
+   "¿Rojas o verdes?",
+   "Cuéntamelo en",
+   "los comentarios"
+  ]
+ },
+ "thumb": {
+  "img": "raw/HERO.jpg",
+  "crop": [
+   0.15,
+   0.08,
+   0.62
+  ],
+  "title": [
+   "Enchiladas",
+   "rojas"
+  ],
+  "tags": [
+   [
+    "picantes",
+    "#D9573B",
+    "#F6EFE3"
+   ],
+   [
+    "cremosas",
+    "#F6EFE3",
+    "#140E09"
+   ],
+   [
+    "de pollo",
+    "#F2B544",
+    "#140E09"
+   ]
+  ]
+ },
+ "short": {
+  "mode": "autonomo",
+  "voice": "voz_short.mp3",
+  "sheet": "Short",
+  "limits": [
+   30,
+   47
+  ],
+  "loop": true,
+  "cover_t": 1.6,
+  "hook": {
+   "title": [
+    "Enchiladas",
+    "rojas"
+   ],
+   "vertical": {
+    "title_y": 470,
+    "cuts": [
+     [
+      0,
+      "HERO",
+      0,
+      1,
+      [
+       1.0,
+       1.08
+      ],
+      [
+       0.47,
+       0.6
+      ]
+     ]
+    ],
+    "pins": [
+     [
+      "salsa de guajillo",
+      2.4,
+      [
+       0.3,
+       0.72
+      ],
+      "#D9573B"
+     ],
+     [
+      "crema y queso",
+      3.0,
+      [
+       0.6,
+       0.5
+      ],
+      "#F6EFE3"
+     ]
+    ]
+   }
+  },
+  "chapters": [
+   {
+    "start": "V02",
+    "title": "Ingredientes",
+    "color": "#F2B544"
+   },
+   {
+    "start": "V04",
+    "title": "Pollo",
+    "color": "#DB8B78"
+   },
+   {
+    "start": "V05",
+    "title": "Salsa",
+    "color": "#D9573B"
+   },
+   {
+    "start": "V07",
+    "title": "Tortillas",
+    "color": "#F3D35B"
+   },
+   {
+    "start": "V08",
+    "title": "Armado",
+    "color": "#E9A23B"
+   },
+   {
+    "start": "V09",
+    "title": "Servicio",
+    "color": "#A9C44E"
+   }
+  ],
+  "cta": {
+   "start": "V10",
+   "card": [
+    "Guárdala",
+    "Receta con trucos",
+    "en el canal  ▶"
+   ],
+   "until": "@V10$"
+  },
+  "shots": {
+   "V02": {
+    "src": "N01",
+    "z": [
+     1.0,
+     1.06
+    ],
+    "f": [
+     [
+      0.42,
+      0.52
+     ],
+     [
+      0.4,
+      0.52
+     ]
+    ]
+   },
+   "V03": {
+    "src": "N01",
+    "z": [
+     1.3,
+     1.36
+    ],
+    "f": [
+     [
+      0.34,
+      0.3
+     ],
+     [
+      0.36,
+      0.28
+     ]
+    ]
+   },
+   "V04": {
+    "src": "N02",
+    "a": 0,
+    "b": 3.5
+   },
+   "V05": {
+    "src": "N05",
+    "a": 0,
+    "b": 6.1
+   },
+   "V06": {
+    "src": "N08",
+    "a": 2.0,
+    "b": 5.3
+   },
+   "V07": {
+    "src": "N09",
+    "a": 0,
+    "b": 4.2
+   },
+   "V08": {
+    "src": "N11",
+    "a": 0.6,
+    "b": 4.6
+   },
+   "V09": {
+    "src": "N12",
+    "a": 0,
+    "b": 4.2
+   },
+   "V10": {
+    "src": "N12",
+    "a": 4.2,
+    "b": 6.9
+   },
+   "V11": {
+    "src": "HERO",
+    "z": [
+     1.1,
+     1.04
+    ],
+    "f": [
+     [
+      0.47,
+      0.6
+     ],
+     [
+      0.47,
+      0.6
+     ]
+    ]
+   }
+  },
+  "callouts": [
+   {
+    "kind": "list",
+    "t": 4.58,
+    "until": "V03",
+    "rows": [
+     [
+      600,
+      "g",
+      "de pollo",
+      4.58
+     ],
+     [
+      6,
+      "",
+      "chiles guajillo",
+      6.47
+     ],
+     [
+      2,
+      "",
+      "chiles ancho",
+      8.16
+     ],
+     [
+      300,
+      "g",
+      "de tomate",
+      9.6
+     ],
+     [
+      12,
+      "",
+      "tortillas de maíz",
+      11.44
+     ]
+    ]
+   },
+   {
+    "kind": "timer",
+    "t": 14.23,
+    "value": 25,
+    "unit": "min",
+    "label": "y deshébralo",
+    "until": "V04"
+   },
+   {
+    "kind": "timer",
+    "t": 18.7,
+    "value": 15,
+    "unit": "min",
+    "label": "chiles en remojo",
+    "until": "V05"
+   },
+   {
+    "kind": "timer",
+    "t": 23.0,
+    "value": 10,
+    "unit": "min",
+    "main": "8–10 minutos",
+    "label": "a fuego medio",
+    "until": "V06"
+   },
+   {
+    "kind": "timer",
+    "t": 26.3,
+    "value": 5,
+    "unit": "s",
+    "main": "5 segundos",
+    "label": "por lado",
+    "sides": 2,
+    "until": "V07"
+   },
+   {
+    "kind": "list",
+    "t": 30.45,
+    "rows": [
+     [
+      2,
+      "cdas",
+      "de pollo por tortilla",
+      30.3
+     ]
+    ],
+    "until": "V08"
+   },
+   {
+    "kind": "chips",
+    "t": 34.45,
+    "items": [
+     [
+      "crema",
+      34.45
+     ],
+     [
+      "queso fresco",
+      35.01
+     ],
+     [
+      "cebolla morada",
+      35.88
+     ]
+    ],
+    "until": "V09"
+   },
+   {
+    "kind": "chips",
+    "t": 37.01,
+    "items": [
+     [
+      "aguacate",
+      37.01
+     ]
+    ],
+    "until": "V09"
+   }
+  ],
+  "pins": [],
+  "subtitles": [
+   [
+    0.1,
+    1.3,
+    "Enchiladas rojas,"
+   ],
+   [
+    1.5,
+    3.5,
+    "jugosas y bañadas en salsa."
+   ],
+   [
+    4,
+    6.1,
+    "Necesitas **600 g** de pollo,"
+   ],
+   [
+    6.5,
+    7.9,
+    "**6** chiles guajillo"
+   ],
+   [
+    8.1,
+    9.3,
+    "y **2** chiles ancho."
+   ],
+   [
+    9.8,
+    12.9,
+    "**300 g** de tomate y **12** tortillas de maíz."
+   ],
+   [
+    13.3,
+    16.3,
+    "Cocina el pollo **25 minutos** y deshébralo."
+   ],
+   [
+    16.8,
+    17.8,
+    "Tuesta los chiles,"
+   ],
+   [
+    18,
+    21,
+    "remójalos **15 minutos** y licúalos con tomate,"
+   ],
+   [
+    21.4,
+    22.5,
+    "ajo y caldo."
+   ],
+   [
+    22.9,
+    25.8,
+    "Fríe la salsa hasta que oscurezca y espese."
+   ],
+   [
+    26.2,
+    28.3,
+    "Pasa cada tortilla por aceite caliente"
+   ],
+   [
+    28.6,
+    30,
+    "y luego por la salsa."
+   ],
+   [
+    30.4,
+    31.4,
+    "Rellena con pollo,"
+   ],
+   [
+    31.7,
+    34,
+    "enrolla y baña con más salsa."
+   ],
+   [
+    34.4,
+    38.2,
+    "Crema, queso fresco, cebolla morada y aguacate encima."
+   ],
+   [
+    38.6,
+    39.1,
+    "Guárdala,"
+   ],
+   [
+    39.3,
+    40.9,
+    "y los trucos están en el canal."
+   ],
+   [
+    41.3,
+    45.8,
+    "Así quedan unas enchiladas rojas, jugosas y bañadas en salsa."
+   ]
+  ]
+ }
+}

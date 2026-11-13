@@ -1,0 +1,672 @@
+{
+ "duration": 46.6,
+ "fps": 30,
+ "title": "Enchiladas rojas de pollo",
+ "tag": "CURSO DE COCINA  ·  COCINA MEXICANA",
+ "music": "latino",
+ "footage": "landscape",
+ "colors": {},
+ "chapters": [
+  {
+   "id": "gancho",
+   "side": "hook",
+   "title": "Enchiladas rojas de pollo",
+   "n": 0,
+   "t": 0.0,
+   "color": "#F2B544"
+  },
+  {
+   "id": "v1",
+   "side": "V",
+   "title": "Ingredientes",
+   "n": 1,
+   "t": 4.0,
+   "color": "#F2B544"
+  },
+  {
+   "id": "v2",
+   "side": "V",
+   "title": "Pollo",
+   "n": 2,
+   "t": 13.3,
+   "color": "#DB8B78"
+  },
+  {
+   "id": "v3",
+   "side": "V",
+   "title": "Salsa",
+   "n": 3,
+   "t": 16.8,
+   "color": "#D9573B"
+  },
+  {
+   "id": "v4",
+   "side": "V",
+   "title": "Tortillas",
+   "n": 4,
+   "t": 26.2,
+   "color": "#F3D35B"
+  },
+  {
+   "id": "v5",
+   "side": "V",
+   "title": "Armado",
+   "n": 5,
+   "t": 30.4,
+   "color": "#E9A23B"
+  },
+  {
+   "id": "v6",
+   "side": "V",
+   "title": "Servicio",
+   "n": 6,
+   "t": 34.4,
+   "color": "#A9C44E"
+  },
+  {
+   "id": "cta",
+   "side": "endshort",
+   "title": "fin",
+   "n": 7,
+   "t": 38.6,
+   "color": "#A9C44E"
+  }
+ ],
+ "media": {
+  "HERO": {
+   "img": "raw/HERO.jpg"
+  },
+  "N01": {
+   "img": "raw/N01.jpg"
+  },
+  "N03": {
+   "img": "raw/N03.jpg"
+  },
+  "N04": {
+   "img": "raw/N04.jpg"
+  },
+  "N06": {
+   "img": "raw/N06.jpg"
+  },
+  "N10": {
+   "img": "raw/N10.jpg"
+  },
+  "N02": {
+   "clip": "N02",
+   "audio": true
+  },
+  "N05": {
+   "clip": "N05",
+   "audio": true
+  },
+  "N07": {
+   "clip": "N07",
+   "audio": true
+  },
+  "N08": {
+   "clip": "N08",
+   "audio": true
+  },
+  "N09": {
+   "clip": "N09",
+   "audio": true
+  },
+  "N11": {
+   "clip": "N11",
+   "audio": true
+  },
+  "N12": {
+   "clip": "N12",
+   "audio": true
+  }
+ },
+ "shots": [
+  {
+   "id": "V02",
+   "t0": 4.0,
+   "t1": 9.8,
+   "src": "N01",
+   "a": 0.0,
+   "b": 5.800000000000001,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.42,
+     0.52
+    ],
+    [
+     0.4,
+     0.52
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V03",
+   "t0": 9.8,
+   "t1": 13.3,
+   "src": "N01",
+   "a": 0.0,
+   "b": 3.5,
+   "z": [
+    1.3,
+    1.36
+   ],
+   "f": [
+    [
+     0.34,
+     0.3
+    ],
+    [
+     0.36,
+     0.28
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "V04",
+   "t0": 13.3,
+   "t1": 16.8,
+   "src": "N02",
+   "a": 0,
+   "b": 3.5,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V05",
+   "t0": 16.8,
+   "t1": 22.9,
+   "src": "N05",
+   "a": 0,
+   "b": 6.1,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V06",
+   "t0": 22.9,
+   "t1": 26.2,
+   "src": "N08",
+   "a": 2.0,
+   "b": 5.3,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "V07",
+   "t0": 26.2,
+   "t1": 30.4,
+   "src": "N09",
+   "a": 0,
+   "b": 4.2,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V08",
+   "t0": 30.4,
+   "t1": 34.4,
+   "src": "N11",
+   "a": 0.6,
+   "b": 4.6,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V09",
+   "t0": 34.4,
+   "t1": 38.6,
+   "src": "N12",
+   "a": 0,
+   "b": 4.2,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V10",
+   "t0": 38.6,
+   "t1": 41.3,
+   "src": "N12",
+   "a": 4.2,
+   "b": 6.9,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V11",
+   "t0": 41.3,
+   "t1": 46.1,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 4.800000000000004,
+   "z": [
+    1.1,
+    1.04
+   ],
+   "f": [
+    [
+     0.47,
+     0.6
+    ],
+    [
+     0.47,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "LOOP",
+   "t0": 46.1,
+   "t1": 46.6,
+   "src": "HERO",
+   "a": 0,
+   "b": 0,
+   "z": [
+    1.04,
+    1.0
+   ],
+   "f": [
+    [
+     0.47,
+     0.6
+    ],
+    [
+     0.47,
+     0.6
+    ]
+   ],
+   "tr": "zoom"
+  }
+ ],
+ "callouts": [
+  {
+   "kind": "list",
+   "t": 4.58,
+   "rows": [
+    [
+     600,
+     "g",
+     "de pollo",
+     4.58
+    ],
+    [
+     6,
+     "",
+     "chiles guajillo",
+     6.47
+    ],
+    [
+     2,
+     "",
+     "chiles ancho",
+     8.16
+    ],
+    [
+     300,
+     "g",
+     "de tomate",
+     9.6
+    ],
+    [
+     12,
+     "",
+     "tortillas de maíz",
+     11.44
+    ]
+   ],
+   "t1": 13.3
+  },
+  {
+   "kind": "timer",
+   "t": 14.23,
+   "value": 25,
+   "unit": "min",
+   "label": "y deshébralo",
+   "t1": 16.8
+  },
+  {
+   "kind": "timer",
+   "t": 18.7,
+   "value": 15,
+   "unit": "min",
+   "label": "chiles en remojo",
+   "t1": 22.9
+  },
+  {
+   "kind": "timer",
+   "t": 23.0,
+   "value": 10,
+   "unit": "min",
+   "main": "8–10 minutos",
+   "label": "a fuego medio",
+   "t1": 26.2
+  },
+  {
+   "kind": "timer",
+   "t": 26.3,
+   "value": 5,
+   "unit": "s",
+   "main": "5 segundos",
+   "label": "por lado",
+   "sides": 2,
+   "t1": 30.4
+  },
+  {
+   "kind": "list",
+   "t": 30.45,
+   "rows": [
+    [
+     2,
+     "cdas",
+     "de pollo por tortilla",
+     30.3
+    ]
+   ],
+   "t1": 34.4
+  },
+  {
+   "kind": "chips",
+   "t": 34.45,
+   "items": [
+    [
+     "crema",
+     34.45
+    ],
+    [
+     "queso fresco",
+     35.01
+    ],
+    [
+     "cebolla morada",
+     35.88
+    ]
+   ],
+   "t1": 38.6
+  },
+  {
+   "kind": "chips",
+   "t": 37.01,
+   "items": [
+    [
+     "aguacate",
+     37.01
+    ]
+   ],
+   "t1": 38.6
+  }
+ ],
+ "pins": [],
+ "cues": [
+  [
+   0.1,
+   3.5,
+   "Enchiladas rojas, jugosas y bañadas en salsa.",
+   3.5
+  ],
+  [
+   4,
+   6.1,
+   "Necesitas **600 g** de pollo,",
+   6.1
+  ],
+  [
+   6.5,
+   9.3,
+   "**6** chiles guajillo y **2** chiles ancho.",
+   9.3
+  ],
+  [
+   9.8,
+   12.9,
+   "**300 g** de tomate y **12** tortillas de maíz.",
+   12.9
+  ],
+  [
+   13.3,
+   16.3,
+   "Cocina el pollo **25 minutos** y deshébralo.",
+   16.3
+  ],
+  [
+   16.8,
+   21,
+   "Tuesta los chiles, remójalos **15 minutos** y licúalos con tomate,",
+   20.96
+  ],
+  [
+   21.4,
+   22.5,
+   "ajo y caldo.",
+   22.5
+  ],
+  [
+   22.9,
+   25.8,
+   "Fríe la salsa hasta que oscurezca y espese.",
+   25.79
+  ],
+  [
+   26.2,
+   30,
+   "Pasa cada tortilla por aceite caliente y luego por la salsa.",
+   29.95
+  ],
+  [
+   30.4,
+   34,
+   "Rellena con pollo, enrolla y baña con más salsa.",
+   34.0
+  ],
+  [
+   34.4,
+   38.2,
+   "Crema, queso fresco, cebolla morada y aguacate encima.",
+   38.17
+  ],
+  [
+   38.6,
+   40.9,
+   "Guárdala, y los trucos están en el canal.",
+   40.9
+  ],
+  [
+   41.3,
+   45.8,
+   "Así quedan unas enchiladas rojas, jugosas y bañadas en salsa.",
+   45.75
+  ]
+ ],
+ "hook": {
+  "title": [
+   "Enchiladas",
+   "rojas"
+  ],
+  "vertical": {
+   "title_y": 470,
+   "cuts": [
+    [
+     0,
+     "HERO",
+     0,
+     1,
+     [
+      1.0,
+      1.08
+     ],
+     [
+      0.47,
+      0.6
+     ]
+    ]
+   ],
+   "pins": [
+    [
+     "salsa de guajillo",
+     2.4,
+     [
+      0.3,
+      0.72
+     ],
+     "#D9573B"
+    ],
+    [
+     "crema y queso",
+     3.0,
+     [
+      0.6,
+      0.5
+     ],
+     "#F6EFE3"
+    ]
+   ]
+  }
+ },
+ "end": {
+  "start": "S32",
+  "title": "¡Buen provecho!",
+  "next": "PRÓXIMO VIDEO",
+  "bubble": [
+   "¿Rojas o verdes?",
+   "Cuéntamelo en",
+   "los comentarios"
+  ]
+ },
+ "thumb": {
+  "img": "raw/HERO.jpg",
+  "crop": [
+   0.15,
+   0.08,
+   0.62
+  ],
+  "title": [
+   "Enchiladas",
+   "rojas"
+  ],
+  "tags": [
+   [
+    "picantes",
+    "#D9573B",
+    "#F6EFE3"
+   ],
+   [
+    "cremosas",
+    "#F6EFE3",
+    "#140E09"
+   ],
+   [
+    "de pollo",
+    "#F2B544",
+    "#140E09"
+   ]
+  ]
+ },
+ "size": [
+  1080,
+  1920
+ ],
+ "layout": "vertical",
+ "end_card": [
+  "Guárdala",
+  "Receta con trucos",
+  "en el canal  ▶"
+ ],
+ "loop": true,
+ "end_until": 41.3
+}

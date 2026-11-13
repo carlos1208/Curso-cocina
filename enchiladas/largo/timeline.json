@@ -1,0 +1,2110 @@
+{
+ "duration": 180.1,
+ "fps": 30,
+ "title": "Enchiladas rojas de pollo",
+ "tag": "CURSO DE COCINA  ·  COCINA MEXICANA",
+ "music": "latino",
+ "footage": "landscape",
+ "colors": {},
+ "chapters": [
+  {
+   "id": "gancho",
+   "t": 0.0,
+   "n": 0,
+   "title": "Enchiladas rojas de pollo",
+   "color": "#F2B544",
+   "side": "hook"
+  },
+  {
+   "id": "ingredientes",
+   "t": 10.4,
+   "n": 1,
+   "title": "Ingredientes",
+   "h1": "Ingredientes",
+   "h2": "para 4 personas",
+   "color": "#F2B544",
+   "side": "R",
+   "mark": "MISE EN PLACE"
+  },
+  {
+   "id": "pollo",
+   "t": 37.4,
+   "n": 2,
+   "title": "Pollo",
+   "h1": "Pollo",
+   "h2": "deshebrado",
+   "color": "#DB8B78",
+   "side": "L",
+   "mark": "POLLO"
+  },
+  {
+   "id": "salsa",
+   "t": 68.3,
+   "n": 3,
+   "title": "Salsa roja",
+   "h1": "Salsa",
+   "h2": "de guajillo",
+   "color": "#D9573B",
+   "side": "R",
+   "mark": "SALSA ROJA"
+  },
+  {
+   "id": "tortillas",
+   "t": 124.4,
+   "n": 4,
+   "title": "Tortillas",
+   "h1": "Tortillas",
+   "h2": "flexibles",
+   "color": "#F3D35B",
+   "side": "L",
+   "mark": "TORTILLAS"
+  },
+  {
+   "id": "armado",
+   "t": 145.3,
+   "n": 5,
+   "title": "Armado",
+   "h1": "Rellenar",
+   "h2": "y enrollar",
+   "color": "#E9A23B",
+   "side": "R",
+   "mark": "ARMADO"
+  },
+  {
+   "id": "servicio",
+   "t": 157.7,
+   "n": 6,
+   "title": "Servicio",
+   "h1": "Servir",
+   "h2": "y decorar",
+   "color": "#A9C44E",
+   "side": "L",
+   "mark": "SERVICIO"
+  },
+  {
+   "id": "cierre",
+   "t": 171.7,
+   "n": 7,
+   "title": "Cierre",
+   "color": "#F2B544",
+   "side": "end"
+  }
+ ],
+ "media": {
+  "HERO": {
+   "img": "raw/HERO.jpg"
+  },
+  "N01": {
+   "img": "raw/N01.jpg"
+  },
+  "N03": {
+   "img": "raw/N03.jpg"
+  },
+  "N04": {
+   "img": "raw/N04.jpg"
+  },
+  "N06": {
+   "img": "raw/N06.jpg"
+  },
+  "N10": {
+   "img": "raw/N10.jpg"
+  },
+  "N02": {
+   "clip": "N02",
+   "audio": true
+  },
+  "N05": {
+   "clip": "N05",
+   "audio": true
+  },
+  "N07": {
+   "clip": "N07",
+   "audio": true
+  },
+  "N08": {
+   "clip": "N08",
+   "audio": true
+  },
+  "N09": {
+   "clip": "N09",
+   "audio": true
+  },
+  "N11": {
+   "clip": "N11",
+   "audio": true
+  },
+  "N12": {
+   "clip": "N12",
+   "audio": true
+  }
+ },
+ "shots": [
+  {
+   "id": "S01",
+   "t0": 0.0,
+   "t1": 6.4,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 6.4,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S02",
+   "t0": 6.4,
+   "t1": 10.4,
+   "src": "N12",
+   "a": 0,
+   "b": 4.0,
+   "z": [
+    1.03,
+    1.08
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S03",
+   "t0": 10.4,
+   "t1": 17.2,
+   "src": "N01",
+   "a": 0.0,
+   "b": 6.799999999999999,
+   "z": [
+    1.0,
+    1.03
+   ],
+   "f": [
+    [
+     0.42,
+     0.52
+    ],
+    [
+     0.42,
+     0.52
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S04",
+   "t0": 17.2,
+   "t1": 25.8,
+   "src": "N01",
+   "a": 0.0,
+   "b": 8.600000000000001,
+   "z": [
+    1.03,
+    1.06
+   ],
+   "f": [
+    [
+     0.42,
+     0.52
+    ],
+    [
+     0.4,
+     0.52
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S05",
+   "t0": 25.8,
+   "t1": 31.2,
+   "src": "N01",
+   "a": 0.0,
+   "b": 5.399999999999999,
+   "z": [
+    1.06,
+    1.09
+   ],
+   "f": [
+    [
+     0.4,
+     0.52
+    ],
+    [
+     0.42,
+     0.5
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S06",
+   "t0": 31.2,
+   "t1": 37.4,
+   "src": "N01",
+   "a": 0.0,
+   "b": 6.199999999999999,
+   "z": [
+    1.45,
+    1.52
+   ],
+   "f": [
+    [
+     0.3,
+     0.22
+    ],
+    [
+     0.32,
+     0.22
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S07",
+   "t0": 37.4,
+   "t1": 45.7,
+   "src": "N02",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S08",
+   "t0": 45.7,
+   "t1": 49.1,
+   "src": "N02",
+   "a": 3.0,
+   "b": 6.4,
+   "z": [
+    1.28,
+    1.34
+   ],
+   "f": [
+    [
+     0.45,
+     0.32
+    ],
+    [
+     0.47,
+     0.32
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S09",
+   "t0": 49.1,
+   "t1": 54.5,
+   "src": "N02",
+   "a": 2.6,
+   "b": 8.0,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S10",
+   "t0": 54.5,
+   "t1": 57.7,
+   "src": "N02",
+   "a": 0,
+   "b": 3.2,
+   "z": [
+    1.3,
+    1.38
+   ],
+   "f": [
+    [
+     0.45,
+     0.35
+    ],
+    [
+     0.45,
+     0.35
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S11",
+   "t0": 57.7,
+   "t1": 62.7,
+   "src": "N03",
+   "a": 0.0,
+   "b": 5.0,
+   "z": [
+    1.04,
+    1.12
+   ],
+   "f": [
+    [
+     0.36,
+     0.6
+    ],
+    [
+     0.34,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S12",
+   "t0": 62.7,
+   "t1": 68.3,
+   "src": "N02",
+   "a": 2.4,
+   "b": 8.0,
+   "z": [
+    1.18,
+    1.24
+   ],
+   "f": [
+    [
+     0.45,
+     0.4
+    ],
+    [
+     0.45,
+     0.42
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S13",
+   "t0": 68.3,
+   "t1": 78.3,
+   "src": "N04",
+   "a": 0.0,
+   "b": 10.0,
+   "z": [
+    1.0,
+    1.12
+   ],
+   "f": [
+    [
+     0.5,
+     0.55
+    ],
+    [
+     0.56,
+     0.6
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S14",
+   "t0": 78.3,
+   "t1": 80.9,
+   "src": "N04",
+   "a": 0.0,
+   "b": 2.6000000000000085,
+   "z": [
+    1.55,
+    1.62
+   ],
+   "f": [
+    [
+     0.64,
+     0.68
+    ],
+    [
+     0.64,
+     0.68
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S15",
+   "t0": 80.9,
+   "t1": 86.8,
+   "src": "N05",
+   "a": 0,
+   "b": 5.9,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S16",
+   "t0": 86.8,
+   "t1": 93.1,
+   "src": "N05",
+   "a": 1.7,
+   "b": 8.0,
+   "z": [
+    1.2,
+    1.26
+   ],
+   "f": [
+    [
+     0.48,
+     0.4
+    ],
+    [
+     0.48,
+     0.42
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S17",
+   "t0": 93.1,
+   "t1": 97.6,
+   "src": "N06",
+   "a": 0.0,
+   "b": 4.5,
+   "z": [
+    1.04,
+    1.12
+   ],
+   "f": [
+    [
+     0.38,
+     0.62
+    ],
+    [
+     0.38,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S18",
+   "t0": 97.6,
+   "t1": 103.1,
+   "src": "N07",
+   "a": 0,
+   "b": 3.6,
+   "z": [
+    1.0,
+    1.02
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S19",
+   "t0": 103.1,
+   "t1": 109.5,
+   "src": "N07",
+   "a": 3.6,
+   "b": 6.6,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S20",
+   "t0": 109.5,
+   "t1": 111.7,
+   "src": "N07",
+   "a": 5.9,
+   "b": 8.0,
+   "z": [
+    1.08,
+    1.12
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S21",
+   "t0": 111.7,
+   "t1": 118.9,
+   "src": "N08",
+   "a": 0,
+   "b": 7.2,
+   "z": [
+    1.0,
+    1.03
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S22",
+   "t0": 118.9,
+   "t1": 124.4,
+   "src": "N08",
+   "a": 2.5,
+   "b": 8.0,
+   "z": [
+    1.2,
+    1.26
+   ],
+   "f": [
+    [
+     0.45,
+     0.42
+    ],
+    [
+     0.45,
+     0.42
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S23",
+   "t0": 124.4,
+   "t1": 131.4,
+   "src": "N09",
+   "a": 0,
+   "b": 7.0,
+   "z": [
+    1.0,
+    1.03
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S24",
+   "t0": 131.4,
+   "t1": 135.1,
+   "src": "N09",
+   "a": 2.5,
+   "b": 6.2,
+   "z": [
+    1.25,
+    1.3
+   ],
+   "f": [
+    [
+     0.42,
+     0.42
+    ],
+    [
+     0.42,
+     0.42
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S25",
+   "t0": 135.1,
+   "t1": 141.5,
+   "src": "N09",
+   "a": 1.6,
+   "b": 8.0,
+   "z": [
+    1.06,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S26",
+   "t0": 141.5,
+   "t1": 145.3,
+   "src": "N08",
+   "a": 0,
+   "b": 3.8,
+   "z": [
+    1.3,
+    1.36
+   ],
+   "f": [
+    [
+     0.45,
+     0.4
+    ],
+    [
+     0.45,
+     0.4
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S27",
+   "t0": 145.3,
+   "t1": 150.1,
+   "src": "N10",
+   "a": 0.0,
+   "b": 4.799999999999983,
+   "z": [
+    1.0,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.58
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S28",
+   "t0": 150.1,
+   "t1": 154.8,
+   "src": "N11",
+   "a": 5.0,
+   "b": 8.0,
+   "z": [
+    1.04,
+    1.08
+   ],
+   "f": [
+    [
+     0.48,
+     0.6
+    ],
+    [
+     0.48,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S29",
+   "t0": 154.8,
+   "t1": 157.7,
+   "src": "N11",
+   "a": 1.0,
+   "b": 3.9,
+   "z": [
+    1.0,
+    1.02
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S30",
+   "t0": 157.7,
+   "t1": 166.8,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 9.100000000000023,
+   "z": [
+    1.08,
+    1.24
+   ],
+   "f": [
+    [
+     0.47,
+     0.6
+    ],
+    [
+     0.47,
+     0.58
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S31",
+   "t0": 166.8,
+   "t1": 171.7,
+   "src": "N12",
+   "a": 0,
+   "b": 4.9,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S32",
+   "t0": 171.7,
+   "t1": 180.1,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 8.400000000000006,
+   "z": [
+    1.04,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "end"
+  }
+ ],
+ "callouts": [
+  {
+   "kind": "board",
+   "t": 14.1,
+   "groups": [
+    [
+     "a",
+     "Pollo y salsa"
+    ],
+    [
+     "b",
+     "Aromáticos"
+    ],
+    [
+     "c",
+     "Y además"
+    ]
+   ],
+   "items": [
+    {
+     "g": "a",
+     "t": 14.1,
+     "v": 600,
+     "unit": "g",
+     "label": "pechuga de pollo"
+    },
+    {
+     "g": "a",
+     "t": 17.3,
+     "v": 6,
+     "unit": "",
+     "label": "chiles guajillo"
+    },
+    {
+     "g": "a",
+     "t": 18.9,
+     "v": 2,
+     "unit": "",
+     "label": "chiles ancho"
+    },
+    {
+     "g": "a",
+     "t": 20.8,
+     "v": 300,
+     "unit": "g",
+     "label": "tomate"
+    },
+    {
+     "g": "b",
+     "t": 22.55,
+     "v": "¾",
+     "unit": "",
+     "label": "cebolla blanca"
+    },
+    {
+     "g": "b",
+     "t": 23.9,
+     "v": 4,
+     "unit": "",
+     "label": "dientes de ajo"
+    },
+    {
+     "g": "b",
+     "t": 25.8,
+     "v": "½",
+     "unit": "cdta",
+     "label": "comino"
+    },
+    {
+     "g": "b",
+     "t": 26.6,
+     "v": "½",
+     "unit": "cdta",
+     "label": "orégano"
+    },
+    {
+     "g": "c",
+     "t": 27.4,
+     "v": 1,
+     "unit": "",
+     "label": "hoja de laurel"
+    },
+    {
+     "g": "c",
+     "t": 28.18,
+     "v": 2,
+     "unit": "cdtas",
+     "label": "sal"
+    },
+    {
+     "g": "c",
+     "t": 28.75,
+     "v": 12,
+     "unit": "",
+     "label": "tortillas de maíz"
+    },
+    {
+     "g": "c",
+     "t": 30.11,
+     "v": 120,
+     "unit": "ml",
+     "label": "aceite (+ 2 cdas)"
+    }
+   ],
+   "t1": 31.2
+  },
+  {
+   "kind": "list",
+   "t": 32.39,
+   "rows": [
+    [
+     120,
+     "ml",
+     "crema agria",
+     32.39
+    ],
+    [
+     100,
+     "g",
+     "queso fresco",
+     33.35
+    ],
+    [
+     "½",
+     "",
+     "cebolla morada",
+     34.23
+    ],
+    [
+     2,
+     "hojas",
+     "lechuga",
+     35.43
+    ],
+    [
+     1,
+     "",
+     "aguacate",
+     36.07
+    ]
+   ],
+   "t1": 37.4
+  },
+  {
+   "kind": "chips",
+   "t": 41.26,
+   "items": [
+    [
+     "+ 1,5 l de agua",
+     41.26
+    ],
+    [
+     "+ ½ cebolla",
+     42.74
+    ]
+   ],
+   "t1": 45.7
+  },
+  {
+   "kind": "chips",
+   "t": 43.94,
+   "items": [
+    [
+     "+ 2 dientes de ajo",
+     43.94
+    ]
+   ],
+   "t1": 45.7
+  },
+  {
+   "kind": "chips",
+   "t": 45.88,
+   "items": [
+    [
+     "+ 1 hoja de laurel",
+     45.88
+    ],
+    [
+     "+ 1 cdta de sal",
+     47.23
+    ]
+   ],
+   "t1": 49.1
+  },
+  {
+   "kind": "timer",
+   "t": 49.58,
+   "value": 25,
+   "unit": "min",
+   "label": "hervor suave",
+   "t1": 54.5
+  },
+  {
+   "kind": "heat",
+   "t": 50.85,
+   "level": 2,
+   "label": "Medio-bajo",
+   "t1": 54.5
+  },
+  {
+   "kind": "tip",
+   "t": 54.55,
+   "icon": "x",
+   "text": "A borbotones: seco y fibroso",
+   "t1": 57.7
+  },
+  {
+   "kind": "timer",
+   "t": 59.28,
+   "value": 10,
+   "unit": "min",
+   "label": "que se enfríe",
+   "t1": 62.7
+  },
+  {
+   "kind": "tip",
+   "t": 60.09,
+   "icon": "hand",
+   "text": "Con 2 tenedores",
+   "t1": 62.7
+  },
+  {
+   "kind": "list",
+   "t": 64.98,
+   "rows": [
+    [
+     250,
+     "ml",
+     "de caldo → salsa",
+     64.98
+    ]
+   ],
+   "t1": 68.3
+  },
+  {
+   "kind": "chips",
+   "t": 74.92,
+   "items": [
+    [
+     "– tallo",
+     74.92
+    ],
+    [
+     "– semillas",
+     75.97
+    ],
+    [
+     "– venas",
+     77.17
+    ]
+   ],
+   "t1": 78.3
+  },
+  {
+   "kind": "tip",
+   "t": 78.66,
+   "icon": "fire",
+   "text": "El picante está en semillas y venas",
+   "t1": 80.9
+  },
+  {
+   "kind": "heat",
+   "t": 82.62,
+   "level": 3,
+   "label": "Medio",
+   "t1": 86.8
+  },
+  {
+   "kind": "timer",
+   "t": 84.03,
+   "value": 30,
+   "unit": "s",
+   "main": "20–30 segundos",
+   "label": "sartén seca",
+   "sides": 2,
+   "t1": 86.8
+  },
+  {
+   "kind": "tip",
+   "t": 89.4,
+   "icon": "x",
+   "text": "Quemados: salsa amarga",
+   "t1": 93.1
+  },
+  {
+   "kind": "timer",
+   "t": 93.91,
+   "value": 15,
+   "unit": "min",
+   "label": "en agua caliente",
+   "t1": 97.6
+  },
+  {
+   "kind": "chips",
+   "t": 98.77,
+   "items": [
+    [
+     "+ 300 g de tomate",
+     98.77
+    ],
+    [
+     "+ ¼ de cebolla",
+     99.53
+    ]
+   ],
+   "t1": 103.1
+  },
+  {
+   "kind": "chips",
+   "t": 101.12,
+   "items": [
+    [
+     "+ 2 dientes de ajo",
+     101.12
+    ]
+   ],
+   "t1": 103.1
+  },
+  {
+   "kind": "list",
+   "t": 103.15,
+   "rows": [
+    [
+     "½",
+     "cdta",
+     "de comino",
+     103.0
+    ],
+    [
+     "½",
+     "cdta",
+     "de orégano",
+     105.11
+    ],
+    [
+     1,
+     "cdta",
+     "de sal",
+     106.4
+    ],
+    [
+     250,
+     "ml",
+     "de caldo",
+     108.08
+    ]
+   ],
+   "t1": 109.5
+  },
+  {
+   "kind": "timer",
+   "t": 109.55,
+   "value": 1,
+   "unit": "min",
+   "label": "en la licuadora",
+   "t1": 111.7
+  },
+  {
+   "kind": "chips",
+   "t": 112.34,
+   "items": [
+    [
+     "+ 2 cdas de aceite",
+     112.34
+    ]
+   ],
+   "t1": 118.9
+  },
+  {
+   "kind": "heat",
+   "t": 115.06,
+   "level": 3,
+   "label": "Medio",
+   "t1": 118.9
+  },
+  {
+   "kind": "timer",
+   "t": 116.23,
+   "value": 10,
+   "unit": "min",
+   "main": "8–10 minutos",
+   "label": "hasta que oscurezca",
+   "t1": 118.9
+  },
+  {
+   "kind": "tip",
+   "t": 119.07,
+   "icon": "check",
+   "text": "Oscura y espesa: ya no sabe a crudo",
+   "t1": 124.4
+  },
+  {
+   "kind": "chips",
+   "t": 128.28,
+   "items": [
+    [
+     "+ 120 ml de aceite",
+     128.28
+    ]
+   ],
+   "t1": 131.4
+  },
+  {
+   "kind": "heat",
+   "t": 130.28,
+   "level": 3,
+   "label": "Medio",
+   "t1": 131.4
+  },
+  {
+   "kind": "timer",
+   "t": 133.03,
+   "value": 5,
+   "unit": "s",
+   "main": "5 segundos",
+   "label": "por lado",
+   "sides": 2,
+   "t1": 135.1
+  },
+  {
+   "kind": "tip",
+   "t": 135.2,
+   "icon": "x",
+   "text": "No es para freírlas",
+   "t1": 141.5
+  },
+  {
+   "kind": "tip",
+   "t": 137.97,
+   "icon": "check",
+   "text": "Flexibles: no se rompen",
+   "t1": 141.5
+  },
+  {
+   "kind": "tip",
+   "t": 142.03,
+   "icon": "drop",
+   "text": "Salsa por ambos lados",
+   "t1": 145.3
+  },
+  {
+   "kind": "list",
+   "t": 147.24,
+   "rows": [
+    [
+     2,
+     "cdas",
+     "de pollo por tortilla",
+     147.24
+    ]
+   ],
+   "t1": 150.1
+  },
+  {
+   "kind": "tip",
+   "t": 148.68,
+   "icon": "hand",
+   "text": "Rellena y enrolla",
+   "t1": 150.1
+  },
+  {
+   "kind": "big",
+   "t": 150.72,
+   "text": "3 por plato",
+   "t1": 157.7
+  },
+  {
+   "kind": "tip",
+   "t": 152.0,
+   "icon": "check",
+   "text": "La unión hacia abajo",
+   "t1": 157.7
+  },
+  {
+   "kind": "chips",
+   "t": 159.99,
+   "items": [
+    [
+     "crema",
+     159.99
+    ],
+    [
+     "queso fresco",
+     161.23
+    ],
+    [
+     "cebolla morada",
+     162.97
+    ]
+   ],
+   "t1": 166.8
+  },
+  {
+   "kind": "chips",
+   "t": 164.59,
+   "items": [
+    [
+     "lechuga",
+     164.59
+    ],
+    [
+     "aguacate",
+     165.47
+    ]
+   ],
+   "t1": 166.8
+  },
+  {
+   "kind": "big",
+   "t": 167.41,
+   "text": "¡A la mesa!",
+   "t1": 171.7
+  }
+ ],
+ "pins": [
+  {
+   "shot": "S03",
+   "t": 14.1,
+   "xy": [
+    0.4,
+    0.7
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S04",
+   "t": 17.21,
+   "xy": [
+    0.4,
+    0.7
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S04",
+   "t": 17.3,
+   "xy": [
+    0.1,
+    0.7
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S04",
+   "t": 18.9,
+   "xy": [
+    0.25,
+    0.57
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S04",
+   "t": 20.8,
+   "xy": [
+    0.23,
+    0.34
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S04",
+   "t": 22.55,
+   "xy": [
+    0.25,
+    0.43
+   ],
+   "n": 5
+  },
+  {
+   "shot": "S04",
+   "t": 23.9,
+   "xy": [
+    0.35,
+    0.37
+   ],
+   "n": 6
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.4,
+    0.7
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.1,
+    0.7
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.25,
+    0.57
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.23,
+    0.34
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.25,
+    0.43
+   ],
+   "n": 5
+  },
+  {
+   "shot": "S05",
+   "t": 25.77,
+   "xy": [
+    0.35,
+    0.37
+   ],
+   "n": 6
+  },
+  {
+   "shot": "S05",
+   "t": 25.8,
+   "xy": [
+    0.5,
+    0.4
+   ],
+   "n": 7
+  },
+  {
+   "shot": "S05",
+   "t": 26.6,
+   "xy": [
+    0.61,
+    0.4
+   ],
+   "n": 8
+  },
+  {
+   "shot": "S05",
+   "t": 27.4,
+   "xy": [
+    0.4,
+    0.42
+   ],
+   "n": 9
+  },
+  {
+   "shot": "S05",
+   "t": 28.75,
+   "xy": [
+    0.47,
+    0.22
+   ],
+   "n": 11
+  },
+  {
+   "shot": "S06",
+   "t": 32.39,
+   "xy": [
+    0.33,
+    0.18
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S06",
+   "t": 33.35,
+   "xy": [
+    0.61,
+    0.26
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S06",
+   "t": 34.23,
+   "xy": [
+    0.15,
+    0.21
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S06",
+   "t": 35.43,
+   "xy": [
+    0.06,
+    0.22
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S06",
+   "t": 36.07,
+   "xy": [
+    0.22,
+    0.16
+   ],
+   "n": 5
+  },
+  {
+   "shot": "S30",
+   "t": 159.99,
+   "xy": [
+    0.37,
+    0.68
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S30",
+   "t": 161.23,
+   "xy": [
+    0.55,
+    0.6
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S30",
+   "t": 162.97,
+   "xy": [
+    0.385,
+    0.57
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S30",
+   "t": 164.59,
+   "xy": [
+    0.53,
+    0.54
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S30",
+   "t": 165.47,
+   "xy": [
+    0.5,
+    0.46
+   ],
+   "n": 5
+  }
+ ],
+ "cues": [
+  [
+   0.1,
+   2.08,
+   "Enchiladas rojas de pollo."
+  ],
+  [
+   2.1,
+   3.2399999999999998,
+   "Picantes,"
+  ],
+  [
+   3.26,
+   6.380000000000001,
+   "cremosas y bañadas en salsa de chile."
+  ],
+  [
+   6.4,
+   8.780000000000001,
+   "Hoy te enseño a hacerlas como en México,"
+  ],
+  [
+   8.8,
+   9.7,
+   "paso a paso."
+  ],
+  [
+   10.4,
+   11.4,
+   "Ingredientes."
+  ],
+  [
+   12.2,
+   17.18,
+   "Para **4 personas** necesitas **600 g** de pechuga de pollo."
+  ],
+  [
+   17.2,
+   20.88,
+   "**6** chiles guajillo y **2** chiles ancho."
+  ],
+  [
+   20.9,
+   25.1,
+   "**300 g** de tomate, cebolla blanca y **4** dientes de ajo."
+  ],
+  [
+   25.8,
+   28.88,
+   "Comino, orégano, laurel y sal."
+  ],
+  [
+   28.9,
+   31.18,
+   "**12** tortillas de maíz y aceite."
+  ],
+  [
+   31.2,
+   32.48,
+   "Y para servir:"
+  ],
+  [
+   32.5,
+   37.379999999999995,
+   "crema agria, queso fresco, cebolla morada, lechuga y aguacate."
+  ],
+  [
+   37.4,
+   37.8,
+   "Pollo."
+  ],
+  [
+   38.4,
+   39.4,
+   "Empieza por el pollo."
+  ],
+  [
+   40,
+   42.879999999999995,
+   "Ponlo en una olla con **litro y medio** de agua,"
+  ],
+  [
+   42.9,
+   45.1,
+   "**media** cebolla y **2** dientes de ajo."
+  ],
+  [
+   45.7,
+   48.4,
+   "**1** hoja de laurel y **1 cucharadita** de sal."
+  ],
+  [
+   49.1,
+   52,
+   "Cocina **25 minutos** a fuego **medio-bajo**."
+  ],
+  [
+   52.8,
+   53.8,
+   "Que hierva suave."
+  ],
+  [
+   54.5,
+   57.68,
+   "A borbotones, la carne queda seca y fibrosa."
+  ],
+  [
+   57.7,
+   62.68,
+   "Sácalo, déjalo enfriar **10 minutos** y deshébralo con **2** tenedores."
+  ],
+  [
+   62.7,
+   64.48,
+   "No botes el caldo."
+  ],
+  [
+   64.5,
+   68.28,
+   "Guarda **250 ml** para la salsa."
+  ],
+  [
+   68.3,
+   69.3,
+   "Salsa roja."
+  ],
+  [
+   70,
+   73.28,
+   "Ahora la salsa, que es el alma del plato."
+  ],
+  [
+   73.3,
+   78.28,
+   "Quítales a los chiles el tallo, las semillas y las venas."
+  ],
+  [
+   78.3,
+   80.3,
+   "Ahí está casi todo el picante."
+  ],
+  [
+   80.9,
+   83.88000000000001,
+   "Tuéstalos en una sartén seca a fuego **medio**,"
+  ],
+  [
+   83.9,
+   86.1,
+   "de **20 a 30 segundos** por lado."
+  ],
+  [
+   86.8,
+   88.8,
+   "Solo hasta que suelten su aroma."
+  ],
+  [
+   89.4,
+   90.68,
+   "Si se queman,"
+  ],
+  [
+   90.7,
+   92.2,
+   "la salsa queda amarga."
+  ],
+  [
+   93.1,
+   96.6,
+   "Remójalos **15 minutos** en agua caliente para que se ablanden."
+  ],
+  [
+   97.6,
+   99.68,
+   "Luego licúalos con el tomate,"
+  ],
+  [
+   99.7,
+   102.3,
+   "**¼** de cebolla y **2** dientes de ajo."
+  ],
+  [
+   103.1,
+   105.18,
+   "**½ cucharadita** de comino,"
+  ],
+  [
+   105.2,
+   108.8,
+   "**½** de orégano, **1 cucharadita** de sal y el caldo."
+  ],
+  [
+   109.5,
+   111.68,
+   "**1 minuto**, hasta que quede lisa."
+  ],
+  [
+   111.7,
+   116.28,
+   "Calienta **2 cucharadas** de aceite y fríe la salsa a fuego **medio**,"
+  ],
+  [
+   116.3,
+   118.2,
+   "de **8 a 10 minutos**."
+  ],
+  [
+   118.9,
+   121.28,
+   "Va a oscurecer y a espesar."
+  ],
+  [
+   121.3,
+   123.5,
+   "Este paso le quita el sabor a crudo."
+  ],
+  [
+   124.4,
+   125.2,
+   "Tortillas."
+  ],
+  [
+   125.9,
+   127.58,
+   "Vamos con las tortillas."
+  ],
+  [
+   127.6,
+   131.36999999999998,
+   "Calienta **120 ml** de aceite a fuego **medio**."
+  ],
+  [
+   131.39,
+   135.07999999999998,
+   "Pasa cada tortilla **5 segundos** por lado."
+  ],
+  [
+   135.1,
+   136.98,
+   "No es para freírlas."
+  ],
+  [
+   137,
+   140.8,
+   "Es para que queden flexibles y no se rompan al enrollarlas."
+  ],
+  [
+   141.5,
+   145.29,
+   "Enseguida pásala por la salsa, por los dos lados."
+  ],
+  [
+   145.31,
+   145.76999999999998,
+   "Armado."
+  ],
+  [
+   145.79,
+   150.07999999999998,
+   "Rellena cada tortilla con **2 cucharadas** de pollo y enróllala."
+  ],
+  [
+   150.1,
+   151.64,
+   "Acomoda **3 por plato**,"
+  ],
+  [
+   151.66,
+   154.78,
+   "con la unión hacia abajo para que no se abran."
+  ],
+  [
+   154.8,
+   156.7,
+   "Báñalas con más salsa caliente."
+  ],
+  [
+   157.7,
+   158.5,
+   "Servicio."
+  ],
+  [
+   159.4,
+   161.07999999999998,
+   "Termina con crema,"
+  ],
+  [
+   161.1,
+   162.57999999999998,
+   "queso fresco,"
+  ],
+  [
+   162.6,
+   164,
+   "aros de cebolla morada,"
+  ],
+  [
+   164.7,
+   166.2,
+   "lechuga y aguacate."
+  ],
+  [
+   166.8,
+   170.07999999999998,
+   "Sírvelas de inmediato, antes de que la tortilla absorba"
+  ],
+  [
+   170.1,
+   171.67999999999998,
+   "toda la salsa."
+  ],
+  [
+   171.7,
+   173.17999999999998,
+   "Si te gustó,"
+  ],
+  [
+   173.2,
+   175,
+   "suscríbete para más recetas."
+  ],
+  [
+   175.7,
+   177.2,
+   "Y cuéntame en los comentarios:"
+  ],
+  [
+   177.9,
+   179.8,
+   "¿Las prefieres rojas o verdes?"
+  ]
+ ],
+ "hook": {
+  "title": [
+   "Enchiladas",
+   "rojas"
+  ],
+  "cards": [
+   {
+    "before": {
+     "src": "N04",
+     "a": 0,
+     "rate": 0,
+     "z": 1.0,
+     "f": [
+      0.47,
+      0.55
+     ]
+    },
+    "after": {
+     "src": "N05",
+     "a": 2.0,
+     "rate": 1,
+     "z": 1.0,
+     "f": [
+      0.42,
+      0.5
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "HERO",
+     "a": 0,
+     "rate": 0,
+     "z": 1.0,
+     "f": [
+      0.46,
+      0.6
+     ]
+    },
+    "after": {
+     "src": "N12",
+     "a": 1.2,
+     "rate": 1,
+     "z": 1.0,
+     "f": [
+      0.52,
+      0.5
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "N10",
+     "a": 0,
+     "rate": 0,
+     "z": 1.0,
+     "f": [
+      0.5,
+      0.6
+     ]
+    },
+    "after": {
+     "src": "N11",
+     "a": 0.8,
+     "rate": 1,
+     "z": 1.0,
+     "f": [
+      0.56,
+      0.5
+     ]
+    }
+   }
+  ],
+  "rows": [],
+  "beat": 2.0,
+  "words": [
+   [
+    "Picantes",
+    2.05,
+    "#D9573B",
+    "chile guajillo y ancho"
+   ],
+   [
+    "Cremosas",
+    3.2,
+    "#F2B544",
+    "crema y queso fresco"
+   ],
+   [
+    "Bañadas",
+    4.2,
+    "#F6EFE3",
+    "en salsa roja"
+   ]
+  ],
+  "tagline": [
+   "COMO EN MÉXICO  ·  PASO A PASO",
+   6.4
+  ],
+  "sizzle": "N09"
+ },
+ "end": {
+  "start": "S32",
+  "title": "¡Buen provecho!",
+  "next": "PRÓXIMO VIDEO",
+  "bubble": [
+   "¿Rojas o verdes?",
+   "Cuéntamelo en",
+   "los comentarios"
+  ]
+ },
+ "thumb": {
+  "img": "raw/HERO.jpg",
+  "crop": [
+   0.15,
+   0.08,
+   0.62
+  ],
+  "title": [
+   "Enchiladas",
+   "rojas"
+  ],
+  "tags": [
+   [
+    "picantes",
+    "#D9573B",
+    "#F6EFE3"
+   ],
+   [
+    "cremosas",
+    "#F6EFE3",
+    "#140E09"
+   ],
+   [
+    "de pollo",
+    "#F2B544",
+    "#140E09"
+   ]
+  ]
+ }
+}
