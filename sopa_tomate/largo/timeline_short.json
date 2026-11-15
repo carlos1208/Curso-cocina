@@ -1,0 +1,638 @@
+{
+ "duration": 46.1,
+ "fps": 30,
+ "title": "Velouté de tomate tatemado",
+ "tag": "CURSO DE COCINA  ·  ALTA COCINA EN CASA",
+ "music": "calido",
+ "footage": "portrait",
+ "colors": {},
+ "chapters": [
+  {
+   "id": "gancho",
+   "side": "hook",
+   "title": "Velouté de tomate tatemado",
+   "n": 0,
+   "t": 0.0,
+   "color": "#F2B544"
+  },
+  {
+   "id": "v1",
+   "side": "V",
+   "title": "Ingredientes",
+   "n": 1,
+   "t": 1.6,
+   "color": "#F2B544"
+  },
+  {
+   "id": "v2",
+   "side": "V",
+   "title": "Tatemar",
+   "n": 2,
+   "t": 13.1,
+   "color": "#C8452E"
+  },
+  {
+   "id": "v3",
+   "side": "V",
+   "title": "Velouté",
+   "n": 3,
+   "t": 19.1,
+   "color": "#E8673F"
+  },
+  {
+   "id": "v4",
+   "side": "V",
+   "title": "Brioche",
+   "n": 4,
+   "t": 30.6,
+   "color": "#E9B44C"
+  },
+  {
+   "id": "v5",
+   "side": "V",
+   "title": "Servicio",
+   "n": 5,
+   "t": 35.2,
+   "color": "#7DB04A"
+  },
+  {
+   "id": "cta",
+   "side": "endshort",
+   "title": "fin",
+   "n": 6,
+   "t": 39.0,
+   "color": "#7DB04A"
+  }
+ ],
+ "media": {
+  "HERO": {
+   "img": "raw/HERO.jpg"
+  },
+  "N01": {
+   "img": "raw/N01.jpg"
+  },
+  "N11": {
+   "img": "raw/N11.jpg"
+  },
+  "N13": {
+   "img": "raw/N13.jpg"
+  },
+  "N16": {
+   "img": "raw/N16.jpg"
+  },
+  "N02": {
+   "clip": "N02",
+   "audio": true
+  },
+  "N03": {
+   "clip": "N03",
+   "audio": true
+  },
+  "N04": {
+   "clip": "N04",
+   "audio": true
+  },
+  "N05": {
+   "clip": "N05",
+   "audio": true
+  },
+  "N06": {
+   "clip": "N06",
+   "audio": true
+  },
+  "N07": {
+   "clip": "N07",
+   "audio": true
+  },
+  "N08": {
+   "clip": "N08",
+   "audio": true
+  },
+  "N09": {
+   "clip": "N09",
+   "audio": true
+  },
+  "N10": {
+   "clip": "N10",
+   "audio": true
+  },
+  "N12": {
+   "clip": "N12",
+   "audio": true
+  },
+  "N14": {
+   "clip": "N14",
+   "audio": true
+  },
+  "N15": {
+   "clip": "N15",
+   "audio": true
+  }
+ },
+ "shots": [
+  {
+   "id": "V02",
+   "t0": 1.6,
+   "t1": 7.1,
+   "src": "N01",
+   "a": 0.0,
+   "b": 5.5,
+   "z": [
+    1.25,
+    1.3
+   ],
+   "f": [
+    [
+     0.4,
+     0.45
+    ],
+    [
+     0.4,
+     0.45
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V03",
+   "t0": 7.1,
+   "t1": 13.1,
+   "src": "N01",
+   "a": 0.0,
+   "b": 6.0,
+   "z": [
+    1.5,
+    1.56
+   ],
+   "f": [
+    [
+     0.6,
+     0.44
+    ],
+    [
+     0.62,
+     0.44
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "V04",
+   "t0": 13.1,
+   "t1": 19.1,
+   "src": "N02",
+   "a": 0,
+   "b": 6.0,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V05",
+   "t0": 19.1,
+   "t1": 24.7,
+   "src": "N04",
+   "a": 0,
+   "b": 5.6,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V06",
+   "t0": 24.7,
+   "t1": 27.5,
+   "src": "N07",
+   "a": 0,
+   "b": 2.8,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "V07",
+   "t0": 27.5,
+   "t1": 30.6,
+   "src": "N08",
+   "a": 0.5,
+   "b": 3.6,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "V08",
+   "t0": 30.6,
+   "t1": 35.2,
+   "src": "N12",
+   "a": 0,
+   "b": 4.6,
+   "z": [
+    1.04,
+    1.1
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V09",
+   "t0": 35.2,
+   "t1": 39.0,
+   "src": "N14",
+   "a": 4.2,
+   "b": 8.0,
+   "z": [
+    1.35,
+    1.4
+   ],
+   "f": [
+    [
+     0.5,
+     0.68
+    ],
+    [
+     0.5,
+     0.68
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V10",
+   "t0": 39.0,
+   "t1": 42.3,
+   "src": "N15",
+   "a": 0,
+   "b": 3.3,
+   "z": [
+    1.5,
+    1.55
+   ],
+   "f": [
+    [
+     0.5,
+     0.7
+    ],
+    [
+     0.5,
+     0.7
+    ]
+   ],
+   "tr": "cut"
+  },
+  {
+   "id": "V11",
+   "t0": 42.3,
+   "t1": 45.6,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 3.3000000000000043,
+   "z": [
+    1.1,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "LOOP",
+   "t0": 45.6,
+   "t1": 46.1,
+   "src": "HERO",
+   "a": 0,
+   "b": 0,
+   "z": [
+    1.04,
+    1.0
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "tr": "zoom"
+  }
+ ],
+ "callouts": [
+  {
+   "kind": "list",
+   "t": 1.7,
+   "rows": [
+    [
+     "1,2",
+     "kg",
+     "de tomate",
+     1.7
+    ],
+    [
+     2,
+     "",
+     "chalotas",
+     4.0
+    ],
+    [
+     4,
+     "",
+     "ajos",
+     5.04
+    ],
+    [
+     400,
+     "ml",
+     "de fondo",
+     7.1
+    ],
+    [
+     40,
+     "g",
+     "de mantequilla",
+     9.24
+    ]
+   ],
+   "t1": 13.1
+  },
+  {
+   "kind": "timer",
+   "t": 17.86,
+   "value": 8,
+   "unit": "min",
+   "label": "fuego alto",
+   "t1": 19.1
+  },
+  {
+   "kind": "timer",
+   "t": 22.8,
+   "value": 30,
+   "unit": "min",
+   "label": "con tomates y fondo",
+   "t1": 24.7
+  },
+  {
+   "kind": "tip",
+   "t": 24.75,
+   "icon": "check",
+   "text": "Colador fino",
+   "t1": 27.5
+  },
+  {
+   "kind": "tip",
+   "t": 27.55,
+   "icon": "x",
+   "text": "Sin hervir",
+   "t1": 30.6
+  },
+  {
+   "kind": "timer",
+   "t": 33.32,
+   "value": 4,
+   "unit": "min",
+   "label": "por lado",
+   "sides": 2,
+   "t1": 35.2
+  },
+  {
+   "kind": "chips",
+   "t": 35.25,
+   "items": [
+    [
+     "aceite verde",
+     35.25
+    ],
+    [
+     "burrata",
+     36.86
+    ]
+   ],
+   "t1": 39.0
+  }
+ ],
+ "pins": [],
+ "cues": [
+  [
+   0,
+   1.1,
+   "Sopa de tomate.",
+   1.1
+  ],
+  [
+   1.6,
+   6.5,
+   "**1,2 kg** de tomate, **2** chalotas, **4** ajos y tomillo.",
+   6.48
+  ],
+  [
+   7.1,
+   12.3,
+   "**400 ml** de fondo, **40 g** de mantequilla, brioche y gruyère.",
+   12.3
+  ],
+  [
+   13.1,
+   13.7,
+   "Pasos.",
+   13.7
+  ],
+  [
+   13.7,
+   18.5,
+   "Tatema los tomates en sartén de hierro, a fuego **alto**, **8 minutos**.",
+   18.5
+  ],
+  [
+   19.1,
+   22.3,
+   "Sofríe chalota y ajo, suma los tomates y el fondo,",
+   22.3
+  ],
+  [
+   22.8,
+   24.2,
+   "y cocina **30 minutos**.",
+   24.2
+  ],
+  [
+   24.7,
+   26.7,
+   "Licúa y pásala por colador fino.",
+   26.7
+  ],
+  [
+   27.5,
+   29.7,
+   "Monta la mantequilla fría, sin hervir.",
+   29.7
+  ],
+  [
+   30.6,
+   34.5,
+   "Brioche con gruyère y costra de parmesano, **4 minutos** por lado.",
+   34.5
+  ],
+  [
+   35.2,
+   38.5,
+   "Aceite de albahaca, burrata si quieres, y a mojar.",
+   38.46
+  ],
+  [
+   39,
+   41.8,
+   "Guárdala, y los trucos están en el canal.",
+   41.78
+  ],
+  [
+   42.3,
+   45.2,
+   "Así queda la sopa de tomate de restaurante con estrella.",
+   45.2
+  ]
+ ],
+ "hook": {
+  "title": [
+   "Velouté",
+   "de tomate"
+  ],
+  "vertical": {
+   "title_y": 470,
+   "cuts": [
+    [
+     0,
+     "HERO",
+     0,
+     1,
+     [
+      1.0,
+      1.08
+     ],
+     [
+      0.5,
+      0.6
+     ]
+    ]
+   ],
+   "pins": []
+  }
+ },
+ "end": {
+  "start": "S35",
+  "title": "¡Buen provecho!",
+  "next": "PRÓXIMO VIDEO",
+  "bubble": [
+   "¿Con qué la mojas?",
+   "Cuéntamelo en",
+   "los comentarios"
+  ]
+ },
+ "thumb": {
+  "img": "raw/HERO.jpg",
+  "crop": [
+   0.03,
+   0.31,
+   0.94
+  ],
+  "title": [
+   "Velouté",
+   "de tomate"
+  ],
+  "tags": [
+   [
+    "tatemado",
+    "#D9573B",
+    "#F6EFE3"
+   ],
+   [
+    "sedosa",
+    "#F6EFE3",
+    "#140E09"
+   ],
+   [
+    "nivel chef",
+    "#F2B544",
+    "#140E09"
+   ]
+  ]
+ },
+ "size": [
+  1080,
+  1920
+ ],
+ "layout": "vertical",
+ "end_card": [
+  "Guárdala",
+  "Receta con trucos",
+  "en el canal  ▶"
+ ],
+ "loop": true,
+ "end_until": 42.3
+}

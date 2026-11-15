@@ -1,0 +1,452 @@
+{
+  "receta": "Velouté de tomate tatemado con burrata y brioche de gruyère",
+  "props": {
+    "plato_hondo": [
+      "soup plate",
+      "a wide-rimmed 26 cm cream off-white ceramic soup plate with a soft satin glaze"
+    ],
+    "licuadora": [
+      "blender",
+      "a tall glass blender jar with a handle on a square matte black base, with no brand or logo"
+    ],
+    "colador": [
+      "fine-mesh sieve",
+      "a round fine-mesh stainless-steel sieve with a long thin handle"
+    ],
+    "filtro": [
+      "filter",
+      "a white paper coffee filter inside a small clear glass pour-over dripper with a handle"
+    ]
+  },
+  "assets": [
+    {
+      "id": "HERO",
+      "tipo": "Nueva fija",
+      "escena": "45-degree hero shot on the dark walnut countertop: velvety deep red roasted-tomato velouté in [plato_hondo], a torn-open white burrata at the center showing its creamy heart, five bright green basil-oil dots on the glossy surface, three tiny basil leaves, flaky sea salt, and beside it four golden brioche batons with melted gruyère visible inside stacked on [tabla], soft wisps of steam rising",
+      "en_fuego": false
+    },
+    {
+      "id": "N01",
+      "tipo": "Nueva fija",
+      "escena": "Overhead 90-degree mise en place on the dark walnut countertop: halved ripe red tomatoes in [bol], two sliced shallots and four peeled garlic cloves in [bolito], two thyme sprigs, a fresh bunch of basil, cubes of cold butter in [bolito], a small glass jug of cream, a small glass jug of vegetable stock, a whole white burrata, grated gruyère in [bolito], grated parmesan in [bolito], eight thick slices of golden brioche on [tabla], each ingredient separate and clearly recognizable",
+      "en_fuego": false
+    },
+    {
+      "id": "N02",
+      "tipo": "Nueva animada",
+      "escena": "Low 30-degree side view of [sarten] with twelve tomato halves placed cut side down in a thin layer of olive oil, skins starting to blister and char black at the edges",
+      "camara": "push",
+      "accion": "The tomato skins blister and darken while the oil sizzles around them",
+      "en_fuego": true,
+      "recipiente": "sarten",
+      "fuego": "alto"
+    },
+    {
+      "id": "N03",
+      "tipo": "Nueva animada",
+      "escena": "Low 30-degree side view of [olla] with thinly sliced shallots and garlic cloves glistening in olive oil, pale and translucent, not browned, [cuchara] resting on the rim",
+      "camara": "push",
+      "accion": "The shallots gently sweat and soften, [cuchara] stirs once slowly",
+      "en_fuego": true,
+      "recipiente": "olla",
+      "fuego": "medio-bajo"
+    },
+    {
+      "id": "N04",
+      "tipo": "Nueva animada",
+      "escena": "Low 30-degree side view of [olla] filled with charred tomato halves, two thyme sprigs and softened shallots, the tomatoes collapsing and releasing red juice",
+      "camara": "push",
+      "accion": "The tomatoes slowly collapse into their own juice as it starts to bubble",
+      "en_fuego": true,
+      "recipiente": "olla",
+      "fuego": "medio"
+    },
+    {
+      "id": "N05",
+      "tipo": "Nueva animada",
+      "escena": "Low 35-degree side view of [olla] with a rustic deep red tomato soup and stock, gently simmering, small bubbles breaking at the surface",
+      "camara": "push",
+      "accion": "The soup simmers gently and small bubbles break slowly at the surface",
+      "en_fuego": true,
+      "recipiente": "olla",
+      "fuego": "bajo"
+    },
+    {
+      "id": "N06",
+      "tipo": "Nueva animada",
+      "escena": "Eye-level close view of [licuadora] on the dark walnut countertop beside the stove, filled with bright red tomato soup, lid on",
+      "camara": "push",
+      "accion": "The red soup spins into a smooth, silky vortex inside the glass jar",
+      "en_fuego": false
+    },
+    {
+      "id": "N07",
+      "tipo": "Nueva animada",
+      "escena": "Low 25-degree side view of [colador] resting on the rim of [cacerola] on the dark walnut countertop, a silky red soup flowing through the fine mesh into it, tomato skins and seeds left behind in the mesh",
+      "camara": "push",
+      "accion": "A smooth glossy red stream flows steadily through the fine mesh",
+      "en_fuego": false
+    },
+    {
+      "id": "N08",
+      "tipo": "Nueva animada",
+      "escena": "Low 30-degree side view of [cacerola] with a smooth, glossy red velouté and a thin swirl of cream, one cube of cold butter floating at the center",
+      "camara": "push",
+      "accion": "The cold butter cube melts and swirls into the soup, leaving a mirror-like shine",
+      "en_fuego": true,
+      "recipiente": "cacerola",
+      "fuego": "bajo"
+    },
+    {
+      "id": "N16",
+      "tipo": "Nueva fija",
+      "escena": "Close 30-degree view of [cuchara] laid across the rim of [cacerola], the back of [cuchara] evenly coated with glossy red velouté, a clean line drawn through the coating, resting off the heat beside the stove",
+      "en_fuego": false
+    },
+    {
+      "id": "N09",
+      "tipo": "Nueva animada",
+      "escena": "Low 30-degree side view of [cacerola] with rolling boiling water and a handful of basil leaves turning vivid emerald green, and [bol] with ice water waiting on the countertop beside the stove",
+      "camara": "push",
+      "accion": "The basil leaves swirl in the boiling water and turn bright emerald green",
+      "en_fuego": true,
+      "recipiente": "cacerola",
+      "fuego": "alto"
+    },
+    {
+      "id": "N10",
+      "tipo": "Nueva animada",
+      "escena": "Eye-level close view on the dark walnut countertop of [filtro] set over [bolito], the paper soaked with an intense emerald green basil oil, a clear bright green pool of oil collecting in [bolito]",
+      "camara": "push",
+      "accion": "One drop of bright green oil falls slowly from the filter into the pool and ripples",
+      "en_fuego": false
+    },
+    {
+      "id": "N11",
+      "tipo": "Nueva fija",
+      "escena": "Overhead 90-degree view on [tabla]: four brioche slices with the outer side brushed with thyme butter and pressed with grated parmesan, and four slices topped with a generous mound of grated gruyère, a small [bolito] of soft thyme butter beside them",
+      "en_fuego": false
+    },
+    {
+      "id": "N12",
+      "tipo": "Nueva animada",
+      "escena": "Low 30-degree side view of [sarten] with two brioche gruyère sandwiches, a deep golden parmesan crust on the bread, melted gruyère starting to ooze at the edges",
+      "camara": "push",
+      "accion": "The melted gruyère slowly oozes from the edges and lightly sizzles",
+      "en_fuego": true,
+      "recipiente": "sarten",
+      "fuego": "medio-bajo"
+    },
+    {
+      "id": "N13",
+      "tipo": "Nueva fija",
+      "escena": "Low 20-degree close view on [tabla] on the dark walnut countertop: golden brioche sandwiches cut into neat batons, crisp parmesan crust, the gruyère inside melted and stretching between two pieces, [cuchillo] resting beside",
+      "en_fuego": false
+    },
+    {
+      "id": "N14",
+      "tipo": "Nueva animada",
+      "escena": "Close 40-degree view on the dark walnut countertop of [plato_hondo] with glossy deep red velouté and a torn burrata at the center",
+      "camara": "push",
+      "accion": "Three drops of bright green basil oil fall onto the red surface and bloom into small rings",
+      "en_fuego": false
+    },
+    {
+      "id": "N15",
+      "tipo": "Nueva animada",
+      "escena": "45-degree view on the dark walnut countertop of the finished dish: velvety red velouté in [plato_hondo] with burrata, green basil-oil dots and tiny basil leaves, golden brioche batons on [tabla] beside it",
+      "camara": "orbit",
+      "accion": "Soft steam rises slowly from the warm soup",
+      "en_fuego": false
+    }
+  ],
+  "largo": [
+    {
+      "seccion": "Gancho",
+      "narracion": "Tomate tatemado, aceite de albahaca y un brioche de gruyère crujiente.",
+      "clip": "HERO"
+    },
+    {
+      "seccion": "Gancho",
+      "narracion": "Ahumada, sedosa y brillante.",
+      "clip": "N14",
+      "tramo": "final"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Para cuatro personas necesitas un kilo y doscientos gramos de tomate chonto maduro.",
+      "clip": "N01",
+      "nota": "Texto: 1,2 kg de tomate chonto",
+      "ajuste": "Zoom 130 % sobre los tomates"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Dos chalotas, cuatro dientes de ajo y dos ramas de tomillo.",
+      "clip": "N01",
+      "nota": "Texto: 2 chalotas · 4 dientes de ajo · 2 ramas de tomillo",
+      "ajuste": "Zoom 130 % sobre chalota, ajo y tomillo"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Cuatrocientos mililitros de fondo de verduras, cincuenta de crema de leche y cuarenta gramos de mantequilla fría.",
+      "clip": "N01",
+      "nota": "Texto: 400 ml fondo de verduras · 50 ml crema de leche · 40 g mantequilla fría",
+      "ajuste": "Zoom 130 % sobre fondo, crema y mantequilla"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Para el aceite, cuarenta gramos de albahaca y ciento veinte mililitros de aceite de girasol.",
+      "clip": "N01",
+      "nota": "Texto: 40 g albahaca · 120 ml aceite de girasol",
+      "ajuste": "Zoom 130 % sobre la albahaca"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Y para acompañar, ocho rebanadas de brioche, ciento sesenta gramos de gruyère, veinte de parmesano y, si quieres, una burrata.",
+      "clip": "N01",
+      "nota": "Texto: 8 rebanadas de brioche · 160 g gruyère · 20 g parmesano · 1 burrata (opcional)",
+      "ajuste": "Zoom 130 % sobre brioche y quesos"
+    },
+    {
+      "seccion": "Tomates tatemados",
+      "narracion": "Tomates tatemados. Parte los tomates por la mitad. Calienta la sartén de hierro a fuego alto durante tres minutos.",
+      "clip": "N02",
+      "nota": "Texto: fuego alto · 3 min"
+    },
+    {
+      "seccion": "Tomates tatemados",
+      "narracion": "Pon los tomates boca abajo con una cucharada de aceite de oliva. Déjalos de seis a ocho minutos, sin moverlos.",
+      "clip": "N02",
+      "nota": "Texto: 15 ml aceite de oliva · 6–8 min"
+    },
+    {
+      "seccion": "Tomates tatemados",
+      "narracion": "Queremos la piel ampollada y los bordes casi negros.",
+      "clip": "N02",
+      "tramo": "final",
+      "ajuste": "Zoom 130 %"
+    },
+    {
+      "seccion": "Tomates tatemados",
+      "narracion": "Ese tatemado reemplaza al horno y le da a la sopa un fondo ahumado.",
+      "clip": "N02",
+      "tramo": "desde 1",
+      "ajuste": "Zoom 115 %, mitad derecha"
+    },
+    {
+      "seccion": "Velouté",
+      "narracion": "En la olla, a fuego medio bajo, sofríe la chalota y el ajo con otra cucharada de aceite.",
+      "clip": "N03",
+      "nota": "Texto: fuego medio-bajo · 15 ml aceite de oliva"
+    },
+    {
+      "seccion": "Velouté",
+      "narracion": "Cinco minutos, sin que tomen color. Si se doran, la sopa amarga.",
+      "clip": "N03",
+      "nota": "Texto: 5 min · sin color",
+      "tramo": "final"
+    },
+    {
+      "seccion": "Velouté",
+      "narracion": "Suma los tomates, el tomillo, una pizca de azúcar y la sal.",
+      "clip": "N04",
+      "nota": "Texto: 5 g azúcar · 8 g sal"
+    },
+    {
+      "seccion": "Velouté",
+      "narracion": "Diez minutos a fuego medio, hasta que se desarmen.",
+      "clip": "N04",
+      "nota": "Texto: 10 min · fuego medio",
+      "tramo": "final"
+    },
+    {
+      "seccion": "Velouté",
+      "narracion": "Agrega el fondo y cocina veinte minutos a fuego bajo.",
+      "clip": "N05",
+      "nota": "Texto: 400 ml fondo · 20 min · fuego bajo"
+    },
+    {
+      "seccion": "Velouté",
+      "narracion": "Saca el tomillo y licúa dos minutos a máxima potencia.",
+      "clip": "N06",
+      "nota": "Texto: 2 min · potencia máxima"
+    },
+    {
+      "seccion": "Velouté",
+      "narracion": "Ahora, el paso que separa una sopa casera de una de restaurante.",
+      "clip": "N07"
+    },
+    {
+      "seccion": "Velouté",
+      "narracion": "Pásala por un colador fino. Presiona con la cuchara y descarta pieles y semillas.",
+      "clip": "N07",
+      "tramo": "final",
+      "ajuste": "Zoom 125 %"
+    },
+    {
+      "seccion": "Velouté",
+      "narracion": "Devuélvela al fuego bajo con la crema. Y monta la mantequilla fría, cubo a cubo.",
+      "clip": "N08",
+      "nota": "Texto: 50 ml crema · 40 g mantequilla fría · fuego bajo"
+    },
+    {
+      "seccion": "Velouté",
+      "narracion": "No la dejes hervir. La mantequilla fría emulsiona y le da ese brillo de espejo.",
+      "clip": "N08",
+      "tramo": "final",
+      "ajuste": "Zoom 130 %"
+    },
+    {
+      "seccion": "Velouté",
+      "narracion": "Si hierve, se corta. Termina con unas gotas de vinagre de jerez.",
+      "clip": "N16",
+      "nota": "Texto: 5 ml vinagre de jerez"
+    },
+    {
+      "seccion": "Aceite de albahaca",
+      "narracion": "Aceite de albahaca. Blanquea la albahaca diez segundos en agua hirviendo. Pásala de inmediato a agua con hielo.",
+      "clip": "N09",
+      "nota": "Texto: 10 s · agua con hielo"
+    },
+    {
+      "seccion": "Aceite de albahaca",
+      "narracion": "Ese choque fija el verde y evita que el aceite se ponga café.",
+      "clip": "N09",
+      "tramo": "final",
+      "ajuste": "Zoom 130 %"
+    },
+    {
+      "seccion": "Aceite de albahaca",
+      "narracion": "Sécala bien y licúala dos minutos con el aceite. Fíltralo por un filtro de café.",
+      "clip": "N10",
+      "nota": "Texto: 40 g albahaca · 120 ml aceite · 2 min"
+    },
+    {
+      "seccion": "Aceite de albahaca",
+      "narracion": "Gota a gota, sale un verde intenso y limpio.",
+      "clip": "N10",
+      "tramo": "final",
+      "ajuste": "Zoom 130 %"
+    },
+    {
+      "seccion": "Brioche de gruyère",
+      "narracion": "Brioche de gruyère. Mezcla la mantequilla blanda con hojas de tomillo. Úntala por fuera del pan y presiona parmesano rallado sobre ella.",
+      "clip": "N11",
+      "nota": "Texto: 60 g mantequilla · 1 cdta tomillo · 20 g parmesano"
+    },
+    {
+      "seccion": "Brioche de gruyère",
+      "narracion": "Rellena con el gruyère y cierra.",
+      "clip": "N11",
+      "nota": "Texto: 160 g gruyère",
+      "ajuste": "Zoom 130 % sobre el gruyère"
+    },
+    {
+      "seccion": "Brioche de gruyère",
+      "narracion": "Sartén a fuego medio bajo, de tres a cuatro minutos por lado.",
+      "clip": "N12",
+      "nota": "Texto: fuego medio-bajo · 3–4 min por lado"
+    },
+    {
+      "seccion": "Brioche de gruyère",
+      "narracion": "El fuego bajo funde el queso por dentro antes de que el pan se queme. El parmesano forma una costra crujiente.",
+      "clip": "N12",
+      "tramo": "final",
+      "ajuste": "Zoom 125 %"
+    },
+    {
+      "seccion": "Brioche de gruyère",
+      "narracion": "Córtalo en bastones.",
+      "clip": "N13"
+    },
+    {
+      "seccion": "Servicio",
+      "narracion": "Sirve la sopa en un plato hondo. Si quieres, abre una burrata al centro.",
+      "clip": "N14"
+    },
+    {
+      "seccion": "Servicio",
+      "narracion": "Unas gotas del aceite verde, hojas pequeñas de albahaca y sal en escamas.",
+      "clip": "N14",
+      "tramo": "final",
+      "ajuste": "Zoom 120 %"
+    },
+    {
+      "seccion": "Servicio",
+      "narracion": "Al lado, los bastones de brioche, listos para mojar.",
+      "clip": "N15"
+    },
+    {
+      "seccion": "Cierre",
+      "narracion": "Si te gustó, suscríbete para más recetas de restaurante en casa.",
+      "clip": "HERO",
+      "ajuste": "Zoom lento 5 %"
+    }
+  ],
+  "short": [
+    {
+      "seccion": "Gancho",
+      "narracion": "Sopa de tomate.",
+      "clip": "HERO"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Un kilo doscientos de tomate, dos chalotas, cuatro ajos y tomillo.",
+      "clip": "N01",
+      "nota": "Texto: 1,2 kg tomate · 2 chalotas · 4 ajos · tomillo"
+    },
+    {
+      "seccion": "Ingredientes",
+      "narracion": "Cuatrocientos mililitros de fondo, cuarenta gramos de mantequilla, brioche y gruyère.",
+      "clip": "N01",
+      "nota": "Texto: 400 ml fondo · 40 g mantequilla · brioche · gruyère",
+      "ajuste": "Zoom 130 % sobre mantequilla y quesos"
+    },
+    {
+      "seccion": "Pasos",
+      "narracion": "Pasos. Tatema los tomates en sartén de hierro, a fuego alto, ocho minutos.",
+      "clip": "N02",
+      "nota": "Texto: fuego alto · 8 min"
+    },
+    {
+      "seccion": "Pasos",
+      "narracion": "Sofríe chalota y ajo, suma los tomates y el fondo, y cocina treinta minutos.",
+      "clip": "N04",
+      "nota": "Texto: 30 min"
+    },
+    {
+      "seccion": "Pasos",
+      "narracion": "Licúa y pásala por colador fino.",
+      "clip": "N07"
+    },
+    {
+      "seccion": "Pasos",
+      "narracion": "Monta la mantequilla fría, sin hervir.",
+      "clip": "N08",
+      "nota": "Texto: sin hervir"
+    },
+    {
+      "seccion": "Pasos",
+      "narracion": "Brioche con gruyère y costra de parmesano, cuatro minutos por lado.",
+      "clip": "N12",
+      "nota": "Texto: 4 min por lado"
+    },
+    {
+      "seccion": "Recompensa",
+      "narracion": "Aceite de albahaca, burrata si quieres, y a mojar.",
+      "clip": "N14",
+      "tramo": "final"
+    },
+    {
+      "seccion": "Cierre",
+      "narracion": "Guárdala, y los trucos están en el canal.",
+      "clip": "N15"
+    },
+    {
+      "seccion": "Cierre",
+      "narracion": "Así queda la sopa de tomate de restaurante con estrella.",
+      "clip": "HERO",
+      "ajuste": "Zoom lento 5 %"
+    }
+  ]
+}

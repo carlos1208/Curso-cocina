@@ -1,0 +1,2003 @@
+{
+ "duration": 207.0,
+ "fps": 30,
+ "title": "Velouté de tomate tatemado",
+ "tag": "CURSO DE COCINA  ·  ALTA COCINA EN CASA",
+ "music": "calido",
+ "footage": "portrait",
+ "colors": {},
+ "chapters": [
+  {
+   "id": "gancho",
+   "t": 0.0,
+   "n": 0,
+   "title": "Velouté de tomate tatemado",
+   "color": "#F2B544",
+   "side": "hook"
+  },
+  {
+   "id": "ingredientes",
+   "t": 9.0,
+   "n": 1,
+   "title": "Ingredientes",
+   "h1": "Ingredientes",
+   "h2": "para 4 personas",
+   "color": "#F2B544",
+   "side": "R",
+   "mark": "MISE EN PLACE"
+  },
+  {
+   "id": "tatemados",
+   "t": 46.7,
+   "n": 2,
+   "title": "Tomates tatemados",
+   "h1": "Tomates",
+   "h2": "tatemados",
+   "color": "#C8452E",
+   "side": "L",
+   "mark": "TATEMADO"
+  },
+  {
+   "id": "veloute",
+   "t": 73.4,
+   "n": 3,
+   "title": "Velouté",
+   "h1": "Velouté",
+   "h2": "de seda",
+   "color": "#E8673F",
+   "side": "R",
+   "mark": "VELOUTÉ"
+  },
+  {
+   "id": "albahaca",
+   "t": 130.7,
+   "n": 4,
+   "title": "Aceite de albahaca",
+   "h1": "Aceite",
+   "h2": "de albahaca",
+   "color": "#7DB04A",
+   "side": "L",
+   "mark": "ACEITE VERDE"
+  },
+  {
+   "id": "brioche",
+   "t": 155.2,
+   "n": 5,
+   "title": "Brioche de gruyère",
+   "h1": "Brioche",
+   "h2": "de gruyère",
+   "color": "#E9B44C",
+   "side": "R",
+   "mark": "BRIOCHE"
+  },
+  {
+   "id": "servicio",
+   "t": 182.4,
+   "n": 6,
+   "title": "Servicio",
+   "h1": "Servir",
+   "h2": "y decorar",
+   "color": "#F1DDB8",
+   "side": "L",
+   "mark": "SERVICIO"
+  },
+  {
+   "id": "cierre",
+   "t": 197.0,
+   "n": 7,
+   "title": "Cierre",
+   "color": "#F2B544",
+   "side": "end"
+  }
+ ],
+ "media": {
+  "HERO": {
+   "img": "raw/HERO.jpg"
+  },
+  "N01": {
+   "img": "raw/N01.jpg"
+  },
+  "N11": {
+   "img": "raw/N11.jpg"
+  },
+  "N13": {
+   "img": "raw/N13.jpg"
+  },
+  "N16": {
+   "img": "raw/N16.jpg"
+  },
+  "N02": {
+   "clip": "N02",
+   "audio": true
+  },
+  "N03": {
+   "clip": "N03",
+   "audio": true
+  },
+  "N04": {
+   "clip": "N04",
+   "audio": true
+  },
+  "N05": {
+   "clip": "N05",
+   "audio": true
+  },
+  "N06": {
+   "clip": "N06",
+   "audio": true
+  },
+  "N07": {
+   "clip": "N07",
+   "audio": true
+  },
+  "N08": {
+   "clip": "N08",
+   "audio": true
+  },
+  "N09": {
+   "clip": "N09",
+   "audio": true
+  },
+  "N10": {
+   "clip": "N10",
+   "audio": true
+  },
+  "N12": {
+   "clip": "N12",
+   "audio": true
+  },
+  "N14": {
+   "clip": "N14",
+   "audio": true
+  },
+  "N15": {
+   "clip": "N15",
+   "audio": true
+  }
+ },
+ "shots": [
+  {
+   "id": "S01",
+   "t0": 0.0,
+   "t1": 6.1,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 6.1,
+   "z": [
+    1.0,
+    1.06
+   ],
+   "f": [
+    [
+     0.5,
+     0.58
+    ],
+    [
+     0.5,
+     0.58
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S02",
+   "t0": 6.1,
+   "t1": 9.0,
+   "src": "N14",
+   "a": 5.1,
+   "b": 8.0,
+   "z": [
+    1.45,
+    1.5
+   ],
+   "f": [
+    [
+     0.5,
+     0.68
+    ],
+    [
+     0.5,
+     0.68
+    ]
+   ],
+   "tr": "none"
+  },
+  {
+   "id": "S03",
+   "t0": 9.0,
+   "t1": 15.1,
+   "src": "N01",
+   "a": 0.0,
+   "b": 6.1,
+   "z": [
+    1.55,
+    1.62
+   ],
+   "f": [
+    [
+     0.24,
+     0.4
+    ],
+    [
+     0.24,
+     0.4
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S04",
+   "t0": 15.1,
+   "t1": 20.6,
+   "src": "N01",
+   "a": 0.0,
+   "b": 5.500000000000002,
+   "z": [
+    1.55,
+    1.6
+   ],
+   "f": [
+    [
+     0.2,
+     0.5
+    ],
+    [
+     0.24,
+     0.48
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S05",
+   "t0": 20.6,
+   "t1": 28.8,
+   "src": "N01",
+   "a": 0.0,
+   "b": 8.2,
+   "z": [
+    1.5,
+    1.56
+   ],
+   "f": [
+    [
+     0.62,
+     0.4
+    ],
+    [
+     0.6,
+     0.42
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S06",
+   "t0": 28.8,
+   "t1": 36.1,
+   "src": "N01",
+   "a": 0.0,
+   "b": 7.300000000000001,
+   "z": [
+    1.6,
+    1.66
+   ],
+   "f": [
+    [
+     0.6,
+     0.34
+    ],
+    [
+     0.6,
+     0.34
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S07",
+   "t0": 36.1,
+   "t1": 46.7,
+   "src": "N01",
+   "a": 0.0,
+   "b": 10.600000000000001,
+   "z": [
+    1.25,
+    1.32
+   ],
+   "f": [
+    [
+     0.62,
+     0.48
+    ],
+    [
+     0.6,
+     0.48
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S08",
+   "t0": 46.7,
+   "t1": 56.1,
+   "src": "N02",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S09",
+   "t0": 56.1,
+   "t1": 64.5,
+   "src": "N02",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.3,
+    1.36
+   ],
+   "f": [
+    [
+     0.5,
+     0.42
+    ],
+    [
+     0.5,
+     0.42
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S10",
+   "t0": 64.5,
+   "t1": 68.4,
+   "src": "N02",
+   "a": 4.0,
+   "b": 8.0,
+   "z": [
+    1.6,
+    1.66
+   ],
+   "f": [
+    [
+     0.5,
+     0.4
+    ],
+    [
+     0.5,
+     0.4
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S11",
+   "t0": 68.4,
+   "t1": 73.4,
+   "src": "N02",
+   "a": 1.0,
+   "b": 6.0,
+   "z": [
+    1.15,
+    1.2
+   ],
+   "f": [
+    [
+     0.5,
+     0.48
+    ],
+    [
+     0.5,
+     0.48
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S12",
+   "t0": 73.4,
+   "t1": 80.3,
+   "src": "N03",
+   "a": 0,
+   "b": 6.9,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S13",
+   "t0": 80.3,
+   "t1": 85.8,
+   "src": "N03",
+   "a": 2.5,
+   "b": 8.0,
+   "z": [
+    1.35,
+    1.4
+   ],
+   "f": [
+    [
+     0.55,
+     0.5
+    ],
+    [
+     0.55,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S14",
+   "t0": 85.8,
+   "t1": 90.8,
+   "src": "N04",
+   "a": 0,
+   "b": 5.0,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S15",
+   "t0": 90.8,
+   "t1": 93.8,
+   "src": "N04",
+   "a": 4.0,
+   "b": 8.0,
+   "z": [
+    1.3,
+    1.36
+   ],
+   "f": [
+    [
+     0.55,
+     0.45
+    ],
+    [
+     0.55,
+     0.45
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S16",
+   "t0": 93.8,
+   "t1": 97.5,
+   "src": "N05",
+   "a": 1.0,
+   "b": 5.0,
+   "z": [
+    1.05,
+    1.1
+   ],
+   "f": [
+    [
+     0.55,
+     0.5
+    ],
+    [
+     0.55,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S17",
+   "t0": 97.5,
+   "t1": 102.0,
+   "src": "N06",
+   "a": 2.0,
+   "b": 6.5,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S18",
+   "t0": 102.0,
+   "t1": 107.1,
+   "src": "N07",
+   "a": 0,
+   "b": 3.6,
+   "z": [
+    1.0,
+    1.03
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S19",
+   "t0": 107.1,
+   "t1": 113.1,
+   "src": "N07",
+   "a": 2.0,
+   "b": 8.0,
+   "z": [
+    1.55,
+    1.6
+   ],
+   "f": [
+    [
+     0.48,
+     0.66
+    ],
+    [
+     0.48,
+     0.66
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S20",
+   "t0": 113.1,
+   "t1": 119.4,
+   "src": "N08",
+   "a": 0,
+   "b": 6.3,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S21",
+   "t0": 119.4,
+   "t1": 125.3,
+   "src": "N08",
+   "a": 2.1,
+   "b": 8.0,
+   "z": [
+    1.3,
+    1.36
+   ],
+   "f": [
+    [
+     0.5,
+     0.42
+    ],
+    [
+     0.5,
+     0.42
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S22",
+   "t0": 125.3,
+   "t1": 130.7,
+   "src": "N16",
+   "a": 0.0,
+   "b": 5.3999999999999915,
+   "z": [
+    1.0,
+    1.1
+   ],
+   "f": [
+    [
+     0.38,
+     0.6
+    ],
+    [
+     0.34,
+     0.62
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S23",
+   "t0": 130.7,
+   "t1": 139.6,
+   "src": "N09",
+   "a": 0,
+   "b": 8.0,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S24",
+   "t0": 139.6,
+   "t1": 144.3,
+   "src": "N09",
+   "a": 3.3,
+   "b": 8.0,
+   "z": [
+    1.3,
+    1.36
+   ],
+   "f": [
+    [
+     0.45,
+     0.42
+    ],
+    [
+     0.45,
+     0.42
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S25",
+   "t0": 144.3,
+   "t1": 150.7,
+   "src": "N10",
+   "a": 0,
+   "b": 6.4,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S26",
+   "t0": 150.7,
+   "t1": 155.2,
+   "src": "N10",
+   "a": 3.5,
+   "b": 8.0,
+   "z": [
+    1.35,
+    1.4
+   ],
+   "f": [
+    [
+     0.5,
+     0.42
+    ],
+    [
+     0.5,
+     0.42
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S27",
+   "t0": 155.2,
+   "t1": 165.5,
+   "src": "N11",
+   "a": 0.0,
+   "b": 10.300000000000011,
+   "z": [
+    1.0,
+    1.12
+   ],
+   "f": [
+    [
+     0.45,
+     0.45
+    ],
+    [
+     0.42,
+     0.46
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S28",
+   "t0": 165.5,
+   "t1": 168.3,
+   "src": "N11",
+   "a": 0.0,
+   "b": 2.8000000000000114,
+   "z": [
+    1.45,
+    1.52
+   ],
+   "f": [
+    [
+     0.6,
+     0.4
+    ],
+    [
+     0.6,
+     0.4
+    ]
+   ],
+   "tr": "zoom"
+  },
+  {
+   "id": "S29",
+   "t0": 168.3,
+   "t1": 173.2,
+   "src": "N12",
+   "a": 0,
+   "b": 4.9,
+   "z": [
+    1.0,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.5
+    ],
+    [
+     0.5,
+     0.5
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S30",
+   "t0": 173.2,
+   "t1": 180.8,
+   "src": "N12",
+   "a": 0.4,
+   "b": 8.0,
+   "z": [
+    1.35,
+    1.4
+   ],
+   "f": [
+    [
+     0.45,
+     0.58
+    ],
+    [
+     0.45,
+     0.58
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S31",
+   "t0": 180.8,
+   "t1": 182.4,
+   "src": "N13",
+   "a": 0.0,
+   "b": 1.5999999999999943,
+   "z": [
+    1.08,
+    1.16
+   ],
+   "f": [
+    [
+     0.45,
+     0.62
+    ],
+    [
+     0.42,
+     0.64
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S32",
+   "t0": 182.4,
+   "t1": 187.9,
+   "src": "N14",
+   "a": 0,
+   "b": 5.5,
+   "z": [
+    1.5,
+    1.55
+   ],
+   "f": [
+    [
+     0.52,
+     0.68
+    ],
+    [
+     0.52,
+     0.68
+    ]
+   ],
+   "tr": "chapter"
+  },
+  {
+   "id": "S33",
+   "t0": 187.9,
+   "t1": 193.5,
+   "src": "N14",
+   "a": 2.4,
+   "b": 8.0,
+   "z": [
+    1.6,
+    1.66
+   ],
+   "f": [
+    [
+     0.5,
+     0.68
+    ],
+    [
+     0.5,
+     0.68
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S34",
+   "t0": 193.5,
+   "t1": 197.0,
+   "src": "N15",
+   "a": 0,
+   "b": 3.5,
+   "z": [
+    1.55,
+    1.6
+   ],
+   "f": [
+    [
+     0.5,
+     0.7
+    ],
+    [
+     0.5,
+     0.7
+    ]
+   ],
+   "tr": "push"
+  },
+  {
+   "id": "S35",
+   "t0": 197.0,
+   "t1": 207.0,
+   "src": "HERO",
+   "a": 0.0,
+   "b": 10.0,
+   "z": [
+    1.12,
+    1.04
+   ],
+   "f": [
+    [
+     0.5,
+     0.6
+    ],
+    [
+     0.5,
+     0.6
+    ]
+   ],
+   "tr": "end"
+  }
+ ],
+ "callouts": [
+  {
+   "kind": "board",
+   "t": 10.5,
+   "groups": [
+    [
+     "a",
+     "Base"
+    ],
+    [
+     "c",
+     "Para la sopa"
+    ],
+    [
+     "b",
+     "Aceite verde"
+    ]
+   ],
+   "items": [
+    {
+     "g": "a",
+     "t": 10.5,
+     "v": "1,2",
+     "unit": "kg",
+     "label": "tomate chonto maduro"
+    },
+    {
+     "g": "a",
+     "t": 14.84,
+     "v": 2,
+     "unit": "",
+     "label": "chalotas"
+    },
+    {
+     "g": "a",
+     "t": 16.3,
+     "v": 4,
+     "unit": "",
+     "label": "dientes de ajo"
+    },
+    {
+     "g": "a",
+     "t": 18.39,
+     "v": 2,
+     "unit": "",
+     "label": "ramas de tomillo"
+    },
+    {
+     "g": "c",
+     "t": 20.63,
+     "v": 400,
+     "unit": "ml",
+     "label": "fondo de verduras"
+    },
+    {
+     "g": "c",
+     "t": 23.89,
+     "v": 50,
+     "unit": "ml",
+     "label": "crema de leche"
+    },
+    {
+     "g": "c",
+     "t": 25.68,
+     "v": 40,
+     "unit": "g",
+     "label": "mantequilla fría"
+    },
+    {
+     "g": "b",
+     "t": 30.17,
+     "v": 40,
+     "unit": "g",
+     "label": "albahaca"
+    },
+    {
+     "g": "b",
+     "t": 32.06,
+     "v": 120,
+     "unit": "ml",
+     "label": "aceite de girasol"
+    }
+   ],
+   "t1": 36.1
+  },
+  {
+   "kind": "list",
+   "t": 37.39,
+   "rows": [
+    [
+     8,
+     "",
+     "rebanadas de brioche",
+     37.39
+    ],
+    [
+     160,
+     "g",
+     "de gruyère",
+     39.51
+    ],
+    [
+     20,
+     "g",
+     "de parmesano",
+     42.05
+    ],
+    [
+     1,
+     "",
+     "burrata (opcional)",
+     45.32
+    ]
+   ],
+   "t1": 46.7
+  },
+  {
+   "kind": "heat",
+   "t": 53.96,
+   "level": 4,
+   "label": "Alto",
+   "t1": 56.1
+  },
+  {
+   "kind": "timer",
+   "t": 54.6,
+   "value": 3,
+   "unit": "min",
+   "label": "sartén vacía",
+   "t1": 56.1
+  },
+  {
+   "kind": "chips",
+   "t": 58.12,
+   "items": [
+    [
+     "+ 1 cda de aceite de oliva",
+     58.12
+    ]
+   ],
+   "t1": 64.5
+  },
+  {
+   "kind": "timer",
+   "t": 60.6,
+   "value": 8,
+   "unit": "min",
+   "main": "6–8 minutos",
+   "label": "sin moverlos",
+   "t1": 64.5
+  },
+  {
+   "kind": "tip",
+   "t": 64.6,
+   "icon": "check",
+   "text": "Piel ampollada, bordes casi negros",
+   "t1": 68.4
+  },
+  {
+   "kind": "tip",
+   "t": 69.38,
+   "icon": "fire",
+   "text": "Ahumado sin encender el horno",
+   "t1": 73.4
+  },
+  {
+   "kind": "heat",
+   "t": 75.08,
+   "level": 2,
+   "label": "Medio-bajo",
+   "t1": 80.3
+  },
+  {
+   "kind": "chips",
+   "t": 78.61,
+   "items": [
+    [
+     "+ 1 cda de aceite",
+     78.61
+    ]
+   ],
+   "t1": 80.3
+  },
+  {
+   "kind": "timer",
+   "t": 80.35,
+   "value": 5,
+   "unit": "min",
+   "label": "sin que tomen color",
+   "t1": 85.8
+  },
+  {
+   "kind": "tip",
+   "t": 83.05,
+   "icon": "x",
+   "text": "Doradas: la sopa amarga",
+   "t1": 85.8
+  },
+  {
+   "kind": "list",
+   "t": 86.34,
+   "rows": [
+    [
+     2,
+     "ramas",
+     "de tomillo",
+     87.58
+    ],
+    [
+     5,
+     "g",
+     "de azúcar",
+     89.22
+    ],
+    [
+     8,
+     "g",
+     "de sal",
+     90.05
+    ]
+   ],
+   "t1": 90.8
+  },
+  {
+   "kind": "heat",
+   "t": 91.89,
+   "level": 3,
+   "label": "Medio",
+   "t1": 93.8
+  },
+  {
+   "kind": "timer",
+   "t": 90.8,
+   "value": 10,
+   "unit": "min",
+   "label": "hasta que se desarmen",
+   "t1": 93.8
+  },
+  {
+   "kind": "chips",
+   "t": 93.85,
+   "items": [
+    [
+     "+ 400 ml de fondo",
+     93.85
+    ]
+   ],
+   "t1": 97.5
+  },
+  {
+   "kind": "timer",
+   "t": 95.0,
+   "value": 20,
+   "unit": "min",
+   "label": "hervor suave",
+   "t1": 97.5
+  },
+  {
+   "kind": "heat",
+   "t": 96.86,
+   "level": 1,
+   "label": "Bajo",
+   "t1": 97.5
+  },
+  {
+   "kind": "timer",
+   "t": 99.41,
+   "value": 2,
+   "unit": "min",
+   "label": "a máxima potencia",
+   "t1": 102.0
+  },
+  {
+   "kind": "big",
+   "t": 102.73,
+   "text": "El paso clave",
+   "t1": 107.1
+  },
+  {
+   "kind": "tip",
+   "t": 107.2,
+   "icon": "check",
+   "text": "Colador fino: textura de seda",
+   "t1": 113.1
+  },
+  {
+   "kind": "tip",
+   "t": 109.3,
+   "icon": "press",
+   "text": "Presiona y descarta pieles y semillas",
+   "t1": 113.1
+  },
+  {
+   "kind": "heat",
+   "t": 114.13,
+   "level": 1,
+   "label": "Bajo",
+   "t1": 119.4
+  },
+  {
+   "kind": "chips",
+   "t": 115.43,
+   "items": [
+    [
+     "+ 50 ml de crema",
+     115.43
+    ],
+    [
+     "+ 40 g de mantequilla fría",
+     116.84
+    ]
+   ],
+   "t1": 119.4
+  },
+  {
+   "kind": "tip",
+   "t": 119.45,
+   "icon": "x",
+   "text": "Sin hervir",
+   "t1": 125.3
+  },
+  {
+   "kind": "tip",
+   "t": 123.8,
+   "icon": "spark",
+   "text": "Brillo de espejo",
+   "t1": 125.3
+  },
+  {
+   "kind": "tip",
+   "t": 125.35,
+   "icon": "x",
+   "text": "Si hierve, se corta",
+   "t1": 130.7
+  },
+  {
+   "kind": "chips",
+   "t": 128.8,
+   "items": [
+    [
+     "+ 5 ml de vinagre de jerez",
+     128.8
+    ]
+   ],
+   "t1": 130.7
+  },
+  {
+   "kind": "timer",
+   "t": 134.09,
+   "value": 10,
+   "unit": "s",
+   "main": "10 segundos",
+   "label": "en agua hirviendo",
+   "t1": 139.6
+  },
+  {
+   "kind": "timer",
+   "t": 136.45,
+   "value": 1,
+   "unit": "min",
+   "main": "Agua con hielo",
+   "label": "de inmediato",
+   "cold": true,
+   "t1": 139.6
+  },
+  {
+   "kind": "tip",
+   "t": 139.78,
+   "icon": "check",
+   "text": "El choque fija el verde",
+   "t1": 144.3
+  },
+  {
+   "kind": "list",
+   "t": 144.35,
+   "rows": [
+    [
+     40,
+     "g",
+     "de albahaca",
+     144.35
+    ],
+    [
+     120,
+     "ml",
+     "de aceite de girasol",
+     145.26
+    ]
+   ],
+   "t1": 150.7
+  },
+  {
+   "kind": "timer",
+   "t": 146.13,
+   "value": 2,
+   "unit": "min",
+   "label": "en la licuadora",
+   "t1": 150.7
+  },
+  {
+   "kind": "tip",
+   "t": 150.75,
+   "icon": "drop",
+   "text": "Filtro de café: gota a gota",
+   "t1": 155.2
+  },
+  {
+   "kind": "list",
+   "t": 156.85,
+   "rows": [
+    [
+     60,
+     "g",
+     "de mantequilla blanda",
+     156.85
+    ],
+    [
+     1,
+     "cdta",
+     "de tomillo",
+     159.39
+    ],
+    [
+     20,
+     "g",
+     "de parmesano por fuera",
+     162.17
+    ]
+   ],
+   "t1": 165.5
+  },
+  {
+   "kind": "chips",
+   "t": 165.55,
+   "items": [
+    [
+     "+ 160 g de gruyère",
+     165.55
+    ]
+   ],
+   "t1": 168.3
+  },
+  {
+   "kind": "heat",
+   "t": 168.89,
+   "level": 2,
+   "label": "Medio-bajo",
+   "t1": 173.2
+  },
+  {
+   "kind": "timer",
+   "t": 170.39,
+   "value": 4,
+   "unit": "min",
+   "main": "3–4 minutos",
+   "label": "por lado",
+   "sides": 2,
+   "t1": 173.2
+  },
+  {
+   "kind": "tip",
+   "t": 173.25,
+   "icon": "fire",
+   "text": "Fuego bajo: funde sin quemar",
+   "t1": 180.8
+  },
+  {
+   "kind": "tip",
+   "t": 177.65,
+   "icon": "bread",
+   "text": "Costra de parmesano",
+   "t1": 180.8
+  },
+  {
+   "kind": "big",
+   "t": 180.85,
+   "text": "En bastones",
+   "t1": 182.4
+  },
+  {
+   "kind": "chips",
+   "t": 184.85,
+   "items": [
+    [
+     "burrata (opcional)",
+     184.85
+    ]
+   ],
+   "t1": 187.9
+  },
+  {
+   "kind": "chips",
+   "t": 187.95,
+   "items": [
+    [
+     "aceite verde",
+     187.95
+    ],
+    [
+     "albahaca",
+     190.05
+    ],
+    [
+     "sal en escamas",
+     192.41
+    ]
+   ],
+   "t1": 193.5
+  },
+  {
+   "kind": "big",
+   "t": 195.6,
+   "text": "¡A mojar!",
+   "t1": 197.0
+  }
+ ],
+ "pins": [
+  {
+   "shot": "S03",
+   "t": 10.5,
+   "xy": [
+    0.24,
+    0.37
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S04",
+   "t": 14.84,
+   "xy": [
+    0.13,
+    0.5
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S04",
+   "t": 16.3,
+   "xy": [
+    0.1,
+    0.6
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S04",
+   "t": 18.39,
+   "xy": [
+    0.5,
+    0.43
+   ],
+   "n": 4
+  },
+  {
+   "shot": "S05",
+   "t": 20.63,
+   "xy": [
+    0.89,
+    0.32
+   ],
+   "n": 5
+  },
+  {
+   "shot": "S05",
+   "t": 23.89,
+   "xy": [
+    0.75,
+    0.33
+   ],
+   "n": 6
+  },
+  {
+   "shot": "S05",
+   "t": 25.68,
+   "xy": [
+    0.37,
+    0.48
+   ],
+   "n": 7
+  },
+  {
+   "shot": "S06",
+   "t": 30.17,
+   "xy": [
+    0.58,
+    0.34
+   ],
+   "n": 8
+  },
+  {
+   "shot": "S07",
+   "t": 37.39,
+   "xy": [
+    0.75,
+    0.5
+   ],
+   "n": 1
+  },
+  {
+   "shot": "S07",
+   "t": 39.51,
+   "xy": [
+    0.37,
+    0.59
+   ],
+   "n": 2
+  },
+  {
+   "shot": "S07",
+   "t": 42.05,
+   "xy": [
+    0.57,
+    0.59
+   ],
+   "n": 3
+  },
+  {
+   "shot": "S07",
+   "t": 45.32,
+   "xy": [
+    0.92,
+    0.41
+   ],
+   "n": 4
+  }
+ ],
+ "cues": [
+  [
+   0,
+   5.4,
+   "Tomate tatemado, aceite de albahaca y un brioche de gruyère crujiente."
+  ],
+  [
+   6.1,
+   8.98,
+   "Ahumada, sedosa y brillante."
+  ],
+  [
+   9,
+   14.3,
+   "Para **4 personas** necesitas **1,2 kg** de tomate chonto maduro."
+  ],
+  [
+   15.1,
+   19.9,
+   "**2** chalotas, **4** dientes de ajo y **2** ramas de tomillo."
+  ],
+  [
+   20.6,
+   23.2,
+   "**400 ml** de fondo de verduras,"
+  ],
+  [
+   23.9,
+   28,
+   "**50 ml** de crema de leche y **40 g** de mantequilla fría."
+  ],
+  [
+   28.8,
+   30.18,
+   "Para el aceite,"
+  ],
+  [
+   30.2,
+   35.4,
+   "**40 g** de albahaca y **120 ml** de aceite de girasol."
+  ],
+  [
+   36.1,
+   42.08,
+   "Y para acompañar, **8** rebanadas de brioche, **160 g** de gruyère,"
+  ],
+  [
+   42.1,
+   45.9,
+   "**20 g** de parmesano y, si quieres, una burrata."
+  ],
+  [
+   46.7,
+   48.2,
+   "Tomates tatemados."
+  ],
+  [
+   49,
+   50.6,
+   "Parte los tomates por la mitad."
+  ],
+  [
+   51.4,
+   55.3,
+   "Calienta la sartén de hierro a fuego **alto** durante **3 minutos**."
+  ],
+  [
+   56.1,
+   59.8,
+   "Pon los tomates boca abajo con **1 cucharada** de aceite de oliva."
+  ],
+  [
+   60.5,
+   63.7,
+   "Déjalos de **6 a 8 minutos**, sin moverlos."
+  ],
+  [
+   64.5,
+   67.6,
+   "Queremos la piel ampollada y los bordes casi negros."
+  ],
+  [
+   68.4,
+   73.38000000000001,
+   "Ese tatemado reemplaza al horno y le da a la sopa un fondo ahumado."
+  ],
+  [
+   73.4,
+   80.28,
+   "En la olla, a fuego **medio-bajo**, sofríe la chalota y el ajo con otra cucharada de aceite."
+  ],
+  [
+   80.3,
+   82.3,
+   "**5 minutos**, sin que tomen color."
+  ],
+  [
+   83,
+   85.1,
+   "Si se doran, la sopa amarga."
+  ],
+  [
+   85.8,
+   90.1,
+   "Suma los tomates, el tomillo, una pizca de azúcar y la sal."
+  ],
+  [
+   90.8,
+   93.78,
+   "**10 minutos** a fuego **medio**, hasta que se desarmen."
+  ],
+  [
+   93.8,
+   97.48,
+   "Agrega el fondo y cocina **20 minutos** a fuego **bajo**."
+  ],
+  [
+   97.5,
+   101.98,
+   "Saca el tomillo y licúa **2 minutos** a máxima potencia."
+  ],
+  [
+   102,
+   107.08,
+   "Ahora, el paso que separa una sopa casera de una de restaurante."
+  ],
+  [
+   107.1,
+   109.28,
+   "Pásala por un colador fino."
+  ],
+  [
+   109.3,
+   113.08,
+   "Presiona con la cuchara y descarta pieles y semillas."
+  ],
+  [
+   113.1,
+   115.5,
+   "Devuélvela al fuego **bajo** con la crema."
+  ],
+  [
+   116.4,
+   119.38000000000001,
+   "Y monta la mantequilla fría, cubo a cubo."
+  ],
+  [
+   119.4,
+   121.08,
+   "No la dejes hervir."
+  ],
+  [
+   121.1,
+   125.28,
+   "La mantequilla fría emulsiona y le da ese brillo de espejo."
+  ],
+  [
+   125.3,
+   127.58,
+   "Si hierve, se corta."
+  ],
+  [
+   127.6,
+   130.67999999999998,
+   "Termina con unas gotas de vinagre de jerez."
+  ],
+  [
+   130.7,
+   132.88,
+   "Aceite de albahaca."
+  ],
+  [
+   132.9,
+   136.38,
+   "Blanquea la albahaca **10 segundos** en agua hirviendo."
+  ],
+  [
+   136.4,
+   139.57999999999998,
+   "Pásala de inmediato a agua con hielo."
+  ],
+  [
+   139.6,
+   143.6,
+   "Ese choque fija el verde y evita que el aceite se ponga café."
+  ],
+  [
+   144.3,
+   148.17999999999998,
+   "Sécala bien y licúala **2 minutos** con el aceite."
+  ],
+  [
+   148.2,
+   150.67999999999998,
+   "Fíltralo por un filtro de café."
+  ],
+  [
+   150.7,
+   154.5,
+   "Gota a gota, sale un verde intenso y limpio."
+  ],
+  [
+   155.2,
+   156.78,
+   "Brioche de gruyère."
+  ],
+  [
+   156.8,
+   159.7,
+   "Mezcla la mantequilla blanda con hojas de tomillo."
+  ],
+  [
+   160.4,
+   164.7,
+   "Úntala por fuera del pan y presiona parmesano rallado sobre ella."
+  ],
+  [
+   165.5,
+   167.6,
+   "Rellena con el gruyère y cierra."
+  ],
+  [
+   168.3,
+   172.4,
+   "Sartén a fuego **medio-bajo**, de **3 a 4 minutos** por lado."
+  ],
+  [
+   173.2,
+   177.57999999999998,
+   "El fuego bajo funde el queso por dentro antes de que el pan se queme."
+  ],
+  [
+   177.6,
+   180.2,
+   "El parmesano forma una costra crujiente."
+  ],
+  [
+   180.8,
+   182.38,
+   "Córtalo en bastones."
+  ],
+  [
+   182.4,
+   184.78,
+   "Sirve la sopa en un plato hondo."
+  ],
+  [
+   184.8,
+   187.88,
+   "Si quieres, abre una burrata al centro."
+  ],
+  [
+   187.9,
+   189.98,
+   "Unas gotas del aceite verde,"
+  ],
+  [
+   190,
+   193.48,
+   "hojas pequeñas de albahaca y sal en escamas."
+  ],
+  [
+   193.5,
+   196.98,
+   "Al lado, los bastones de brioche, listos para mojar."
+  ],
+  [
+   197,
+   201.2,
+   "Si te gustó, suscríbete para más recetas de restaurante en casa."
+  ]
+ ],
+ "hook": {
+  "title": [
+   "Velouté",
+   "de tomate"
+  ],
+  "cards": [
+   {
+    "before": {
+     "src": "N02",
+     "a": 0,
+     "rate": 0,
+     "z": 1.0,
+     "f": [
+      0.5,
+      0.5
+     ]
+    },
+    "after": {
+     "src": "N02",
+     "a": 2.0,
+     "rate": 1,
+     "z": 1.25,
+     "f": [
+      0.5,
+      0.45
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "HERO",
+     "a": 0,
+     "rate": 0,
+     "z": 1.0,
+     "f": [
+      0.5,
+      0.6
+     ]
+    },
+    "after": {
+     "src": "N08",
+     "a": 1.0,
+     "rate": 1,
+     "z": 1.1,
+     "f": [
+      0.5,
+      0.45
+     ]
+    }
+   },
+   {
+    "before": {
+     "src": "N13",
+     "a": 0,
+     "rate": 0,
+     "z": 1.0,
+     "f": [
+      0.45,
+      0.62
+     ]
+    },
+    "after": {
+     "src": "N12",
+     "a": 2.0,
+     "rate": 1,
+     "z": 1.2,
+     "f": [
+      0.48,
+      0.55
+     ]
+    }
+   }
+  ],
+  "rows": [],
+  "beat": 2.4,
+  "words": [
+   [
+    "Ahumada",
+    6.15,
+    "#D9573B",
+    "tomate tatemado"
+   ],
+   [
+    "Sedosa",
+    6.73,
+    "#F2B544",
+    "mantequilla montada"
+   ],
+   [
+    "Brillante",
+    7.81,
+    "#7DB04A",
+    "aceite de albahaca"
+   ]
+  ],
+  "tagline": [
+   "NIVEL RESTAURANTE  ·  PASO A PASO",
+   8.2
+  ],
+  "sizzle": "N02"
+ },
+ "end": {
+  "start": "S35",
+  "title": "¡Buen provecho!",
+  "next": "PRÓXIMO VIDEO",
+  "bubble": [
+   "¿Con qué la mojas?",
+   "Cuéntamelo en",
+   "los comentarios"
+  ]
+ },
+ "thumb": {
+  "img": "raw/HERO.jpg",
+  "crop": [
+   0.03,
+   0.31,
+   0.94
+  ],
+  "title": [
+   "Velouté",
+   "de tomate"
+  ],
+  "tags": [
+   [
+    "tatemado",
+    "#D9573B",
+    "#F6EFE3"
+   ],
+   [
+    "sedosa",
+    "#F6EFE3",
+    "#140E09"
+   ],
+   [
+    "nivel chef",
+    "#F2B544",
+    "#140E09"
+   ]
+  ]
+ }
+}
