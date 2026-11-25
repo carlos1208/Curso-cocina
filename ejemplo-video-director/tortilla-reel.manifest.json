@@ -1,0 +1,267 @@
+{
+ "schema_version": "1.0",
+ "created": "2026-11-25T10:00:00",
+ "id": "tortilla-reel",
+ "brief": {
+  "prompt": "un reel de 15 segundos de una tortilla de patatas para el curso de cocina",
+  "kind": "product",
+  "length_s": 15,
+  "aspect": "9:16",
+  "fps": 24,
+  "style": "food film cálido, luz de ventana lateral, cocina rústica española, macro de textura, 35mm film still",
+  "audio": {
+   "narration": true,
+   "music": true,
+   "sfx": true,
+   "lip_sync": false,
+   "music_file": null,
+   "language": "es"
+  },
+  "captions": "burned",
+  "deliverables": [
+   "9:16"
+  ],
+  "commercial_use": true,
+  "defaults_used": [
+   "fps 24",
+   "length_s 15 (product)",
+   "captions burned (vertical)"
+  ]
+ },
+ "target": {
+  "kind": "google_colab",
+  "url": "",
+  "gpu": "L4",
+  "vram_gb": 24,
+  "budget": {
+   "max_gpu_minutes": 60,
+   "max_credits": 10,
+   "credit_unit": "compute units",
+   "deadline_minutes": null
+  }
+ },
+ "tier": "standard",
+ "tier_reason": "L4 24 GB en Google Colab encaja en standard",
+ "caps": {
+  "still_retries": 3,
+  "still_variants": 2,
+  "video_retries": 2,
+  "continuity_regens": 2,
+  "max_renders": 32,
+  "max_gpu_minutes": 60,
+  "pass_mean": 4.0,
+  "pass_min": 3
+ },
+ "gates": {
+  "bible": "human",
+  "plan": "human",
+  "spend": "human",
+  "final": "human"
+ },
+ "stages": {
+  "intake": "done",
+  "preflight": "pending",
+  "bible": "pending",
+  "plan": "pending",
+  "stills": "pending",
+  "video": "pending",
+  "continuity": "pending",
+  "audio": "pending",
+  "post": "pending",
+  "assembly": "pending",
+  "critique": "pending"
+ },
+ "bible": {
+  "path": "tortilla-reel/bible.md",
+  "logline": "De la sartén al plato: la tortilla de patatas perfecta en 15 segundos.",
+  "cast": [
+   {
+    "id": "tortilla",
+    "descriptor": "thick golden Spanish potato omelette, 22 cm round, slightly runny center, browned edges, served on a hand-painted ceramic plate",
+    "ref_image": null,
+    "seed": null
+   },
+   {
+    "id": "sarten",
+    "descriptor": "well-seasoned black iron skillet with a worn wooden handle",
+    "ref_image": null,
+    "seed": null
+   }
+  ],
+  "style": "warm rustic Spanish kitchen, side window light, olive wood and terracotta",
+  "lut": "warm_film.cube",
+  "voice": "voz cálida y cercana de chef, español de España"
+ },
+ "shots": [
+  {
+   "id": "s01",
+   "beat": "1 gancho",
+   "start_s": 0.0,
+   "duration_s": 4,
+   "type": "product",
+   "framing": "macro",
+   "camera": "static locked-off",
+   "cast": [
+    "sarten"
+   ],
+   "location": "cocina rústica",
+   "narration": "Patata, huevo y paciencia.",
+   "sfx": "sizzle",
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein_base",
+    "status": "pending",
+    "prompt": "Warm food film still, vertical frame. Macro shot of thin potato slices and onion gently frying in golden olive oil inside a black iron skillet, tiny bubbles, soft side window light from frame left, rustic kitchen blurred behind.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Static camera. Oil bubbles gently around the potato slices; a wisp of steam rises.",
+    "seed": null
+   },
+   "status": "pending",
+   "extra": []
+  },
+  {
+   "id": "s02",
+   "beat": "2 proceso",
+   "start_s": 4.0,
+   "duration_s": 4,
+   "type": "product",
+   "framing": "medium close-up",
+   "camera": "slow push-in",
+   "cast": [
+    "sarten"
+   ],
+   "location": "cocina rústica",
+   "narration": "Mezclamos y cuajamos a fuego lento.",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein_base",
+    "status": "pending",
+    "prompt": "Warm food film still, vertical frame. Medium close-up of beaten eggs with potatoes being poured into the black iron skillet, glossy yellow surface, wooden spoon at frame right, warm window light.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Slow push-in; the egg mixture settles and starts to set at the edges.",
+    "seed": null
+   },
+   "status": "pending",
+   "extra": []
+  },
+  {
+   "id": "s03",
+   "beat": "3 la vuelta",
+   "start_s": 8.0,
+   "duration_s": 4,
+   "type": "product",
+   "framing": "medium",
+   "camera": "static locked-off",
+   "cast": [
+    "tortilla",
+    "sarten"
+   ],
+   "location": "cocina rústica",
+   "narration": "El momento clave: darle la vuelta.",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein_base",
+    "status": "pending",
+    "prompt": "Warm food film still, vertical frame. Medium shot of hands holding a ceramic plate over the black iron skillet, about to flip a thick golden Spanish potato omelette, steam rising, warm side light.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Static camera. The skillet is flipped onto the plate in one quick motion, revealing the golden browned top; steam puffs up.",
+    "seed": null
+   },
+   "status": "pending",
+   "extra": []
+  },
+  {
+   "id": "s04",
+   "beat": "4 cierre",
+   "start_s": 12.0,
+   "duration_s": 3,
+   "type": "product",
+   "framing": "wide",
+   "camera": "slow push-in",
+   "cast": [
+    "tortilla"
+   ],
+   "location": "mesa de madera",
+   "narration": "Tortilla de patatas. Aprende con nosotros.",
+   "sfx": null,
+   "chain_from": null,
+   "transition_in": "cut",
+   "still": {
+    "route": "still.klein_base",
+    "status": "pending",
+    "prompt": "Warm food film still, vertical frame. A thick golden Spanish potato omelette on a hand-painted ceramic plate at frame lower third, one wedge cut showing a slightly runny center, olive wood table, empty warm space above for the end title.",
+    "seed": null
+   },
+   "video": {
+    "route": "video.i2v",
+    "status": "pending",
+    "prompt": "Slow push-in; a thin curl of steam rises from the cut wedge.",
+    "seed": null
+   },
+   "status": "pending",
+   "extra": []
+  }
+ ],
+ "audio": {
+  "voiceover": {
+   "route": "audio.voice",
+   "status": "pending",
+   "params": {
+    "voice": "voz-chef.mp3"
+   },
+   "seed": 3
+  },
+  "music": {
+   "route": "audio.music",
+   "status": "pending",
+   "params": {
+    "tags": "acoustic spanish guitar, warm, light percussion, 96 bpm, cheerful, no vocals",
+    "lyrics": "[instrumental]"
+   }
+  },
+  "sfx": [
+   {
+    "route": "audio.sfx",
+    "status": "pending",
+    "params": {
+     "prompt": "olive oil sizzling in an iron pan, close-up",
+     "seconds": 4
+    }
+   }
+  ]
+ },
+ "post": [],
+ "assembly": {
+  "status": "pending",
+  "xfade": 0.0,
+  "beats_file": null,
+  "captions": "burned",
+  "exports": [],
+  "output": null
+ },
+ "cost": {
+  "renders": 0,
+  "estimate_gpu_minutes": null,
+  "actual_gpu_minutes": 0,
+  "rates_s_per_render": {},
+  "rates_note": "unverified assumptions"
+ },
+ "log": []
+}
