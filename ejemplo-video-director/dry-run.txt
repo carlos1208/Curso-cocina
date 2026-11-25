@@ -1,0 +1,145 @@
+== tortilla-reel: tier=standard shots=4 est=28.9 GPU-min (rates are assumptions) caps={'still_retries': 3, 'still_variants': 2, 'video_retries': 2, 'continuity_regens': 2, 'max_renders': 32, 'max_gpu_minutes': 60, 'pass_mean': 4.0, 'pass_min': 3}
+[001] preflight (one call per workflow)
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/comfyui-preflight/scripts/preflight.py --url http://127.0.0.1:8188 '<55 routed workflows>'
+== GATE 'bible': waiting for human approval. Run: direct.py approve tortilla-reel.manifest.json bible
+== GATE 'plan': waiting for human approval. Run: direct.py approve tortilla-reel.manifest.json plan
+== GATE 'spend': waiting for human approval. Run: direct.py approve tortilla-reel.manifest.json spend
+-- stage: stills
+[002] still s01 #1 (still.klein_base)
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/workflows/flux3_klein_t2i.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/stills --set '18:17.value=Warm food film still, vertical frame. Macro shot of thin potato slices and onion gently frying in golden olive oil inside a black iron skillet, tiny bubbles, soft side window light from frame left, rustic kitchen blurred behind.' --set 18:7.seed=1007
+[003] judge <still s01 #1 (still.klein_base)>
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<still s01 #1 (still.klein_base)>' --prompt 'Warm food film still, vertical frame. Macro shot of thin potato slices and onion gently frying in golden olive oil inside a black iron skillet, tiny bubbles, soft side window light from frame left, rustic kitchen blurred behind.' --bible tortilla-reel/bible.md
+[004] still s01 #2 (still.klein_base)
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/workflows/flux3_klein_t2i.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/stills --set '18:17.value=Warm food film still, vertical frame. Macro shot of thin potato slices and onion gently frying in golden olive oil inside a black iron skillet, tiny bubbles, soft side window light from frame left, rustic kitchen blurred behind.' --set 18:7.seed=1008
+[005] judge <still s01 #2 (still.klein_base)>
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<still s01 #2 (still.klein_base)>' --prompt 'Warm food film still, vertical frame. Macro shot of thin potato slices and onion gently frying in golden olive oil inside a black iron skillet, tiny bubbles, soft side window light from frame left, rustic kitchen blurred behind.' --bible tortilla-reel/bible.md
+[006] still s02 #1 (still.klein_base)
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/workflows/flux3_klein_t2i.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/stills --set '18:17.value=Warm food film still, vertical frame. Medium close-up of beaten eggs with potatoes being poured into the black iron skillet, glossy yellow surface, wooden spoon at frame right, warm window light.' --set 18:7.seed=1014
+[007] judge <still s02 #1 (still.klein_base)>
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<still s02 #1 (still.klein_base)>' --prompt 'Warm food film still, vertical frame. Medium close-up of beaten eggs with potatoes being poured into the black iron skillet, glossy yellow surface, wooden spoon at frame right, warm window light.' --bible tortilla-reel/bible.md
+[008] still s02 #2 (still.klein_base)
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/workflows/flux3_klein_t2i.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/stills --set '18:17.value=Warm food film still, vertical frame. Medium close-up of beaten eggs with potatoes being poured into the black iron skillet, glossy yellow surface, wooden spoon at frame right, warm window light.' --set 18:7.seed=1015
+[009] judge <still s02 #2 (still.klein_base)>
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<still s02 #2 (still.klein_base)>' --prompt 'Warm food film still, vertical frame. Medium close-up of beaten eggs with potatoes being poured into the black iron skillet, glossy yellow surface, wooden spoon at frame right, warm window light.' --bible tortilla-reel/bible.md
+[010] still s03 #1 (still.klein_base)
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/workflows/flux3_klein_t2i.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/stills --set '18:17.value=Warm food film still, vertical frame. Medium shot of hands holding a ceramic plate over the black iron skillet, about to flip a thick golden Spanish potato omelette, steam rising, warm side light.' --set 18:7.seed=1021
+[011] judge <still s03 #1 (still.klein_base)>
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<still s03 #1 (still.klein_base)>' --prompt 'Warm food film still, vertical frame. Medium shot of hands holding a ceramic plate over the black iron skillet, about to flip a thick golden Spanish potato omelette, steam rising, warm side light.' --bible tortilla-reel/bible.md
+[012] still s03 #2 (still.klein_base)
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/workflows/flux3_klein_t2i.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/stills --set '18:17.value=Warm food film still, vertical frame. Medium shot of hands holding a ceramic plate over the black iron skillet, about to flip a thick golden Spanish potato omelette, steam rising, warm side light.' --set 18:7.seed=1022
+[013] judge <still s03 #2 (still.klein_base)>
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<still s03 #2 (still.klein_base)>' --prompt 'Warm food film still, vertical frame. Medium shot of hands holding a ceramic plate over the black iron skillet, about to flip a thick golden Spanish potato omelette, steam rising, warm side light.' --bible tortilla-reel/bible.md
+[014] still s04 #1 (still.klein_base)
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/workflows/flux3_klein_t2i.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/stills --set '18:17.value=Warm food film still, vertical frame. A thick golden Spanish potato omelette on a hand-painted ceramic plate at frame lower third, one wedge cut showing a slightly runny center, olive wood table, empty warm space above for the end title.' --set 18:7.seed=1028
+[015] judge <still s04 #1 (still.klein_base)>
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<still s04 #1 (still.klein_base)>' --prompt 'Warm food film still, vertical frame. A thick golden Spanish potato omelette on a hand-painted ceramic plate at frame lower third, one wedge cut showing a slightly runny center, olive wood table, empty warm space above for the end title.' --bible tortilla-reel/bible.md
+[016] still s04 #2 (still.klein_base)
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/flux3-klein-stills/workflows/flux3_klein_t2i.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/stills --set '18:17.value=Warm food film still, vertical frame. A thick golden Spanish potato omelette on a hand-painted ceramic plate at frame lower third, one wedge cut showing a slightly runny center, olive wood table, empty warm space above for the end title.' --set 18:7.seed=1029
+[017] judge <still s04 #2 (still.klein_base)>
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<still s04 #2 (still.klein_base)>' --prompt 'Warm food film still, vertical frame. A thick golden Spanish potato omelette on a hand-painted ceramic plate at frame lower third, one wedge cut showing a slightly runny center, olive wood table, empty warm space above for the end title.' --bible tortilla-reel/bible.md
+-- stage: video
+[018] video s01 #1 (video.i2v) [first pass]
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/ltx25-image-to-video/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/ltx25-image-to-video/workflows/ltx25_i2v_two_pass.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/video --set '395.image=<still s01 #1 (still.klein_base)>' --set '364.text=Static camera. Oil bubbles gently around the potato slices; a wisp of steam rises.' --set 338.noise_seed=5011 --set 356.width=352 --set 356.height=640 --set 356.length=97 --set 357.strength=1.0 --set 349.strength=1.0
+[019] shot-qc s01
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/shot-qc/scripts/shot_qc.py '<video s01 #1 (video.i2v) [first pass]>' --duration 4 --json --static
+[020] frame first of <video s01 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -i '<video s01 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s01 #1 (video.i2v) [first pass]>.first.png'
+[021] frame mid of <video s01 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -ss 0 -i '<video s01 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s01 #1 (video.i2v) [first pass]>.mid.png'
+[022] frame last of <video s01 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -sseof -0.05 -i '<video s01 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s01 #1 (video.i2v) [first pass]>.last.png'
+[023] judge <video s01 #1 (video.i2v) [first pass]>.first.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s01 #1 (video.i2v) [first pass]>.first.png' --prompt 'Static camera. Oil bubbles gently around the potato slices; a wisp of steam rises.' --bible tortilla-reel/bible.md --ref '<still s01 #1 (still.klein_base)>'
+[024] judge <video s01 #1 (video.i2v) [first pass]>.mid.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s01 #1 (video.i2v) [first pass]>.mid.png' --prompt 'Static camera. Oil bubbles gently around the potato slices; a wisp of steam rises.' --bible tortilla-reel/bible.md --ref '<still s01 #1 (still.klein_base)>'
+[025] judge <video s01 #1 (video.i2v) [first pass]>.last.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s01 #1 (video.i2v) [first pass]>.last.png' --prompt 'Static camera. Oil bubbles gently around the potato slices; a wisp of steam rises.' --bible tortilla-reel/bible.md --ref '<still s01 #1 (still.klein_base)>'
+[026] video s02 #1 (video.i2v) [first pass]
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/ltx25-image-to-video/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/ltx25-image-to-video/workflows/ltx25_i2v_two_pass.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/video --set '395.image=<still s02 #1 (still.klein_base)>' --set '364.text=Slow push-in; the egg mixture settles and starts to set at the edges.' --set 338.noise_seed=5022 --set 356.width=352 --set 356.height=640 --set 356.length=97 --set 357.strength=0.7 --set 349.strength=1.0
+[027] shot-qc s02
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/shot-qc/scripts/shot_qc.py '<video s02 #1 (video.i2v) [first pass]>' --duration 4 --json
+[028] frame first of <video s02 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -i '<video s02 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s02 #1 (video.i2v) [first pass]>.first.png'
+[029] frame mid of <video s02 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -ss 0 -i '<video s02 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s02 #1 (video.i2v) [first pass]>.mid.png'
+[030] frame last of <video s02 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -sseof -0.05 -i '<video s02 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s02 #1 (video.i2v) [first pass]>.last.png'
+[031] judge <video s02 #1 (video.i2v) [first pass]>.first.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s02 #1 (video.i2v) [first pass]>.first.png' --prompt 'Slow push-in; the egg mixture settles and starts to set at the edges.' --bible tortilla-reel/bible.md --ref '<still s02 #1 (still.klein_base)>'
+[032] judge <video s02 #1 (video.i2v) [first pass]>.mid.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s02 #1 (video.i2v) [first pass]>.mid.png' --prompt 'Slow push-in; the egg mixture settles and starts to set at the edges.' --bible tortilla-reel/bible.md --ref '<still s02 #1 (still.klein_base)>'
+[033] judge <video s02 #1 (video.i2v) [first pass]>.last.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s02 #1 (video.i2v) [first pass]>.last.png' --prompt 'Slow push-in; the egg mixture settles and starts to set at the edges.' --bible tortilla-reel/bible.md --ref '<still s02 #1 (still.klein_base)>'
+[034] video s03 #1 (video.i2v) [first pass]
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/ltx25-image-to-video/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/ltx25-image-to-video/workflows/ltx25_i2v_two_pass.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/video --set '395.image=<still s03 #1 (still.klein_base)>' --set '364.text=Static camera. The skillet is flipped onto the plate in one quick motion, revealing the golden browned top; steam puffs up.' --set 338.noise_seed=5033 --set 356.width=352 --set 356.height=640 --set 356.length=97 --set 357.strength=1.0 --set 349.strength=1.0
+[035] shot-qc s03
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/shot-qc/scripts/shot_qc.py '<video s03 #1 (video.i2v) [first pass]>' --duration 4 --json --static
+[036] frame first of <video s03 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -i '<video s03 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s03 #1 (video.i2v) [first pass]>.first.png'
+[037] frame mid of <video s03 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -ss 0 -i '<video s03 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s03 #1 (video.i2v) [first pass]>.mid.png'
+[038] frame last of <video s03 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -sseof -0.05 -i '<video s03 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s03 #1 (video.i2v) [first pass]>.last.png'
+[039] judge <video s03 #1 (video.i2v) [first pass]>.first.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s03 #1 (video.i2v) [first pass]>.first.png' --prompt 'Static camera. The skillet is flipped onto the plate in one quick motion, revealing the golden browned top; steam puffs up.' --bible tortilla-reel/bible.md --ref '<still s03 #1 (still.klein_base)>'
+[040] judge <video s03 #1 (video.i2v) [first pass]>.mid.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s03 #1 (video.i2v) [first pass]>.mid.png' --prompt 'Static camera. The skillet is flipped onto the plate in one quick motion, revealing the golden browned top; steam puffs up.' --bible tortilla-reel/bible.md --ref '<still s03 #1 (still.klein_base)>'
+[041] judge <video s03 #1 (video.i2v) [first pass]>.last.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s03 #1 (video.i2v) [first pass]>.last.png' --prompt 'Static camera. The skillet is flipped onto the plate in one quick motion, revealing the golden browned top; steam puffs up.' --bible tortilla-reel/bible.md --ref '<still s03 #1 (still.klein_base)>'
+[042] video s04 #1 (video.i2v) [first pass]
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/ltx25-image-to-video/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/ltx25-image-to-video/workflows/ltx25_i2v_two_pass.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/video --set '395.image=<still s04 #1 (still.klein_base)>' --set '364.text=Slow push-in; a thin curl of steam rises from the cut wedge.' --set 338.noise_seed=5044 --set 356.width=352 --set 356.height=640 --set 356.length=73 --set 357.strength=0.7 --set 349.strength=1.0
+[043] shot-qc s04
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/shot-qc/scripts/shot_qc.py '<video s04 #1 (video.i2v) [first pass]>' --duration 3 --json
+[044] frame first of <video s04 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -i '<video s04 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s04 #1 (video.i2v) [first pass]>.first.png'
+[045] frame mid of <video s04 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -ss 0 -i '<video s04 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s04 #1 (video.i2v) [first pass]>.mid.png'
+[046] frame last of <video s04 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -sseof -0.05 -i '<video s04 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s04 #1 (video.i2v) [first pass]>.last.png'
+[047] judge <video s04 #1 (video.i2v) [first pass]>.first.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s04 #1 (video.i2v) [first pass]>.first.png' --prompt 'Slow push-in; a thin curl of steam rises from the cut wedge.' --bible tortilla-reel/bible.md --ref '<still s04 #1 (still.klein_base)>'
+[048] judge <video s04 #1 (video.i2v) [first pass]>.mid.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s04 #1 (video.i2v) [first pass]>.mid.png' --prompt 'Slow push-in; a thin curl of steam rises from the cut wedge.' --bible tortilla-reel/bible.md --ref '<still s04 #1 (still.klein_base)>'
+[049] judge <video s04 #1 (video.i2v) [first pass]>.last.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s04 #1 (video.i2v) [first pass]>.last.png' --prompt 'Slow push-in; a thin curl of steam rises from the cut wedge.' --bible tortilla-reel/bible.md --ref '<still s04 #1 (still.klein_base)>'
+-- stage: continuity
+[050] frame last of <video s01 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -sseof -0.05 -i '<video s01 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s01 #1 (video.i2v) [first pass]>.last.png'
+[051] frame first of <video s02 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -i '<video s02 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s02 #1 (video.i2v) [first pass]>.first.png'
+[052] judge <video s02 #1 (video.i2v) [first pass]>.first.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s02 #1 (video.i2v) [first pass]>.first.png' --prompt 'Same characters, wardrobe, props, lighting and screen direction as the reference frame?' --bible tortilla-reel/bible.md --ref '<video s01 #1 (video.i2v) [first pass]>.last.png'
+[053] frame last of <video s02 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -sseof -0.05 -i '<video s02 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s02 #1 (video.i2v) [first pass]>.last.png'
+[054] frame first of <video s03 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -i '<video s03 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s03 #1 (video.i2v) [first pass]>.first.png'
+[055] judge <video s03 #1 (video.i2v) [first pass]>.first.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s03 #1 (video.i2v) [first pass]>.first.png' --prompt 'Same characters, wardrobe, props, lighting and screen direction as the reference frame?' --bible tortilla-reel/bible.md --ref '<video s02 #1 (video.i2v) [first pass]>.last.png'
+[056] frame last of <video s03 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -sseof -0.05 -i '<video s03 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s03 #1 (video.i2v) [first pass]>.last.png'
+[057] frame first of <video s04 #1 (video.i2v) [first pass]>
+      $ ffmpeg -y -loglevel error -i '<video s04 #1 (video.i2v) [first pass]>' -frames:v 1 '<video s04 #1 (video.i2v) [first pass]>.first.png'
+[058] judge <video s04 #1 (video.i2v) [first pass]>.first.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image '<video s04 #1 (video.i2v) [first pass]>.first.png' --prompt 'Same characters, wardrobe, props, lighting and screen direction as the reference frame?' --bible tortilla-reel/bible.md --ref '<video s03 #1 (video.i2v) [first pass]>.last.png'
+-- stage: audio
+[059] upload voz-chef.mp3
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/voiceover/scripts/comfy_client.py --url http://127.0.0.1:8188 upload voz-chef.mp3
+[060] voiceover
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/voiceover/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/voiceover/workflows/voice_chatterbox_multilingual.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/audio --set '1.text=Patata, huevo y paciencia. Mezclamos y cuajamos a fuego lento. El momento clave: darle la vuelta. Tortilla de patatas. Aprende con nosotros.' --set 1.seed=3 --set '2.audio=<upload>'
+[061] music
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/music-sfx/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/music-sfx/workflows/music_ace_step15.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/audio --set 6.seconds=17 --set 4.seed=11 --set '4.tags=acoustic spanish guitar, warm, light percussion, 96 bpm, cheerful, no vocals' --set '4.lyrics=[instrumental]'
+[062] sfx 1
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/music-sfx/scripts/comfy_client.py --url http://127.0.0.1:8188 run /home/user/Curso-cocina/.claude/skills/music-sfx/workflows/sfx_stable_audio_open.api.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/audio --set 6.seed=20 --set '3.text=olive oil sizzling in an iron pan, close-up' --set 5.seconds=4
+-- stage: post
+-- stage: assembly
+[063] assemble
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/film-assembly/scripts/assemble.py --clips '<video s01 #1 (video.i2v) [first pass]>' '<video s02 #1 (video.i2v) [first pass]>' '<video s03 #1 (video.i2v) [first pass]>' '<video s04 #1 (video.i2v) [first pass]>' --aspect 9:16 --fps 24 --xfade 0.0 --durations 4 4 4 3 --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/tortilla-reel.mp4 --run --narration '<voiceover>' --music '<music>'
+[064] captions
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/subtitles-captions/scripts/make_srt.py --manifest tortilla-reel.manifest.json --out /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/tortilla-reel.srt --burn /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/tortilla-reel.mp4 --burned /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/tortilla-reel_captioned.mp4 --run
+-- stage: critique
+[065] frame mid of tortilla-reel.mp4
+      $ ffmpeg -y -loglevel error -ss 0 -i /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/tortilla-reel.mp4 -frames:v 1 /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/final_mid.png
+[066] judge final_mid.png
+      $ /usr/local/bin/python3 /home/user/Curso-cocina/.claude/skills/still-qa/scripts/judge.py --image /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/final_mid.png --prompt 'un reel de 15 segundos de una tortilla de patatas para el curso de cocina | style: food film cálido, luz de ventana lateral, cocina rústica española, macro de textura, 35mm film still' --bible tortilla-reel/bible.md
+      (report) /home/user/Curso-cocina/ejemplo-video-director/tortilla-reel/REPORT.md
+== dry run complete: 66 steps planned, est 28.9 GPU-min, render cap 32. No network calls were made.
