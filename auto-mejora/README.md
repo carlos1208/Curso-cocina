@@ -2,7 +2,7 @@
 
 Video explicativo de 3 min 15 s, 1920×1080 a 30 fps, en español, hecho por completo con código: sin plantillas ni editor de video.
 
-**Ver:** [`auto-mejora-recursiva.mp4`](auto-mejora-recursiva.mp4)
+**Ver:** [`auto-mejora-recursiva_web.mp4`](auto-mejora-recursiva_web.mp4) (21 MB). El master de alta calidad, `auto-mejora-recursiva.mp4`, pesa unos 125 MB y queda fuera de git porque GitHub no acepta archivos de más de 100 MB.
 
 | Tiempo | Capítulo | Qué cuenta |
 |---|---|---|
@@ -31,5 +31,6 @@ export NODE_PATH=$(npm root -g)          # render.cjs usa el paquete playwright 
 node render.cjs --events                 # events.json
 python3 audio.py                         # soundtrack.wav
 node render.cjs --stills 12,48,90        # fotogramas sueltos en stills/ para revisar
-node render.cjs                          # auto-mejora-recursiva.mp4 (unos minutos)
+node render.cjs                          # auto-mejora-recursiva.mp4, el master (unos 10 min)
+ffmpeg -i auto-mejora-recursiva.mp4 -vf hqdn3d=1.5:1.5:6:6 -c:v libx264 -preset slow -crf 20 -tune animation -c:a copy -movflags +faststart auto-mejora-recursiva_web.mp4
 ```
